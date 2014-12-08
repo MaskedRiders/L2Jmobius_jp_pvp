@@ -1,0 +1,582 @@
+<?xml version="1.0"?>
+<list>
+	<skill id="30000" levels="1" name="Hydro Attack: Debuff">
+		<set name="magicLevel" val="85"/>
+		<set name="icon" val="skill30000"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Debuff" stackOrder="-1" stackType="DamageElemental" time="10" chance="100" val="0"/>
+		</for>
+	</skill>
+	<skill id="30001" levels="25" name="Hydro Attack">
+		<table name="#mpConsume2">35</table>
+		<table name="#magicLevel">1 20 28 36 42 46 50 54 60 62 66 70 74 77 79 81 83 85 87 89 91 93 95 97 99</table>
+		<table name="#power">6 14 19 25 32 36 41 46 55 60 64 69 72 75 77 79 171 179 187 195 203 211 219 227</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill30001"/>
+		<set name="reuseDelay" val="1200"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="hitCancelTime" val="500"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="CallSkills" time="0" val="0">
+				<def name="skillIds" val="30002"/>
+				<def name="skillLevels" val="1"/>
+			</effect>
+		</for>		
+	</skill>
+	<skill id="30002" levels="3" name="Storm Sign">
+		<table name="#magicLevel">85 90 95</table>
+		<table name="#mDef">0.70</table>
+		<table name="#runSpd">70</table>
+		<table name="#chance">20 10 0</table>
+		<table name="#levelfit">1 2 3</table>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill30002"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="80"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="BUFF_CHARGER"/>
+		<set name="targetBuff" val="30002"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect count="1" name="Buff" time="20" val="0" stackType="StormSign" abnormal="stormsign2_ave">
+				<mul order="0x30" stat="mDef" val="#mDef">
+					<using kind="Sword, Blunt"/>
+				</mul>
+				<add order="0x40" stat="runSpd" val="#runSpd">
+					<using kind="Sword, Blunt"/>
+				</add>
+				<triggers>
+					<trigger id="30002" level="#levelfit" type="OFFENSIVE_MAGICAL_SKILL_USE" chance="#chance">
+						<player damage="1;0"/>
+					</trigger>
+				</triggers>
+			</effect>
+		</for>
+	</skill>	
+	<skill id="30003" levels="17" name="Hydro Flare">
+		<table name="#mpConsume2">37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 70</table>
+		<table name="#magicLevel">60 62 66 70 74 77 79 81 83 85 86 88 90 92 94 96 98</table>
+		<table name="#power">114 120 130 140 150 157 162 167 172 501 515 543 571 599 627 655 683</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill30001"/>
+		<set name="reuseDelay" val="1200"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="consumeSkillsIDs" val="30002"/>
+		<set name="negateSkill" val="30003"/>		
+		<cond msgId="113" addName="1">
+			<target hasBuffId="30002;3"/>
+		</cond>
+		<for>
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="bane"/>
+				<def name="cancelRate" val="80"/>
+				<def name="negateCount" val="5"/>
+				<def name="negateStackTypes" val="StormSign;mAtk;mAtkSpeedUp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30004" levels="22" name="Hydro Strike">
+		<table name="#mpConsume2">27 29 31 33 35 37 39 41 43 45 47 49 51 53 55 57 59 61 63 65 67 70</table>
+		<table name="#magicLevel">40 44 48 52 56 58 64 68 72 76 78 80 82 84 85 87 89 91 93 95 97 99</table>
+		<table name="#power">57 66 74 83 92 101 110 118 127 136 140 145 149 154 420 442 464 486 508 530 552 574</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill30004"/>
+		<set name="reuseDelay" val="1200"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="trait" val="PARALYZE"/>		
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="negateSkill" val="30004"/>		
+		<cond msgId="113" addName="1">
+			<player hasBuffId="30008"/>
+		</cond>
+		<for>
+			<effect count="1" name="Paralyze" stackType="Paralyze" stackOrder="1" time="5" abnormal="hold_ave"/>
+		</for>
+	</skill>
+	<skill id="30006" levels="8" name="Storm Rage">
+		<table name="#mpConsume2">134 135 136 137 138 139 140 141</table>
+		<table name="#magicLevel">85 87 89 91 93 95 97 99</table>
+		<table name="#power">255 269 283 297 311 325 339 353</table>
+		<set name="castRange" val="80"/>		
+		<set name="icon" val="icon.skill30006"/>
+		<set name="reuseDelay" val="1200"/>
+		<set name="power" val="#power"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="castRange" val="80"/>
+		<set name="hitTime" val="4000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="operateType" val="OP_ACTIVE"/>		
+		<set name="trait" val="KNOCKBACK"/>
+		<set name="activateRate" val="60"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillRadius" val="250"/>
+		<set name="skillType" val="MDAM"/>			
+		<for>
+			<effect count="1" name="KnockBack" stackOrder="-1" stackType="KnockBack" time="0" val="0"/>
+		</for>
+	</skill>
+	<skill id="30007" levels="12" name="Hydro Drain">
+		<table name="#magicLevel">78 80 82 84 85 86 88 90 92 94 96 98</table>
+		<table name="#power">123 127 130 134 386 396 416 436 456 476 496 516</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="power" val="#power"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="overHit" val="true"/>
+		<set name="castRange" val="900"/>
+		<set name="hitTime" val="6080"/>
+		<set name="reuseDelay" val="6699"/>
+		<cond msgId="113" addName="1">
+			<target hasBuffId="30002;3"/>
+		</cond>
+		<for>
+			<effect count="1" name="HealPercent" time="0" val="10"/>
+			<effect count="1" name="ManaHealPercent" time="0" val="5"/>
+		</for>			
+	</skill>
+	<skill id="30008" levels="5" name="Wind Blend">
+		<table name="#magicLevel">20 85 90 94 98</table>
+		<table name="#reuseDelay">180000</table>	
+		<table name="#time">10</table>
+		<table name="#mpConsume2">38</table>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="hitTime" val="800"/>
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="dispelType" val="negative"/>
+		<set name="negateCount" val="3"/>
+		<set name="dispelOnDamage" val="true"/>
+		<for>
+			<effect count="1" abnormal="shadow" name="Invisible" stackOrder="-1" stackType="Invisible" time="#time" val="0" cancelOnAction="true">
+				<add order="0x40" stat="runSpd" val="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30009" levels="10" name="Deceptive Blink">
+		<table name="#mpConsume2">56 58 62 66 70 74 76 78 80 84</table>
+		<table name="#magicLevel">80 82 84 86 88 90 92 94 96 98</table>	
+		<table name="#reuseDelay">15000</table>
+		<table name="#flyRadius">-200</table>		
+		<set name="reuseDelay" val="#reuseDelay"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="mpConsume2" val="#mpConsume2"/>		
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="dispelOnDamage" val="true"/>
+		<set name="flyType" val="WARP_BACK"/>
+		<set name="flyRadius" val="#flyRadius"/>		
+		<for>
+			<effect count="1" abnormal="windhide_ave" name="Invisible" stackOrder="-1" stackType="Invisible" time="5" val="0" cancelOnAction="true">
+				<add order="0x40" stat="runSpd" val="100"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30010" levels="1" name="Windy Refuge">
+		<table name="#magicLevel">88</table>
+		<table name="#regMp">84</table>
+		<table name="#regHp">284</table>
+		<table name="#time">10</table>
+		<set name="reuseDelay" val="300000"/>
+		<set name="hitTime" val="500"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="NEGATE_EFFECTS"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="dispelType" val="negative"/>
+		<set name="negateCount" val="5"/>
+		<for>
+			<effect abnormal="windstun_ave" count="1" name="Petrification" stackOrder="-1" stackType="Invulnerable" time="#time" val="0" cancelOnAction="false">
+				<mul order="0x30" stat="regHp" val="#regHp"/>
+				<mul order="0x30" stat="regMp" val="#regMp"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30011" levels="12" name="Threatening Wind">
+		<table name="#magicLevel">76 78 80 82 84 86 88 90 92 94 96 98</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="skill30011"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="DEBUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="hitTime" val="1500"/>
+		<set name="reuseDelay" val="900"/>
+		<set name="castRange" val="900"/>
+		<for>
+			<effect count="1" name="CallSkills" time="0" val="0">
+				<def name="skillIds" val="30002"/>
+				<def name="skillLevels" val="3"/>
+			</effect>
+		</for>		
+	</skill>	
+	<skill id="30012" levels="22" name="Air Rush">
+		<table name="#mpConsume2">31 34 38 41 45 49 56 59 62 63 64 65 66 67 67 68 68 69 69 69 70</table>
+		<table name="#magicLevel">40 44 48 52 56 58 64 68 72 76 78 80 82 84 85 87 89 91 93 95 97 99</table>
+		<table name="#power">57 66 74 83 92 101 110 118 127 136 141 145 150 154 376 397 418 438 459 480 501 522</table>
+		<table name="#activateRate">80</table>
+		<set name="magicType" val="MAGIC"/>
+		<set name="icon" val="icon.skill30012"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="flyType" val="CHARGE"/>
+		<set name="flyRadius" val="600"/>
+		<set name="reuseDelay" val="5999"/>
+		<set name="activateRate" val="#activateRate"/>
+		<set name="nextAction" val="attack"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="power" val="#power"/>
+		<set name="criticalRate" val="10"/>
+		<set name="skillType" val="PDAM"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="499"/>
+		<for>
+			<effect count="1" name="KnockDown" stackOrder="-1" stackType="KnockDown" time="2" val="0"/>
+		</for>		
+	</skill>
+	<skill id="30013" levels="1" name="Switch Places">
+		<table name="#radius">600</table>
+		<set name="magicLevel" val="97"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="skillType" val="REPLACE"/>
+		<set name="target" val="TARGET_SUMMON"/>
+		<set name="castRange" val="600"/>
+		<set name="hitTime" val="1200"/>
+		<set name="reuseDelay" val="60000"/>
+		<set name="castRange" val="#radius"/>
+		<enchant1 levels="10" name="Cost"/>
+		<enchant2 levels="10" name="Distance">
+			<table name="#radius">610 620 630 640 650 660 670 680 690 700</table>
+			<table name="#magicLevel">90 91 92 93 94 95 96 97 98 99</table>
+		</enchant2>
+		<for/>
+	</skill>
+	<skill id="30014" levels="12" name="Compelling Wind">
+		<table name="#magicLevel">76 78 80 82 84 86 88 90 92 94 96 98</table>
+		<table name="#activateRate">70</table>
+		<set name="hitTime" val="1000"/>
+		<set name="reuseDelay" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="hitTime" val="500"/>		
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="AGGRESSION"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="trait" val="PULL"/>		
+		<set name="castRange" val="900"/>
+		<set name="flyType" val="THROW_HORIZONTAL"/>
+		<set name="flySpeed" val="900"/>		
+		<for>
+			<effect count="1" name="TargetToMe" time="1" val="0" chance="#activateRate"/>
+		</for>
+	</skill>
+	<skill id="30016" levels="3" name="Eye of the Storm">
+		<table name="#magicLevel">40 76 85</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="30" val="0" stackOrder="1" stackType="storm">
+				<mul order="0x30" stat="mCritRate" val="2.0"/>
+				<mul order="0x30" stat="pDef" val="1.30"/>
+				<mul order="0x30" stat="mDef" val="1.30"/>
+				<add order="0x40" stat="knockBackResist" val="90"/>
+				<add order="0x40" stat="knockDownResist" val="90"/>
+				<add order="0x40" stat="pullResist" val="90"/>
+				<add order="0x40" stat="airjokeResist" val="90"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30017" levels="3" name="Squall">
+		<table name="#magicLevel">40 76 85</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="600" val="0" stackOrder="1" stackType="squall">
+				<mul order="0x30" stat="critDamRcpt" val="0.85"/>
+				<add order="0x40" stat="runSpd" val="7"/>
+				<triggers>
+					<trigger id="30026" level="3" type="RECEIVE_DAMAGE" chance="30">
+						<player damage="1;0"/>
+					</trigger>
+				</triggers>				
+			</effect>
+		</for>
+	</skill>
+	<skill id="30018" levels="1" name="Windy Illusion">
+		<!-- TODO BlockTarget Effect Type -->
+		<set name="magicLevel" val="93"/>
+		<set name="reuseDelay" val="334000"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="isMusic" val="true"/>
+		<set name="dispelType" val="negative"/>
+		<set name="operateType" val="OP_ACTIVE"/>	
+		<for>
+			<effect count="1" name="BlockTarget" time="10" val="0" abnormal="illuwind_ave"/>
+			<effect count="1" name="DispelEffects" time="0" val="0">
+				<def name="dispelType" val="cleanse"/>
+				<def name="cancelRate" val="100"/>
+				<def name="negateCount" val="10"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30019" levels="8" name="Sayha's Word">
+		<table name="#magicLevel">85 87 89 91 93 95 97 99</table>
+		<table name="#power">533 561 589 617 645 673 701 729</table>
+		<set name="power" val="#power"/>
+		<set name="hitTime" val="1000"/>
+		<set name="reuseDelay" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="isDebuff" val="true"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<set name="castRange" val="40"/>
+		<for>
+			<effect name="Debuff" time="13" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1" stackType="speed_down">
+				<mul order="0x30" stat="pAtkSpd" val="0.70"/>
+				<mul order="0x30" stat="mAtkSpd" val="0.70"/>
+				<mul order="0x30" stat="runSpd" val="0.7"/>
+			</effect>
+			<effect count="1" name="CallSkills" time="0" val="0">
+				<def name="skillIds" val="30002"/>
+				<def name="skillLevels" val="3"/>
+			</effect>			
+		</for>
+	</skill>
+	<skill id="30020" levels="1" name="Sayha's Fury">
+		<table name="#magicLevel">85</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="30" val="0" stackOrder="1" stackType="fury">
+				<mul order="0x30" stat="critDamRcpt" val="0.50"/>
+				<add order="0x40" stat="runSpd" val="70"/>
+				<triggers>
+					<trigger id="30026" level="3" type="RECEIVE_DAMAGE" chance="30">
+						<player damage="1;0"/>
+					</trigger>
+				</triggers>				
+			</effect>
+		</for>
+	</skill>
+	<skill id="30022" levels="1" name="Sayha's Blessing">
+		<table name="#magicLevel">85</table>
+		<set name="reuseDelay" val="4000"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_PARTY"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Buff" time="30" val="0" stackOrder="2" stackType="blessing">
+				<ad order="0x40" stat="runSpd" val="50"/>
+				<add order="0x40" stat="knockBackResist" val="30"/>
+				<add order="0x40" stat="knockDownResist" val="30"/>
+				<add order="0x40" stat="pullResist" val="30"/>
+				<add order="0x40" stat="airjokeResist" val="30"/>
+			</effect>
+		</for>
+	</skill>
+	<skill id="30026" levels="3" name="Lightning Squall">
+		<table name="#power">50</table>
+		<table name="#mDef">0.70</table>
+		<table name="#runSpd">70</table>
+		<table name="#chance">50 50 50</table>
+		<table name="#triggerLevel">1 2 3</table>
+		<set name="reuseDelay" val="20000"/>
+		<set name="hitTime" val="1000"/>
+		<set name="power" val="#power"/>
+		<set name="magicType" val="SPECIAL"/>
+		<set name="icon" val="icon.skill30026"/>
+		<set name="castRange" val="1100"/>
+		<set name="isDebuff" val="true"/>
+		<set name="target" val="TARGET_ONE"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Debuff" time="10" val="0" effectPower="40" effectType="DEBUFF" stackOrder="1" stackType="speed_down" abnormal="squall_ave">
+				<add order="0x40" stat="runSpd" val="20"/>
+			</effect>
+		</for>
+	</skill>		
+	<skill id="30029" levels="1" name="Divine Storm">
+		<table name="#time">7</table>
+		<table name="#power">448</table>
+		<table name="#magicLevel">98</table>
+		<table name="#mpConsume2">1405</table>
+		<set name="power" val="#power"/>
+		<set name="reuseDelay" val="300000"/>
+		<set name="hitTime" val="3000"/>
+		<set name="mpConsume2" val="#mpConsume2"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_AREA"/>
+		<set name="skillType" val="MDAM"/>
+		<set name="operateType" val="OP_ACTIVE"/>
+		<for>
+			<effect name="Paralyze" stackType="Paralyze" stackOrder="1" time="#time" abnormal="psypower_ave"/>
+		</for>
+	</skill>
+	<skill id="30031" levels="1" name="Magic Potential">
+		<table name="#INT">2</table>
+		<table name="#level">85</table>
+		<set name="magicLevel" val="#level"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="INT" val="#INT">
+				<using kind="Dual Fist"/>
+			</add>
+		</for>
+	</skill>
+	<skill id="30040" levels="11" name="Eminent Blunt Weapon Mastery">
+		<table name="#magicLevel">5 20 40 52 64 76 80 85 90 95 99</table>
+		<table name="#mAtk">1.17 1.17 1.17 1.17 1.17 1.17 1.17 1.40 1.40 1.40 1.40</table>
+		<table name="#Table-mAtk">10 57 228 436 728 834 942 1050 1252 1454 1727</table>
+		<table name="#mAtkSpd">0.05 0.05 1.10 1.10 1.10 1.15 1.20 1.30 1.30 1.30 1.30</table>
+		<table name="#mCritRate">1.10</table>
+		<table name="#mCritDamage">1.10</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="mAtk" val="#Table-mAtk">
+				<using kind="Blunt, Big Blunt"/>
+			</add>
+			<mul order="0x30" stat="mAtk" val="#mAtk">
+				<using kind="Blunt, Big Blunt"/>
+			</mul>
+			<mul order="0x30" stat="mAtkSpd" val="#mAtkSpd">
+				<using kind="Blunt, Big Blunt"/>
+			</mul>
+			<mul order="0x30" stat="mCritRate" val="#mCritRate">
+				<using kind="Blunt, Big Blunt"/>
+			</mul>			
+			<mul order="0x30" stat="mCritDamage" val="#mCritDamage">
+				<using kind="Blunt, Big Blunt"/>
+			</mul>			
+		</for>
+	</skill>
+	<skill id="30041" levels="11" name="Eminent Robe Mastery">
+		<table name="#magicLevel">5 20 40 44 64 76 80 85 90 95 99</table>
+		<table name="#pDef">7 12 27 39 55 69 77 1238 1347 1456 1601</table>
+		<table name="#mDef">1.03 1.05 1.05 1.05</table>
+		<table name="#Table-mDef">1156 1258 1360 1496</table>
+		<table name="#magicResist">1.05 1.10 1.15 1.20 1.25 1.30 1.35 1.35 1.35</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="armorAllowed" val="Robe"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="pDef" val="#pDef">
+				<using armor="Magic"/>
+			</add>
+			<add order="0x40" stat="mDef" val="#Table-mDef">
+				<using armor="Magic"/>
+			</add>			
+			<mul order="0x30" stat="mDef" val="#mDef">
+				<using armor="Magic"/>
+			</mul>
+			<mul order="0x30" stat="magicResist" val="#mDef">
+				<using armor="Magic"/>
+			</mul>
+			<effect count="1" name="CallSkills" time="0" val="0">
+				<def name="skillIds" val="30002"/>
+				<def name="skillLevels" val="1"/>
+			</effect>			
+		</for>
+	</skill>
+	<skill id="30042" levels="7" name="Eminent Quick Recovery">
+		<table name="#maxHp">4891</table>
+		<table name="#maxMp">33 77 223 344 411 478 568</table>
+		<table name="#regMp">1 3 5 7 8 10 11</table>
+		<table name="#mReuse">1.10 1.15 1.20 1.30 1.30 1.30 1.30</table>
+		<table name="#mpConsum">0.95 0.93 0.93 0.93 0.93</table>
+		<table name="#magicLevel">20 40 76 85 90 95 99</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="maxHp" val="#maxHp"/>
+			<mul order="0x30" stat="mReuse" val="#mReuse"/>
+			<add order="0x40" stat="regMp" val="#regMp"/>
+			<mul order="0x30" stat="mpConsum" val="#mpConsum"/>
+		</for>
+	</skill>
+	<skill id="30043" levels="2" name="Eminent Attribute Resistance">
+		<table name="#magicLevel">76 85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="defenceWind" val="30"/>
+			<add order="0x40" stat="defenceHoly" val="30"/>
+		</for>
+	</skill>
+	<skill id="30044" levels="2" name="Eminent Trait Resistance">
+		<table name="#magicLevel">76 85</table>
+		<set name="magicLevel" val="#magicLevel"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x40" stat="pullResist" val="30"/>
+			<add order="0x40" stat="rootResist" val="30"/>
+			<add order="0x40" stat="mentalResist" val="30"/>
+		</for>
+	</skill>
+	<skill id="30045" levels="3" name="Eminent Ability">
+		<table name="#INT">2 4 16</table>
+		<table name="#level">40 76 85</table>
+		<set name="magicLevel" val="#level"/>
+		<set name="target" val="TARGET_SELF"/>
+		<set name="skillType" val="BUFF"/>
+		<set name="operateType" val="OP_PASSIVE"/>
+		<for>
+			<add order="0x10" stat="INT" val="#INT">
+				<using kind="Sword,Blunt"/>
+			</add>
+		</for>
+	</skill>
+</list>
