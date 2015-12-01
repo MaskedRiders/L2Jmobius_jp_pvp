@@ -1,168 +1,153 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project name="Mobius" default="dist" basedir=".">
-	<property name="debug" value="on" />
-	<property name="src.gameserver" location="java/lineage2/gameserver" />
-	<property name="src.loginserver" location="java/lineage2/loginserver" />
-	<property name="src.commons" location="java/lineage2/commons" />
-	<property name="dist" location="dist" />
-	<property name="libraries" location="dist/libs" />
+<!DOCTYPE xml>
+<project name="L2J_Mobius" default="cleanup" basedir=".">
+	<description>
+		This script will build the L2J Server.
+
+		This program is free software; you can redistribute it and/or modify
+		it under the terms of the GNU General Public License as published by
+		the Free Software Foundation; either version 3, or (at your option)
+		any later version.
+
+		This program is distributed in the hope that it will be useful,
+		but WITHOUT ANY WARRANTY; without even the implied warranty of
+		MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+		GNU General Public License for more details.
+
+		You should have received a copy of the GNU General Public License
+		along with this program; if not, write to the Free Software
+		Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA
+		02111-1307, USA.
+
+		http://www.gnu.org/copyleft/gpl.html
+	</description>
+
 	<property name="build" location="../build" />
-	<property name="build.classes" location="${build}/classes" />
+	<property name="build.bin" location="${build}/bin" />
 	<property name="build.dist" location="${build}/dist" />
-	<property name="build.dist.loginserver" location="${build.dist}/loginserver" />
-	<property name="build.dist.gameserver" location="${build.dist}/gameserver" />
-	<property name="build.dist.tools" location="${build.dist}/tools" />
-	
+	<property name="build.dist.doc" location="${build.dist}/doc" />
+	<property name="build.dist.game" location="${build.dist}/game" />
+	<property name="build.dist.login" location="${build.dist}/login" />
+	<property name="build.dist.dbinstaller" location="${build.dist}/db_installer" />
+	<property name="datapack" location="dist" />
+	<property name="libs" location="${datapack}/libs" />
+	<property name="src" location="java" />
+
 	<path id="classpath">
-		<fileset dir="${libraries}">
-			<include name="**/*.jar" />
+		<fileset dir="${libs}">
+			<include name="*.jar" />
 		</fileset>
 	</path>
-	<property name="build.classpath" refid="classpath" />
-	
-	<pathconvert property="jar.list" pathsep=" " refid="classpath">
-		<mapper type="flatten" />
+
+	<pathconvert property="manifest.libs" pathsep=" ">
+		<path refid="classpath" />
+		<mapper>
+			<chainedmapper>
+				<flattenmapper />
+				<globmapper from="*.jar" to="../libs/*.jar" />
+			</chainedmapper>
+		</mapper>
 	</pathconvert>
-	
-	<tstamp>
-		<format property="build.tstamp" pattern="yyyy.MM.dd HH:mm" />
-	</tstamp>
-	
+
 	<target name="checkRequirements" description="Check Requirements.">
-		<fail message="Ant 1.9.1 is required. But your version is ${ant.version} and if you are using Eclipse probably is outdated.">
+		<fail message="Ant 1.8.2 is required. But your version is ${ant.version} and if you are using Eclipse probably is outdated.">
 			<condition>
 				<not>
-					<antversion atleast="1.9.1" />
+					<antversion atleast="1.8.2" />
 				</not>
 			</condition>
 		</fail>
 		<available classname="java.util.stream.Stream" property="JDK8.present" />
 		<fail unless="JDK8.present" message="Java 1.8 is required. But your version is Java ${ant.java.version} and probably JDK is not installed." />
 	</target>
-	
-	<target name="clean" depends="checkRequirements" description="Remove the output directories.">
-		<delete dir="${build}" />
+
+	<target name="init" depends="checkRequirements" description="Create the output directories.">
+		<delete dir="${build.bin}" quiet="true" />
+		<mkdir dir="${build.bin}" />
 	</target>
-	
-	<target name="init" depends="clean" description="Create the output directories.">
-		<mkdir dir="${build}" />
+
+	<target name="compile" depends="init" description="Compile the source.">
+		<javac srcdir="${src}" classpathref="classpath" destdir="${build.bin}" compiler="modern" debug="true" debuglevel="lines,vars,source" includeantruntime="false" source="1.8" target="1.8" encoding="UTF-8" />
 	</target>
-	
-	<target name="compile-commons" depends="init">
-		<delete dir="${build.classes}" />
-		<mkdir dir="${build.classes}" />
-		<javac srcdir="${src.commons}" destdir="${build.classes}" optimize="on" debug="${debug}" source="1.8" target="1.8" includeantruntime="false" encoding="UTF-8" nowarn="off" classpath="${build.classpath}">
-			<compilerarg value="-Xlint:unchecked,-serial" />
-		</javac>
-	</target>
-	
-	<target name="commons-jar" depends="compile-commons">
-		<jar destfile="${build}/lineage2-commons.jar">
-			<fileset dir="${build.classes}" />
+
+	<target name="jar" depends="compile" description="Create the jar files.">
+		<tstamp>
+			<format property="time.stamp" pattern="yyyy-MM-dd HH:mm:ss" />
+		</tstamp>
+
+		<jar destfile="${build.dist.login}/l2jlogin.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/dbinstaller/**" />
+				<exclude name="**/gameserver/**" />
+				<exclude name="**/commons/geodriver/**" />
+				<exclude name="**/commons/javaengine/**" />
+			</fileset>
 			<manifest>
-				<attribute name="Build-By" value="${user.name}" />
-				<attribute name="Build-Date" value="${build.tstamp}" />
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Built-Date" value="${time.stamp}" />
+				<attribute name="Implementation-URL" value="http://www.l2jmobius.com/" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Main-Class" value="com.l2jserver.loginserver.L2LoginServer" />
+			</manifest>
+		</jar>
+		<jar destfile="${build.dist.game}/l2jserver.jar" level="9">
+			<fileset dir="${build.bin}">
+				<exclude name="**/dbinstaller/**" />
+				<exclude name="**/loginserver/**" />
+				<exclude name="**/accountmanager/**" />
+				<exclude name="**/gsregistering/**" />
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Built-Date" value="${time.stamp}" />
+				<attribute name="Implementation-URL" value="http://www.l2jmobius.com/" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Main-Class" value="com.l2jserver.gameserver.GameServer" />
+			</manifest>
+		</jar>
+		<jar destfile="${build.dist.dbinstaller}/Database_Installer_GS.jar" level="9">
+			<fileset dir="${build.bin}">
+				<include name="**/dbinstaller/**" />
+				<include name="**/images/**" />
+				<include name="**/util/**" />
+				<include name="**/SQLFilter**" />
+				<exclude name="**/LauncherLS*" />
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Built-Date" value="${time.stamp}" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Implementation-URL" value="http://www.l2jmobius.com/" />
+				<attribute name="Main-Class" value="com.l2jserver.tools.dbinstaller.LauncherGS" />
+			</manifest>
+		</jar>
+		<jar destfile="${build.dist.dbinstaller}/Database_Installer_LS.jar" level="9">
+			<fileset dir="${build.bin}">
+				<include name="**/dbinstaller/**" />
+				<include name="**/images/**" />
+				<include name="**/util/**" />
+				<include name="**/SQLFilter**" />
+				<exclude name="**/LauncherGS*" />
+			</fileset>
+			<manifest>
+				<attribute name="Built-By" value="${user.name}" />
+				<attribute name="Built-Date" value="${time.stamp}" />
+				<attribute name="Class-Path" value="${manifest.libs}" />
+				<attribute name="Implementation-URL" value="http://www.l2jmobius.com/" />
+				<attribute name="Main-Class" value="com.l2jserver.tools.dbinstaller.LauncherLS" />
 			</manifest>
 		</jar>
 	</target>
-	
-	<target name="compile-gameserver" depends="commons-jar">
-		<delete dir="${build.classes}" />
-		<mkdir dir="${build.classes}" />
-		<javac srcdir="${src.gameserver}" destdir="${build.classes}" optimize="on" debug="${debug}" source="1.8" target="1.8" includeantruntime="false" encoding="UTF-8" nowarn="off" classpath="${build.classpath}:${build}/lineage2-commons.jar">
-			<compilerarg value="-Xlint:unchecked,-serial" />
-		</javac>
+
+	<target name="adding-core" depends="jar" description="Adding the compiled jars to the Zip file.">
+		<zip destfile="${build}/L2J_Mobius.zip" basedir="${build.dist}" level="9" />
 	</target>
 	
-	<target name="gameserver-jar" depends="compile-gameserver">
-		<jar destfile="${build}/lineage2-gameserver.jar">
-			<fileset dir="${build.classes}" />
-			<manifest>
-				<attribute name="Main-Class" value="lineage2.gameserver.GameServer" />
-				<attribute name="Class-Path" value="${jar.list} lineage2-commons.jar" />
-				<attribute name="Build-By" value="${user.name}" />
-				<attribute name="Build-Date" value="${build.tstamp}" />
-			</manifest>
-		</jar>
+	<target name="adding-datapack" depends="adding-core" description="Updating the Zip file with datapack content.">
+		<zip destfile="${build}/L2J_Mobius.zip" basedir="${datapack}" update="true" level="9" />
 	</target>
 	
-	<target name="gameserver" depends="gameserver-jar">
-		<mkdir dir="${build.dist}" />
-		<mkdir dir="${build.dist.tools}" />
-		<mkdir dir="${build.dist.gameserver}" />
-		<mkdir dir="${build.dist.gameserver}/geodata" />
-		<mkdir dir="${build.dist.gameserver}/log" />
-		<copy todir="${build.dist}/libs">
-			<fileset dir="${build}">
-				<include name="lineage2-gameserver.jar" />
-			</fileset>
-		</copy>
-		<fixcrlf srcdir="${build.dist.gameserver}" eol="lf" eof="remove" includes="**/*.sh"/>
-		<fixcrlf srcdir="${build.dist.gameserver}" eol="crlf" eof="remove" includes="**/*.bat"/>
-		<delete dir="${build.classes}" />
-		<copy todir="${build.dist.gameserver}" preservelastmodified="true">
-			<fileset dir="${dist}/gameserver">
-				<include name="**/*.*" />
-			</fileset>
-		</copy>
-		<copy todir="${build.dist.tools}" preservelastmodified="true">
-			<fileset dir="${dist}/tools">
-				<include name="**/*.*" />
-			</fileset>
-		</copy>
-	</target>
-	
-	<target name="compile-loginserver" depends="commons-jar">
-		<delete dir="${build.classes}" />
-		<mkdir dir="${build.classes}" />
-		<javac srcdir="${src.loginserver}" optimize="on" destdir="${build.classes}" debug="${debug}" source="1.8" target="1.8" includeantruntime="false" encoding="UTF-8" nowarn="off" classpath="${build.classpath}:${build}/lineage2-commons.jar">
-			<compilerarg value="-Xlint:unchecked,-serial" />
-		</javac>
-	</target>
-	
-	<target name="loginserver-jar" depends="compile-loginserver">
-		<jar destfile="${build}/lineage2-loginserver.jar">
-			<fileset dir="${build.classes}" />
-			<manifest>
-				<attribute name="Main-Class" value="lineage2.loginserver.loginserver" />
-				<attribute name="Class-Path" value="${jar.list} lineage2-commons.jar" />
-				<attribute name="Build-By" value="${user.name}" />
-				<attribute name="Build-Date" value="${build.tstamp}" />
-			</manifest>
-		</jar>
-	</target>
-	
-	<target name="loginserver" depends="loginserver-jar">
-		<mkdir dir="${build.dist}" />
-		<mkdir dir="${build.dist.loginserver}" />
-		<mkdir dir="${build.dist}/libs" />
-		<mkdir dir="${build.dist.loginserver}/log" />
-		<copy todir="${build.dist}/libs">
-			<fileset dir="${build}">
-				<include name="lineage2-loginserver.jar" />
-				<include name="lineage2-commons.jar" />
-			</fileset>
-		</copy>
-		<copy todir="${build.dist}/libs">
-			<fileset dir="${libraries}">
-				<include name="*.jar" />
-				<exclude name="lineage2-gameserver.jar" />
-			</fileset>
-		</copy>
-		<copy todir="${build.dist.loginserver}">
-			<fileset dir="${dist}/loginserver" />
-		</copy>
-		<fixcrlf srcdir="${build.dist.loginserver}" eol="lf" eof="remove" includes="**/*.sh"/>
-		<fixcrlf srcdir="${build.dist.loginserver}" eol="crlf" eof="remove" includes="**/*.bat"/>
-	</target>
-	
-	<target name="dist" depends="gameserver, loginserver" description="Create the Zip file.">
-		<!-- cleanup -->
-		<delete file="${build}/lineage2-gameserver.jar" />
-		<delete file="${build}/lineage2-loginserver.jar" />
-		<delete file="${build}/lineage2-commons.jar" />
-		<delete dir="${build.classes}" />
-		<!-- create the zip file -->
-		<zip destfile="${build}/Lineage2Ertheia.zip" basedir="${build.dist}" level="9" />
+	<target name="cleanup" depends="adding-datapack" description="Cleaning the build folder.">
+		<delete dir="${build.dist}" />
 	</target>
 </project>
