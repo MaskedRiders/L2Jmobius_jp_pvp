@@ -10,25 +10,25 @@ set DEPLOY_DIR=..\..\staging
 echo L2Jmobius_jp_pvpのデプロイを開始します。
 
 :gsdeployed_start
-set /P GS_DEPLOYED="ゲームサーバーをデプロイしますか？(y/n) "
+set /P GS_DEPLOYED="ゲームサーバをデプロイしますか？(y/n) "
 if /i %GS_DEPLOYED%==y (goto gs_deployed_run) else (goto gs_deployed_end)
 
 :gs_deployed_run
-echo ゲームサーバーのデプロイを開始します
-robocopy ..\build\dist %DEPLOY_DIR%\ /s /xf General.properties > gsdeploylog.txt
-echo ゲームサーバーのデプロイが完了しました
+echo ゲームサーバのデプロイを開始します
+robocopy ..\build\dist %DEPLOY_DIR%\ /s /xf General.properties > _gsdeploylog.txt
+echo ゲームサーバのデプロイが完了しました
 
 :gs_deployed_end
 
 :dp_deployed_start
-set /P DP_DEPLOYED="データーパックをデプロイしますか？(y/n) "
+set /P DP_DEPLOYED="データパックをデプロイしますか？(y/n) "
 if /i %DP_DEPLOYED%==y (goto dp_deployed_run) else (goto dp_deployed_end)
 
 :dp_deployed_run
-echo データーパックのデプロイを開始します
-robocopy dist %DEPLOY_DIR%\ /s > dpdeploylog.txt
+echo データパックのデプロイを開始します
+robocopy dist %DEPLOY_DIR%\ /s > _dpdeploylog.txt
 
-echo データーパックのデプロイが完了しました
+echo データパックのデプロイが完了しました
 
 :dp_deployed_end
 :exit_start
