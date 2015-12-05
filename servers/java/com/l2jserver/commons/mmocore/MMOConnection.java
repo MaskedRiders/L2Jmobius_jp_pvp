@@ -49,8 +49,6 @@ public class MMOConnection<T extends MMOClient<?>>
 	
 	private final SelectionKey _selectionKey;
 	
-	// private SendablePacket<T> _closePacket;
-	
 	private ByteBuffer _readBuffer;
 	
 	private ByteBuffer _primaryWriteBuffer;

@@ -28,13 +28,12 @@ import java.nio.channels.Selector;
 import java.nio.channels.ServerSocketChannel;
 import java.nio.channels.SocketChannel;
 import java.util.Iterator;
-import java.util.Queue;
-import java.util.concurrent.ConcurrentLinkedQueue;
+import java.util.LinkedList;
 
 /**
  * Parts of design based on network core from WoodenGil
  * @param <T>
- * @author KenM, Zoey76
+ * @author KenM
  */
 public final class SelectorThread<T extends MMOClient<?>> extends Thread
 {
@@ -63,7 +62,7 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 	// String Buffer
 	private final NioNetStringBuffer STRING_BUFFER;
 	// ByteBuffers General Purpose Pool
-	private final Queue<ByteBuffer> _bufferPool;
+	private final LinkedList<ByteBuffer> _bufferPool;
 	// Pending Close
 	private final NioNetStackList<MMOConnection<T>> _pendingClose;
 	
@@ -87,11 +86,11 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 		STRING_BUFFER = new NioNetStringBuffer(64 * 1024);
 		
 		_pendingClose = new NioNetStackList<>();
-		_bufferPool = new ConcurrentLinkedQueue<>();
+		_bufferPool = new LinkedList<>();
 		
 		for (int i = 0; i < HELPER_BUFFER_COUNT; i++)
 		{
-			_bufferPool.add(ByteBuffer.wrap(new byte[HELPER_BUFFER_SIZE]).order(BYTE_ORDER));
+			_bufferPool.addLast(ByteBuffer.wrap(new byte[HELPER_BUFFER_SIZE]).order(BYTE_ORDER));
 		}
 		
 		_acceptFilter = acceptFilter;
@@ -127,7 +126,7 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 			return ByteBuffer.wrap(new byte[HELPER_BUFFER_SIZE]).order(BYTE_ORDER);
 		}
 		
-		return _bufferPool.remove();
+		return _bufferPool.removeFirst();
 	}
 	
 	final void recycleBuffer(ByteBuffer buf)
@@ -135,7 +134,7 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 		if (_bufferPool.size() < HELPER_BUFFER_COUNT)
 		{
 			buf.clear();
-			_bufferPool.add(buf);
+			_bufferPool.addLast(buf);
 		}
 	}
 	
@@ -285,9 +284,7 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 				buf = READ_BUFFER;
 			}
 			
-			// if we try to to do a read with no space in the buffer it will
-			// read 0 bytes
-			// going into infinite loop
+			// if we try to to do a read with no space in the buffer it will read 0 bytes going into infinite loop
 			if (buf.position() == buf.limit())
 			{
 				System.exit(0);
@@ -358,9 +355,9 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 		switch (buf.remaining())
 		{
 			case 0:
-				// buffer is full
-				// nothing to read
+				// buffer is full nothing to read
 				return false;
+				
 			case 1:
 				// we don`t have enough data for header so we need to read
 				key.interestOps(key.interestOps() | SelectionKey.OP_READ);
@@ -377,6 +374,7 @@ public final class SelectorThread<T extends MMOClient<?>> extends Thread
 					buf.compact();
 				}
 				return false;
+				
 			default:
 				// data size excluding header size :>
 				final int dataPending = (buf.getShort() & 0xFFFF) - HEADER_SIZE;

@@ -60,5 +60,5 @@ public final class SelectorConfig
 	 * <BR>
 	 * Summary, data will be sent earlier, thus lowering the ping, at the cost of a small increase in bandwidth consumption.
 	 */
-	public boolean TCP_NODELAY = false;
+	public boolean TCP_NODELAY = true;
 }
