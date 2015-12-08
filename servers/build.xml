@@ -148,6 +148,8 @@
 	</target>
 
 	<target name="cleanup" depends="adding-datapack" description="Cleaning the build folder.">
+<!--
 		<delete dir="${build.dist}" />
+-->
 	</target>
 </project>
