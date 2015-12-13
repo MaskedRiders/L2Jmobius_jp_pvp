@@ -26,13 +26,13 @@ if /i %DP_DEPLOYED%==y (goto dp_deployed_run) else (goto dp_deployed_end)
 
 :dp_deployed_run
 echo データパックのデプロイを開始します
-robocopy dist\db_installer %DEPLOY_DIR%\ /s > _dpdeploylog.txt
-robocopy dist\doc %DEPLOY_DIR%\ /s >> _dpdeploylog.txt
-robocopy dist\libs %DEPLOY_DIR%\ /s >> _dpdeploylog.txt
-robocopy dist\login\data %DEPLOY_DIR%\ /s >> _dpdeploylog.txt
-robocopy dist\game\data %DEPLOY_DIR%\ /s >> _dpdeploylog.txt
-copy dist\game\*.* %DEPLOY_DIR%\ /Y >> _dpdeploylog.txt
-copy dist\login\*.* %DEPLOY_DIR%\ /Y >> _dpdeploylog.txt
+robocopy dist\db_installer %DEPLOY_DIR%\db_installer\ /s > _dpdeploylog.txt
+robocopy dist\doc %DEPLOY_DIR%\doc\ /s >> _dpdeploylog.txt
+robocopy dist\libs %DEPLOY_DIR%\libs\ /s >> _dpdeploylog.txt
+robocopy dist\login\data %DEPLOY_DIR%\login\data\ /s >> _dpdeploylog.txt
+robocopy dist\game\data %DEPLOY_DIR%\game\data\ /s >> _dpdeploylog.txt
+copy dist\game\*.* %DEPLOY_DIR%\game\ /Y >> _dpdeploylog.txt
+copy dist\login\*.* %DEPLOY_DIR%\login\ /Y >> _dpdeploylog.txt
 
 echo データパックのデプロイが完了しました
 
