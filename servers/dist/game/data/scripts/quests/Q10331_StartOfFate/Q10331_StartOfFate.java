@@ -18,7 +18,7 @@
  */
 package quests.Q10331_StartOfFate;
 
-import quests.Q10366_RuinsStatusUpdate.Q10366_RuinsStatusUpdate;
+//import quests.Q10366_RuinsStatusUpdate.Q10366_RuinsStatusUpdate;
 
 import com.l2jserver.gameserver.data.xml.impl.MultisellData;
 import com.l2jserver.gameserver.model.Location;
