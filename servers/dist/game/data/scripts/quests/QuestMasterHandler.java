@@ -112,6 +112,7 @@ import quests.Q00376_ExplorationOfTheGiantsCavePart1.Q00376_ExplorationOfTheGian
 import quests.Q00377_ExplorationOfTheGiantsCavePart2.Q00377_ExplorationOfTheGiantsCavePart2;
 import quests.Q00381_LetsBecomeARoyalMember.Q00381_LetsBecomeARoyalMember;
 import quests.Q00382_KailsMagicCoin.Q00382_KailsMagicCoin;
+import quests.Q00386_StolenDignity.Q00386_StolenDignity;
 import quests.Q00420_LittleWing.Q00420_LittleWing;
 import quests.Q00421_LittleWingsBigAdventure.Q00421_LittleWingsBigAdventure;
 import quests.Q00431_WeddingMarch.Q00431_WeddingMarch;
@@ -126,6 +127,12 @@ import quests.Q00457_LostAndFound.Q00457_LostAndFound;
 import quests.Q00458_PerfectForm.Q00458_PerfectForm;
 import quests.Q00463_IMustBeaGenius.Q00463_IMustBeaGenius;
 import quests.Q00464_Oath.Q00464_Oath;
+import quests.Q00494_IncarnationOfGreedZellakaGroup.Q00494_IncarnationOfGreedZellakaGroup;
+import quests.Q00495_IncarnationOfJealousyPellineGroup.Q00495_IncarnationOfJealousyPellineGroup;
+import quests.Q00496_IncarnationOfGluttonyKaliosGroup.Q00496_IncarnationOfGluttonyKaliosGroup;
+import quests.Q00497_IncarnationOfGreedZellakaSolo.Q00497_IncarnationOfGreedZellakaSolo;
+import quests.Q00498_IncarnationOfJealousyPellineSolo.Q00498_IncarnationOfJealousyPellineSolo;
+import quests.Q00499_IncarnationOfGluttonyKaliosSolo.Q00499_IncarnationOfGluttonyKaliosSolo;
 import quests.Q00501_ProofOfClanAlliance.Q00501_ProofOfClanAlliance;
 import quests.Q00503_PursuitOfClanAmbition.Q00503_PursuitOfClanAmbition;
 import quests.Q00504_CompetitionForTheBanditStronghold.Q00504_CompetitionForTheBanditStronghold;
@@ -350,6 +357,7 @@ public class QuestMasterHandler
 		Q00377_ExplorationOfTheGiantsCavePart2.class,
 		Q00381_LetsBecomeARoyalMember.class,
 		Q00382_KailsMagicCoin.class,
+		Q00386_StolenDignity.class,
 		Q00420_LittleWing.class,
 		Q00421_LittleWingsBigAdventure.class,
 		Q00431_WeddingMarch.class,
@@ -364,6 +372,12 @@ public class QuestMasterHandler
 		Q00458_PerfectForm.class,
 		Q00463_IMustBeaGenius.class,
 		Q00464_Oath.class,
+		Q00494_IncarnationOfGreedZellakaGroup.class,
+		Q00495_IncarnationOfJealousyPellineGroup.class,
+		Q00496_IncarnationOfGluttonyKaliosGroup.class,
+		Q00497_IncarnationOfGreedZellakaSolo.class,
+		Q00498_IncarnationOfJealousyPellineSolo.class,
+		Q00499_IncarnationOfGluttonyKaliosSolo.class,
 		Q00501_ProofOfClanAlliance.class,
 		Q00503_PursuitOfClanAmbition.class,
 		Q00504_CompetitionForTheBanditStronghold.class,

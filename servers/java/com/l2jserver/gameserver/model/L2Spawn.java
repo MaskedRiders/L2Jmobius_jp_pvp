@@ -86,6 +86,8 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 	private final Deque<L2Npc> _spawnedNpcs = new ConcurrentLinkedDeque<>();
 	private Map<Integer, Location> _lastSpawnPoints;
 	private boolean _isNoRndWalk = false; // Is no random walk
+	private String _areaName;
+	private int _globalMapId;
 	
 	/** The task launching the function doSpawn() */
 	class SpawnTask implements Runnable
@@ -144,7 +146,7 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 			return;
 		}
 		
-		String className = "com.l2jserver.gameserver.model.actor.instance." + _template.getType() + "Instance";
+		final String className = "com.l2jserver.gameserver.model.actor.instance." + _template.getType() + "Instance";
 		
 		// Create the generic constructor of L2Npc managed by this L2Spawn
 		_constructor = Class.forName(className).asSubclass(L2Npc.class).getConstructor(L2NpcTemplate.class);
@@ -305,7 +307,6 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 	public void setXYZ(ILocational loc)
 	{
 		setXYZ(loc.getX(), loc.getY(), loc.getZ());
-		
 	}
 	
 	/**
@@ -542,7 +543,7 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 			}
 			
 			// Call the constructor of the L2Npc
-			L2Npc npc = _constructor.newInstance(_template);
+			final L2Npc npc = _constructor.newInstance(_template);
 			npc.setInstanceId(getInstanceId()); // Must be done before object is spawned into visible world
 			if (isSummonSpawn)
 			{
@@ -578,7 +579,7 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 		// New method
 		if (isTerritoryBased())
 		{
-			int[] p = _spawnTerritory.getRandomPoint();
+			final int[] p = _spawnTerritory.getRandomPoint();
 			newlocx = p[0];
 			newlocy = p[1];
 			newlocz = p[2];
@@ -746,8 +747,8 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 				_log.warning("respawn delay is negative for spawn:" + this);
 			}
 			
-			int minDelay = delay - randomInterval;
-			int maxDelay = delay + randomInterval;
+			final int minDelay = delay - randomInterval;
+			final int maxDelay = delay + randomInterval;
 			
 			_respawnMinDelay = Math.max(10, minDelay) * 1000;
 			_respawnMaxDelay = Math.max(10, maxDelay) * 1000;
@@ -830,12 +831,6 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 		_location.setInstanceId(instanceId);
 	}
 	
-	@Override
-	public String toString()
-	{
-		return "L2Spawn ID: " + getId() + " " + getLocation();
-	}
-	
 	public final boolean isNoRndWalk()
 	{
 		return _isNoRndWalk;
@@ -844,5 +839,31 @@ public class L2Spawn implements IPositionable, IIdentifiable, INamable
 	public final void setIsNoRndWalk(boolean value)
 	{
 		_isNoRndWalk = value;
+	}
+	
+	public String getAreaName()
+	{
+		return _areaName;
+	}
+	
+	public void setAreaName(String areaName)
+	{
+		_areaName = areaName;
+	}
+	
+	public int getGlobalMapId()
+	{
+		return _globalMapId;
+	}
+	
+	public void setGlobalMapId(int globalMapId)
+	{
+		_globalMapId = globalMapId;
+	}
+	
+	@Override
+	public String toString()
+	{
+		return "L2Spawn ID: " + getId() + " " + getLocation();
 	}
 }

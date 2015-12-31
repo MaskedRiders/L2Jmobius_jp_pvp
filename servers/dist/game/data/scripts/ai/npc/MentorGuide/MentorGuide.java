@@ -36,7 +36,6 @@ import com.l2jserver.gameserver.instancemanager.MentorManager;
 import com.l2jserver.gameserver.model.L2Mentee;
 import com.l2jserver.gameserver.model.actor.L2Npc;
 import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
-import com.l2jserver.gameserver.model.base.ClassLevel;
 import com.l2jserver.gameserver.model.entity.Message;
 import com.l2jserver.gameserver.model.events.EventType;
 import com.l2jserver.gameserver.model.events.ListenerRegisterType;
@@ -154,7 +153,7 @@ public class MentorGuide extends AbstractNpcAI implements IXmlReader
 		
 		if (event.equalsIgnoreCase("exchange"))
 		{
-			if (hasQuestItems(player, MENTEE_CERT) && (player.getLevel() >= MAX_LEVEL) && (player.getClassId().level() == ClassLevel.AWAKEN.ordinal()))
+			if (hasQuestItems(player, MENTEE_CERT) && (player.getLevel() >= MAX_LEVEL) && player.isAwaken())
 			{
 				takeItems(player, MENTEE_CERT, 1);
 				giveItems(player, DIPLOMA, 40);
@@ -509,7 +508,7 @@ public class MentorGuide extends AbstractNpcAI implements IXmlReader
 			return;
 		}
 		
-		int amount = MENTEE_COINS.get(player.getLevel());
+		final int amount = MENTEE_COINS.get(player.getLevel());
 		if (amount > 0)
 		{
 			sendMail(mentor.getObjectId(), player, LEVEL_UP_TITLE, String.format(LEVEL_UP_BODY, player.getName(), player.getLevel()), MENTEE_MARK, amount);

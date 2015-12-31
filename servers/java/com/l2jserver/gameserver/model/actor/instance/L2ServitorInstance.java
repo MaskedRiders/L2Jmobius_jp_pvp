@@ -318,7 +318,7 @@ public class L2ServitorInstance extends L2Summon implements Runnable
 					{
 						while (rs.next())
 						{
-							int effectCurTime = rs.getInt("remaining_time");
+							final int effectCurTime = rs.getInt("remaining_time");
 							
 							final Skill skill = SkillData.getInstance().getSkill(rs.getInt("skill_id"), rs.getInt("skill_level"));
 							if (skill == null)
@@ -420,7 +420,7 @@ public class L2ServitorInstance extends L2Summon implements Runnable
 	@Override
 	public void run()
 	{
-		int usedtime = 5000;
+		final int usedtime = 5000;
 		_lifeTimeRemaining -= usedtime;
 		
 		if (isDead() || !isVisible())
@@ -511,6 +511,12 @@ public class L2ServitorInstance extends L2Summon implements Runnable
 	}
 	
 	@Override
+	public int getMaxMp()
+	{
+		return (int) (super.getMaxMp() + (getActingPlayer().getMaxMp() * (getActingPlayer().getServitorShareBonus(Stats.MAX_MP) - 1.0)));
+	}
+	
+	@Override
 	public int getCriticalHit(L2Character target, Skill skill)
 	{
 		return (int) (super.getCriticalHit(target, skill) + ((getActingPlayer().getCriticalHit(target, skill)) * (getActingPlayer().getServitorShareBonus(Stats.CRITICAL_RATE) - 1.0)));
@@ -520,5 +526,17 @@ public class L2ServitorInstance extends L2Summon implements Runnable
 	public double getPAtkSpd()
 	{
 		return super.getPAtkSpd() + (getActingPlayer().getPAtkSpd() * (getActingPlayer().getServitorShareBonus(Stats.POWER_ATTACK_SPEED) - 1.0));
+	}
+	
+	@Override
+	public int getMaxRecoverableHp()
+	{
+		return (int) calcStat(Stats.MAX_RECOVERABLE_HP, getMaxHp());
+	}
+	
+	@Override
+	public int getMaxRecoverableMp()
+	{
+		return (int) calcStat(Stats.MAX_RECOVERABLE_MP, getMaxMp());
 	}
 }

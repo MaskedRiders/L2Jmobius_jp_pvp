@@ -409,7 +409,7 @@ public final class Instance
 		{
 			if (door != null)
 			{
-				L2WorldRegion region = door.getWorldRegion();
+				final L2WorldRegion region = door.getWorldRegion();
 				door.decayMe();
 				
 				if (region != null)
@@ -453,11 +453,11 @@ public final class Instance
 	public void loadInstanceTemplate(String filename)
 	{
 		Document doc = null;
-		File xml = new File(Config.DATAPACK_ROOT, "instances/" + filename);
+		final File xml = new File(Config.DATAPACK_ROOT, "instances/" + filename);
 		
 		try
 		{
-			DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
+			final DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 			factory.setValidating(false);
 			factory.setIgnoringComments(true);
 			doc = factory.newDocumentBuilder().parse(xml);
@@ -493,7 +493,7 @@ public final class Instance
 		{
 			_allowRandomWalk = Boolean.parseBoolean(a.getNodeValue());
 		}
-		Node first = n.getFirstChild();
+		final Node first = n.getFirstChild();
 		for (n = first; n != null; n = n.getNextSibling())
 		{
 			switch (n.getNodeName().toLowerCase())
@@ -562,15 +562,15 @@ public final class Instance
 						if ("door".equalsIgnoreCase(d.getNodeName()))
 						{
 							doorId = Integer.parseInt(d.getAttributes().getNamedItem("doorId").getNodeValue());
-							StatsSet set = new StatsSet();
+							final StatsSet set = new StatsSet();
 							set.add(DoorData.getInstance().getDoorTemplate(doorId));
 							for (Node bean = d.getFirstChild(); bean != null; bean = bean.getNextSibling())
 							{
 								if ("set".equalsIgnoreCase(bean.getNodeName()))
 								{
-									NamedNodeMap attrs = bean.getAttributes();
-									String setname = attrs.getNamedItem("name").getNodeValue();
-									String value = attrs.getNamedItem("val").getNodeValue();
+									final NamedNodeMap attrs = bean.getAttributes();
+									final String setname = attrs.getNamedItem("name").getNodeValue();
+									final String value = attrs.getNamedItem("val").getNodeValue();
 									set.set(setname, value);
 								}
 							}
@@ -585,32 +585,52 @@ public final class Instance
 					{
 						if ("group".equalsIgnoreCase(group.getNodeName()))
 						{
-							String spawnGroup = group.getAttributes().getNamedItem("name").getNodeValue();
-							List<L2Spawn> manualSpawn = new ArrayList<>();
+							final String spawnGroup = group.getAttributes().getNamedItem("name").getNodeValue();
+							final List<L2Spawn> manualSpawn = new ArrayList<>();
 							for (Node d = group.getFirstChild(); d != null; d = d.getNextSibling())
 							{
 								int npcId = 0, x = 0, y = 0, z = 0, heading = 0, respawn = 0, respawnRandom = 0, delay = -1;
 								Boolean allowRandomWalk = null;
+								String areaName = null;
+								int globalMapId = 0;
+								
 								if ("spawn".equalsIgnoreCase(d.getNodeName()))
 								{
-									
 									npcId = Integer.parseInt(d.getAttributes().getNamedItem("npcId").getNodeValue());
 									x = Integer.parseInt(d.getAttributes().getNamedItem("x").getNodeValue());
 									y = Integer.parseInt(d.getAttributes().getNamedItem("y").getNodeValue());
 									z = Integer.parseInt(d.getAttributes().getNamedItem("z").getNodeValue());
 									heading = Integer.parseInt(d.getAttributes().getNamedItem("heading").getNodeValue());
 									respawn = Integer.parseInt(d.getAttributes().getNamedItem("respawn").getNodeValue());
-									if (d.getAttributes().getNamedItem("onKillDelay") != null)
+									
+									Node node = d.getAttributes().getNamedItem("onKillDelay");
+									if (node != null)
 									{
-										delay = Integer.parseInt(d.getAttributes().getNamedItem("onKillDelay").getNodeValue());
+										delay = Integer.parseInt(node.getNodeValue());
 									}
-									if (d.getAttributes().getNamedItem("respawnRandom") != null)
+									
+									node = d.getAttributes().getNamedItem("respawnRandom");
+									if (node != null)
 									{
-										respawnRandom = Integer.parseInt(d.getAttributes().getNamedItem("respawnRandom").getNodeValue());
+										respawnRandom = Integer.parseInt(node.getNodeValue());
 									}
+									
+									node = d.getAttributes().getNamedItem("allowRandomWalk");
 									if (d.getAttributes().getNamedItem("allowRandomWalk") != null)
 									{
-										allowRandomWalk = Boolean.valueOf(d.getAttributes().getNamedItem("allowRandomWalk").getNodeValue());
+										allowRandomWalk = Boolean.valueOf(node.getNodeValue());
+									}
+									
+									node = d.getAttributes().getNamedItem("areaName");
+									if (d.getAttributes().getNamedItem("areaName") != null)
+									{
+										areaName = node.getNodeValue();
+									}
+									
+									node = d.getAttributes().getNamedItem("globalMapId");
+									if (node != null)
+									{
+										globalMapId = Integer.parseInt(node.getNodeValue());
 									}
 									
 									final L2Spawn spawnDat = new L2Spawn(npcId);
@@ -637,9 +657,13 @@ public final class Instance
 									{
 										spawnDat.setIsNoRndWalk(!allowRandomWalk);
 									}
+									
+									spawnDat.setAreaName(areaName);
+									spawnDat.setGlobalMapId(globalMapId);
+									
 									if (spawnGroup.equals("general"))
 									{
-										L2Npc spawned = spawnDat.doSpawn();
+										final L2Npc spawned = spawnDat.doSpawn();
 										if ((delay >= 0) && (spawned instanceof L2Attackable))
 										{
 											((L2Attackable) spawned).setOnKillDelay(delay);
@@ -651,6 +675,7 @@ public final class Instance
 									}
 								}
 							}
+							
 							if (!manualSpawn.isEmpty())
 							{
 								_manualSpawn.put(spawnGroup, manualSpawn);
@@ -661,9 +686,9 @@ public final class Instance
 				}
 				case "exitpoint":
 				{
-					int x = Integer.parseInt(n.getAttributes().getNamedItem("x").getNodeValue());
-					int y = Integer.parseInt(n.getAttributes().getNamedItem("y").getNodeValue());
-					int z = Integer.parseInt(n.getAttributes().getNamedItem("z").getNodeValue());
+					final int x = Integer.parseInt(n.getAttributes().getNamedItem("x").getNodeValue());
+					final int y = Integer.parseInt(n.getAttributes().getNamedItem("y").getNodeValue());
+					final int z = Integer.parseInt(n.getAttributes().getNamedItem("z").getNodeValue());
 					_exitLocation = new Location(x, y, z);
 					break;
 				}
@@ -676,9 +701,9 @@ public final class Instance
 						{
 							try
 							{
-								int x = Integer.parseInt(loc.getAttributes().getNamedItem("x").getNodeValue());
-								int y = Integer.parseInt(loc.getAttributes().getNamedItem("y").getNodeValue());
-								int z = Integer.parseInt(loc.getAttributes().getNamedItem("z").getNodeValue());
+								final int x = Integer.parseInt(loc.getAttributes().getNamedItem("x").getNodeValue());
+								final int y = Integer.parseInt(loc.getAttributes().getNamedItem("y").getNodeValue());
+								final int z = Integer.parseInt(loc.getAttributes().getNamedItem("z").getNodeValue());
 								_enterLocations.add(new Location(x, y, z));
 							}
 							catch (Exception e)
@@ -781,7 +806,7 @@ public final class Instance
 		else if (_players.isEmpty() && (_emptyDestroyTime > 0))
 		{
 			
-			Long emptyTimeLeft = (_lastLeft + _emptyDestroyTime) - System.currentTimeMillis();
+			final Long emptyTimeLeft = (_lastLeft + _emptyDestroyTime) - System.currentTimeMillis();
 			if (emptyTimeLeft <= 0)
 			{
 				interval = 0;
@@ -812,7 +837,7 @@ public final class Instance
 		{
 			timeLeft = remaining / 60000;
 			interval = 300000;
-			SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTE_S_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES);
+			final SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTE_S_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES);
 			sm.addString(Integer.toString(timeLeft));
 			Broadcast.toPlayersInInstance(sm, getId());
 			remaining = remaining - 300000;
@@ -821,7 +846,7 @@ public final class Instance
 		{
 			timeLeft = remaining / 60000;
 			interval = 60000;
-			SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTE_S_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES);
+			final SystemMessage sm = SystemMessage.getSystemMessage(SystemMessageId.THIS_DUNGEON_WILL_EXPIRE_IN_S1_MINUTE_S_YOU_WILL_BE_FORCED_OUT_OF_THE_DUNGEON_WHEN_THE_TIME_EXPIRES);
 			sm.addString(Integer.toString(timeLeft));
 			Broadcast.toPlayersInInstance(sm, getId());
 			remaining = remaining - 60000;

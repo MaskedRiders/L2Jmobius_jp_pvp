@@ -146,7 +146,7 @@ public class EnterWorld extends L2GameClientPacket
 			return;
 		}
 		
-		String[] adress = new String[5];
+		final String[] adress = new String[5];
 		for (int i = 0; i < 5; i++)
 		{
 			adress[i] = tracert[i][0] + "." + tracert[i][1] + "." + tracert[i][2] + "." + tracert[i][3];
@@ -286,19 +286,11 @@ public class EnterWorld extends L2GameClientPacket
 			activeChar.sendPacket(ExPledgeWaitingListAlarm.STATIC_PACKET);
 		}
 		
+		// Used as a tempfix for Clan crests.
 		activeChar.broadcastUserInfo();
 		
 		// Send SubClass Info
 		activeChar.sendPacket(new ExSubjobInfo(activeChar, SubclassInfoType.NO_CHANGES));
-		
-		// Send Inventory Info
-		activeChar.sendPacket(new ExUserInfoInvenWeight(activeChar));
-		
-		// Send Adena / Inventory Count Info
-		activeChar.sendPacket(new ExAdenaInvenCount(activeChar));
-		
-		// Send Equipped Items
-		activeChar.sendPacket(new ExUserInfoEquipSlot(activeChar));
 		
 		// Send Unread Mail Count
 		if (MailManager.getInstance().hasUnreadPost(activeChar))
@@ -339,7 +331,7 @@ public class EnterWorld extends L2GameClientPacket
 			
 			notifySponsorOrApprentice(activeChar);
 			
-			AuctionableHall clanHall = ClanHallManager.getInstance().getClanHallByOwner(activeChar.getClan());
+			final AuctionableHall clanHall = ClanHallManager.getInstance().getClanHallByOwner(activeChar.getClan());
 			
 			if (clanHall != null)
 			{
@@ -496,15 +488,20 @@ public class EnterWorld extends L2GameClientPacket
 		sm.addString(activeChar.getName());
 		for (int id : activeChar.getFriendList().keySet())
 		{
-			L2Object obj = L2World.getInstance().findObject(id);
+			final L2Object obj = L2World.getInstance().findObject(id);
 			if (obj != null)
 			{
 				obj.sendPacket(sm);
 			}
 		}
 		
-		// Temp Fix
 		activeChar.broadcastUserInfo();
+		// Send Inventory Info
+		activeChar.sendPacket(new ExUserInfoInvenWeight(activeChar));
+		// Send Adena / Inventory Count Info
+		activeChar.sendPacket(new ExAdenaInvenCount(activeChar));
+		// Send Equipped Items
+		activeChar.sendPacket(new ExUserInfoEquipSlot(activeChar));
 		
 		activeChar.sendPacket(SystemMessageId.WELCOME_TO_THE_WORLD_OF_LINEAGE_II);
 		
@@ -521,7 +518,7 @@ public class EnterWorld extends L2GameClientPacket
 		}
 		else if (Config.SERVER_NEWS)
 		{
-			String serverNews = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), "html/servnews.htm");
+			final String serverNews = HtmCache.getInstance().getHtm(activeChar.getHtmlPrefix(), "html/servnews.htm");
 			if (serverNews != null)
 			{
 				sendPacket(new NpcHtmlMessage(serverNews));
@@ -579,7 +576,7 @@ public class EnterWorld extends L2GameClientPacket
 			}
 			else
 			{
-				int slot = activeChar.getInventory().getSlotFromItem(activeChar.getInventory().getItemByItemId(9819));
+				final int slot = activeChar.getInventory().getSlotFromItem(activeChar.getInventory().getItemByItemId(9819));
 				activeChar.getInventory().unEquipItemInBodySlot(slot);
 				activeChar.destroyItem("CombatFlag", activeChar.getInventory().getItemByItemId(9819), null, true);
 			}
@@ -619,7 +616,7 @@ public class EnterWorld extends L2GameClientPacket
 		
 		L2ClassMasterInstance.showQuestionMark(activeChar);
 		
-		int birthday = activeChar.checkBirthDay();
+		final int birthday = activeChar.checkBirthDay();
 		if (birthday == 0)
 		{
 			activeChar.sendPacket(SystemMessageId.HAPPY_BIRTHDAY_ALEGRIA_HAS_SENT_YOU_A_BIRTHDAY_GIFT);
@@ -670,7 +667,7 @@ public class EnterWorld extends L2GameClientPacket
 	
 	private void engage(L2PcInstance cha)
 	{
-		int chaId = cha.getObjectId();
+		final int chaId = cha.getObjectId();
 		
 		for (Couple cl : CoupleManager.getInstance().getCouples())
 		{
@@ -701,7 +698,7 @@ public class EnterWorld extends L2GameClientPacket
 	 */
 	private void notifyPartner(L2PcInstance cha, int partnerId)
 	{
-		int objId = cha.getPartnerId();
+		final int objId = cha.getPartnerId();
 		if (objId != 0)
 		{
 			final L2PcInstance partner = L2World.getInstance().getPlayer(objId);

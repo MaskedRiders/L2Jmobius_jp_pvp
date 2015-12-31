@@ -342,7 +342,7 @@ public class Q00114_ResurrectionOfAnOldManager extends Quest
 	{
 		if (creature.isPlayer())
 		{
-			final QuestState st = creature.getActingPlayer().getQuestState(getName());
+			final QuestState st = getQuestState(creature.getActingPlayer(), false);
 			if ((st != null) && st.isCond(17))
 			{
 				st.takeItems(DETCTOR, 1);
@@ -365,7 +365,7 @@ public class Q00114_ResurrectionOfAnOldManager extends Quest
 			return getNoQuestMsg(player);
 		}
 		
-		int talk = st.getInt("talk");
+		final int talk = st.getInt("talk");
 		
 		switch (npc.getId())
 		{
