@@ -1,35 +1,33 @@
 /*
- * Copyright (C) 2004-2015 L2J DataPack
- *
- * This file is part of L2J DataPack.
- *
- * L2J DataPack is free software: you can redistribute it and/or modify
+ * This file is part of the L2J Mobius project.
+ * 
+ * This file is part of the L2J Mobius Project.
+ * 
+ * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.
- *
- * L2J DataPack is distributed in the hope that it will be useful,
+ * 
+ * This program is distributed in the hope that it will be useful,
  * but WITHOUT ANY WARRANTY; without even the implied warranty of
  * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU
  * General Public License for more details.
- *
+ * 
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
 package quests.Q10331_StartOfFate;
 
-//import quests.Q10366_RuinsStatusUpdate.Q10366_RuinsStatusUpdate;
-
-import com.l2jserver.gameserver.data.xml.impl.MultisellData;
-import com.l2jserver.gameserver.model.Location;
-import com.l2jserver.gameserver.model.actor.L2Npc;
-import com.l2jserver.gameserver.model.actor.instance.L2PcInstance;
-import com.l2jserver.gameserver.model.quest.Quest;
-import com.l2jserver.gameserver.model.quest.QuestState;
-import com.l2jserver.gameserver.model.quest.State;
-import com.l2jserver.gameserver.network.NpcStringId;
-import com.l2jserver.gameserver.network.serverpackets.ExShowScreenMessage;
-import com.l2jserver.gameserver.network.serverpackets.TutorialShowHtml;
+import com.l2jmobius.gameserver.data.xml.impl.MultisellData;
+import com.l2jmobius.gameserver.model.Location;
+import com.l2jmobius.gameserver.model.actor.L2Npc;
+import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
+import com.l2jmobius.gameserver.model.quest.Quest;
+import com.l2jmobius.gameserver.model.quest.QuestState;
+import com.l2jmobius.gameserver.model.quest.State;
+import com.l2jmobius.gameserver.network.NpcStringId;
+import com.l2jmobius.gameserver.network.serverpackets.ExShowScreenMessage;
+import com.l2jmobius.gameserver.network.serverpackets.TutorialShowHtml;
 
 /**
  * Start of Fate (10331)
@@ -53,7 +51,7 @@ public class Q10331_StartOfFate extends Quest
 	private static final int PROOF_OF_COURAGE = 17821;
 	// Other
 	private static final Location LAKCIS_TELEPORT_LOC = new Location(-111774, 231933, -3160);
-
+	
 	public Q10331_StartOfFate()
 	{
 		super(10331, Q10331_StartOfFate.class.getSimpleName(), "Start of Fate");
@@ -61,9 +59,8 @@ public class Q10331_StartOfFate extends Quest
 		addTalkId(FRANCO, VALFAR, RIVIAN, TOOK, MOKA, DEVON, PANTHEON, LAKCIS, SEBION);
 		registerQuestItems(SARIL_NECKLACE, BELIS_MARK);
 		addCondMinLevel(18, "no_level.html");
-		//addCondCompletedQuest(Q10366_RuinsStatusUpdate.class.getSimpleName(), "no_prequest.html");
 	}
-
+	
 	@Override
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
@@ -72,7 +69,7 @@ public class Q10331_StartOfFate extends Quest
 		{
 			return null;
 		}
-
+		
 		String htmltext = null;
 		switch (event)
 		{
@@ -125,7 +122,7 @@ public class Q10331_StartOfFate extends Quest
 				{
 					htmltext = getNoQuestMsg(player);
 				}
-
+				
 				switch (player.getRace())
 				{
 					case HUMAN:
@@ -169,7 +166,7 @@ public class Q10331_StartOfFate extends Quest
 				break;
 			}
 		}
-
+		
 		if (event.startsWith("change_to_"))
 		{
 			if (qs.getCond() < 6)
@@ -290,16 +287,16 @@ public class Q10331_StartOfFate extends Quest
 			player.broadcastUserInfo();
 			qs.exitQuest(false, true);
 		}
-
+		
 		return htmltext;
 	}
-
+	
 	@Override
 	public String onTalk(L2Npc npc, L2PcInstance player)
 	{
 		final QuestState qs = getQuestState(player, true);
 		String htmltext = null;
-
+		
 		switch (qs.getState())
 		{
 			case State.STARTED:
