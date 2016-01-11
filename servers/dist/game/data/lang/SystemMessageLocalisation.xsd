@@ -1,13 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://www.w3.org/2001/XMLSchema">
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
 	<xs:element name="list">
 		<xs:complexType>
 			<xs:sequence minOccurs="1" maxOccurs="1">
 				<xs:element name="sm" minOccurs="1" maxOccurs="unbounded">
 					<xs:complexType>
-						<xs:attribute name="id" type="nonNegativeInteger" use="optional" />
-						<xs:attribute name="name" type="token" use="optional" />
-						<xs:attribute name="text" type="normalizedString" use="required" />
+						<xs:attribute name="id" type="xs:nonNegativeInteger" use="optional" />
+						<xs:attribute name="name" type="xs:token" use="optional" />
+						<xs:attribute name="text" type="xs:normalizedString" use="optional" />
 					</xs:complexType>
 				</xs:element>
 			</xs:sequence>

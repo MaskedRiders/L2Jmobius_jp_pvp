@@ -487,16 +487,16 @@
 	<sm id="484" text="すでに友人リストに登録されています。" name="THIS_PLAYER_IS_ALREADY_REGISTERED_ON_YOUR_FRIENDS_LIST;" />
 	<sm id="485" text="友人になることを勧めたユーザーがいません。" name="NO_NEW_FRIEND_INVITATIONS_MAY_BE_ACCEPTED;" />
 	<sm id="486" text="友人リストに登録されているユーザーではありません。" name="THE_FOLLOWING_USER_IS_NOT_ON_YOUR_FRIENDS_LIST;" />
-	<sm id="487" text="======<友人リスト>======" name="FRIENDS_LIST;" />
+	<sm id="487" text="======&lt;友人リスト&gt;======" name="FRIENDS_LIST;" />
 	<sm id="488" text="$s1(ステータス：オンライン)" name="S1_CURRENTLY_ONLINE;" />
 	<sm id="489" text="$s1(ステータス：オフライン)" name="S1_CURRENTLY_OFFLINE;" />
 	<sm id="490" text="========================" name="EMPTY3;" />
-	<sm id="491" text="=======<同盟情報>=======" name="ALLIANCE_INFORMATION;" />
+	<sm id="491" text="=======&lt;同盟情報&gt;=======" name="ALLIANCE_INFORMATION;" />
 	<sm id="492" text="同盟名：$s1" name="ALLIANCE_NAME_S1;" />
 	<sm id="493" text="接続：$s1人/合計$s2人" name="CONNECTION_S1_TOTAL_S2;" />
 	<sm id="494" text="同盟主：$s1血盟の$s2" name="ALLIANCE_LEADER_S2_OF_S1;" />
 	<sm id="495" text="所属血盟：合計$s1血盟" name="AFFILIATED_CLANS_TOTAL_S1_CLAN_S;" />
-	<sm id="496" text="=====<所属血盟の情報>=====" name="CLAN_INFORMATION;" />
+	<sm id="496" text="=====&lt;所属血盟の情報&gt;=====" name="CLAN_INFORMATION;" />
 	<sm id="497" text="血盟名：$s1" name="CLAN_NAME_S1;" />
 	<sm id="498" text="血盟主：$s1" name="CLAN_LEADER_S1;" />
 	<sm id="499" text="血盟レベル：$s1" name="CLAN_LEVEL_S1;" />
@@ -540,8 +540,8 @@
 	<sm id="537" text="いくつ移しますか。" name="HOW_MUCH_WILL_YOU_TRANSFER;" />
 	<sm id="538" text="SPが$s1減りました。" name="YOUR_SP_HAS_DECREASED_BY_S1;" />
 	<sm id="539" text="経験値が$s1減りました。" name="YOUR_XP_HAS_DECREASED_BY_S1;" />
-	<sm id="540" text="血盟主は削除できません。<br>血盟を解散してからやり直してください。" name="CLAN_LEADERS_MAY_NOT_BE_DELETED_DISSOLVE_THE_CLAN_FIRST_AND_TRY_AGAIN;" />
-	<sm id="541" text="血盟員は削除できません。<br>血盟を脱退してからやり直してください。" name="YOU_MAY_NOT_DELETE_A_CLAN_MEMBER_WITHDRAW_FROM_THE_CLAN_FIRST_AND_TRY_AGAIN;" />
+	<sm id="540" text="血盟主は削除できません。&lt;br&gt;血盟を解散してからやり直してください。" name="CLAN_LEADERS_MAY_NOT_BE_DELETED_DISSOLVE_THE_CLAN_FIRST_AND_TRY_AGAIN;" />
+	<sm id="541" text="血盟員は削除できません。&lt;br&gt;血盟を脱退してからやり直してください。" name="YOU_MAY_NOT_DELETE_A_CLAN_MEMBER_WITHDRAW_FROM_THE_CLAN_FIRST_AND_TRY_AGAIN;" />
 	<sm id="542" text="NPCサーバーが作動していないため、ペットを召喚できません。" name="THE_NPC_SERVER_IS_CURRENTLY_DOWN_PETS_AND_SERVITORS_CANNOT_BE_SUMMONED_AT_THIS_TIME;" />
 	<sm id="543" text="すでにペットがいます。" name="YOU_ALREADY_HAVE_A_PET;" />
 	<sm id="544" text="ペットに渡せないアイテムです。" name="YOUR_PET_CANNOT_CARRY_THIS_ITEM;" />
@@ -613,7 +613,7 @@
 	<sm id="610" text="HPが足りなかったためスキルが解除されました。" name="YOUR_SKILL_HAS_BEEN_CANCELED_DUE_TO_LACK_OF_HP;" />
 	<sm id="611" text="敵を惑わすことに成功しました。" name="YOU_HAVE_SUCCEEDED_IN_CONFUSING_THE_ENEMY;" />
 	<sm id="612" text="スポイル状態になりました。" name="THE_SPOIL_CONDITION_HAS_BEEN_ACTIVATED;" />
-	<sm id="613" text="======<遮断リスト>======" name="IGNORE_LIST;" />
+	<sm id="613" text="======&lt;遮断リスト&gt;======" name="IGNORE_LIST;" />
 	<sm id="614" text="$c1：$c2" name="C1_C2;" />
 	<sm id="615" text="遮断リストへの登録に失敗しました。" name="YOU_HAVE_FAILED_TO_REGISTER_THE_USER_TO_YOUR_IGNORE_LIST;" />
 	<sm id="616" text="遮断リストからの削除に失敗しました。" name="YOU_HAVE_FAILED_TO_DELETE_THE_CHARACTER2;" />
@@ -703,7 +703,7 @@
 	<sm id="700" text="購入が完了しました。" name="THE_PURCHASE_IS_COMPLETE;" />
 	<sm id="701" text="必要アイテムが足りません。" name="YOU_DO_NOT_HAVE_ENOUGH_REQUIRED_ITEMS;" />
 	<sm id="702" text="現在対応中のFS・SPT・サービスチームがいません。" name="THERE_ARE_NO_GMS_CURRENTLY_VISIBLE_IN_THE_PUBLIC_LIST_AS_THEY_MAY_BE_PERFORMING_OTHER_FUNCTIONS_AT_THE_MOMENT;" />
-	<sm id="703" text=" ======<FSリスト>======" name="GM_LIST;" />
+	<sm id="703" text=" ======&lt;FSリスト&gt;======" name="GM_LIST;" />
 	<sm id="704" text="support：$c1" name="GM_C1;" />
 	<sm id="705" text="自分自身を遮断することはできません。" name="YOU_CANNOT_EXCLUDE_YOURSELF;" />
 	<sm id="706" text="遮断リストには最大128人まで登録できます。" name="YOU_CAN_ONLY_ENTER_UP_TO_128_NAMES_IN_YOUR_BLOCK_LIST;" />
@@ -1030,7 +1030,7 @@
 	<sm id="1027" text="召喚獣が$c1によって$s2のダメージを受けました。" name="SERVITOR_RECEIVED_S2_DAMAGE_CAUSED_BY_C1;" />
 	<sm id="1028" text="召喚獣のクリティカル ヒット！" name="SUMMONED_MONSTER_S_CRITICAL_HIT;" />
 	<sm id="1029" text="召喚獣が$s1を使用します。" name="A_SUMMONED_MONSTER_USES_S1;" />
-	<sm id="1030" text="=======<パーティ情報>=======" name="PARTY_INFORMATION;" />
+	<sm id="1030" text="=======&lt;パーティ情報&gt;=======" name="PARTY_INFORMATION;" />
 	<sm id="1031" text="タイプ： 拾った人が所有" name="LOOTING_METHOD_FINDERS_KEEPERS;" />
 	<sm id="1032" text="タイプ： ランダムに分配" name="LOOTING_METHOD_RANDOM;" />
 	<sm id="1033" text="タイプ： スポイルを含めランダムに" name="LOOTING_METHOD_RANDOM_INCLUDING_SPOIL;" />
@@ -1199,7 +1199,7 @@
 	<sm id="1196" text="気が最高段階に達したため、これ以上気を集めることはできません。" name="YOUR_FORCE_HAS_REACHED_MAXIMUM_CAPACITY2;" />
 	<sm id="1197" text="召喚獣の費用で$s1$s2個が消耗されました。" name="SUMMONING_A_SERVITOR_COSTS_S2_S1;" />
 	<sm id="1198" text="クリスタライズしました。" name="THE_ITEM_HAS_BEEN_SUCCESSFULLY_CRYSTALLIZED;" />
-	<sm id="1199" text="=======<血盟戦の相手>=======" name="CLAN_WAR_TARGET;" />
+	<sm id="1199" text="=======&lt;血盟戦の相手&gt;=======" name="CLAN_WAR_TARGET;" />
 	<sm id="1200" text="=$s1($s2同盟)" name="S1_S2_ALLIANCE;" />
 	<sm id="1201" text="中断するクエストを選択してください。" name="PLEASE_SELECT_THE_QUEST_YOU_WISH_TO_ABORT;" />
 	<sm id="1202" text="=$s1(同盟なし)" name="S1_NO_ALLIANCE_EXISTS;" />
@@ -1259,7 +1259,7 @@
 	<sm id="1256" text="コマンドの後ろに名前を書いてください。" name="PLEASE_WRITE_THE_NAME_AFTER_THE_COMMAND;" />
 	<sm id="1257" text="ペットと召喚獣の特殊スキルはマクロに登録できません。" name="THE_SPECIAL_SKILL_OF_A_SERVITOR_OR_PET_CANNOT_BE_REGISTERED_AS_A_MACRO;" />
 	<sm id="1258" text="$s1をクリスタライズしました。" name="S1_HAS_BEEN_CRYSTALLIZED;" />
-	<sm id="1259" text="=======<同盟戦の相手>=======" name="ALLIANCE_TARGET;" />
+	<sm id="1259" text="=======&lt;同盟戦の相手&gt;=======" name="ALLIANCE_TARGET;" />
 	<sm id="1260" text="セブン サイン：次の競争の準備中です。" name="SEVEN_SIGNS_PREPARATIONS_HAVE_BEGUN_FOR_THE_NEXT_QUEST_EVENT;" />
 	<sm id="1261" text="セブン サイン：競争期間中です。黎明の司祭か黄昏の司祭を訪ねることで参加できます。" name="SEVEN_SIGNS_THE_QUEST_EVENT_PERIOD_HAS_BEGUN_SPEAK_WITH_A_PRIEST_OF_DAWN_OR_PRIESTESS_OF_DUSK_IF_YOU_WISH_TO_PARTICIPATE_IN_THE_EVENT;" />
 	<sm id="1262" text="セブン サイン：競争期間が終了し、結果を集計しています。" name="SEVEN_SIGNS_QUEST_EVENT_HAS_ENDED_RESULTS_ARE_BEING_TALLIED;" />
@@ -1571,8 +1571,8 @@
 	<sm id="1568" text="布告の対象が正しくありません。" name="THE_TARGET_FOR_DECLARATION_IS_WRONG;" />
 	<sm id="1569" text="同盟を結んだ血盟には血盟戦を布告できません。" name="A_DECLARATION_OF_CLAN_WAR_AGAINST_AN_ALLIED_CLAN_CAN_T_BE_MADE;" />
 	<sm id="1570" text="30以上の血盟に同時に宣戦布告することはできません。" name="A_DECLARATION_OF_WAR_AGAINST_MORE_THAN_30_CLANS_CAN_T_BE_MADE_AT_THE_SAME_TIME;" />
-	<sm id="1571" text="=======<布告リスト>=======" name="CLANS_YOU_VE_DECLARED_WAR_ON;" />
-	<sm id="1572" text="======<被布告リスト>======" name="CLANS_THAT_HAVE_DECLARED_WAR_ON_YOU;" />
+	<sm id="1571" text="=======&lt;布告リスト&gt;=======" name="CLANS_YOU_VE_DECLARED_WAR_ON;" />
+	<sm id="1572" text="======&lt;被布告リスト&gt;======" name="CLANS_THAT_HAVE_DECLARED_WAR_ON_YOU;" />
 	<sm id="1573" text="布告する血盟が存在しません。" name="ALL_IS_WELL_THERE_ARE_NO_CLANS_THAT_HAVE_DECLARED_WAR_AGAINST_YOUR_CLAN;" />
 	<sm id="1574" text="布告を受ける血盟が存在しません。" name="COMMAND_CHANNELS_CAN_ONLY_BE_FORMED_BY_A_PARTY_LEADER_WHO_IS_ALSO_THE_LEADER_OF_A_LEVEL_5_CLAN;" />
 	<sm id="1575" text="連合の結成は血盟レベル5以上の血盟主でありパーティ リーダーのみが可能です。" name="YOUR_PET_USES_SPIRITSHOT;" />
@@ -1590,7 +1590,7 @@
 	<sm id="1587" text="$c1のパーティが連合チャンネルから脱退しました。" name="C1_S_PARTY_HAS_LEFT_THE_COMMAND_CHANNEL;" />
 	<sm id="1588" text="連合は5つ以上のパーティが参加した時のみアクティブになります。" name="THE_COMMAND_CHANNEL_IS_ACTIVATED_ONLY_WHEN_THERE_ARE_AT_LEAST_5_PARTIES_PARTICIPATING;" />
 	<sm id="1589" text="$c1に連合の権限が与えられました。" name="COMMAND_CHANNEL_AUTHORITY_HAS_BEEN_TRANSFERRED_TO_C1;" />
-	<sm id="1590" text="===<連合情報(全パーティ数：$s1)>===" name="GUILD_INFO_TOTAL_PARTIES_S1;" />
+	<sm id="1590" text="===&lt;連合情報(全パーティ数：$s1)&gt;===" name="GUILD_INFO_TOTAL_PARTIES_S1;" />
 	<sm id="1591" text="連合に招待したプレイヤーがいません。" name="NO_USER_HAS_BEEN_INVITED_TO_THE_COMMAND_CHANNEL;" />
 	<sm id="1592" text="これ以上連合を開設できません。" name="YOU_CAN_NO_LONGER_SET_UP_A_COMMAND_CHANNEL;" />
 	<sm id="1593" text="連合に招待できる権限がありません。" name="YOU_DO_NOT_HAVE_AUTHORITY_TO_INVITE_SOMEONE_TO_THE_COMMAND_CHANNEL;" />
@@ -1612,7 +1612,7 @@
 	<sm id="1609" text="すでに宣戦布告した血盟です。" name="WAR_HAS_ALREADY_BEEN_DECLARED_AGAINST_THAT_CLAN_BUT_I_LL_MAKE_NOTE_THAT_YOU_REALLY_DON_T_LIKE_THEM;" />
 	<sm id="1610" text="自分の血盟には宣戦布告できません。" name="FOOL_YOU_CANNOT_DECLARE_WAR_AGAINST_YOUR_OWN_CLAN;" />
 	<sm id="1611" text="パーティ リーダー： $c1" name="PARTY_LEADER_C1;" />
-	<sm id="1612" text="=====<双方布告リスト>=====" name="CLAN_WAR_LIST;" />
+	<sm id="1612" text="=====&lt;双方布告リスト&gt;=====" name="CLAN_WAR_LIST;" />
 	<sm id="1613" text="双方布告した血盟がありません。" name="THERE_IS_NO_CLAN_LISTED_ON_YOUR_WAR_LIST;" />
 	<sm id="1614" text="すでに開設されたチャンネルに参加しています。" name="YOU_HAVE_JOINED_A_CHANNEL_THAT_WAS_ALREADY_OPEN;" />
 	<sm id="1615" text="チャンネルがアクティブ化するまで$s1のパーティが参加できます。" name="THE_NUMBER_OF_REMAINING_PARTIES_IS_S1_UNTIL_A_CHANNEL_IS_ACTIVATED;" />
@@ -1909,7 +1909,7 @@
 	<sm id="1906" text="所属変更する部隊を選択します。" name="SELECT_THE_COMBAT_UNIT_TO_TRANSFER_TO;" />
 	<sm id="1907" text="選択対象を他の人と交替する場合、交替する対象を選択します。" name="SELECT_THE_CHARACTER_WHO_WILL_N_REPLACE_THE_CURRENT_CHARACTER;" />
 	<sm id="1908" text="$c1は現在、召喚/テレポートできない地域にいます。" name="C1_IS_IN_AN_AREA_WHICH_BLOCKS_SUMMONING_OR_TELEPORTING2;" />
-	<sm id="1909" text="==<最近一週間の血盟アカデミー卒業者>==" name="LIST_OF_CLAN_ACADEMY_GRADUATES_DURING_THE_PAST_WEEK;" />
+	<sm id="1909" text="==&lt;最近一週間の血盟アカデミー卒業者&gt;==" name="LIST_OF_CLAN_ACADEMY_GRADUATES_DURING_THE_PAST_WEEK;" />
 	<sm id="1910" text="卒業者：$c1" name="GRADUATES_C1;" />
 	<sm id="1911" text="オリンピアード参加中のプレイヤーは召喚/テレポートできません。" name="A_USER_PARTICIPATING_IN_THE_OLYMPIAD_CANNOT_USE_SUMMONING_OR_TELEPORTING;" />
 	<sm id="1912" text="OTPサービス申請者のみ入力" name="NC_OTP_SERVICE_REQUESTER_ONLY_ENTRY;" />
@@ -2123,7 +2123,7 @@
 	<sm id="2120" text="お客様のアカウントは不正ユーティリティの利用が認められたため、10日間ゲームサービスの利用がすべて制限されています。今後同様の違反行為が確認された場合は永久に制限されますのでご注意ください。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートまでお問い合わせください。" name="" />
 	<sm id="2121" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートまでお問い合わせください。" name="" />
 	<sm id="2122" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートまでお問い合わせください。" name="" />
-	<sm id="2123" text="お客様のアカウントはお客様からの要請によりゲームサービスすべての利用ができないようになっています。詳しくは<font color='#FFDF4C'>公式サイト(</font><font color='#6699FF'><a href='asfunction:homePage'>http://www.ncsoft.jp/lineage2/</a></font><font color='#FFDF4C'>)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="2123" text="お客様のアカウントはお客様からの要請によりゲームサービスすべての利用ができないようになっています。詳しくは&lt;font color='#FFDF4C'&gt;公式サイト(&lt;/font&gt;&lt;font color='#6699FF'&gt;&lt;a href='asfunction:homePage'&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color='#FFDF4C'&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="2124" text="サーバーが統合され既存にご使用されていた血盟名である$s1は、他の名前と重複しています。変更する血盟名を入力してください。" name="DURING_THE_SERVER_MERGE_YOUR_CLAN_NAME_S1_CONFLICTED_WITH_ANOTHER_YOUR_CLAN_NAME_MAY_STILL_BE_AVAILABLE_PLEASE_ENTER_YOUR_DESIRED_NAME;" />
 	<sm id="2125" text="ご入力の名前は既に存在しているかご使用ができない名前です。変更する血盟名をもう一度入力してください。" name="THE_CLAN_NAME_ALREADY_EXISTS_OR_IS_AN_INVALID_NAME_PLEASE_ENTER_ANOTHER_CLAN_NAME;" />
 	<sm id="2126" text="お客様のアカウントは公序良俗に反する内容の度重なるアップロードが認められたため、サービスのご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートまでお問い合わせください。" name="" />
@@ -2331,8 +2331,8 @@
 	<sm id="2328" text="破壊された城砦、亡者の要塞のアジト戦は、レベル4以上の血盟のみが登録できます。" name="ONLY_CLANS_WHO_ARE_LEVEL_4_OR_ABOVE_CAN_REGISTER_FOR_BATTLE_AT_DEVASTATED_CASTLE_AND_FORTRESS_OF_THE_DEAD;" />
 	<sm id="2329" text="バイタリティ システム：レベル$s1$s2" name="VITALITY_LEVEL_S1_S2;" />
 	<sm id="2330" text="  - 経験値/SP$s1％習得" name="XP_SP_BOOSTED_BY_S1;" />
-	<sm id="2331" text="<レア>$s1" name="RARE_S1;" />
-	<sm id="2332" text="<補給>$s1" name="SUPPLY_S1;" />
+	<sm id="2331" text="&lt;レア&gt;$s1" name="RARE_S1;" />
+	<sm id="2332" text="&lt;補給&gt;$s1" name="SUPPLY_S1;" />
 	<sm id="2333" text="インベントリの重さ/個数制限を超えているため、トッピング アイテムが受取れません。" name="YOU_CANNOT_RECEIVE_THE_DIMENSIONAL_ITEM_BECAUSE_YOU_HAVE_EXCEED_YOUR_INVENTORY_WEIGHT_QUANTITY_LIMIT;" />
 	<sm id="2334" text="個人の名声を現す点数。攻城戦、要塞戦、アジト戦、地下コロシアム、オリンピアードなどで活躍すると手に入ります。" name="SCORE_THAT_SHOWS_PERSONAL_REPUTATION_YOU_MAY_OBTAIN_IT_VIA_CASTLE_SIEGE_FORTRESS_WAR_CLAN_HALL_SIEGE_UNDERGROUND_COLISEUM_AND_THE_OLYMPIAD;" />
 	<sm id="2335" text="受け取れるトッピング アイテムはありません。" name="THERE_ARE_NO_MORE_DIMENSIONAL_ITEMS_TO_BE_FOUND;" />
@@ -3126,7 +3126,7 @@
 	<sm id="3274" text="天使ネビトの祝福" name="ANGEL_NEVIT_S_BLESSING;" />
 	<sm id="3275" text="天使ネビトの気が消えました。天使ネビトはあなたと引き続き会えることを望んでいます。" name="NEVIT_S_ADVENT_BLESSING_HAS_ENDED_CONTINUE_YOUR_JOURNEY_AND_YOU_WILL_SURELY_MEET_HIS_FAVOR_AGAIN_SOMETIME_SOON;" />
 	<sm id="3276" text="登録されたアイテムがないため、クリスタライズできません。" name="CRYSTALLIZATION_CANNOT_BE_PROCEEDED_BECAUSE_THERE_ARE_NO_ITEMS_REGISTERED;" />
-	<sm id="3277" text="天使ネビトの降臨<ボーナス時間>$1" name="NEVIT_S_ADVENT_BLESSING_1;" />
+	<sm id="3277" text="天使ネビトの降臨&lt;ボーナス時間&gt;$1" name="NEVIT_S_ADVENT_BLESSING_1;" />
 	<sm id="3278" text="($s1秒後に可能)" name="ALLOWED_AFTER_S1_SECOND_S;" />
 	<sm id="3279" text="サブクラス$s1をデュアルクラス$s2に登録しました。おめでとうございます！" name="SUBCLASS_S1_HAS_BEEN_UPGRADED_TO_DUEL_CLASS_S2_CONGRATULATIONS;" />
 	<sm id="3280" text="$s1を$s2に変更しますか" name="CHANGE_S1_TO_S2;" />
@@ -3186,29 +3186,29 @@
 	<sm id="3334" text="何者かの声があなたの心臓と共鳴しています。声の聞こえる場所に移動しますか。" name="YOU_HEAR_A_VOICE_THAT_ECHOES_THROUGHOUT_YOU_DO_YOU_WISH_TO_TRAVEL_WHERE_THE_VOICE_CAN_BE_HEARD;" />
 	<sm id="3335" text="新たな力を受けて覚醒することを望むのならば、あなたを導く星を押して移動してください。" name="IF_YOU_ARE_READY_TO_BE_AWAKENED_WITH_NEW_POWERS_CLICK_THE_STAR_TO_BEGIN_YOUR_JOURNEY;" />
 	<sm id="3336" text="近接防御系ファイター" name="DEFENSIVE_TANK;" />
-	<sm id="3337" text="- 高い防御力と熟練の盾さばき。<br>- 鎖を使って相手を引きつける。<br>- 黄金の獅子と共に繰り出す強力な一撃。" name="STRONG_DEFENSE_AND_SKILLFUL_WITH_SHIELDS_BR_CAN_PULL_TARGETS_USING_CHAINS_BR_GOLDEN_LION_COMPANION;" />
-	<sm id="3338" text="抜群の防御力と攻撃力を備えた下巨人の古代英雄<font color='#FFDF4C'>アベリウス</font>の力を受け継いだ。黄金のたてがみを持つ愛玩獣<font color='#FFDF4C'>ケルシオン</font>と共に強烈な一撃を叩き込み、盾を手にすれば誰よりも頼もしい守護神として活躍する。" name="INHERITED_THE_POWERS_OF_THE_SIGEL_KNIGHT_FONT_COLOR_FFDF4C_ABELIUS_FONT_WHO_WAS_ALSO_KNOWN_AS_THE_GOLDEN_COMMANDER_FOR_HIS_SENSE_OF_HONOR_AND_HIS_ABILITY_TO_MOTIVATE_TROOPS_HIS_BEAST_COMPANION_THE_GOLDEN_LION_KELCION_FOUGHT_BY_HIS_SIDE_IN_EVERY_BATTLE_INSPIRING_FEAR_AND_AWE_THROUGH_HIS_FIERCE_ROAR;" />
+	<sm id="3337" text="- 高い防御力と熟練の盾さばき。&lt;br&gt;- 鎖を使って相手を引きつける。&lt;br&gt;- 黄金の獅子と共に繰り出す強力な一撃。" name="STRONG_DEFENSE_AND_SKILLFUL_WITH_SHIELDS_BR_CAN_PULL_TARGETS_USING_CHAINS_BR_GOLDEN_LION_COMPANION;" />
+	<sm id="3338" text="抜群の防御力と攻撃力を備えた下巨人の古代英雄&lt;font color='#FFDF4C'&gt;アベリウス&lt;/font&gt;の力を受け継いだ。黄金のたてがみを持つ愛玩獣&lt;font color='#FFDF4C'&gt;ケルシオン&lt;/font&gt;と共に強烈な一撃を叩き込み、盾を手にすれば誰よりも頼もしい守護神として活躍する。" name="INHERITED_THE_POWERS_OF_THE_SIGEL_KNIGHT_FONT_COLOR_FFDF4C_ABELIUS_FONT_WHO_WAS_ALSO_KNOWN_AS_THE_GOLDEN_COMMANDER_FOR_HIS_SENSE_OF_HONOR_AND_HIS_ABILITY_TO_MOTIVATE_TROOPS_HIS_BEAST_COMPANION_THE_GOLDEN_LION_KELCION_FOUGHT_BY_HIS_SIDE_IN_EVERY_BATTLE_INSPIRING_FEAR_AND_AWE_THROUGH_HIS_FIERCE_ROAR;" />
 	<sm id="3339" text="近接物理攻撃系ファイター" name="MELEE_DAMAGE_DEALER;" />
-	<sm id="3340" text="- 強靭な肉体でさまざまな武器を使いこなす。<br>- 気力を使った強烈な溜め攻撃。<br>- 気合いの雄叫びで瞬間的に能力を引き上げる。" name="DIVERSE_WEAPONS_EXPERT_BR_POWERFUL_ATTACKS_USING_MOMENTUM_BR_VARIOUS_REINFORCEMENT_SKILLS;" />
-	<sm id="3341" text="突風の指導者と呼ばれた<font color='#FFDF4C'>サフィロス</font>の力を受け継ぎ、荒々しく凶暴な破壊者の道を歩んでいる。飼いならされることを嫌い、傭兵として最前線で戦場を撹乱する恐怖の代名詞だ。" name="INHERITED_THE_POWERS_OF_THE_TYRR_WARRIOR_FONT_COLOR_FFDF4C_SAPYROS_FONT_WHO_WAS_KNOWN_AS_THE_TEMPEST_LEADER_FOR_HIS_ROUGH_WEATHER_BEATEN_UNRULY_DEMEANOR_AND_HIS_TEMPESTUOUS_NATURE_HIS_FIERCE_HAND_TO_HAND_BATTLES_WERE_THE_STUFF_OF_LEGEND_ONCE_HE_ENGAGED_COMBAT_HE_NEVER_BACKED_DOWN_AND_HE_NEVER_LOST;" />
+	<sm id="3340" text="- 強靭な肉体でさまざまな武器を使いこなす。&lt;br&gt;- 気力を使った強烈な溜め攻撃。&lt;br&gt;- 気合いの雄叫びで瞬間的に能力を引き上げる。" name="DIVERSE_WEAPONS_EXPERT_BR_POWERFUL_ATTACKS_USING_MOMENTUM_BR_VARIOUS_REINFORCEMENT_SKILLS;" />
+	<sm id="3341" text="突風の指導者と呼ばれた&lt;font color='#FFDF4C'&gt;サフィロス&lt;/font&gt;の力を受け継ぎ、荒々しく凶暴な破壊者の道を歩んでいる。飼いならされることを嫌い、傭兵として最前線で戦場を撹乱する恐怖の代名詞だ。" name="INHERITED_THE_POWERS_OF_THE_TYRR_WARRIOR_FONT_COLOR_FFDF4C_SAPYROS_FONT_WHO_WAS_KNOWN_AS_THE_TEMPEST_LEADER_FOR_HIS_ROUGH_WEATHER_BEATEN_UNRULY_DEMEANOR_AND_HIS_TEMPESTUOUS_NATURE_HIS_FIERCE_HAND_TO_HAND_BATTLES_WERE_THE_STUFF_OF_LEGEND_ONCE_HE_ENGAGED_COMBAT_HE_NEVER_BACKED_DOWN_AND_HE_NEVER_LOST;" />
 	<sm id="3342" text="近接物理攻撃系ファイター" name="DAGGER_DAMAGE_DEALER;" />
-	<sm id="3343" text="- ハイドを駆使する卓越した接近能力。<br>- 敵の急所を狙った強烈な一撃。<br>- 毒と投てきの多彩なスキル。" name="SUPERIOR_STEALTH_SKILLS_BR_WEAKENS_THE_ENEMY_WITH_CRITICAL_ATTACKS_BR_DIVERSE_SKILLS_USING_POISONS_AND_THROWING_WEAPONS;" />
-	<sm id="3344" text="巨人族の暗殺者<font color='#FFDF4C'>カイシュナーガ</font>の封印された能力を受け継いだ。正攻法には弱いが、素早く対象を暗殺し、追っ手を振りきって脱出する生存能力は非常に優れている。" name="INHERITED_THE_POWERS_OF_THE_OTHELL_ROGUE_FONT_COLOR_FFDF4C_ASHAGEN_FONT_A_FEARSOME_WARRIOR_WHOSE_FEROCITY_MATCHED_HIS_CRUELTY_BRUTAL_ENOUGH_TO_STRIKE_AN_ENEMY_S_UNPROTECTED_BACK_ASHAGEN_WAS_FEARED_BY_HIS_ENEMIES_AND_SHUNNED_BY_HIS_ALLIES;" />
+	<sm id="3343" text="- ハイドを駆使する卓越した接近能力。&lt;br&gt;- 敵の急所を狙った強烈な一撃。&lt;br&gt;- 毒と投てきの多彩なスキル。" name="SUPERIOR_STEALTH_SKILLS_BR_WEAKENS_THE_ENEMY_WITH_CRITICAL_ATTACKS_BR_DIVERSE_SKILLS_USING_POISONS_AND_THROWING_WEAPONS;" />
+	<sm id="3344" text="巨人族の暗殺者&lt;font color='#FFDF4C'&gt;カイシュナーガ&lt;/font&gt;の封印された能力を受け継いだ。正攻法には弱いが、素早く対象を暗殺し、追っ手を振りきって脱出する生存能力は非常に優れている。" name="INHERITED_THE_POWERS_OF_THE_OTHELL_ROGUE_FONT_COLOR_FFDF4C_ASHAGEN_FONT_A_FEARSOME_WARRIOR_WHOSE_FEROCITY_MATCHED_HIS_CRUELTY_BRUTAL_ENOUGH_TO_STRIKE_AN_ENEMY_S_UNPROTECTED_BACK_ASHAGEN_WAS_FEARED_BY_HIS_ENEMIES_AND_SHUNNED_BY_HIS_ALLIES;" />
 	<sm id="3345" text="遠距離物理攻撃系ファイター" name="BOW_AND_CROSSBOW_SHARPSHOOTER;" />
-	<sm id="3346" text="- ボウとボウガンを使った遠距離攻撃。<br>- ホークを巧みに操り多彩なスキルを繰り出す。<br>- 高い機動力とさまざなな罠の設置技術。" name="MASTER_AT_USING_BOWS_AND_CROSSBOWS_BR_THUNDER_HAWK_COMPANION_BR_EXPERTISE_WITH_TRAPS;" />
-	<sm id="3347" text="三つ目の下巨人の古代英雄<font color='#FFDF4C'>クローンビースト</font>の力を受け継いだ。高い命中率と攻撃力、優れた連射能力を備えている。接近前に制圧することで敵を寄せつけない。" name="INHERITED_POWERS_FROM_THE_YUL_ARCHER_FONT_COLOR_FFDF4C_CRANIGG_FONT_A_GIANT_HERO_SHARPSHOOTER_WHOSE_THIRD_EYE_GAVE_HIM_PRECISE_ACCURACY_AND_FOCUS_AT_A_VERY_LONG_RANGE;" />
+	<sm id="3346" text="- ボウとボウガンを使った遠距離攻撃。&lt;br&gt;- ホークを巧みに操り多彩なスキルを繰り出す。&lt;br&gt;- 高い機動力とさまざなな罠の設置技術。" name="MASTER_AT_USING_BOWS_AND_CROSSBOWS_BR_THUNDER_HAWK_COMPANION_BR_EXPERTISE_WITH_TRAPS;" />
+	<sm id="3347" text="三つ目の下巨人の古代英雄&lt;font color='#FFDF4C'&gt;クローンビースト&lt;/font&gt;の力を受け継いだ。高い命中率と攻撃力、優れた連射能力を備えている。接近前に制圧することで敵を寄せつけない。" name="INHERITED_POWERS_FROM_THE_YUL_ARCHER_FONT_COLOR_FFDF4C_CRANIGG_FONT_A_GIANT_HERO_SHARPSHOOTER_WHOSE_THIRD_EYE_GAVE_HIM_PRECISE_ACCURACY_AND_FOCUS_AT_A_VERY_LONG_RANGE;" />
 	<sm id="3348" text="遠距離魔法攻撃系メイジ" name="MAGIC_DAMAGE_DEALER;" />
-	<sm id="3349" text="- 四大元素を利用する強力な魔法。<br>- さまざまな弱化魔法を駆使。<br>- ダブル キャスティングで能力を引き上げる。" name="MASTER_OF_THE_FOUR_ELEMENTS_BR_VARIOUS_DEBUFF_SKILLS_BR_ABILITY_TO_CAST_TWO_SPELLS_AT_THE_SAME_TIME;" />
-	<sm id="3350" text="豊富な知識を持つ巨人族の七大賢者の一人、<font color='#FFDF4C'>ソルトクリーグ</font>。自然の基本原理を探求し続けることで、ついに自然を構成する元素とマナについてすべてを悟った。" name="FEOH_WIZARD_FONT_COLOR_FFDF4C_SOLTKREIG_FONT_WAS_ONE_OF_THE_SEVEN_GIANT_SAGES_SOLTKREIG_A_SUPREMELY_WISE_AND_INTELLIGENT_GIANT_WAS_ALSO_A_STRATEGIC_TACTICIAN_HE_SNATCHED_VICTORY_FROM_THE_CLAWS_OF_DEFEAT_MANY_TIMES_THANKS_TO_HIS_BRILLIANT_PLANNING_THROUGH_YEARS_OF_STUDY_HE_BECAME_THE_FOREMOST_EXPERT_ON_THE_FOUR_ELEMENTS_AND_MANA_THEORY;" />
+	<sm id="3349" text="- 四大元素を利用する強力な魔法。&lt;br&gt;- さまざまな弱化魔法を駆使。&lt;br&gt;- ダブル キャスティングで能力を引き上げる。" name="MASTER_OF_THE_FOUR_ELEMENTS_BR_VARIOUS_DEBUFF_SKILLS_BR_ABILITY_TO_CAST_TWO_SPELLS_AT_THE_SAME_TIME;" />
+	<sm id="3350" text="豊富な知識を持つ巨人族の七大賢者の一人、&lt;font color='#FFDF4C'&gt;ソルトクリーグ&lt;/font&gt;。自然の基本原理を探求し続けることで、ついに自然を構成する元素とマナについてすべてを悟った。" name="FEOH_WIZARD_FONT_COLOR_FFDF4C_SOLTKREIG_FONT_WAS_ONE_OF_THE_SEVEN_GIANT_SAGES_SOLTKREIG_A_SUPREMELY_WISE_AND_INTELLIGENT_GIANT_WAS_ALSO_A_STRATEGIC_TACTICIAN_HE_SNATCHED_VICTORY_FROM_THE_CLAWS_OF_DEFEAT_MANY_TIMES_THANKS_TO_HIS_BRILLIANT_PLANNING_THROUGH_YEARS_OF_STUDY_HE_BECAME_THE_FOREMOST_EXPERT_ON_THE_FOUR_ELEMENTS_AND_MANA_THEORY;" />
 	<sm id="3351" text="近接サポート系補助ファイター" name="MAGIC_BUFFER;" />
-	<sm id="3352" text="- さまざまな強化魔法を駆使する支援のスペシャリスト。<br>- 戦闘の流れを変える瞬間強化魔法。<br>- 突撃と二刀での強力な攻撃。" name="DIVERSE_BUFF_SKILLS_BR_EXPERT_AT_ALLY_BOOSTING_ENEMY_WEAKENING_AND_CROWD_CONTROL_BR_POWERFUL_RUSH_AND_DUAL_WEAPON_ATTACKS;" />
-	<sm id="3353" text="みずから戦闘に加わるよりも戦況の流れに目を光らせていた<font color='#FFDF4C'>ライスター</font>の力を受け継いだ。状況を見極めた最適な支援で味方を勝利に導くパーティの影の指揮官。" name="INHERITED_THE_POWERS_OF_ISS_ENCHANTER_FONT_COLOR_FFDF4C_LEISTER_FONT_AN_INSIGHTFUL_AND_OBSERVANT_GIANT_WHO_COMBINED_MAGIC_WITH_MILITARY_STRATEGY_AND_TACTICS_HIS_ABILITY_TO_ANTICIPATE_AND_REACT_TO_THE_FLOW_OF_BATTLE_WAS_LEGENDARY;" />
+	<sm id="3352" text="- さまざまな強化魔法を駆使する支援のスペシャリスト。&lt;br&gt;- 戦闘の流れを変える瞬間強化魔法。&lt;br&gt;- 突撃と二刀での強力な攻撃。" name="DIVERSE_BUFF_SKILLS_BR_EXPERT_AT_ALLY_BOOSTING_ENEMY_WEAKENING_AND_CROWD_CONTROL_BR_POWERFUL_RUSH_AND_DUAL_WEAPON_ATTACKS;" />
+	<sm id="3353" text="みずから戦闘に加わるよりも戦況の流れに目を光らせていた&lt;font color='#FFDF4C'&gt;ライスター&lt;/font&gt;の力を受け継いだ。状況を見極めた最適な支援で味方を勝利に導くパーティの影の指揮官。" name="INHERITED_THE_POWERS_OF_ISS_ENCHANTER_FONT_COLOR_FFDF4C_LEISTER_FONT_AN_INSIGHTFUL_AND_OBSERVANT_GIANT_WHO_COMBINED_MAGIC_WITH_MILITARY_STRATEGY_AND_TACTICS_HIS_ABILITY_TO_ANTICIPATE_AND_REACT_TO_THE_FLOW_OF_BATTLE_WAS_LEGENDARY;" />
 	<sm id="3354" text="遠距離魔法攻撃系召喚師" name="SUMMONER_AND_RANGED_MAGIC_ATTACK;" />
-	<sm id="3355" text="- 他次元の召喚獣を戦わせるスペシャリスト。<br>- 複数の召喚獣を操る一騎当千タイプ。<br>- 強力な呪い系魔法で対象を弱化させる。" name="CAN_BE_ACCOMPANIED_BY_MULTIPLE_SERVITORS_AT_THE_SAME_TIME_BR_SPECIALIZES_IN_ENEMY_DEBUFFS_WHILE_SERVITORS_DO_DAMAGE;" />
-	<sm id="3356" text="自由自在に次元を操るために視覚を失った巨人<font color='#FFDF4C'>ナビアロフ</font>の力は、限界を超越した次元魔法の頂点を極めた。多数の召喚獣を率いるその姿は、まさに一騎当千と呼ぶにふさわしい。" name="INHERITED_THE_POWERS_OF_FONT_COLOR_FFDF4C_NABIAROV_FONT_WHO_HAD_THE_POWER_TO_OPEN_AND_CLOSE_PLANAR_DIMENSIONS_HE_PASSIONATELY_SACRIFICED_HIS_EYESIGHT_TO_EXPAND_HIS_IMMENSE_SUMMONING_POWER_EVEN_FURTHER_HE_WAS_THE_FIRST_MAGE_EVER_TO_MAINTAIN_CONTROL_OVER_MULTIPLE_SUMMONED_PETS_SIMULTANEOUSLY;" />
+	<sm id="3355" text="- 他次元の召喚獣を戦わせるスペシャリスト。&lt;br&gt;- 複数の召喚獣を操る一騎当千タイプ。&lt;br&gt;- 強力な呪い系魔法で対象を弱化させる。" name="CAN_BE_ACCOMPANIED_BY_MULTIPLE_SERVITORS_AT_THE_SAME_TIME_BR_SPECIALIZES_IN_ENEMY_DEBUFFS_WHILE_SERVITORS_DO_DAMAGE;" />
+	<sm id="3356" text="自由自在に次元を操るために視覚を失った巨人&lt;font color='#FFDF4C'&gt;ナビアロフ&lt;/font&gt;の力は、限界を超越した次元魔法の頂点を極めた。多数の召喚獣を率いるその姿は、まさに一騎当千と呼ぶにふさわしい。" name="INHERITED_THE_POWERS_OF_FONT_COLOR_FFDF4C_NABIAROV_FONT_WHO_HAD_THE_POWER_TO_OPEN_AND_CLOSE_PLANAR_DIMENSIONS_HE_PASSIONATELY_SACRIFICED_HIS_EYESIGHT_TO_EXPAND_HIS_IMMENSE_SUMMONING_POWER_EVEN_FURTHER_HE_WAS_THE_FIRST_MAGE_EVER_TO_MAINTAIN_CONTROL_OVER_MULTIPLE_SUMMONED_PETS_SIMULTANEOUSLY;" />
 	<sm id="3357" text="魔法サポート系メイジ" name="MAGIC_HEALER;" />
-	<sm id="3358" text="- 味方の体力を回復。<br>- ヒーラー ツリーと妖精を使いこなす。<br>- 異界の光を使って戦う。" name="HAS_SEVERAL_HEALING_AND_RESURRECTION_SKILLS_BR_SPECIALIZES_IN_REINFORCEMENT_SKILLS_BR_UNISON_OF_LIGHTS_COMPANION;" />
-	<sm id="3359" text="<font color='#FFDF4C'>アインハザード</font>と親しかった<font color='#FFDF4C'>ラキシス</font>。彼が<font color='#FFDF4C'>アインハザード</font>の能力と自分の神聖魔法を融合させて作った力は巨人族に急速に広まり、この力を有するものは戦場で必須の存在となった。" name="AEORE_HEALER_FONT_COLOR_FFDF4C_LAKCIS_FONT_WAS_A_FRIEND_OF_EINHASAD_IN_THE_EARLY_DAYS_OF_THE_GIANTS_HE_COMBINED_HIS_HOLY_MAGIC_WITH_THE_CREATION_MAGIC_OF_EINHASAD_TO_CREATE_A_NEW_TYPE_OF_POWER_SAHA_SAHA_SPREAD_RAPIDLY_THROUGHOUT_THE_GIANTS_AS_THE_MOST_POPULAR_SOURCE_OF_HEALING;" />
+	<sm id="3358" text="- 味方の体力を回復。&lt;br&gt;- ヒーラー ツリーと妖精を使いこなす。&lt;br&gt;- 異界の光を使って戦う。" name="HAS_SEVERAL_HEALING_AND_RESURRECTION_SKILLS_BR_SPECIALIZES_IN_REINFORCEMENT_SKILLS_BR_UNISON_OF_LIGHTS_COMPANION;" />
+	<sm id="3359" text="&lt;font color='#FFDF4C'&gt;アインハザード&lt;/font&gt;と親しかった&lt;font color='#FFDF4C'&gt;ラキシス&lt;/font&gt;。彼が&lt;font color='#FFDF4C'&gt;アインハザード&lt;/font&gt;の能力と自分の神聖魔法を融合させて作った力は巨人族に急速に広まり、この力を有するものは戦場で必須の存在となった。" name="AEORE_HEALER_FONT_COLOR_FFDF4C_LAKCIS_FONT_WAS_A_FRIEND_OF_EINHASAD_IN_THE_EARLY_DAYS_OF_THE_GIANTS_HE_COMBINED_HIS_HOLY_MAGIC_WITH_THE_CREATION_MAGIC_OF_EINHASAD_TO_CREATE_A_NEW_TYPE_OF_POWER_SAHA_SAHA_SPREAD_RAPIDLY_THROUGHOUT_THE_GIANTS_AS_THE_MOST_POPULAR_SOURCE_OF_HEALING;" />
 	<sm id="3360" text="残り$s1" name="S1_LEFT;" />
 	<sm id="3361" text="存在しないアイテムは登録できません。" name="REGISTRATION_IS_NOT_AVAILABLE_BECAUSE_THE_CORRESPONDING_ITEM_DOES_NOT_EXIST;" />
 	<sm id="3362" text="以前の作業を終了させてからやり直してください。" name="PLEASE_TRY_AGAIN_AFTER_ENDING_THE_PREVIOUS_TASK;" />
@@ -3270,15 +3270,15 @@
 	<sm id="3418" text="$s1日" name="S1_DAY_S;" />
 	<sm id="3419" text="$s1への血盟加入勧誘に失敗しました。" name="INVITING_S1_TO_YOUR_CLAN_HAS_FAILED;" />
 	<sm id="3420" text="$s1はすでに血盟アカデミーを卒業しているため加入できません。" name="S1_ALREADY_GRADUATED_FROM_A_CLAN_ACADEMY_THEREFORE_RE_JOINING_IS_NOT_ALLOWED;" />
-	<sm id="3421" text="このアイテムを販売代行に登録します。\\n\\n販売するアイテム：\\n<$s1>\\n\\n販売価格：\\n<$s2>\\n\\n登録手数料：\\n<$s3>\\n\\n登録しますか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_IS_BEING_REGISTERED_FOR_AUCTION_N_NITEM_TO_SELL_N_S1_N_NPRICE_N_S2_N_NSALE_FEE_N_S3_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_REGISTRATION_THE_FEE_IS_NOT_REFUNDABLE;" />
-	<sm id="3422" text="このアイテムを販売代行に登録します。\\n\\n販売するアイテム：\\n<$s1>\\n <$s2>個\\n\\n1個あたりの販売価格：\\n<$s3>\\n\\n合計金額：\\n<$s4>\\n\\n登録手数料：\\n<$s5>\\n\\n登録しますか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_IS_BEING_REGISTERED_FOR_AUCTION_N_NITEM_TO_SELL_N_N_S1_N_S2_UNITS_N_NUNIT_PRICE_N_S3_N_NTOTAL_SALE_PRICE_N_S4_N_NSALE_FEE_N_S5_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_REGISTRATION_THE_FEE_IS_NOT_REFUNDABLE;" />
+	<sm id="3421" text="このアイテムを販売代行に登録します。\\n\\n販売するアイテム：\\n&lt;$s1&gt;\\n\\n販売価格：\\n&lt;$s2&gt;\\n\\n登録手数料：\\n&lt;$s3&gt;\\n\\n登録しますか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_IS_BEING_REGISTERED_FOR_AUCTION_N_NITEM_TO_SELL_N_S1_N_NPRICE_N_S2_N_NSALE_FEE_N_S3_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_REGISTRATION_THE_FEE_IS_NOT_REFUNDABLE;" />
+	<sm id="3422" text="このアイテムを販売代行に登録します。\\n\\n販売するアイテム：\\n&lt;$s1&gt;\\n &lt;$s2&gt;個\\n\\n1個あたりの販売価格：\\n&lt;$s3&gt;\\n\\n合計金額：\\n&lt;$s4&gt;\\n\\n登録手数料：\\n&lt;$s5&gt;\\n\\n登録しますか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_IS_BEING_REGISTERED_FOR_AUCTION_N_NITEM_TO_SELL_N_N_S1_N_S2_UNITS_N_NUNIT_PRICE_N_S3_N_NTOTAL_SALE_PRICE_N_S4_N_NSALE_FEE_N_S5_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_REGISTRATION_THE_FEE_IS_NOT_REFUNDABLE;" />
 	<sm id="3423" text="$s1$s2" name="S1_S22;" />
-	<sm id="3424" text="このアイテムを購入します。\\n\\n購入するアイテム：\\n<$s1>\\n\\n購入価格：\\n<$s2>\\n\\nよろしいですか。" name="THE_FOLLOWING_ITEM_IS_BEING_PURCHASED_N_NITEM_TO_PURCHASE_N_S1_N_NPURCHASE_PRICE_N_S2_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_PURCHASE;" />
-	<sm id="3425" text="このアイテムを購入します。\\n\\n購入するアイテム：\\n<$s1>\\n<$s2>個\\n\\n1個あたりの購入価格：\\n<$s3>\\n\\n合計金額：\\n<$s4>\\n\\nよろしいですか。" name="THE_FOLLOWING_ITEM_IS_BEING_PURCHASED_N_NITEM_TO_PURCHASE_N_S1_N_S2_UNITS_N_NUNIT_PRICE_N_S3_N_NTOTAL_PURCHASE_PRICE_N_S4_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_PURCHASE;" />
+	<sm id="3424" text="このアイテムを購入します。\\n\\n購入するアイテム：\\n&lt;$s1&gt;\\n\\n購入価格：\\n&lt;$s2&gt;\\n\\nよろしいですか。" name="THE_FOLLOWING_ITEM_IS_BEING_PURCHASED_N_NITEM_TO_PURCHASE_N_S1_N_NPURCHASE_PRICE_N_S2_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_PURCHASE;" />
+	<sm id="3425" text="このアイテムを購入します。\\n\\n購入するアイテム：\\n&lt;$s1&gt;\\n&lt;$s2&gt;個\\n\\n1個あたりの購入価格：\\n&lt;$s3&gt;\\n\\n合計金額：\\n&lt;$s4&gt;\\n\\nよろしいですか。" name="THE_FOLLOWING_ITEM_IS_BEING_PURCHASED_N_NITEM_TO_PURCHASE_N_S1_N_S2_UNITS_N_NUNIT_PRICE_N_S3_N_NTOTAL_PURCHASE_PRICE_N_S4_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_PURCHASE;" />
 	<sm id="3426" text="販売を取消しました。" name="CANCEL_SALE_IS_SUCCESSFULLY_COMPLETED;" />
 	<sm id="3427" text="販売取消に失敗しました。" name="CANCEL_SALE_HAS_FAILED;" />
-	<sm id="3428" text="このアイテムの販売を中止します。\\n\\n販売を中止するアイテム：\\n<$s1>\\n\\n販売価格：\\n<$s2>\\n\\n登録手数料：\\n<$s3>\\n\\nよろしいですか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_SALE_IS_BEING_CANCELLED_N_NITEM_TO_CANCEL_N_S1_N_NPRICE_N_S2_N_NSALE_FEE_N_S3_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_CANCELLATION_THE_FEE_IS_NOT_REFUNDABLE;" />
-	<sm id="3429" text="このアイテムの販売を中止します。\\n\\n販売を中止するアイテム：\\n<$s1>\\n <$s2>個\\n\\n1個あたりの販売価格：\\n<$s3>\\n\\n合計金額：\\n<$s4>\\n\\n登録手数料：\\n<$s5>\\n\\nよろしいですか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_SALE_IS_BEING_CANCELLED_N_NITEM_TO_SELL_N_N_S1_N_S2_UNITS_N_NUNIT_PRICE_N_S3_N_NTOTAL_SALE_PRICE_N_S4_N_NSALE_FEE_N_S5_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_CANCELLATION_THE_FEE_IS_NOT_REFUNDABLE;" />
+	<sm id="3428" text="このアイテムの販売を中止します。\\n\\n販売を中止するアイテム：\\n&lt;$s1&gt;\\n\\n販売価格：\\n&lt;$s2&gt;\\n\\n登録手数料：\\n&lt;$s3&gt;\\n\\nよろしいですか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_SALE_IS_BEING_CANCELLED_N_NITEM_TO_CANCEL_N_S1_N_NPRICE_N_S2_N_NSALE_FEE_N_S3_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_CANCELLATION_THE_FEE_IS_NOT_REFUNDABLE;" />
+	<sm id="3429" text="このアイテムの販売を中止します。\\n\\n販売を中止するアイテム：\\n&lt;$s1&gt;\\n &lt;$s2&gt;個\\n\\n1個あたりの販売価格：\\n&lt;$s3&gt;\\n\\n合計金額：\\n&lt;$s4&gt;\\n\\n登録手数料：\\n&lt;$s5&gt;\\n\\nよろしいですか。\\n(手数料は返金されません)" name="THE_FOLLOWING_ITEM_SALE_IS_BEING_CANCELLED_N_NITEM_TO_SELL_N_N_S1_N_S2_UNITS_N_NUNIT_PRICE_N_S3_N_NTOTAL_SALE_PRICE_N_S4_N_NSALE_FEE_N_S5_N_NDO_YOU_WANT_TO_CONTINUE_WITH_THE_CANCELLATION_THE_FEE_IS_NOT_REFUNDABLE;" />
 	<sm id="3430" text="血盟アカデミー卒業おめでとうございます！卒業により所属血盟から脱退となります。これからはペナルティなしで正式に血盟員として即加入できます。" name="CONGRATULATIONS_YOU_WILL_NOW_GRADUATE_FROM_THE_CLAN_ACADEMY_AND_LEAVE_YOUR_CURRENT_CLAN_YOU_CAN_NOW_JOIN_A_CLAN_WITHOUT_BEING_SUBJECT_TO_ANY_PENALTIES2;" />
 	<sm id="3431" text="$s1血盟との血盟戦が終了しました。$s1血盟との血盟戦は引き分けです。" name="WAR_WITH_THE_S1_CLAN_HAS_ENDED_IT_WAS_A_TIE_IN_THE_CLAN_WAR_WITH_THE_S1_CLAN;" />
 	<sm id="3432" text="ステージ1" name="STAGE_1;" />
@@ -3378,7 +3378,7 @@
 	<sm id="3526" text="バイタリティ ボーナスが適用されていません。毎週水曜日の午前6時30分にバイタリティ ポイントがフルチャージされます。バイタリティ ポーションには使用制限があり、チャージ/維持/回復にかかわらず一週間に5個までです。" name="VITALITY_IS_NOT_YET_APPLIED_VITALITY_POINTS_ARE_ALL_REPLENISHED_EVERY_WEEK_DURING_THE_REGULAR_MAINTENANCE_YOU_CAN_USE_A_MAXIMUM_5_VITALITY_ITEMS_PER_WEEK_INCLUDING_REPLENISHING_AND_MAINTAINING_ITEMS;" />
 	<sm id="3527" text="このパーティは召喚できない地域にいるため、パーティに参加できません。待機者リストに再登録されます。" name="THE_CORRESPONDING_PARTY_IS_CURRENTLY_IN_AN_AREA_WHERE_SUMMONING_IS_NOT_ALLOWED_THEREFORE_IT_CANNOT_JOIN_THE_PARTY_BECAME_RE_REGISTERED_ON_THE_WAITING_LIST;" />
 	<sm id="3528" text="バイタリティ効果が適用されます。次の周期までに適用可能なバイタリティ効果は、残り$s1回です。" name="VITALITY_EFFECT_IS_APPLIED_THERE_S_S1_VITALITY_EFFECT_LEFT_THAT_MAY_BE_APPLIED_UNTIL_THE_NEXT_CYCLE;" />
-	<sm id="3529" text="アイテム販売代行登録中はキャラクターを削除できません。<br>登録をキャンセルしてから削除してください。" name="YOU_MAY_NOT_DELETE_A_CHARACTER_WHILE_ITEM_IS_LISTED_FOR_SALE_BR_PLEASE_CANCEL_THE_REGISTRATION_THEN_TRY_AGAIN;" />
+	<sm id="3529" text="アイテム販売代行登録中はキャラクターを削除できません。&lt;br&gt;登録をキャンセルしてから削除してください。" name="YOU_MAY_NOT_DELETE_A_CHARACTER_WHILE_ITEM_IS_LISTED_FOR_SALE_BR_PLEASE_CANCEL_THE_REGISTRATION_THEN_TRY_AGAIN;" />
 	<sm id="3530" text="$s1を$s2個購入しました。" name="YOU_HAVE_SUCCESSFULLY_PURCHASED_S2_OF_S1;" />
 	<sm id="3531" text="スキルの習得に必要なSPとアイテムが足りません。" name="YOU_ARE_MISSING_BOTH_SP_AND_ITEM_TO_LEARN_THE_SKILL;" />
 	<sm id="3532" text="リネージュIIの世界へようこそ！\\n下の新規作成ボタンをクリックするとキャラクター作成画面に移ります。" name="WELCOME_TO_LINEAGE_II_NWHEN_YOU_CLICK_ON_THE_CHARACTER_GENERATION_BUTTON_IN_THE_BOTTOM_YOU_WILL_MOVE_TO_THE_CHARACTER_GENERATION_SCREEN;" />
@@ -3389,7 +3389,7 @@
 	<sm id="3537" text="公式サイトからお問い合わせください。" name="PLEASE_CONTACT_CUSTOMER_SERVICE;" />
 	<sm id="3538" text="巨人の封印を解けば．．．力はお前のものだ．．．" name="BREAK_THE_GIANTS_SEAL_AND_THE_POWER_WILL_BE_YOURS;" />
 	<sm id="3539" text="使用できる名前です。" name="AVAILABLE_NAME;" />
-	<sm id="3540" text="<$s1>は運営ポリシーにより選択できないキャラクターです。詳しくは公式サイトのサポートまでお問い合わせください。" name="S1_CANNOT_BE_USED_DUE_TO_POLICY_RESTRICTIONS_PLEASE_CONTACT_CUSTOMER_SERVICE_FOR_DETAILS;" />
+	<sm id="3540" text="&lt;$s1&gt;は運営ポリシーにより選択できないキャラクターです。詳しくは公式サイトのサポートまでお問い合わせください。" name="S1_CANNOT_BE_USED_DUE_TO_POLICY_RESTRICTIONS_PLEASE_CONTACT_CUSTOMER_SERVICE_FOR_DETAILS;" />
 	<sm id="3541" text="ウオォ！" name="URGGGHH;" />
 	<sm id="3542" text="フウゥ．．．！" name="RAWWWWW;" />
 	<sm id="3543" text="光の忠僕よ 疲れ果てた貴方の魂は．．．" name="SERVANT_OF_LIGHT_YOU_HAVE_DONE_ENOUGH;" />
@@ -3515,9 +3515,9 @@
 	<sm id="3663" text="他の作業を進行中です。作業を終了してからやり直してください。" name="OTHER_OPERATION_IS_IN_PROGRESS_PLEASE_TRY_AGAIN_AFTER_ENDING_THE_PREVIOUS_TASK;" />
 	<sm id="3664" text="現在地：$s1/$s2/$s3(マグメルドのオルビスの殿堂付近)" name="CURRENT_LOCATION_S1_S2_S3_NEAR_THE_MAGMELD_ORBIS_TEMPLE;" />
 	<sm id="3665" text="全画面モードで24hzを実行するとウィンドウモードに切り替わります。" name="IF_YOU_EXECUTE_24HZ_IN_THE_FULL_SCREEN_MODE_IT_SWITCHES_TO_WINDOW_MODE;" />
-	<sm id="3666" text="<$s1>の<$s2>属性を<$s3>属性に変更します。よろしいですか。" name="S1_S_S2_ATTRIBUTE_IS_CHANGING_TO_S3_ATTRIBUTE_DO_YOU_REALLY_WANT_TO_CHANGE;" />
+	<sm id="3666" text="&lt;$s1&gt;の&lt;$s2&gt;属性を&lt;$s3&gt;属性に変更します。よろしいですか。" name="S1_S_S2_ATTRIBUTE_IS_CHANGING_TO_S3_ATTRIBUTE_DO_YOU_REALLY_WANT_TO_CHANGE;" />
 	<sm id="3667" text="まずは変更する属性を選択してください。" name="PLEASE_CHOOSE_THE_ATTRIBUTE_THAT_YOU_WANT_TO_CHANGE_FIRST;" />
-	<sm id="3668" text="<$s1>の<$s2>属性を<$s3>属性に変更しました。" name="S1_S_S2_ATTRIBUTE_HAS_SUCCESSFULLY_CHANGED_TO_S3_ATTRIBUTE;" />
+	<sm id="3668" text="&lt;$s1&gt;の&lt;$s2&gt;属性を&lt;$s3&gt;属性に変更しました。" name="S1_S_S2_ATTRIBUTE_HAS_SUCCESSFULLY_CHANGED_TO_S3_ATTRIBUTE;" />
 	<sm id="3669" text="属性を変更するアイテムがありません。" name="THE_ITEM_FOR_CHANGING_AN_ATTRIBUTE_DOES_NOT_EXIST;" />
 	<sm id="3670" text="今回の周期で使えるバイテリティ効果をすべて使用しました。水曜日の定期メンテナンス後に次の周期が始まります。" name="YOU_HAVE_USED_ALL_VITALITY_EFFECTS_AVAILABLE_FOR_THIS_PERIOD_THE_NEXT_PERIOD_BEGINS_AFTER_WEDNESDAY_S_REGULAR_MAINTENANCE;" />
 	<sm id="3671" text="アカウントを入力してください。" name="PLEASE_ENTER_YOUR_ID_OR_EMAIL_ADDRESS;" />
@@ -3574,7 +3574,7 @@
 	<sm id="3722" text="$s1が孵化に成功しました。" name="S1_HAS_SUCCESSFULLY_HATCHED_THE_EGG;" />
 	<sm id="3723" text="$s1が孵化に失敗しました。" name="S1_HAS_FAILED_TO_HATCH_THE_EGG;" />
 	<sm id="3724" text="$s1が最適な温度で孵化に成功しました。" name="S1_HAS_SUCCESSFULLY_HATCHED_THE_EGG_BY_CREATING_THE_PERFECT_TEMPERATURE_FOR_INCUBATION;" />
-	<sm id="3725" text=" =====<上昇温度順位>=====" name="TEMPERATURE_RAISING_RANKINGS;" />
+	<sm id="3725" text=" =====&lt;上昇温度順位&gt;=====" name="TEMPERATURE_RAISING_RANKINGS;" />
 	<sm id="3726" text="$1位：$2様($3.$4度)" name="RANK_1_2_3_4_DEGREES;" />
 	<sm id="3727" text=" ========================" name="EMPTY9;" />
 	<sm id="3728" text="もっとも温度を上げた $1 にプレゼントが追加支給されます。" name="S1_RECEIVES_A_PRIZE_FOR_RAISING_THE_TEMPERATURE_MOST;" />
@@ -3670,24 +3670,24 @@
 	<sm id="3818" text="キー組合せは一般モードでのみ可能です。" name="KEY_COMBINATIONS_ARE_AVAILABLE_ONLY_IN_NORMAL_MODE;" />
 	<sm id="3819" text="入力したキーはショートカットキーに指定できません。" name="THE_KEY_YOU_ENTERED_CANNOT_BE_USED_AS_A_SHORTCUT_KEY;" />
 	<sm id="3820" text="入力したキーは他の機能が指定されています。適用ボタンを押すとキーが入れ替わります。" name="THE_KEY_YOU_ENTERED_IS_ALREADY_USED_FOR_ANOTHER_FUNCTION_CLICK_THE_APPLY_BUTTON_TO_SWITCH_THE_KEYS;" />
-	<sm id="3821" text="血盟の名声と経済的な発展を遂げたいのであれば、3つのギルドのうち好きな依頼を選択し、<font color='#FFDF4C'>血盟依頼</font>を遂行して夢を叶えましょう。<br><br>でも、注意してください。決定の権限があるのは血盟主のみです。" name="IF_YOU_WANT_FAME_AND_ECONOMIC_DEVELOPMENT_FOR_YOUR_CLAN_SELECT_A_REQUEST_FROM_ANY_OF_THE_3_GUILDS_AND_START_THE_FONT_COLOR_FFDF4C_CLAN_REQUEST_FONT_BR_BR_BUT_ONLY_THE_CLAN_LEADER_CAN_MAKE_A_DECISION;" />
+	<sm id="3821" text="血盟の名声と経済的な発展を遂げたいのであれば、3つのギルドのうち好きな依頼を選択し、&lt;font color='#FFDF4C'&gt;血盟依頼&lt;/font&gt;を遂行して夢を叶えましょう。&lt;br&gt;&lt;br&gt;でも、注意してください。決定の権限があるのは血盟主のみです。" name="IF_YOU_WANT_FAME_AND_ECONOMIC_DEVELOPMENT_FOR_YOUR_CLAN_SELECT_A_REQUEST_FROM_ANY_OF_THE_3_GUILDS_AND_START_THE_FONT_COLOR_FFDF4C_CLAN_REQUEST_FONT_BR_BR_BUT_ONLY_THE_CLAN_LEADER_CAN_MAKE_A_DECISION;" />
 	<sm id="3822" text="$s1を引き受けました。" name="S1_HAS_BEEN_ACCEPTED;" />
-	<sm id="3823" text="血盟員個人の狩りによる<font color='#FFDF4C'>個人依頼ポイント</font>収集活動と、血盟員との団結による<font color='#FFDF4C'>血盟依頼活動</font>により、多くの血盟が成長しています。<br><br>(個人依頼ポイントを精算して血盟依頼ポイントを上げましょう。個人依頼ポイント精算した分だけ個人名声値を獲得できます)" name="CLANS_ARE_BOOMING_WITH_THE_ACQUISITION_OF_FONT_COLOR_FFDF4C_INDIVIDUAL_REQUEST_POINTS_FONT_EARNED_THROUGH_PRIVATE_HUNTS_AND_FONT_COLOR_FFDF4C_CLAN_REQUEST_ACTIVITIES_FONT_DONE_WITH_YOUR_CLANMATES_BR_BR_REDEEM_INDIVIDUAL_REQUEST_POINTS_TO_INCREASE_YOUR_CLAN_REQUEST_POINTS_INDIVIDUAL_FAME_GOES_UP_WITH_EACH_INDIVIDUAL_REQUEST_POINT_YOU_REDEEM;" />
+	<sm id="3823" text="血盟員個人の狩りによる&lt;font color='#FFDF4C'&gt;個人依頼ポイント&lt;/font&gt;収集活動と、血盟員との団結による&lt;font color='#FFDF4C'&gt;血盟依頼活動&lt;/font&gt;により、多くの血盟が成長しています。&lt;br&gt;&lt;br&gt;(個人依頼ポイントを精算して血盟依頼ポイントを上げましょう。個人依頼ポイント精算した分だけ個人名声値を獲得できます)" name="CLANS_ARE_BOOMING_WITH_THE_ACQUISITION_OF_FONT_COLOR_FFDF4C_INDIVIDUAL_REQUEST_POINTS_FONT_EARNED_THROUGH_PRIVATE_HUNTS_AND_FONT_COLOR_FFDF4C_CLAN_REQUEST_ACTIVITIES_FONT_DONE_WITH_YOUR_CLANMATES_BR_BR_REDEEM_INDIVIDUAL_REQUEST_POINTS_TO_INCREASE_YOUR_CLAN_REQUEST_POINTS_INDIVIDUAL_FAME_GOES_UP_WITH_EACH_INDIVIDUAL_REQUEST_POINT_YOU_REDEEM;" />
 	<sm id="3824" text="個人依頼ポイントを精算します。" name="REDEEM_INDIVIDUAL_REQUEST_POINTS;" />
 	<sm id="3825" text="個人依頼ポイントを精算しました。" name="INDIVIDUAL_REQUEST_POINTS_HAVE_BEEN_REDEEMED;" />
-	<sm id="3826" text="血盟依頼は以下のような難易度で構成されています。ソロでも進行できますが、難易度に合った人数でなければ進行は困難です。<br><br>進行する血盟依頼を選択してください。<br><br>7人依頼：1パーティ難易度<br>14人依頼：2パーティ難易度" name="CLAN_REQUESTS_ARE_CATEGORIZED_INTO_THE_FOLLOWING_DIFFICULTY_LEVELS_A_PERSON_CAN_START_ANY_REQUEST_ALONE_BUT_IT_IS_HARD_SUCCEED_WITH_FEWER_PEOPLE_THAN_IT_IS_APPROPRIATE_FOR_SPECIFIC_DIFFICULTY_LEVELS_BR_BR_SELECT_A_CLAN_REQUEST_TO_START_BR_BR_7_PERSON_REQUEST_PARTY_DIFFICULTY_1_BR_14_PERSON_REQUEST_PARTY_DIFFICULTY_2;" />
+	<sm id="3826" text="血盟依頼は以下のような難易度で構成されています。ソロでも進行できますが、難易度に合った人数でなければ進行は困難です。&lt;br&gt;&lt;br&gt;進行する血盟依頼を選択してください。&lt;br&gt;&lt;br&gt;7人依頼：1パーティ難易度&lt;br&gt;14人依頼：2パーティ難易度" name="CLAN_REQUESTS_ARE_CATEGORIZED_INTO_THE_FOLLOWING_DIFFICULTY_LEVELS_A_PERSON_CAN_START_ANY_REQUEST_ALONE_BUT_IT_IS_HARD_SUCCEED_WITH_FEWER_PEOPLE_THAN_IT_IS_APPROPRIATE_FOR_SPECIFIC_DIFFICULTY_LEVELS_BR_BR_SELECT_A_CLAN_REQUEST_TO_START_BR_BR_7_PERSON_REQUEST_PARTY_DIFFICULTY_1_BR_14_PERSON_REQUEST_PARTY_DIFFICULTY_2;" />
 	<sm id="3827" text="血盟依頼を引き受けました。" name="YOU_VE_RECEIVED_A_CLAN_REQUEST;" />
 	<sm id="3828" text="アデナおよび名声値が足りません。" name="NOT_ENOUGH_ADENA_OR_FAME;" />
-	<sm id="3829" text="に変更します。<br>変更時、血盟依頼ポイントは初期化されます。" name="CHANGE_TO_BR_UPON_CHANGE_CLAN_REQUEST_POINTS_WILL_BE_RESET;" />
+	<sm id="3829" text="に変更します。&lt;br&gt;変更時、血盟依頼ポイントは初期化されます。" name="CHANGE_TO_BR_UPON_CHANGE_CLAN_REQUEST_POINTS_WILL_BE_RESET;" />
 	<sm id="3830" text="$s1に変更されました。" name="IT_HAS_CHANGED_TO_S1;" />
-	<sm id="3831" text="依頼を放棄します。<br>放棄時、血盟依頼ポイントは初期化されます。" name="YOU_ARE_GIVING_UP_ON_THE_REQUEST_BR_WHEN_YOU_GIVE_UP_ON_IT_CLAN_REQUEST_POINTS_WILL_BE_RESET;" />
+	<sm id="3831" text="依頼を放棄します。&lt;br&gt;放棄時、血盟依頼ポイントは初期化されます。" name="YOU_ARE_GIVING_UP_ON_THE_REQUEST_BR_WHEN_YOU_GIVE_UP_ON_IT_CLAN_REQUEST_POINTS_WILL_BE_RESET;" />
 	<sm id="3832" text="$s1を放棄しました。" name="YOU_VE_GIVEN_UP_ON_S1;" />
-	<sm id="3833" text="<font color='#FFDF4C'>組合ミッション</font>とは？組合依頼の前に簡単に進行できる組合の別の活動であり、ミッション成功時、組合のバッジを獲得できます。<br><br>組合員の幸運をお祈りします。" name="WHAT_IS_A_FONT_COLOR_FFDF4C_GUILD_QUEST_FONT_IT_S_A_SIMPLE_ACTIVITY_YOU_CAN_DO_BEFORE_WORKING_ON_A_GUILD_REQUEST_IF_YOU_SUCCEED_IN_IT_YOU_WILL_GET_A_BADGE_OF_THE_GUILD_BR_BR_GOOD_LUCK_TO_EVERY_GUILD_MEMBER;" />
+	<sm id="3833" text="&lt;font color='#FFDF4C'&gt;組合ミッション&lt;/font&gt;とは？組合依頼の前に簡単に進行できる組合の別の活動であり、ミッション成功時、組合のバッジを獲得できます。&lt;br&gt;&lt;br&gt;組合員の幸運をお祈りします。" name="WHAT_IS_A_FONT_COLOR_FFDF4C_GUILD_QUEST_FONT_IT_S_A_SIMPLE_ACTIVITY_YOU_CAN_DO_BEFORE_WORKING_ON_A_GUILD_REQUEST_IF_YOU_SUCCEED_IN_IT_YOU_WILL_GET_A_BADGE_OF_THE_GUILD_BR_BR_GOOD_LUCK_TO_EVERY_GUILD_MEMBER;" />
 	<sm id="3834" text="$s1が血盟員召喚を要請しました。" name="S1_HAS_REQUESTED_CLAN_MEMBER_SUMMONING;" />
 	<sm id="3835" text="$s1が召喚を開始します。" name="SUMMONING_S1;" />
 	<sm id="3836" text="$s1の召喚がキャンセルされました。" name="CANCELLED_THE_SUMMONING_OF_S1;" />
 	<sm id="3837" text="組合ミッションが始まります。" name="A_CLAN_QUEST_IS_STARTING;" />
-	<sm id="3838" text="<font color='#FFDF4C'>血盟依頼</font>とは？血盟がより堅固で強力な組織となれることを目指す血盟活動で、依頼活動により獲得した各ドワーフギルドのバッジで血盟レベルの上昇および色々な報賞が購入できます。<br><br>また、レベル5以上の血盟は血盟依頼成功時、血盟名声値を獲得できます。<br><br>(血盟レベルの成長は各村のグランドマスターのところで行います)" name="WHAT_IS_A_FONT_COLOR_FFDF4C_CLAN_REQUEST_FONT_IT_S_A_CLAN_ACTIVITY_DESIGNED_TO_HELP_A_CLAN_BECOME_A_MORE_SOLID_POWERFUL_ORGANIZATION_WITH_BADGES_OF_EACH_DWARF_GUILD_YOU_VE_OBTAINED_THROUGH_REQUEST_ACTIVITIES_YOU_CAN_INCREASE_CLAN_LEVEL_AND_PURCHASE_VARIOUS_REWARDS_BR_BR_ALSO_CLANS_OF_LEVEL_5_OR_HIGHER_CAN_OBTAIN_CLAN_REPUTATION_AFTER_SUCCESSFULLY_FINISHING_A_CLAN_REQUEST_BR_BR_YOU_CAN_INCREASE_CLAN_LEVEL_THROUGH_THE_GRAND_MASTER_IN_ANY_VILLAGE;" />
+	<sm id="3838" text="&lt;font color='#FFDF4C'&gt;血盟依頼&lt;/font&gt;とは？血盟がより堅固で強力な組織となれることを目指す血盟活動で、依頼活動により獲得した各ドワーフギルドのバッジで血盟レベルの上昇および色々な報賞が購入できます。&lt;br&gt;&lt;br&gt;また、レベル5以上の血盟は血盟依頼成功時、血盟名声値を獲得できます。&lt;br&gt;&lt;br&gt;(血盟レベルの成長は各村のグランドマスターのところで行います)" name="WHAT_IS_A_FONT_COLOR_FFDF4C_CLAN_REQUEST_FONT_IT_S_A_CLAN_ACTIVITY_DESIGNED_TO_HELP_A_CLAN_BECOME_A_MORE_SOLID_POWERFUL_ORGANIZATION_WITH_BADGES_OF_EACH_DWARF_GUILD_YOU_VE_OBTAINED_THROUGH_REQUEST_ACTIVITIES_YOU_CAN_INCREASE_CLAN_LEVEL_AND_PURCHASE_VARIOUS_REWARDS_BR_BR_ALSO_CLANS_OF_LEVEL_5_OR_HIGHER_CAN_OBTAIN_CLAN_REPUTATION_AFTER_SUCCESSFULLY_FINISHING_A_CLAN_REQUEST_BR_BR_YOU_CAN_INCREASE_CLAN_LEVEL_THROUGH_THE_GRAND_MASTER_IN_ANY_VILLAGE;" />
 	<sm id="3839" text="血盟依頼地域に移動します。" name="GO_TO_THE_CLAN_REQUEST_AREA;" />
 	<sm id="3840" text="血盟依頼地域への移動が始まります。" name="THE_TRIP_TO_THE_CLAN_REQUEST_AREA_IS_STARTING;" />
 	<sm id="3841" text="$s1が血盟員召喚を要請しました。" name="S1_HAS_REQUESTED_CLAN_MEMBER_SUMMONING2;" />
@@ -3741,9 +3741,9 @@
 	<sm id="3889" text="カリエの祝福イベントが始まりました。只今より60分間、レベル40以上、2次転職以降のすべてのキャラクターがカリエの祝福イベントに自動で参加します。イベント中は｢カリエの願い｣を使用できません。" name="THE_EVENT_KALIEL_S_BLESSING_HAS_STARTED_FOR_1_HOUR_FROM_NOW_ALL_CHARACTERS_OF_LEVEL_40_OR_HIGHER_WHO_HAVE_DONE_THE_2ND_CLASS_TRANSFER_WILL_BE_AUTOMATICALLY_JOINED_IN_THE_EVENT_DURING_THIS_TIME_YOU_CANNOT_USE_THE_ITEM_KALIEL_S_WISH;" />
 	<sm id="3890" text="バイタリティ強化魔法を除く、すべての強化魔法が削除されます。" name="EXCEPT_THE_VITALITY_BUFF_ALL_BUFFS_INCLUDING_ART_OF_SEDUCTION_WILL_BE_DELETED;" />
 	<sm id="3891" text="個人依頼ポイントを獲得しました。($s1/100)" name="YOU_VE_OBTAINED_INDIVIDUAL_REQUEST_POINTS_S1_100;" />
-	<sm id="3892" text="現在イベントに参加していません。｢カリエの願い｣を使用すると参加できます。<br>｢カリエの願い｣は、イベントNPCジョリーから貰えます。" name="YOU_ARE_CURRENTLY_NOT_PARTICIPATING_IN_ANY_EVENT_USE_A_KALIEL_S_WISH_TO_JOIN_AN_EVENT_BR_YOU_CAN_GET_KALIEL_S_WISHES_THROUGH_EVENT_NPC_JOLIE_YOU_CAN_ALSO_GET_UP_TO_TWO_OF_THEM_A_DAY_FROM_HUNTING;" />
+	<sm id="3892" text="現在イベントに参加していません。｢カリエの願い｣を使用すると参加できます。&lt;br&gt;｢カリエの願い｣は、イベントNPCジョリーから貰えます。" name="YOU_ARE_CURRENTLY_NOT_PARTICIPATING_IN_ANY_EVENT_USE_A_KALIEL_S_WISH_TO_JOIN_AN_EVENT_BR_YOU_CAN_GET_KALIEL_S_WISHES_THROUGH_EVENT_NPC_JOLIE_YOU_CAN_ALSO_GET_UP_TO_TWO_OF_THEM_A_DAY_FROM_HUNTING;" />
 	<sm id="3893" text="インベントリの個数または重量をオーバーしているため、$s1を受け取れません。" name="YOU_CANNOT_RECEIVE_THE_ITEM_S1_BECAUSE_YOU_VE_EXCEEDED_THE_LIMIT_ON_THE_QUANTITY_AND_WEIGHT_OF_THE_INVENTORY;" />
-	<sm id="3894" text="カリエの祝福イベント$s1段階$s2％進行中です。<br>(サーバーオープン30分後、1時間イベントに自動参加します)" name="LEVEL_S1_OF_THE_EVENT_KALIEL_S_BLESSING_IS_S2_COMPLETED_BR_YOU_WILL_BE_AUTOMATICALLY_JOINED_IN_THE_EVENT_FOR_1_HOUR_30_MINUTES_AFTER_THE_SERVER_OPENS;" />
+	<sm id="3894" text="カリエの祝福イベント$s1段階$s2％進行中です。&lt;br&gt;(サーバーオープン30分後、1時間イベントに自動参加します)" name="LEVEL_S1_OF_THE_EVENT_KALIEL_S_BLESSING_IS_S2_COMPLETED_BR_YOU_WILL_BE_AUTOMATICALLY_JOINED_IN_THE_EVENT_FOR_1_HOUR_30_MINUTES_AFTER_THE_SERVER_OPENS;" />
 	<sm id="3895" text="血盟依頼参加人数をオーバーしているため、移動に失敗しました。" name="YOU_CANNOT_GO_BECAUSE_THE_MAXIMUM_NUMBER_OF_PARTICIPANTS_IN_THE_CLAN_REQUEST_HAS_BEEN_EXCEEDED;" />
 	<sm id="3896" text="血盟依頼発生！血盟依頼管理者から血盟依頼を受けてください。" name="THERE_S_A_NEW_CLAN_REQUEST_GET_IT_FROM_THE_CLAN_REQUEST_MANAGER;" />
 	<sm id="3897" text="サーバーオープン30分後、1時間はイベント自動参加期間のため、カリエの願いを使用できません。" name="YOU_WILL_BE_AUTOMATICALLY_JOINED_IN_THE_EVENT_FOR_1_HOUR_30_MINUTES_AFTER_THE_SERVER_OPENS_SO_YOU_CANNOT_USE_THE_ITEM_KALIEL_S_WISH;" />
@@ -3772,11 +3772,11 @@
 	<sm id="4013" text="ビューティ ショップを利用する前の姿をお見せします。" name="BEFORE_USING_THE_BEAUTY_SHOP;" />
 	<sm id="4014" text="現在の姿をお見せします。" name="CURRENT_APPEARANCE;" />
 	<sm id="4015" text="ビューティ ショップを利用する前の姿に戻します。" name="RESTORING_THE_APPEARANCE_TO_BEFORE_USING_THE_BEAUTY_SHOP;" />
-	<sm id="4016" text="<BROWN01>購入したことのあるスタイルはビューティ ショップで再度変更できます。<br>復元を実行しますか。</BROWN01>" name="BROWN01_THE_PREVIOUSLY_PURCHASED_STYLE_CAN_BE_EQUIPPED_AGAIN_AT_THE_BEAUTY_SHOP_BR_DO_YOU_WISH_TO_RESTORE_BROWN01;" />
+	<sm id="4016" text="&lt;BROWN01&gt;購入したことのあるスタイルはビューティ ショップで再度変更できます。&lt;br&gt;復元を実行しますか。&lt;/BROWN01&gt;" name="BROWN01_THE_PREVIOUSLY_PURCHASED_STYLE_CAN_BE_EQUIPPED_AGAIN_AT_THE_BEAUTY_SHOP_BR_DO_YOU_WISH_TO_RESTORE_BROWN01;" />
 	<sm id="4017" text="以前のスタイルに復元しました。" name="RESTORATION_TO_PREVIOUS_APPEARANCE_COMPLETE;" />
 	<sm id="4018" text="以前のスタイルへの復元に失敗しました。" name="FAILED_TO_RESTORE_APPEARANCE_TO_PREVIOUS_STYLE;" />
 	<sm id="4019" text="ビューティ ショップから退出します。" name="LEAVING_BEAUTY_SHOP;" />
-	<sm id="4020" text="<BROWN01>ヘア スタイル適用時、着用している</BROWN01><br><RED02>ヘア アクセサリー</RED02><BROWN01>が見えません。<br>購入しますか？</BROWN01>" name="BROWN01_HAIR_STYLE_WOULD_MAKE_THE_EQUIPPED_BROWN01_BR_RED02_HAIR_ACCESSORY_RED02_BROWN01_INVISIBLE_BR_PROCEED_WITH_PURCHASE_BROWN01;" />
+	<sm id="4020" text="&lt;BROWN01&gt;ヘア スタイル適用時、着用している&lt;/BROWN01&gt;&lt;br&gt;&lt;RED02&gt;ヘア アクセサリー&lt;/RED02&gt;&lt;BROWN01&gt;が見えません。&lt;br&gt;購入しますか？&lt;/BROWN01&gt;" name="BROWN01_HAIR_STYLE_WOULD_MAKE_THE_EQUIPPED_BROWN01_BR_RED02_HAIR_ACCESSORY_RED02_BROWN01_INVISIBLE_BR_PROCEED_WITH_PURCHASE_BROWN01;" />
 	<sm id="4021" text="変更するスタイルがありません。" name="THERE_IS_NO_STYLE_TO_BE_CHANGED;" />
 	<sm id="4022" text="復元中です。" name="RESTORING_APPEARANCE;" />
 	<sm id="4023" text="アデナが不足しているので復元に失敗しました。" name="FAILED_TO_RESTORE_THE_APPEARANCE_DUE_TO_INSUFFICIENT_ADENA;" />
@@ -3838,14 +3838,14 @@
 	<sm id="4079" text="アクティブでないキャラクターはプレイできません。アクティブなキャラクターを選択してください。" name="YOU_CANNOT_PLAY_A_DISABLED_CHARACTER_PLEASE_SELECT_AN_ENABLED_CHARACTER;" />
 	<sm id="4080" text="キャラクターがレベル85に成長しましたので、リネージュIIの無料プレイ期間は終了となります。ゲージを購入して、レベル85以上のさらに迫力あるアデンでの冒険をお楽しみください。" name="WE_HOPE_YOU_ENJOYED_YOUR_FREE_TRIAL_OF_LINEAGE_II_WITH_A_PLAY_PASS_YOU_CAN_GO_BEYOND_LV_85_TO_EXPLORE_AN_EVEN_MORE_EXCITING_AND_EXPANSIVE_WORLD_IN_ADEN;" />
 	<sm id="4081" text="フリー アカウントで接続した際に最大2つのクライアントを起動することができます。2つ以上の重複起動時、まず利用券を購入したアカウントでログインするか、リネージュII利用券を購入してください。" name="YOU_CAN_RUN_A_MAXIMUM_OF_3_CLIENTS_ON_THE_SAME_PC;" />
-	<sm id="4082" text="<font color='#FFDF4C'>無料利用案内</font><br>サーバー内にレベル85以上のキャラクターがいない場合、該当サーバーでレベル85達成時まで無料でプレイすることが可能です。" name="FONT_COLOR_FFDF4C_PATH_TO_AWAKENING_FONT_BR_IF_YOU_ARE_A_NEW_PLAYER_YOU_CAN_EARN_FREE_REWARDS_AS_YOU_LEVEL_UP_BY_VISITING_THE_FOLLOWING_WEBSITE_HTTP_TRULY_FREE_LINEAGE2_COM_PATH_LOG_IN_WITH_YOUR_LINEAGE_II_ACCOUNT_AND_CLAIM_THE_REWARDS_WHEN_YOU_REACH_EACH_MILESTONE_DON_T_MISS_OUT;" />
-	<sm id="4083" text="リネージュIIの世界へようこそ。<br>サーバー内に最大2体のキャラクターをレベル85まで無料でプレイできます。" name="WELCOME_TO_LINEAGE_II_BR_PLEASE_SELECT_A_CHARACTER_YOU_CAN_USE_FOR_FREE_OR_PURCHASE_A_LINEAGE_II_PLAY_PASS;" />
+	<sm id="4082" text="&lt;font color='#FFDF4C'&gt;無料利用案内&lt;/font&gt;&lt;br&gt;サーバー内にレベル85以上のキャラクターがいない場合、該当サーバーでレベル85達成時まで無料でプレイすることが可能です。" name="FONT_COLOR_FFDF4C_PATH_TO_AWAKENING_FONT_BR_IF_YOU_ARE_A_NEW_PLAYER_YOU_CAN_EARN_FREE_REWARDS_AS_YOU_LEVEL_UP_BY_VISITING_THE_FOLLOWING_WEBSITE_HTTP_TRULY_FREE_LINEAGE2_COM_PATH_LOG_IN_WITH_YOUR_LINEAGE_II_ACCOUNT_AND_CLAIM_THE_REWARDS_WHEN_YOU_REACH_EACH_MILESTONE_DON_T_MISS_OUT;" />
+	<sm id="4083" text="リネージュIIの世界へようこそ。&lt;br&gt;サーバー内に最大2体のキャラクターをレベル85まで無料でプレイできます。" name="WELCOME_TO_LINEAGE_II_BR_PLEASE_SELECT_A_CHARACTER_YOU_CAN_USE_FOR_FREE_OR_PURCHASE_A_LINEAGE_II_PLAY_PASS;" />
 	<sm id="4084" text="選択したキャラクターは利用できません。ゲージを購入してください。" name="YOU_CANNOT_USE_THE_SELECTED_CHARACTER_BR_PLEASE_SELECT_A_CHARACTER_YOU_CAN_USE_FOR_FREE_OR_PURCHASE_A_LINEAGE_II_PLAY_PASS;" />
 	<sm id="4085" text="召喚ポイントが不足しているため$s1スキルを使用できません。" name="YOU_CANNOT_USE_THE_S1_SKILL_DUE_TO_INSUFFICIENT_SUMMON_POINTS;" />
 	<sm id="4086" text="血盟紹介文は作成後30日が経過する$s1年$s2月$s3日の午前6時30分に削除される予定です。" name="CLAN_INTRODUCTION_WILL_BE_DELETED_30_DAYS_AFTER_DRAFT_WHICH_IS_S1_S2_S3_AT_6_30_AM;" />
 	<sm id="4087" text="血盟加入申請：加入申請日から30日が経過する$s1年$s2月$s3日の午前6時30分に削除される予定です。" name="CLAN_ENTRY_APPLICATION_DELETED_30_DAYS_AFTER_APPLICATION_WHICH_IS_S1_S2_S3_AT_6_30_AM;" />
 	<sm id="4088" text="待機者登録：待機登録日から30日が経過する$s1年$s2月$s3日の午前6時30分に削除される予定です。" name="WAITING_LIST_DELETED_30_DAYS_AFTER_APPLICATION_WHICH_IS_S1_S2_S3_AT_6_30_AM;" />
-	<sm id="4089" text="リネージュIIへようこそ。<br>サーバー内でレベル85達成時まで無料でプレイすることが可能です。レベル85の達成と同時に該当サーバーでの無料プレイができなくなります。継続してプレイをご希望の場合は、ゲージを購入してください。<br><br>無料利用条件<br>その1：キャラクターのレベル<br>その2：キャラクターの経験値<br>その3：キャラクター作成日(早い順)" name="WELCOME_TO_LINEAGE_II_BR_YOU_CREATE_UP_TO_2_CHARACTERS_WITHIN_A_SERVER_AND_LEVEL_THEM_UP_TO_85_FOR_FREE_THE_FREE_SERVICE_WILL_END_FOR_THE_SERVER_WHEN_YOU_REACH_LV_85;" />
+	<sm id="4089" text="リネージュIIへようこそ。&lt;br&gt;サーバー内でレベル85達成時まで無料でプレイすることが可能です。レベル85の達成と同時に該当サーバーでの無料プレイができなくなります。継続してプレイをご希望の場合は、ゲージを購入してください。&lt;br&gt;&lt;br&gt;無料利用条件&lt;br&gt;その1：キャラクターのレベル&lt;br&gt;その2：キャラクターの経験値&lt;br&gt;その3：キャラクター作成日(早い順)" name="WELCOME_TO_LINEAGE_II_BR_YOU_CREATE_UP_TO_2_CHARACTERS_WITHIN_A_SERVER_AND_LEVEL_THEM_UP_TO_85_FOR_FREE_THE_FREE_SERVICE_WILL_END_FOR_THE_SERVER_WHEN_YOU_REACH_LV_85;" />
 	<sm id="4090" text="特別に、休止されていたお客様専用の利用券をお配りしております。24時間が経過すると受け取れなくなります。\\n\\n｢受領する｣をクリックすると利用券受領のためにウェブ ページに移動しゲームを終了します。よろしいですか。\\n\\n(すでに利用券を登録している場合はキャンセルをクリックしてください)" name="RETURNING_PLAYERS_WILL_RECEIVE_FREE_PASSES_AS_A_WELCOME_BACK_GIFT_THE_PASS_MUST_BE_RETRIEVED_WITHIN_24_HOURS_N_NCLICK_RECEIVE_TO_GO_TO_THE_WEBSITE_FOR_THE_PASS_THIS_WILL_LOG_YOU_OUT_OF_THE_GAME_DO_YOU_WISH_TO_PROCEED_N_N_CLICK_CANCEL_IF_YOU_HAVE_ALREADY_REGISTERED_THE_PASS;" />
 	<sm id="4091" text="該当クエストは削除することができません。" name="THIS_QUEST_CANNOT_BE_DELETED;" />
 	<sm id="4092" text="委譲されたキャラクターがフリー トライアル利用者の場合、血盟主の権限は一部しか使用できません。本当に権限を委譲しますか？" name="A_FREE_PLAYER_WILL_HAVE_LIMITED_ACCESS_TO_RIGHTS_AS_CLAN_LEADER_WILL_YOU_TRANSFER_CLAN_LEADERSHIP;" />
@@ -3866,7 +3866,7 @@
 	<sm id="4107" text="フリー トライアル利用者は、レベル$s1まで先にウィスパーを送ることができません。ウィスパーに対する返事は可能です。" name="PLAYERS_CAN_RESPOND_TO_A_WHISPER_BUT_CANNOT_INITIATE_A_WHISPER_UNTIL_LV_S1;" />
 	<sm id="4108" text="ペットの召喚/解除もしくは搭乗中です。しばらくしてからやり直してください。" name="PET_SUMMON_SEAL_OR_RIDING_IN_PROGRESS_PLEASE_TRY_AGAIN_LATER;" />
 	<sm id="4109" text="ペットの召喚/解除中は搭乗できません。しばらくしてからやり直してください。" name="CANNOT_RIDE_WHILE_SUMMONING_SEALING_PET_PLEASE_TRY_AGAIN_LATER;" />
-	<sm id="4110" text="休眠アカウントには、復帰用装備と消耗品をゲーム内の郵便で支援します<br>(ただし、2次転職完了キャラクターに限る)。" name="DORMANT_ACCOUNTS_WILL_RECEIVE_SUPPORT_THROUGH_IN_GAME_MAIL_CONTAINING_EQUIPMENT_AND_SUPPLIES_BR_ONLY_FOR_CHARACTERS_THAT_HAVE_COMPLETED_THE_2ND_CLASS_TRANSFER;" />
+	<sm id="4110" text="休眠アカウントには、復帰用装備と消耗品をゲーム内の郵便で支援します&lt;br&gt;(ただし、2次転職完了キャラクターに限る)。" name="DORMANT_ACCOUNTS_WILL_RECEIVE_SUPPORT_THROUGH_IN_GAME_MAIL_CONTAINING_EQUIPMENT_AND_SUPPLIES_BR_ONLY_FOR_CHARACTERS_THAT_HAVE_COMPLETED_THE_2ND_CLASS_TRANSFER;" />
 	<sm id="4111" text="1024*768以下の解像度ではUIが正常に見えないことがあります。" name="UI_MAY_NOT_DISPLAY_PROPERLY_IN_A_RESOLUTION_OF_1024_768_OR_LESS;" />
 	<sm id="4112" text="精錬された$s1の精錬効果が削除されました。" name="THE_AUGMENTATION_EFFECTS_ON_S1_HAVE_BEEN_DELETED;" />
 	<sm id="4113" text="一定期間のみ形状加工された$s1の形状が初期化されました。" name="S1_HAS_BEEN_RESTORED_TO_ITS_PREVIOUS_APPEARANCE_AS_ITS_TEMPORARY_MODIFICATION_HAS_EXPIRED;" />
@@ -3892,12 +3892,12 @@
 	<sm id="4133" text="新規アカウントで接続時、1週間、各サーバー別に最初に接続した1つのキャラクターに新規アカウント アイテムを支給します。" name="WHEN_YOU_LOG_IN_WITH_A_NEW_ACCOUNT_A_NEW_ACCOUNT_ITEM_WILL_BE_GIVEN_TO_THE_FIRST_CHARACTER_TO_LOG_INTO_EACH_SERVER_FOR_1_WEEK;" />
 	<sm id="4134" text="一度登録した願いは修正ができません。よろしいですか。" name="YOU_CANNOT_CHANGE_YOUR_WISH_ONCE_ENTERED_PROCEED;" />
 	<sm id="4135" text="使用せず：新規追加可能フィールド" name="NOT_IN_USE_NEW_ADDITIONAL_POSSIBLE_FIELD;" />
-	<sm id="4136" text="情報通信網利用促進および情報保護などに関する法律により、お客様の個人情報収集および利用事項が変更されます。変更事項確認後、個人情報収集および利用に同意してください。<br><font color='#FFDF5F'>同意されない場合、2013年2月6日からサービス使用に制約が生じる場合があります。詳しい内容は公式サイトの個人情報取扱(処理)方針を確認してください。</font>" name="YOUR_PERSONAL_INFORMATION_COLLECTION_AND_USAGE_MATTERS_HAVE_BEEN_CHANGED_TO_ADHERE_TO_THE_RULES_REGARDING_THE_PROMOTION_OF_USAGE_OF_THE_INFORMATION_NETWORK_SYSTEM_AND_INFORMATION_PROTECTION_AFTER_CHECKING_THE_CHANGES_PLEASE_AGREE_TO_THE_COLLECTION_AND_USAGE_OF_THE_PERSONAL_INFORMATION_BR_FONT_COLOR_FFDF5F_IF_YOU_DO_NOT_AGREE_SERVICE_USAGE_MAY_BECOME_LIMITED_EFFECTIVE_2_06_2013_PLEASE_REFER_TO_THE_PERSONAL_INFORMATION_TREATMENT_HANDLING_POLICY_ON_THE_WEBPAGE_FOR_FURTHER_DETAILS_FONT;" />
+	<sm id="4136" text="情報通信網利用促進および情報保護などに関する法律により、お客様の個人情報収集および利用事項が変更されます。変更事項確認後、個人情報収集および利用に同意してください。&lt;br&gt;&lt;font color='#FFDF5F'&gt;同意されない場合、2013年2月6日からサービス使用に制約が生じる場合があります。詳しい内容は公式サイトの個人情報取扱(処理)方針を確認してください。&lt;/font&gt;" name="YOUR_PERSONAL_INFORMATION_COLLECTION_AND_USAGE_MATTERS_HAVE_BEEN_CHANGED_TO_ADHERE_TO_THE_RULES_REGARDING_THE_PROMOTION_OF_USAGE_OF_THE_INFORMATION_NETWORK_SYSTEM_AND_INFORMATION_PROTECTION_AFTER_CHECKING_THE_CHANGES_PLEASE_AGREE_TO_THE_COLLECTION_AND_USAGE_OF_THE_PERSONAL_INFORMATION_BR_FONT_COLOR_FFDF5F_IF_YOU_DO_NOT_AGREE_SERVICE_USAGE_MAY_BECOME_LIMITED_EFFECTIVE_2_06_2013_PLEASE_REFER_TO_THE_PERSONAL_INFORMATION_TREATMENT_HANDLING_POLICY_ON_THE_WEBPAGE_FOR_FURTHER_DETAILS_FONT;" />
 	<sm id="4137" text="送り手が代金請求金額を受け取れない状態です。次元移動中には代金請求金額を受け取れない状態になります。しばらくしてから再度お試しください。" name="CHARACTERS_CANNOT_RECEIVE_REQUESTED_PAYMENT_WHILE_TELEPORTING_BETWEEN_DIMENSIONS_PLEASE_TRY_AGAIN_LATER;" />
 	<sm id="4138" text="パーティ マッチ利用が中止されました。パーティ マッチ可能時間まで残り$s1分です。" name="STOPPED_PARTY_MATCHING_YOU_HAVE_S1_MINUTE_S_UNTIL_PARTY_MATCHING_IS_DISABLED;" />
 	<sm id="4139" text="パーティ マッチ利用が可能な状態です。" name="PARTY_MATCHING_USABLE;" />
 	<sm id="4140" text="$s1、$s2個で$s3の属性エンチャントを試みます。" name="THE_ATTRIBUTE_ENCHANT_OF_S2_WILL_BE_PERFORMED_AT_S1_AND_S2;" />
-	<sm id="4141" text="エンチャントが完了しました。\\n\\n<実行結果>\\n$s1X$s2個\\n\\n<成功したエンチャント>\\n$s3個\\n\\n<失敗したエンチャント>\\n$s4個\\n\\n<使用しなかった強化石>\\n$s5個" name="ENCHANTING_IS_COMPLETE_N_N_PERFORMED_ENCHANT_N_S1_X_S2_N_N_SUCCESSFUL_ENCHANT_N_S3_N_N_FAILED_ENCHANT_N_S4_N_N_UNUSED_ENHANCEMENT_STONES_N_S5;" />
+	<sm id="4141" text="エンチャントが完了しました。\\n\\n&lt;実行結果&gt;\\n$s1X$s2個\\n\\n&lt;成功したエンチャント&gt;\\n$s3個\\n\\n&lt;失敗したエンチャント&gt;\\n$s4個\\n\\n&lt;使用しなかった強化石&gt;\\n$s5個" name="ENCHANTING_IS_COMPLETE_N_N_PERFORMED_ENCHANT_N_S1_X_S2_N_N_SUCCESSFUL_ENCHANT_N_S3_N_N_FAILED_ENCHANT_N_S4_N_N_UNUSED_ENHANCEMENT_STONES_N_S5;" />
 	<sm id="4142" text="使用個数を入力してください。" name="PLEASE_ENTER_THE_QUANTITY;" />
 	<sm id="4143" text="失敗するとアイテムが｢破壊(クリスタライズ)｣されます。" name="UPON_FAILURE_THE_ITEM_IS_DESTROYED_CRYSTALLIZATION;" />
 	<sm id="4144" text="失敗するとエンチャントが+0に｢初期化｣されます。" name="UPON_FAILURE_ENCHANT_WILL_RESET_TO_0;" />
@@ -3926,7 +3926,7 @@
 	<sm id="4167" text="ヘア アクセサリーが表示されません。" name="HAIR_ACCESSORIES_WILL_NO_LONGER_BE_DISPLAYED;" />
 	<sm id="4168" text="ヘア アクセサリーが表示されます。" name="HAIR_ACCESSORIES_WILL_BE_DISPLAYED_FROM_NOW_ON;" />
 	<sm id="4169" text="ヘア アクセサリーを装備していないため、表示のON/OFF機能を使用できません。" name="THERE_IS_NO_EQUIPPED_HAIR_ACCESSORY;" />
-	<sm id="4170" text="<BROWN01>インベントリの</BROWN01><RED02>ヘア アクセサリー表示状態</RED02><BROWN01>により<br>ヘア スタイルが表示されないことがあります。<br>スタイルを変更しますか。</BROWN01>" name="BROWN01_BROWN01_RED02_DEPENDING_ON_THE_HAIR_ACCESSORY_DISPLAY_STATUS_IN_THE_INVENTORY_RED02_BROWN01_BR_THE_HAIR_STYLE_MAY_NOT_BE_DISPLAYED_BR_DO_YOU_WISH_TO_CHANGE_THE_STYLE_BROWN01;" />
+	<sm id="4170" text="&lt;BROWN01&gt;インベントリの&lt;/BROWN01&gt;&lt;RED02&gt;ヘア アクセサリー表示状態&lt;/RED02&gt;&lt;BROWN01&gt;により&lt;br&gt;ヘア スタイルが表示されないことがあります。&lt;br&gt;スタイルを変更しますか。&lt;/BROWN01&gt;" name="BROWN01_BROWN01_RED02_DEPENDING_ON_THE_HAIR_ACCESSORY_DISPLAY_STATUS_IN_THE_INVENTORY_RED02_BROWN01_BR_THE_HAIR_STYLE_MAY_NOT_BE_DISPLAYED_BR_DO_YOU_WISH_TO_CHANGE_THE_STYLE_BROWN01;" />
 	<sm id="4171" text="アデナ所持量が超過しているメンバーがいるため、分配がキャンセルされました。" name="A_MEMBER_HAS_EXCESSIVE_ADENA_DISTRIBUTION_HAS_BEEN_CANCELLED;" />
 	<sm id="4172" text="オリンピアード参加中のため、ウィスパーは使用できません。" name="YOU_CANNOT_CHAT_WHILE_PARTICIPATING_IN_THE_OLYMPIAD;" />
 	<sm id="4173" text="オリンピアードに参加中のプレイヤーにウィスパーを送ることはできません。" name="YOU_CANNOT_SEND_A_WHISPER_TO_A_USER_WHO_IS_PARTICIPATING_IN_THE_OLYMPIAD;" />
@@ -3939,7 +3939,7 @@
 	<sm id="4180" text="そう 敵は近くにいることを" name="THE_ENEMY_IS_NEVER_FAR;" />
 	<sm id="4181" text="常に念じておかなければ" name="ALWAYS_REMEMBER_THAT_LEONA_BLACKBIRD;" />
 	<sm id="4182" text="$s1SPを1ポイントに変換します。" name="YOU_CAN_CONVERT_S1_SP_TO_1_ABILITY_POINT;" />
-	<sm id="4183" text="$s1SPを1ポイントに変換し、変換後に$s2SPが残ります。<YELLOW03>｢適用｣しなかったアビリティは選択前の状態に戻ります。</YELLOW03>よろしいですか。" name="AFTER_CONVERTING_S1_SP_TO_1_ABILITY_POINT_THERE_WILL_BE_S2_SP_REMAINING_YELLOW03_ABILITIES_THAT_ARE_NOT_APPLIED_WILL_RETURN_TO_PRE_SELECTION_STATE_YELLOW03_PROCEED;" />
+	<sm id="4183" text="$s1SPを1ポイントに変換し、変換後に$s2SPが残ります。&lt;YELLOW03&gt;｢適用｣しなかったアビリティは選択前の状態に戻ります。&lt;/YELLOW03&gt;よろしいですか。" name="AFTER_CONVERTING_S1_SP_TO_1_ABILITY_POINT_THERE_WILL_BE_S2_SP_REMAINING_YELLOW03_ABILITIES_THAT_ARE_NOT_APPLIED_WILL_RETURN_TO_PRE_SELECTION_STATE_YELLOW03_PROCEED;" />
 	<sm id="4184" text="ポイント変換に失敗しました。再度お試しください。" name="POINT_CONVERSION_HAS_FAILED_PLEASE_TRY_AGAIN;" />
 	<sm id="4185" text="これ以上ポイントを獲得できません。" name="YOU_CANNOT_ACQUIRE_ANY_MORE_ABILITY_POINTS;" />
 	<sm id="4186" text="1ポイント変換時、$s1SPが必要です。" name="YOU_NEED_S1_SP_TO_CONVERT_TO1_ABILITY_POINT;" />
@@ -3954,7 +3954,7 @@
 	<sm id="4195" text="レベル99以上で、ノーブレスまたはエーレの場合にのみアビリティを利用できます。" name="ABILITIES_CAN_BE_USED_BY_NOBLESSE_EXALTED_LV_99_OR_ABOVE;" />
 	<sm id="4196" text="要求された作業に失敗しました。再度お試しください。" name="THE_REQUESTED_OPERATION_HAS_FAILED_PLEASE_TRY_AGAIN;" />
 	<sm id="4197" text="$s1のアデナ所持量が最大値を超えているため、分配を実行できません。" name="S1_S_AMOUNT_OF_ADENA_IN_POSSESSION_HAS_EXCEEDED_THE_MAXIMUM_DISTRIBUTION_CANNOT_PROCEED;" />
-	<sm id="4198" text="アイテムが添付された郵便がある場合、キャラクターを削除できません。<br>郵便箱を整理してから再度お試しください。" name="WHEN_THERE_IS_MAIL_WITH_AN_ATTACHED_ITEM_THE_CHARACTER_CANNOT_BE_DELETED_BR_PLEASE_ORGANIZE_THE_MAILBOX_AND_TRY_AGAIN;" />
+	<sm id="4198" text="アイテムが添付された郵便がある場合、キャラクターを削除できません。&lt;br&gt;郵便箱を整理してから再度お試しください。" name="WHEN_THERE_IS_MAIL_WITH_AN_ATTACHED_ITEM_THE_CHARACTER_CANNOT_BE_DELETED_BR_PLEASE_ORGANIZE_THE_MAILBOX_AND_TRY_AGAIN;" />
 	<sm id="4199" text="ヘア アクセサリーを装備してから再度お試しください。" name="PLEASE_EQUIP_THE_HAIR_ACCESSORY_AND_TRY_AGAIN;" />
 	<sm id="4200" text="ウェブ ページに移動します。よろしいですか。" name="YOU_WILL_MOVE_TO_THE_WEBSITE_DO_YOU_WISH_TO_CONTINUE;" />
 	<sm id="4201" text="所属しているパーティが存在しないため、パーティ チャットを利用できません。" name="YOU_ARE_NOT_IN_A_PARTY;" />
@@ -3994,7 +3994,7 @@
 	<sm id="4235" text="おめでとう。合成が成功して、$s1になりました。" name="CONGRATULATIONS_YOU_HAVE_SUCCESSFULLY_COMBINED_ITEMS_INTO_S1;" />
 	<sm id="4236" text="合成に失敗しました。$s1が消滅しました。" name="YOU_HAVE_FAILED_TO_COMBINED_THE_ITEMS_AND_LOST_S1;" />
 	<sm id="4237" text="ブローチを装備していないため、$s1を着用できません。" name="YOU_CANNOT_EQUIP_S1_WITHOUT_EQUIPPING_A_BROOCH;" />
-	<sm id="4238" text="ワールド チャット(&で使用)使用回数はあと$s1回です。" name="YOU_CAN_USE_WORLD_CHAT_PRESS_S1_MORE_TIME_S;" />
+	<sm id="4238" text="ワールド チャット(&amp;で使用)使用回数はあと$s1回です。" name="YOU_CAN_USE_WORLD_CHAT_PRESS_S1_MORE_TIME_S;" />
 	<sm id="4239" text="本日使用できるワールド チャット回数がなくなりました。ワールド チャット回数は毎日午前6時30分に初期化されます。" name="YOU_HAVE_SPENT_YOUR_WORLD_CHAT_QUOTA_FOR_THE_DAY_A_NEW_DAY_STARTS_EVERY_DAY_AT_18_30;" />
 	<sm id="4240" text="ワールド チャットは$s1レベルから使用できます。" name="YOU_CAN_USE_WORLD_CHAT_FROM_LV_S1;" />
 	<sm id="4241" text="ワールド チャット使用可能時間まで残り$s1秒です。" name="YOU_HAVE_S1_SEC_UNTIL_YOU_ARE_ABLE_TO_USE_WORLD_CHAT;" />
@@ -4112,79 +4112,79 @@
 	<sm id="4353" text="現在地：$s1/$s2/$s3(過去のシュチュッツガルト城)" name="CURRENT_LOCATION_S1_S2_S3_SCHUTTGART_CASTLE_PAST;" />
 	<sm id="4354" text="現在地：$s1/$s2/$s3(過去の夏の迷宮)" name="CURRENT_LOCATION_S1_S2_S3_SUMMER_LABYRINTH_PAST;" />
 	<sm id="4355" text="魂吸収過程が正常でなかったため魂吸収に失敗しました。" name="FAILED_TO_APPLY_THE_SOUL_CRYSTAL_EFFECT_BECAUSE_OF_ABNORMAL_CIRCUMSTANCES;" />
-	<sm id="4601" text=" - 強力な防御力と卓越したシールド防御術<br> - パーティ防御力上昇<br> - パーティ メンバー保護" name="" />
+	<sm id="4601" text=" - 強力な防御力と卓越したシールド防御術&lt;br&gt; - パーティ防御力上昇&lt;br&gt; - パーティ メンバー保護" name="" />
 	<sm id="4602" text="黄金の指揮官と呼ばれた巨人の英雄アベリウスの力と、古代から伝わりし光の力が混沌の意志によって結合した。降臨した光と巨人の恩寵は体力だけではなく、その精神的も強靭にし、恐れを知らぬ大陸最強の盾となることを手助けした。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ABELIUS_THE_GOLDEN_COMMANDER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THE_BLESSING_OF_THE_GIANTS_AND_THE_LIGHT_UPON_HIM_GAVE_HIM_THE_COURAGE_TO_BE_THE_FEARLESS_SHIELD_OF_THE_CONTINENT;" />
-	<sm id="4603" text=" - 強力な防御力<br> - パーティ攻撃力上昇<br> - ヴァンパイアリック レイジ能力と強化されたダーク パンサー" name="GREAT_P_DEF_BR_INCREASED_P_ATK_FOR_THE_WHOLE_PARTY_BR_VAMPIRIC_RAGE_AND_REINFORCED_DARK_PANTHER;" />
+	<sm id="4603" text=" - 強力な防御力&lt;br&gt; - パーティ攻撃力上昇&lt;br&gt; - ヴァンパイアリック レイジ能力と強化されたダーク パンサー" name="GREAT_P_DEF_BR_INCREASED_P_ATK_FOR_THE_WHOLE_PARTY_BR_VAMPIRIC_RAGE_AND_REINFORCED_DARK_PANTHER;" />
 	<sm id="4604" text="黄金の指揮官と呼ばれた巨人の英雄アベリウスの力と、古代から伝わりし闇の力が混沌の意志によって結合した。増幅された闇の力は相手を完璧に制圧する力と意志を付与した。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ABELIUS_THE_GOLDEN_COMMANDER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_THE_HEIGHTENED_POWER_OF_DARKNESS_GAVE_HIM_THE_STRENGTH_AND_WILL_TO_OVERCOME_ANY_OPPONENT;" />
-	<sm id="4605" text=" - 強力な防御力と卓越したシールド防御術<br> - パーティ防御力上昇<br> - HP/MP回復キューブ" name="GREAT_P_DEF_AND_SKILLFUL_SHIELD_DEFENSE_BR_INCREASED_P_DEF_FOR_THE_WHOLE_PARTY_BR_HP_MP_RECOVERY_CUBIC;" />
+	<sm id="4605" text=" - 強力な防御力と卓越したシールド防御術&lt;br&gt; - パーティ防御力上昇&lt;br&gt; - HP/MP回復キューブ" name="GREAT_P_DEF_AND_SKILLFUL_SHIELD_DEFENSE_BR_INCREASED_P_DEF_FOR_THE_WHOLE_PARTY_BR_HP_MP_RECOVERY_CUBIC;" />
 	<sm id="4606" text="黄金の指揮官と呼ばれた巨人の英雄アベリウスの力と、古代から伝わりし光と水の力が混沌の意志によって結合した。合わさった3つの力は攻撃力はもちろん、防護や守護のような生存能力も高めた。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ABELIUS_THE_GOLDEN_COMMANDER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_AND_WATER_THE_THREE_POWERS_COMBINED_INCREASED_NOT_ONLY_ATTACK_POWER_BUT_ALSO_SURVIVAL_ABILITIES_SUCH_AS_DEFENSE_AND_THE_PROTECTION_OF_ALLIES;" />
-	<sm id="4607" text=" - 強力な防御力<br> - パーティ攻撃力上昇<br> - 多様な弱化魔法 スキル" name="GREAT_P_DEF_BR_INCREASED_P_ATK_FOR_THE_WHOLE_PARTY_BR_DYNAMIC_DEBUFFS;" />
+	<sm id="4607" text=" - 強力な防御力&lt;br&gt; - パーティ攻撃力上昇&lt;br&gt; - 多様な弱化魔法 スキル" name="GREAT_P_DEF_BR_INCREASED_P_ATK_FOR_THE_WHOLE_PARTY_BR_DYNAMIC_DEBUFFS;" />
 	<sm id="4608" text="黄金の指揮官と呼ばれた巨人の英雄アベリウスの力と、古代から伝わりし闇の力が混沌の意志によって結合した。この力はシリエン テンプラーに強力で効率的な技術と動きを付与した。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ABELIUS_THE_GOLDEN_COMMANDER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_THIS_POWER_GAVE_THE_SHILLIEN_TEMPLARS_POWERFUL_YET_EFFICIENT_SKILLS_AND_MANEUVERS;" />
-	<sm id="4609" text=" - 強力な肉体と多様な武器使用<br> - デュアル ソード特化<br> - 気力を利用した攻撃に特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_DUAL_SWORDS_BR_SPECIALIZES_IN_ATTACKS_USING_MOMENTUM;" />
+	<sm id="4609" text=" - 強力な肉体と多様な武器使用&lt;br&gt; - デュアル ソード特化&lt;br&gt; - 気力を利用した攻撃に特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_DUAL_SWORDS_BR_SPECIALIZES_IN_ATTACKS_USING_MOMENTUM;" />
 	<sm id="4610" text="突風の指導者と呼ばれた巨人族の英雄サフィロスの力と、古代から伝わりし光の力が混沌の意志によって結合した。二刀流に特化したこの力は速度だけでなく威力まで倍増させ、戦闘でティール デュエリストが優位を占めることができるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_POWER_DISSOLVED_INTO_DUAL_SWORDS_GAVE_SPEED_AND_STRENGTH_TO_GIVE_TYRR_DUELISTS_THE_UPPER_HAND_IN_BATTLE;" />
-	<sm id="4611" text=" - 強力な肉体と多様な武器使用<br> - ポールアーム特化<br> - 物理での狩りに特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_POLEARMS_BR_SPECIALIZES_IN_HERDING_TACTICS;" />
+	<sm id="4611" text=" - 強力な肉体と多様な武器使用&lt;br&gt; - ポールアーム特化&lt;br&gt; - 物理での狩りに特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_POLEARMS_BR_SPECIALIZES_IN_HERDING_TACTICS;" />
 	<sm id="4612" text="突風の指導者と呼ばれた巨人族の英雄サフィロスの力と、古代から伝わりし光の力が混沌の意志によって結合した。一層荒々しく増幅したこの力は、多数の敵を一瞬で撲滅できるほど強力だ。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_MORE_FEROCIOUS_THAN_EVER_THIS_POWER_IS_ENOUGH_TO_ANNIHILATE_A_GROUP_OF_ENEMIES_IN_AN_INSTANT;" />
-	<sm id="4613" text=" - 強力な肉体と多様な武器使用<br> - 両手剣と槍に特化<br> - 一気に攻撃力を強化させることが可能" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_TWO_HANDED_SWORDS_AND_SPEARS_BR_ABLE_TO_SUDDENLY_INCREASE_P_ATK;" />
+	<sm id="4613" text=" - 強力な肉体と多様な武器使用&lt;br&gt; - 両手剣と槍に特化&lt;br&gt; - 一気に攻撃力を強化させることが可能" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_TWO_HANDED_SWORDS_AND_SPEARS_BR_ABLE_TO_SUDDENLY_INCREASE_P_ATK;" />
 	<sm id="4614" text="突風の指導者と呼ばれた巨人族の英雄サフィロスの力と、古代から伝わりし火の力が混沌の意志によって結合した。この力はオーク最高の戦士たちに攻撃力はもちろん防御力までに及ぶ極限の強靭さを付与した。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_FIRE_THIS_POWER_MADE_THE_WARRIORS_OF_THE_ORC_RACE_NOT_ONLY_STRENGTH_BUT_FORMIDABLE_DEFENSES_AS_WELL;" />
-	<sm id="4615" text=" - 強力な肉体と多様な武器使用<br> - 格闘武器に特化<br> - 気力を利用した攻撃に特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_FIST_WEAPONS_BR_SPECIALIZES_IN_ATTACKS_USING_MOMENTUM;" />
+	<sm id="4615" text=" - 強力な肉体と多様な武器使用&lt;br&gt; - 格闘武器に特化&lt;br&gt; - 気力を利用した攻撃に特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_FIST_WEAPONS_BR_SPECIALIZES_IN_ATTACKS_USING_MOMENTUM;" />
 	<sm id="4616" text="突風の指導者と呼ばれた巨人族の英雄サフィロスの力と、古代から伝わりし火の力が混沌の意志によって結合した。強靭な肉体に込められたこの力は、最高境地の技術を使用できるようになる。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_FIRE_INFUSED_INTO_A_STRONG_BODY_THIS_POWER_ALLOWS_FOR_THE_USAGE_OF_THE_MOST_EXTREME_SKILLS;" />
-	<sm id="4617" text=" - 強い肉体と多様な武器使用<br> - ポールアーム/両手剣が活用可能<br> - 製作能力が卓越" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_ABLE_TO_USE_POLEARMS_AND_TWO_HANDED_SWORDS_BR_SKILLFUL_CRAFTING;" />
+	<sm id="4617" text=" - 強い肉体と多様な武器使用&lt;br&gt; - ポールアーム/両手剣が活用可能&lt;br&gt; - 製作能力が卓越" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_ABLE_TO_USE_POLEARMS_AND_TWO_HANDED_SWORDS_BR_SKILLFUL_CRAFTING;" />
 	<sm id="4618" text="突風の指導者と呼ばれた巨人族の英雄サフィロスの力と、古代から伝わりし大地の力が混沌の意志によって結合した。これによってドワーフ商人たちは奇跡のような力と技術を所有することができるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_THE_EARTH_AS_A_RESULT_THE_ARTISANS_OF_THE_DWARVEN_RACE_WERE_GIVEN_INCONCEIVABLE_TECHNOLOGY_AND_POWER;" />
-	<sm id="4619" text=" - 強力な肉体と多様な武器使用<br> - 両手剣に特化<br> - PvP能力に特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_TWO_HANDED_SWORDS_BR_SPECIALIZES_IN_PVP;" />
+	<sm id="4619" text=" - 強力な肉体と多様な武器使用&lt;br&gt; - 両手剣に特化&lt;br&gt; - PvP能力に特化" name="PHYSICAL_HARDINESS_AND_DYNAMIC_WEAPON_MASTERY_BR_SPECIALIZES_IN_TWO_HANDED_SWORDS_BR_SPECIALIZES_IN_PVP;" />
 	<sm id="4620" text="突風の指導者と呼ばれた巨人族の英雄サフィロスの力と、古代から伝わりし巨人の力が混沌の意志により重なった。巨人から作られた同じ性質の二つの力は、カマエルの中に潜在していた全ての可能性を引き出して極限の力を与えた。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SAPYROS_THE_STORMY_LEADER_OF_THE_ANCIENT_GIANTS_HAS_BEEN_STACKED_WITH_THE_ANCIENT_POWER_OF_THE_GIANTS_MADE_OF_THE_SAME_SOURCE_THESE_TWO_POWERS_AWAKENED_THE_SLUMBERING_STRENGTH_OF_THE_KAMAELS;" />
-	<sm id="4621" text=" - クリティカル攻撃成功、威力が均衡が取れて調和<br> - 同一系列で一番優れた生存力" name="BALANCED_CRITICAL_DAMAGE_AND_CRITICAL_RATE_BR_HIGHEST_SURVIVAL_RATE_AMONG_SIMILAR_CLASSES;" />
+	<sm id="4621" text=" - クリティカル攻撃成功、威力が均衡が取れて調和&lt;br&gt; - 同一系列で一番優れた生存力" name="BALANCED_CRITICAL_DAMAGE_AND_CRITICAL_RATE_BR_HIGHEST_SURVIVAL_RATE_AMONG_SIMILAR_CLASSES;" />
 	<sm id="4622" text="巨人族最高の暗殺者カイシュナーガの力と、古代から伝わりし光と風の力が混沌の意志によって結合した。これによって一層早い動きが可能になっただけでなく、極大化された力を瞬間的に利用できる能力も強化された。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ASHAGEN_THE_GREATEST_ASSASSIN_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_AND_WIND_THIS_ALLOWED_FOR_QUICKER_MOVEMENT_AND_STRENGTHENED_THE_ABILITY_TO_PERFORM_EXTREME_MANEUVERS_IN_AN_INSTANT;" />
-	<sm id="4623" text=" - 高いクリティカル攻撃成功率<br> - 早い移動速度と回避率" name="HIGH_CRITICAL_RATE_BR_QUICK_EVASION_AND_SPEED;" />
+	<sm id="4623" text=" - 高いクリティカル攻撃成功率&lt;br&gt; - 早い移動速度と回避率" name="HIGH_CRITICAL_RATE_BR_QUICK_EVASION_AND_SPEED;" />
 	<sm id="4624" text="巨人族最高の暗殺者カイシュナーガの力と、古代から伝わりし光と風の力が混沌の意志によって結合した。この力は突風のように瞬間的な力強さをもった素早い攻撃を可能とした。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ASHAGEN_THE_GREATEST_ASSASSIN_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_AND_WIND_THIS_POWER_ALLOWED_FOR_QUICK_TEMPESTUOUS_ATTACKS;" />
-	<sm id="4625" text=" - 高いクリティカル ダメージ<br> - 攻撃スキル ダメージを反射" name="HIGH_CRITICAL_DAMAGE_BR_REFLECT_ATK_SKILL_DAMAGE;" />
+	<sm id="4625" text=" - 高いクリティカル ダメージ&lt;br&gt; - 攻撃スキル ダメージを反射" name="HIGH_CRITICAL_DAMAGE_BR_REFLECT_ATK_SKILL_DAMAGE;" />
 	<sm id="4626" text="巨人族最高の暗殺者カイシュナーガの力と、古代から伝わりし闇と風の力が混沌の意志によって結合した。この力は速度と致命的な攻撃力を付与し、オーセル ゴーストハンターを最高の暗殺者へと変えた。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ASHAGEN_THE_GREATEST_ASSASSIN_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_AND_WIND_THIS_POWER_ENDOWED_THE_OTHELL_GHOST_HUNTERS_WITH_SPEED_AND_CRITICAL_ATTACKS_THAT_MADE_THEM_THE_ULTIMATE_ASSASSINS;" />
-	<sm id="4627" text=" - スポイル(プランダー)特化<br> - (* 珍しい材料およびアイテムを獲得)" name="SPECIALIZES_IN_SPOIL_PLUNDER_BR_OBTAINS_RARE_ITEMS_AND_INGREDIENTS;" />
+	<sm id="4627" text=" - スポイル(プランダー)特化&lt;br&gt; - (* 珍しい材料およびアイテムを獲得)" name="SPECIALIZES_IN_SPOIL_PLUNDER_BR_OBTAINS_RARE_ITEMS_AND_INGREDIENTS;" />
 	<sm id="4628" text="巨人族最高の暗殺者カイシュナーガの力と、古代から伝わりし大地と風の力が混沌の意志によって結合した。最高の感覚を持つようになるこの力は、戦闘以外の部分までも自身の能力を最大限に活用する。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_ASHAGEN_THE_GREATEST_ASSASSIN_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_THE_EARTH_AND_WIND_HEIGHTENED_IN_ALL_SENSES_THEY_NOW_UTILIZE_THEIR_ABILITIES_IN_BOTH_BATTLEFIELD_AND_AT_HOME;" />
-	<sm id="4629" text=" - クリティカル攻撃成功、威力のバランスが取れていて調和している<br> - 安定的なディーリング" name="BALANCED_CRITICAL_DAMAGE_AND_CRITICAL_RATE_BR_STABLE_DAMAGE_DEALING;" />
+	<sm id="4629" text=" - クリティカル攻撃成功、威力のバランスが取れていて調和している&lt;br&gt; - 安定的なディーリング" name="BALANCED_CRITICAL_DAMAGE_AND_CRITICAL_RATE_BR_STABLE_DAMAGE_DEALING;" />
 	<sm id="4630" text="三つ目の巨人の英雄クローンビーストの力と、古代から伝わりし光の力が混沌の意志によって結合した。これによってサジタリウスたちは敵の肉体はもちろん、精神までも突き刺すことができる力を持つようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_CRANIGG_THE_ANCIENT_GIANT_HERO_WITH_THE_THIRD_EYE_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THE_SAGITTARIUS_CAN_NOW_PIERCE_NOT_ONLY_THE_BODY_BUT_ALSO_THE_SOUL_OF_AN_OPPONENT_AS_A_RESULT;" />
-	<sm id="4631" text=" - 早い攻撃速度と移動速度<br> - 小規模戦闘で有利" name="QUICK_SPEED_AND_ATK_SPD_BR_ADVANTAGEOUS_IN_A_SMALL_BATTLE;" />
+	<sm id="4631" text=" - 早い攻撃速度と移動速度&lt;br&gt; - 小規模戦闘で有利" name="QUICK_SPEED_AND_ATK_SPD_BR_ADVANTAGEOUS_IN_A_SMALL_BATTLE;" />
 	<sm id="4632" text="三つ目の巨人の英雄クローンビーストの力と、古代から伝わりし光の力が混沌の意志によって結合した。この力は最高のアーチャーに相応しい強力な力と集中力を付与した。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_CRANIGG_THE_ANCIENT_GIANT_HERO_WITH_THE_THIRD_EYE_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_POWER_GAVE_THE_GREATEST_ARCHERS_THE_POWER_AND_CONCENTRATION_THEY_NEEDED;" />
-	<sm id="4633" text=" - 同一系統で一番高い攻撃力<br> - 短時間で莫大な被害を与える" name="HIGHEST_P_ATK_AMONG_SIMILAR_CLASSES_BR_GREAT_DAMAGE_DEALT_IN_SHORT_TIME;" />
+	<sm id="4633" text=" - 同一系統で一番高い攻撃力&lt;br&gt; - 短時間で莫大な被害を与える" name="HIGHEST_P_ATK_AMONG_SIMILAR_CLASSES_BR_GREAT_DAMAGE_DEALT_IN_SHORT_TIME;" />
 	<sm id="4634" text="三つ目の巨人の英雄クローンビーストの力と、古代から伝わりし闇の力が混沌の意志によって結合した。これによって強力な破壊力と集中力を得ることになったゴースト センチネルたちは、アーチャーとしての最高の能力を持つようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_CRANIGG_THE_ANCIENT_GIANT_HERO_WITH_THE_THIRD_EYE_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_GHOST_SENTINELS_NOW_ENDOWED_WITH_EXPLOSIVE_POWER_AND_CONCENTRATION_BECAME_FEARED_ARCHERS_THROUGHOUT_THE_LAND;" />
 	<sm id="4635" text=" - PvP戦闘能力が大変優れている" name="GREAT_PVP_SKILLS;" />
 	<sm id="4636" text="三つ目の巨人の英雄クローンビーストの力と、古代から伝わりし巨人の力が混沌の意志によって重なった。これによって生じた巨大な力は自身とパーティ メンバーを守る守護の力を極大化させるために使われた。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_CRANIGG_THE_ANCIENT_GIANT_HERO_WITH_THE_THIRD_EYE_HAS_BEEN_STACKED_WITH_THE_ANCIENT_POWER_OF_GIANTS_THE_GREAT_POWER_RESULTING_FROM_THIS_WAS_USED_TO_STRENGTHEN_ABILITIES_TO_PROTECT_THE_SELF_AND_PARTY_MEMBERS;" />
-	<sm id="4637" text=" - 調和のとれたバランス<br> - 範囲型魔法(ヴォルテックス)使用" name="WELL_ROUNDED_BALANCE_BR_USE_RANGED_MAGIC_VORTEX;" />
+	<sm id="4637" text=" - 調和のとれたバランス&lt;br&gt; - 範囲型魔法(ヴォルテックス)使用" name="WELL_ROUNDED_BALANCE_BR_USE_RANGED_MAGIC_VORTEX;" />
 	<sm id="4638" text="巨人族の七大賢者の中の一人だったソルトクリーグの力と古代から伝わりし光の力が混沌の意志によって結合した。この力を受け取ったアークメイジたちは、既存の限界を超えた強力な魔力を完成させることができるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SOLTKREIG_ONE_OF_THE_7_SAGES_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_ARCHMAGES_THAT_RECEIVED_THIS_POWER_WERE_ABLE_TO_REACH_LEVELS_OF_MAGIC_THAT_WENT_BEYOND_THEIR_PRESENT_LIMITS;" />
-	<sm id="4639" text=" - 強力な魔力と共に弱化魔法を使用<br> - 対人戦に強い" name="POWER_M_ATK_PAIRED_WITH_DEBUFFS_BR_ADVANTAGEOUS_IN_1_1_BATTLES;" />
+	<sm id="4639" text=" - 強力な魔力と共に弱化魔法を使用&lt;br&gt; - 対人戦に強い" name="POWER_M_ATK_PAIRED_WITH_DEBUFFS_BR_ADVANTAGEOUS_IN_1_1_BATTLES;" />
 	<sm id="4640" text="巨人族の七大賢者の中の一人だったソルトクリーグの力と古代から伝わりし闇の力が混沌の意志によって結合した。より一層強力になった魔力を使って多様なスキルを駆使することができるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SOLTKREIG_ONE_OF_THE_7_SAGES_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_THEIR_STRENGTHENED_MAGIC_ALLOWED_FOR_MORE_COMPLEX_SPELLS_TO_BE_PERFORMED;" />
-	<sm id="4641" text=" - スキル使用速度が速い<br> - ヴォルテックス魔法を使用" name="FAST_SKILL_USAGE_SPEED_BR_USE_VORTEX_MAGIC;" />
+	<sm id="4641" text=" - スキル使用速度が速い&lt;br&gt; - ヴォルテックス魔法を使用" name="FAST_SKILL_USAGE_SPEED_BR_USE_VORTEX_MAGIC;" />
 	<sm id="4642" text="巨人族の七大賢者の中の一人だったソルトクリーグの力と古代から伝わりし光の力が混沌の意志によって結合した。これによって彼らは究極の元素魔法を使うことができるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SOLTKREIG_ONE_OF_THE_7_SAGES_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THEY_WERE_NOW_ABLE_TO_USE_THE_ULTIMATE_ELEMENTAL_MAGIC_SPELLS;" />
-	<sm id="4643" text=" - 同一系列で一番高い魔力<br> - ヴォルテックス魔法を使用" name="HIGHEST_M_ATK_AMONG_SIMILAR_CLASSES_BR_USE_VORTEX_MAGIC;" />
+	<sm id="4643" text=" - 同一系列で一番高い魔力&lt;br&gt; - ヴォルテックス魔法を使用" name="HIGHEST_M_ATK_AMONG_SIMILAR_CLASSES_BR_USE_VORTEX_MAGIC;" />
 	<sm id="4644" text="巨人族の七大賢者の中の一人だったソルトクリーグの力と古代から伝わりし光の力が混沌の意志によって結合した。この力によって属性の限界を超える強力な魔法を駆使することができるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SOLTKREIG_ONE_OF_THE_7_SAGES_OF_THE_GIANTS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_ATTRIBUTE_MAGIC_COULD_NOW_BE_USED_BEYOND_ITS_LIMITS;" />
-	<sm id="4645" text=" - 高い防御力と弱化魔法を使用<br> - PvP戦闘に特化" name="HIGH_P_DEF_PAIRED_WITH_DEBUFFS_BR_SPECIALIZES_IN_PVP;" />
+	<sm id="4645" text=" - 高い防御力と弱化魔法を使用&lt;br&gt; - PvP戦闘に特化" name="HIGH_P_DEF_PAIRED_WITH_DEBUFFS_BR_SPECIALIZES_IN_PVP;" />
 	<sm id="4646" text="巨人族の七大賢者の中の一人だったソルトクリーグの力と古代から伝わりし巨人ケイトナットの力が混沌の意志によって重なった。これによって巨人の力に匹敵するような強力な力を使えるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_SOLTKREIG_ONE_OF_THE_7_SAGES_OF_THE_GIANTS_HAS_BEEN_STACKED_WITH_THE_ANCIENT_POWER_OF_KATENAR_THE_GIANT_THIS_HAS_RESULTED_IN_POWERS_THAT_RIVAL_EVEN_THOSE_OF_THE_GIANTS;" />
-	<sm id="4647" text=" - スキル使用に特化したパーティ バッファー<br> - スキル再使用時間減少の特長<br> - 範囲変異の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_SPECIALIZING_IN_SKILLS_BR_SHORTENED_SKILL_COOLDOWNS_BR_USE_AOE_MUTATION_TO_AID_PARTY;" />
+	<sm id="4647" text=" - スキル使用に特化したパーティ バッファー&lt;br&gt; - スキル再使用時間減少の特長&lt;br&gt; - 範囲変異の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_SPECIALIZING_IN_SKILLS_BR_SHORTENED_SKILL_COOLDOWNS_BR_USE_AOE_MUTATION_TO_AID_PARTY;" />
 	<sm id="4648" text="神と巨人の戦争で指揮官として活躍した巨人ライスターの力と古代から伝わりし光の力が混沌の意志によって結合した。これによってハイエロファントは次元の異なる神聖な技術を駆使できるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_GIANT_THAT_COMMANDED_THE_WAR_BETWEEN_THE_GIANTS_AND_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_AS_A_RESULT_HIEROPHANTS_CAN_NOW_USE_OTHER_MAGNIFICENT_HOLY_SKILLS;" />
-	<sm id="4649" text=" - 自身の防御重視のパーティ バッファー<br> - 範囲沈黙の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_BASED_ON_SELF_DEFENSE_BR_USE_AOE_SILENCE_TO_AID_PARTY;" />
+	<sm id="4649" text=" - 自身の防御重視のパーティ バッファー&lt;br&gt; - 範囲沈黙の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_BASED_ON_SELF_DEFENSE_BR_USE_AOE_SILENCE_TO_AID_PARTY;" />
 	<sm id="4650" text="神と巨人の戦争で指揮官として活躍した巨人ライスターの力と古代から伝わりし水の力が混沌の意志によって結合した。増幅した魔力は、自身はもちろん周囲の人々までも極限の力を引き出せる神聖な力を付与した。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_GIANT_THAT_COMMANDED_THE_WAR_BETWEEN_THE_GIANTS_AND_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_WATER_THIS_INCREASED_MAGIC_POWER_GAVE_HIMSELF_AND_PEOPLE_AROUND_HIM_THE_HOLY_POWER_THAT_BRINGS_OUT_THE_ULTIMATE_STRENGTH;" />
-	<sm id="4651" text=" - 自身の攻撃重視のパーティ バッファー<br> - 範囲石化の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_BASED_ON_ATTACK_BR_USE_AOE_PETRIFY_TO_AID_PARTY;" />
+	<sm id="4651" text=" - 自身の攻撃重視のパーティ バッファー&lt;br&gt; - 範囲石化の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_BASED_ON_ATTACK_BR_USE_AOE_PETRIFY_TO_AID_PARTY;" />
 	<sm id="4652" text="神と巨人の戦争で指揮官として活躍した巨人ライスターの力と古代から伝わりし闇の力が混沌の意志によって結合した。この力はスペクトラル ダンサー自身はもちろん、パーティ メンバーの攻撃力まで極大化させる力を付与した。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_GIANT_THAT_COMMANDED_THE_WAR_BETWEEN_THE_GIANTS_AND_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_POWER_HAS_MAXIMIZED_THE_STRENGTH_OF_NOT_ONLY_THE_SPECTRAL_DANCER_BUT_THE_ENTIRE_PARTY_S_ATTACK_POWER;" />
-	<sm id="4653" text=" - 血盟およびPvP特化バッファー<br> - 通常攻撃封鎖の状態異常を使用して血盟戦闘を補助<br> - 血盟単位のバフ特化およびCP強化に特化" name="BUFFER_SPECIALIZING_IN_CLAN_WARS_AND_PVP_BR_RESTRAIN_STANDARD_P_ATK_TO_AID_IN_CLAN_WAR_BR_SPECIALIZES_IN_CLAN_LEVEL_BUFFS_AND_CP_BOOSTS;" />
+	<sm id="4653" text=" - 血盟およびPvP特化バッファー&lt;br&gt; - 通常攻撃封鎖の状態異常を使用して血盟戦闘を補助&lt;br&gt; - 血盟単位のバフ特化およびCP強化に特化" name="BUFFER_SPECIALIZING_IN_CLAN_WARS_AND_PVP_BR_RESTRAIN_STANDARD_P_ATK_TO_AID_IN_CLAN_WAR_BR_SPECIALIZES_IN_CLAN_LEVEL_BUFFS_AND_CP_BOOSTS;" />
 	<sm id="4654" text="神と巨人の戦争で指揮官として活躍した巨人ライスターの力と古代から伝わりし闇の力が混沌の意志によって結合した。この強力な力は自身を超え一族全てを守るのに活用された。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_GIANT_THAT_COMMANDED_THE_WAR_BETWEEN_THE_GIANTS_AND_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_POWER_CAME_TO_PROTECT_NOT_ONLY_THE_SELF_BUT_THE_ENTIRE_COMMUNITY_AROUND_THE_WIELDER;" />
-	<sm id="4655" text=" - 攻撃および防御能力が調和するパーティ バッファー<br> - HP減少の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_WITH_BALANCED_ATTACK_AND_DEFENSE_BR_DECREASES_ENEMY_HP_TO_AID_PARTY;" />
+	<sm id="4655" text=" - 攻撃および防御能力が調和するパーティ バッファー&lt;br&gt; - HP減少の状態異常を使用してパーティ戦闘を補助" name="PARTY_BUFFER_WITH_BALANCED_ATTACK_AND_DEFENSE_BR_DECREASES_ENEMY_HP_TO_AID_PARTY;" />
 	<sm id="4656" text="神と巨人の戦争で指揮官として活躍した巨人ライスターの力と古代から伝わりし闇の力が混沌の意志によって結合した。この強力な力は自身はもちろん一族の能力を倍増させるために活用された。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LEISTER_THE_GIANT_THAT_COMMANDED_THE_WAR_BETWEEN_THE_GIANTS_AND_THE_GODS_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_POWER_CAME_TO_BE_USED_TO_MULTIPLY_THE_POWER_OF_THE_SELF_AND_THE_SURROUNDING_COMMUNITY;" />
-	<sm id="4657" text=" - 攻撃速度に特化したサマナー<br> - キャット系列の召喚獣を扱うことができる能力を使用" name="SUMMONER_SPECIALIZING_IN_ATK_SPD_BR_ABLE_TO_USE_CAT_TYPE_SERVITORS;" />
+	<sm id="4657" text=" - 攻撃速度に特化したサマナー&lt;br&gt; - キャット系列の召喚獣を扱うことができる能力を使用" name="SUMMONER_SPECIALIZING_IN_ATK_SPD_BR_ABLE_TO_USE_CAT_TYPE_SERVITORS;" />
 	<sm id="4658" text="次元を開閉できた巨人ナビアロフの力と古代から伝わりし光の力が混沌の意志によって結合した。次元を超えてきたこの力はアルカナ ロードを召喚者として最高の境地に上がることを可能とした。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_NAVIAROPE_THE_GIANT_THAT_COULD_OPEN_AND_CLOSE_THE_DIMENSIONAL_DOOR_AT_WILL_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_POWER_TRAVERSED_THE_DIMENSIONS_AND_GAVE_THE_ARCANA_LORD_TRUE_MASTERY_OF_THE_ART_OF_SUMMONING;" />
-	<sm id="4659" text=" - クリティカル ダメージに特化したサマナー<br> - ユニコーン系列の召喚獣を扱うことができる能力を使用" name="SUMMONER_SPECIALIZING_IN_CRITICAL_DAMAGE_BR_ABLE_TO_USE_UNICORN_TYPE_SERVITORS;" />
+	<sm id="4659" text=" - クリティカル ダメージに特化したサマナー&lt;br&gt; - ユニコーン系列の召喚獣を扱うことができる能力を使用" name="SUMMONER_SPECIALIZING_IN_CRITICAL_DAMAGE_BR_ABLE_TO_USE_UNICORN_TYPE_SERVITORS;" />
 	<sm id="4660" text="次元を開閉できた巨人ナビアロフの力と古代から伝わりし光の力が混沌の意志によって結合した。この力によってウィン エレメンタル マスターは最上の元素魔法を土台とする召喚術を使えるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_NAVIAROPE_THE_GIANT_THAT_COULD_OPEN_AND_CLOSE_THE_DIMENSIONAL_DOOR_AT_WILL_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_WITH_THIS_POWER_THE_ELEMENTAL_MASTER_CAME_TO_USE_SUMMONING_SKILLS_BASED_ON_THE_HIGHEST_ELEMENTAL_MAGIC;" />
-	<sm id="4661" text=" - 攻撃力に特化したサマナー<br> - ファントム系列の召喚獣を扱うことができる能力を使用" name="SUMMONER_SPECIALIZING_IN_P_ATK_BR_ABLE_TO_USE_PHANTOM_TYPE_SERVITORS;" />
+	<sm id="4661" text=" - 攻撃力に特化したサマナー&lt;br&gt; - ファントム系列の召喚獣を扱うことができる能力を使用" name="SUMMONER_SPECIALIZING_IN_P_ATK_BR_ABLE_TO_USE_PHANTOM_TYPE_SERVITORS;" />
 	<sm id="4662" text="次元を開閉できた巨人ナビアロフの力と古代から伝わりし闇の力が混沌の意志によって結合した。これによって得た極められた力はスペクトラル マスターが強力な召喚術を使うことに使用された。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_NAVIAROPE_THE_GIANT_THAT_COULD_OPEN_AND_CLOSE_THE_DIMENSIONAL_DOOR_AT_WILL_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_THIS_POWER_ENABLED_POWERFUL_SUMMONING_SKILLS_FOR_THE_SPECTRAL_MASTER;" />
-	<sm id="4663" text=" - 高い回復能力をもったヒーラー<br> - 血盟員のHP回復に特化" name="HEALER_WITH_GREAT_RESTORATIVE_POWERS_BR_SPECIALIZES_IN_RESTORING_CLAN_MEMBERS_HP;" />
+	<sm id="4663" text=" - 高い回復能力をもったヒーラー&lt;br&gt; - 血盟員のHP回復に特化" name="HEALER_WITH_GREAT_RESTORATIVE_POWERS_BR_SPECIALIZES_IN_RESTORING_CLAN_MEMBERS_HP;" />
 	<sm id="4664" text="アインハザードの力を伝承し発展させた神聖魔法の先駆者ラキシスの力と古代から伝わりし光の力が混沌の意志によって結合した。エアロ カーディナルたちはこの力によって一層高い奇跡を駆使できるようになった。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LAKCIS_THE_FOREFATHER_OF_HOLY_MAGIC_WHO_TOOK_AND_IMPROVED_EINHASAD_S_POWER_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_THIS_ENABLED_THE_AEORE_CARDINAL_TO_USE_MIRACULOUS_MAGIC;" />
-	<sm id="4665" text=" - スキルを早く連続して使用できるヒーラー<br> - MP回復に特化" name="HEALER_WITH_FAST_CHAIN_SKILL_USAGE_BR_SPECIALIZES_IN_MP_RECOVERY;" />
+	<sm id="4665" text=" - スキルを早く連続して使用できるヒーラー&lt;br&gt; - MP回復に特化" name="HEALER_WITH_FAST_CHAIN_SKILL_USAGE_BR_SPECIALIZES_IN_MP_RECOVERY;" />
 	<sm id="4666" text="アインハザードの力を伝承し発展させた神聖魔法の先駆者ラキシスの力と古代から伝わりし光と水の力が混沌の意志によって結合した。この強力な力は一族を保護すると同時に世の中の平和を守ることに使われた。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LAKCIS_THE_FOREFATHER_OF_HOLY_MAGIC_WHO_TOOK_AND_IMPROVED_EINHASAD_S_POWER_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_LIGHT_AND_WATER_THIS_POWER_WAS_USED_NOT_ONLY_TO_PROTECT_ONE_S_COMMUNITY_BUT_TO_PROTECT_THE_PEACE_OF_THE_WORLD;" />
-	<sm id="4667" text=" - 強い魔力を使用するヒーラー<br> - MP回復に特化" name="HEALER_WITH_POWERFUL_M_ATK_BR_SPECIALIZES_IN_MP_RECOVERY;" />
+	<sm id="4667" text=" - 強い魔力を使用するヒーラー&lt;br&gt; - MP回復に特化" name="HEALER_WITH_POWERFUL_M_ATK_BR_SPECIALIZES_IN_MP_RECOVERY;" />
 	<sm id="4668" text="アインハザードの力を伝承し発展させた神聖魔法の先駆者ラキシスの力と古代から伝わりし闇の力が混沌の意志によって結合した。増幅した神聖な力は一族と戦友を守ることに使われた。" name="BY_THE_WILL_OF_THE_CHAOS_THE_POWER_OF_LAKCIS_THE_FOREFATHER_OF_HOLY_MAGIC_WHO_TOOK_AND_IMPROVED_EINHASAD_S_POWER_HAS_BEEN_COMBINED_WITH_THE_ANCIENT_POWER_OF_DARKNESS_THE_HEIGHTENED_DIVINE_POWER_WAS_USED_TO_PROTECT_ONE_S_COMMUNITY_AND_BROTHERS_IN_ARMS;" />
 	<sm id="4669" text="近接戦闘系ダメージディーラー" name="MELEE_DAMAGE_DEALER2;" />
-	<sm id="4670" text="格闘用武器に特化<br>横移動を利用した攻撃<br>-速い攻撃速度" name="SPECIZLIZES_IN_FIST_WEAPONS_BR_ATTACKS_FROM_THE_SIDE_BR_FAST_ATK_SPD;" />
+	<sm id="4670" text="格闘用武器に特化&lt;br&gt;横移動を利用した攻撃&lt;br&gt;-速い攻撃速度" name="SPECIZLIZES_IN_FIST_WEAPONS_BR_ATTACKS_FROM_THE_SIDE_BR_FAST_ATK_SPD;" />
 	<sm id="4671" text="グラビティ ランカーは重力を操る力を使える。自身の体を重力の影響から解き放ち、自由にして移動速度と攻撃速度を瞬時に変える力で敵に脅威を与える。" name="EVISCERATORS_CAN_MANIPULATE_GRAVITY_TO_THEIR_ADVANTAGE_THEIR_MAIN_STRENGTH_LIES_IN_SHIFTING_THEIR_OWN_CENTER_OF_GRAVITY_TO_ADD_TO_THEIR_SPEED_AND_ATTACK_SPEED;" />
 	<sm id="4672" text="魔法攻撃系ダメージディーラー" name="MAGIC_DAMAGE_DEALER2;" />
-	<sm id="4673" text="魔法両手武器に特化<br>近接魔法攻撃使用<br>風を使った防御能力" name="SPECIALIZES_IN_MAGICAL_TWO_HANDED_WEAPONS_BR_CLOSE_RANGE_DAMAGE_SPELLS_BR_USES_WIND_FOR_DEFENSE;" />
+	<sm id="4673" text="魔法両手武器に特化&lt;br&gt;近接魔法攻撃使用&lt;br&gt;風を使った防御能力" name="SPECIALIZES_IN_MAGICAL_TWO_HANDED_WEAPONS_BR_CLOSE_RANGE_DAMAGE_SPELLS_BR_USES_WIND_FOR_DEFENSE;" />
 	<sm id="4674" text="サイハズ シーアーは風の神サイハの力を操る。風と同化して移動したり、自身を守る力で優れた生存力を誇る。" name="ABLE_TO_TAP_INTO_THE_POWER_OF_THE_WIND_GOD_SAYHA_S_SEERS_CAN_DIFFUSE_THEMSELVES_INTO_THE_WIND_FOR_TRANSPORT_OR_DEFENSES_THEIR_TALENTS_ACCOUNT_FOR_THEIR_EXTRAORDINARY_SURVIVABILITY;" />
 	<sm id="4701" text="あらかじめセットした状態で簡単に性能を調節できます。" name="YOU_CAN_EASILY_ADJUST_PERFORMANCE_TO_THE_FACTORY_SETTING;" />
 	<sm id="4702" text="現在使用していないゲームの性能を下げて、PCの負荷を軽減します。" name="LOWER_THE_PERFORMANCE_OF_THE_GAME_YOU_ARE_NOT_PLAYING_TO_DECREASE_LOAD_ON_THE_COMPUTER;" />
@@ -4372,85 +4372,85 @@
 	<sm id="4884" text="メイン メニューを再度編集します。今までの編集状況は保存されません。" name="RE_EDIT_THE_MAIN_MENU_THE_EDITS_MADE_UNTIL_NOW_WILL_NOT_BE_SAVED;" />
 	<sm id="4885" text="変更事項を保存して編集を終了します。" name="FINISH_EDITING_AND_SAVE_CHANGES;" />
 	<sm id="4886" text="変更事項を保存せずに編集を終了します。" name="FINISH_EDITING_WITHOUT_SAVING_CHANGES;" />
-	<sm id="5000" text="お客様のアカウントは、アカウント盗用虚偽申告により、弊社のアカウント盗用申告の処理ルールに基づきご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5001" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5002" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5000" text="お客様のアカウントは、アカウント盗用虚偽申告により、弊社のアカウント盗用申告の処理ルールに基づきご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5001" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5002" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5003" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5004" text="お客様のアカウントはゲーム上の価値であるアイテムもしくはキャラクター(アカウント)の現金/現物/他のゲームのアイテムなどへの売買、またはこれを試みる行為が認められたため、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5005" text="お客様のアカウントはゲーム上の価値であるアイテムもしくはキャラクター(アカウント)の現金/現物/他のゲームのアイテムなどへの売買、またはこれを試みる行為が認められたため、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5006" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5007" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5008" text="お客様のアカウントは当社が想定していないリネージュIIサービスのプログラム上の動作を利用する行為により、ご利用が制限されています。この行為はサービスに深刻な障害やゲーム内のバランスの崩壊を招く恐れがあります。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5009" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5008" text="お客様のアカウントは当社が想定していないリネージュIIサービスのプログラム上の動作を利用する行為により、ご利用が制限されています。この行為はサービスに深刻な障害やゲーム内のバランスの崩壊を招く恐れがあります。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5009" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5010" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5011" text="このアカウントは、お客様本人の要請によりご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5012" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5013" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5014" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5015" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5016" text="詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="FOR_MORE_DETAILS_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT;" />
-	<sm id="5017" text="<font color=\"FFDF4C\">リネージュII 公式サイト</font>(http://www.ncsoft.jp/lineage2/)の、<font color=\"FFDF4C\">サポート</font>よりお問い合わせください。" name="PLEASE_INQUIRE_THROUGH_THE_FONT_COLOR_FFDF4C_LINEAGE_II_CUSTOMER_SERVICE_CENTER_FONT_OR_THE_FONT_COLOR_FFDF4C_1_1_SUPPORT_FONT_IN_THE_OFFICIAL_WEBSITE;" />
-	<sm id="5018" text="リネージュIIは<font color=\"FFDF4C\">会員登録</font>をするとご利用いただけます。" name="IN_ORDER_TO_PLAY_LINEAGE_II_YOU_MUST_BE_FONT_COLOR_FFDF4C_AGES_15_OR_ABOVE_FONT_YOU_MUST_BE_FONT_COLOR_FFDF4C_18_OR_ABOVE_FONT_IN_ORDER_TO_USE_THE_PVP_SERVERS;" />
-	<sm id="5019" text="新規アカウントを作成するためには、<font color=\"FFDF4C\">リネージュII 公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>で会員登録をする必要があります。" name="TO_CREATE_A_NEW_ACCOUNT_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_ACCOUNT_NCSOFT_COM_SIGNUP_INDEX_A_FONT_AND_CLICK_ON_THE_NEW_ACCOUNT_CREATION_LINK;" />
-	<sm id="5020" text="アカウントを紛失した場合、<font color=\"FFDF4C\">リネージュII 公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートからお問い合わせください。" name="" />
-	<sm id="5021" text="<font color=\"FFDF4C\">会員登録</font>をされていないお客様はご利用頂けません。" name="USERS_WHO_DID_NOT_COMPLETE_THE_FONT_COLOR_FFDF4C_AGE_18_VERIFICATION_FONT_MAY_NOT_LOGIN_BETWEEN_FONT_COLOR_FFDF4C_10PM_FONT_AND_FONT_COLOR_FFDF4C_6AM_FONT_THE_NEXT_DAY;" />
-	<sm id="5022" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="IF_YOU_HAVE_LOST_YOUR_ACCOUNT_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_LOGIN_LINEAGE2_COM_LOGIN_A_FONT_AND_CLICK_ON_THE_SUPPORT_LINK_AT_THE_BOTTOM_OF_THE_PAGE;" />
-	<sm id="5023" text="お客様のアカウントは、現金/アカウント取引などの行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5024" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5025" text="お客様のアカウントはアカウント盗用被害アイテムとの関連が認められたため、一時的にご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5026" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5027" text="お客様のアカウントは、現金/アカウント取引などの行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5028" text="お客様のアカウントは、ご利用が制限されています。<font color=\"FFDF4C\">リネージュII 公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートからお問い合わせください。" name="YOU_CANNOT_USE_THE_GAME_SERVICES_AS_YOUR_IDENTITY_HAS_NOT_BEEN_VERIFIED_PLEASE_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT_AND_GO_TO_FONT_COLOR_FFDF4C_FONT_TO_VERIFY_YOUR_IDENTITY_FOR_MORE_DETAILS_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT;" />
+	<sm id="5013" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5014" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5015" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5016" text="詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="FOR_MORE_DETAILS_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT;" />
+	<sm id="5017" text="&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII 公式サイト&lt;/font&gt;(http://www.ncsoft.jp/lineage2/)の、&lt;font color=&quot;FFDF4C&quot;&gt;サポート&lt;/font&gt;よりお問い合わせください。" name="PLEASE_INQUIRE_THROUGH_THE_FONT_COLOR_FFDF4C_LINEAGE_II_CUSTOMER_SERVICE_CENTER_FONT_OR_THE_FONT_COLOR_FFDF4C_1_1_SUPPORT_FONT_IN_THE_OFFICIAL_WEBSITE;" />
+	<sm id="5018" text="リネージュIIは&lt;font color=&quot;FFDF4C&quot;&gt;会員登録&lt;/font&gt;をするとご利用いただけます。" name="IN_ORDER_TO_PLAY_LINEAGE_II_YOU_MUST_BE_FONT_COLOR_FFDF4C_AGES_15_OR_ABOVE_FONT_YOU_MUST_BE_FONT_COLOR_FFDF4C_18_OR_ABOVE_FONT_IN_ORDER_TO_USE_THE_PVP_SERVERS;" />
+	<sm id="5019" text="新規アカウントを作成するためには、&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII 公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;で会員登録をする必要があります。" name="TO_CREATE_A_NEW_ACCOUNT_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_ACCOUNT_NCSOFT_COM_SIGNUP_INDEX_A_FONT_AND_CLICK_ON_THE_NEW_ACCOUNT_CREATION_LINK;" />
+	<sm id="5020" text="アカウントを紛失した場合、&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII 公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートからお問い合わせください。" name="" />
+	<sm id="5021" text="&lt;font color=&quot;FFDF4C&quot;&gt;会員登録&lt;/font&gt;をされていないお客様はご利用頂けません。" name="USERS_WHO_DID_NOT_COMPLETE_THE_FONT_COLOR_FFDF4C_AGE_18_VERIFICATION_FONT_MAY_NOT_LOGIN_BETWEEN_FONT_COLOR_FFDF4C_10PM_FONT_AND_FONT_COLOR_FFDF4C_6AM_FONT_THE_NEXT_DAY;" />
+	<sm id="5022" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="IF_YOU_HAVE_LOST_YOUR_ACCOUNT_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_LOGIN_LINEAGE2_COM_LOGIN_A_FONT_AND_CLICK_ON_THE_SUPPORT_LINK_AT_THE_BOTTOM_OF_THE_PAGE;" />
+	<sm id="5023" text="お客様のアカウントは、現金/アカウント取引などの行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5024" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5025" text="お客様のアカウントはアカウント盗用被害アイテムとの関連が認められたため、一時的にご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5026" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5027" text="お客様のアカウントは、現金/アカウント取引などの行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5028" text="お客様のアカウントは、ご利用が制限されています。&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII 公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートからお問い合わせください。" name="YOU_CANNOT_USE_THE_GAME_SERVICES_AS_YOUR_IDENTITY_HAS_NOT_BEEN_VERIFIED_PLEASE_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT_AND_GO_TO_FONT_COLOR_FFDF4C_FONT_TO_VERIFY_YOUR_IDENTITY_FOR_MORE_DETAILS_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT;" />
 	<sm id="5029" text="ゲームに接続ができない場合は、公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5030" text="<font color=\"FFDF4C\">ログイン中です。</font>しばらくお待ちください。" name="FONT_COLOR_FFDF4C_LOGGING_IN_FONT_PLEASE_WAIT;" />
+	<sm id="5030" text="&lt;font color=&quot;FFDF4C&quot;&gt;ログイン中です。&lt;/font&gt;しばらくお待ちください。" name="FONT_COLOR_FFDF4C_LOGGING_IN_FONT_PLEASE_WAIT;" />
 	<sm id="5031" text="このアカウントは一時的にご利用が制限されている状態です。詳しくは公式サイトのサポートまでお問い合わせください。" name="THE_ACCOUNT_HAS_BEEN_TEMPORARILY_RESTRICTED_DUE_TO_AN_INCOMPLETE_CELL_PHONE_ARS_TRANSACTION_FOR_MORE_INFORMATION_PLEASE_VISIT_HTTP_US_NCSOFT_COM_EN;" />
-	<sm id="5032" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5033" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5034" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="THIS_ACCOUNT_HAS_DECLINED_THE_USER_AGREEMENT_OR_HAS_REQUESTED_FOR_MEMBERSHIP_WITHDRAWAL_PLEASE_TRY_AGAIN_AFTER_BR_FONT_COLOR_FFDF4C_CANCELLING_THE_GAME_AGREEMENT_DECLINATION_FONT_OR_FONT_COLOR_FFDF4C_CANCELLING_THE_MEMBERSHIP_WITHDRAWAL_REQUEST_FONT;" />
-	<sm id="5035" text="お客様のアカウントは、すべてのサービスのご利用が制限されている状態です。<br>詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5036" text="お客様のアカウントは、すべてのサービスのご利用が制限されている状態です。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="PLEASE_INQUIRE_THROUGH_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT_FONT_COLOR_FFDF4C_1_1_CUSTOMER_SERVICE_CENTER_FONT_COLOR_FFDF4C_CUSTOMER_SERVICE_CENTER_FONT;" />
-	<sm id="5037" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5038" text="お客様のアカウントは、パスワードと秘密の質問を変更しなければならない状態です。<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>で、パスワードと秘密の質問を変更してください。" name="YOU_MUST_CHANGE_YOUR_PASSWORD_AND_SECRET_QUESTION_IN_ORDER_TO_LOG_IN_PLEASE_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT_AND_FONT_COLOR_FFDF4C_CHANGE_THE_PASSWORD_AND_SECRET_QUESTION_FONT;" />
-	<sm id="5039" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5032" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5033" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5034" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="THIS_ACCOUNT_HAS_DECLINED_THE_USER_AGREEMENT_OR_HAS_REQUESTED_FOR_MEMBERSHIP_WITHDRAWAL_PLEASE_TRY_AGAIN_AFTER_BR_FONT_COLOR_FFDF4C_CANCELLING_THE_GAME_AGREEMENT_DECLINATION_FONT_OR_FONT_COLOR_FFDF4C_CANCELLING_THE_MEMBERSHIP_WITHDRAWAL_REQUEST_FONT;" />
+	<sm id="5035" text="お客様のアカウントは、すべてのサービスのご利用が制限されている状態です。&lt;br&gt;詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5036" text="お客様のアカウントは、すべてのサービスのご利用が制限されている状態です。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="PLEASE_INQUIRE_THROUGH_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT_FONT_COLOR_FFDF4C_1_1_CUSTOMER_SERVICE_CENTER_FONT_COLOR_FFDF4C_CUSTOMER_SERVICE_CENTER_FONT;" />
+	<sm id="5037" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5038" text="お客様のアカウントは、パスワードと秘密の質問を変更しなければならない状態です。&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;で、パスワードと秘密の質問を変更してください。" name="YOU_MUST_CHANGE_YOUR_PASSWORD_AND_SECRET_QUESTION_IN_ORDER_TO_LOG_IN_PLEASE_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT_AND_FONT_COLOR_FFDF4C_CHANGE_THE_PASSWORD_AND_SECRET_QUESTION_FONT;" />
+	<sm id="5039" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5040" text="お客様のアカウントはカイモに関するバグを悪用したことが認められたため、ご利用が制限されています。詳しくは公式サイトのサポートまでお問い合わせください。" name="" />
 	<sm id="5041" text="お客様のアカウントは無料で支給されたカイモを悪用したことが認められたため、ご利用が制限されています。詳しくは公式サイトのサポートまでお問い合わせください。" name="" />
-	<sm id="5042" text="お客様のアカウントは他人の名義を利用した加入などが認められたため、一時的にゲームサービスのご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5043" text="お客様のアカウントは決済の盗用が認められたため、すべてのサービスのご利用が制限されている状態です。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5044" text="お客様のアカウントはアカウント取引が認められたため、すべてのサービスのご利用が制限されている状態です。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5045" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスのご利用が制限されています。今後同様の違反行為が確認された場合は永久に制限されますのでご注意ください。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5046" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5047" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5048" text="お客様のアカウントはお客様からの要請によりゲームサービスすべての利用ができないようになっています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5049" text="お客様のアカウントは公序良俗に反する内容の度重なるアップロードが認められたため、サービスのご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5050" text="お客様のアカウントは違反となる書き込みが認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5051" text="お客様のアカウントは商業目的のゲーム利用が認められたため、ゲームサービスすべてのご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5052" text="<font color=\"FFDF4C\">サーバー</font>に接続しました。" name="YOU_HAVE_ENTERED_FONT_COLOR_FFDF4C_REGULAR_SERVER_FONT;" />
-	<sm id="5053" text="<font color=\"FFDF4C\">サーバー</font>に接続しました。" name="YOU_HAVE_ENTERED_FONT_COLOR_FFDF4C_ADULT_SERVER_FONT;" />
-	<sm id="5054" text="<font color=\"FFDF4C\">サーバー</font>に接続しました。" name="YOU_HAVE_ENTERED_FONT_COLOR_FFDF4C_TEENAGE_SERVER_FONT;" />
+	<sm id="5042" text="お客様のアカウントは他人の名義を利用した加入などが認められたため、一時的にゲームサービスのご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5043" text="お客様のアカウントは決済の盗用が認められたため、すべてのサービスのご利用が制限されている状態です。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5044" text="お客様のアカウントはアカウント取引が認められたため、すべてのサービスのご利用が制限されている状態です。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5045" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスのご利用が制限されています。今後同様の違反行為が確認された場合は永久に制限されますのでご注意ください。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5046" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5047" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5048" text="お客様のアカウントはお客様からの要請によりゲームサービスすべての利用ができないようになっています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5049" text="お客様のアカウントは公序良俗に反する内容の度重なるアップロードが認められたため、サービスのご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5050" text="お客様のアカウントは違反となる書き込みが認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5051" text="お客様のアカウントは商業目的のゲーム利用が認められたため、ゲームサービスすべてのご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5052" text="&lt;font color=&quot;FFDF4C&quot;&gt;サーバー&lt;/font&gt;に接続しました。" name="YOU_HAVE_ENTERED_FONT_COLOR_FFDF4C_REGULAR_SERVER_FONT;" />
+	<sm id="5053" text="&lt;font color=&quot;FFDF4C&quot;&gt;サーバー&lt;/font&gt;に接続しました。" name="YOU_HAVE_ENTERED_FONT_COLOR_FFDF4C_ADULT_SERVER_FONT;" />
+	<sm id="5054" text="&lt;font color=&quot;FFDF4C&quot;&gt;サーバー&lt;/font&gt;に接続しました。" name="YOU_HAVE_ENTERED_FONT_COLOR_FFDF4C_TEENAGE_SERVER_FONT;" />
 	<sm id="5055" text="実行できません。" name="YOU_CANNOT_DO_THAT_BECAUSE_OF_FONT_COLOR_FFDF4C_FATIGUE_FONT;" />
-	<sm id="5056" text="お客様のアカウントはアカウント盗用虚偽申告により、弊社のアカウント盗用申告の処理ルールに基づきご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5057" text="お客様のアカウントは他人の名義を使って登録されたことが認められたため、すべてのゲームサービスのご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5058" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5059" text="<font color=\"FFDF4C\">全角1文字</font>以上<font color=\"FFDF4C\">8文字</font>以内、<font color=\"FFDF4C\">半角1文字</font>以上<font color=\"FFDF4C\">8文字</font>以内で設定してください。" name="PLEASE_ENTER_MORE_THAN_FONT_COLOR_FFDF4C_1_LETTER_FONT_AND_LESS_THAN_FONT_COLOR_FFDF4C_16_LETTERS_FONT;" />
-	<sm id="5060" text="<font color=\"FFDF4C\">リネージュII</font>の世界にようこそ。<br>下の<font color=\"FFDF4C\">キャラクター作成</font>ボタンをクリックするとキャラクター作成画面に移ります。" name="WELCOME_TO_FONT_COLOR_FFDF4C_LINEAGE_II_FONT_PLEASE_CLICK_ON_THE_FONT_COLOR_FFDF4C_CREATE_CHARACTER_FONT_TAB_TO_GO_TO_THE_CHARACTER_CREATION_SCREEN;" />
-	<sm id="5061" text="<font color=\"FFDF4C\">血盟</font>に所属しているキャラクターは削除できません。" name="A_CHARACTER_BELONGING_TO_A_FONT_COLOR_FFDF4C_CLAN_FONT_MAY_NOT_BE_DELETED;" />
-	<sm id="5062" text="<font color=\"FFDF4C\">血盟主</font>は削除できません。血盟を解散してから削除してください。" name="A_FONT_COLOR_FFDF4C_CLAN_LEADER_FONT_MAY_NOT_BE_DELETED_PLEASE_DISBAND_THE_CLAN_AND_TRY_AGAIN;" />
-	<sm id="5063" text="<font color=\"FFDF4C\">血盟員</font>は削除できません。血盟を脱退してから削除してください。" name="A_FONT_COLOR_FFDF4C_CLAN_MEMBER_FONT_MAY_NOT_BE_DELETED_PLEASE_LEAVE_THE_CLAN_AND_TRY_AGAIN;" />
-	<sm id="5064" text="認証できません。パスワードが正しくないか、パスワードが入力されていません。連続で<font color=\"FFDF4C\">3回</font>認証に失敗した場合、ゲームへの接続が<font color=\"FFDF4C\">30分間</font>できなくなります。" name="AUTHENTICATION_HAS_FAILED_AS_YOU_HAVE_ENTERED_AN_INCORRECT_AUTHENTICATION_NUMBER_OR_DID_NOT_ENTER_THE_AUTHENTICATION_NUMBER_IF_YOU_FAIL_AUTHENTICATION_FONT_COLOR_FFDF4C_3_TIMES_FONT_IN_A_ROW_GAME_ACCESS_WILL_BE_RESTRICTED_FOR_FONT_COLOR_FFDF4C_30_MINUTES_FONT;" />
+	<sm id="5056" text="お客様のアカウントはアカウント盗用虚偽申告により、弊社のアカウント盗用申告の処理ルールに基づきご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5057" text="お客様のアカウントは他人の名義を使って登録されたことが認められたため、すべてのゲームサービスのご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5058" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5059" text="&lt;font color=&quot;FFDF4C&quot;&gt;全角1文字&lt;/font&gt;以上&lt;font color=&quot;FFDF4C&quot;&gt;8文字&lt;/font&gt;以内、&lt;font color=&quot;FFDF4C&quot;&gt;半角1文字&lt;/font&gt;以上&lt;font color=&quot;FFDF4C&quot;&gt;8文字&lt;/font&gt;以内で設定してください。" name="PLEASE_ENTER_MORE_THAN_FONT_COLOR_FFDF4C_1_LETTER_FONT_AND_LESS_THAN_FONT_COLOR_FFDF4C_16_LETTERS_FONT;" />
+	<sm id="5060" text="&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII&lt;/font&gt;の世界にようこそ。&lt;br&gt;下の&lt;font color=&quot;FFDF4C&quot;&gt;キャラクター作成&lt;/font&gt;ボタンをクリックするとキャラクター作成画面に移ります。" name="WELCOME_TO_FONT_COLOR_FFDF4C_LINEAGE_II_FONT_PLEASE_CLICK_ON_THE_FONT_COLOR_FFDF4C_CREATE_CHARACTER_FONT_TAB_TO_GO_TO_THE_CHARACTER_CREATION_SCREEN;" />
+	<sm id="5061" text="&lt;font color=&quot;FFDF4C&quot;&gt;血盟&lt;/font&gt;に所属しているキャラクターは削除できません。" name="A_CHARACTER_BELONGING_TO_A_FONT_COLOR_FFDF4C_CLAN_FONT_MAY_NOT_BE_DELETED;" />
+	<sm id="5062" text="&lt;font color=&quot;FFDF4C&quot;&gt;血盟主&lt;/font&gt;は削除できません。血盟を解散してから削除してください。" name="A_FONT_COLOR_FFDF4C_CLAN_LEADER_FONT_MAY_NOT_BE_DELETED_PLEASE_DISBAND_THE_CLAN_AND_TRY_AGAIN;" />
+	<sm id="5063" text="&lt;font color=&quot;FFDF4C&quot;&gt;血盟員&lt;/font&gt;は削除できません。血盟を脱退してから削除してください。" name="A_FONT_COLOR_FFDF4C_CLAN_MEMBER_FONT_MAY_NOT_BE_DELETED_PLEASE_LEAVE_THE_CLAN_AND_TRY_AGAIN;" />
+	<sm id="5064" text="認証できません。パスワードが正しくないか、パスワードが入力されていません。連続で&lt;font color=&quot;FFDF4C&quot;&gt;3回&lt;/font&gt;認証に失敗した場合、ゲームへの接続が&lt;font color=&quot;FFDF4C&quot;&gt;30分間&lt;/font&gt;できなくなります。" name="AUTHENTICATION_HAS_FAILED_AS_YOU_HAVE_ENTERED_AN_INCORRECT_AUTHENTICATION_NUMBER_OR_DID_NOT_ENTER_THE_AUTHENTICATION_NUMBER_IF_YOU_FAIL_AUTHENTICATION_FONT_COLOR_FFDF4C_3_TIMES_FONT_IN_A_ROW_GAME_ACCESS_WILL_BE_RESTRICTED_FOR_FONT_COLOR_FFDF4C_30_MINUTES_FONT;" />
 	<sm id="5065" text="電話認証サービス加入番号は現在使われておりません。電話認証サービスの加入情報をご確認ください。" name="" />
 	<sm id="5066" text="電話認証サービス利用期間が終了したため、ゲームの実行が遮断されます。ゲーム実行遮断設定をご確認ください。" name="" />
-	<sm id="5067" text="電話認証に連続<font color=\"FFDF4C\">3回</font>失敗したため、<font color=\"FFDF4C\">30分間</font>ゲームの実行が遮断されています。しばらくしてから、再度お試しください。" name="IF_YOU_FAIL_AUTHENTICATION_FONT_COLOR_FFDF4C_3_TIMES_FONT_IN_A_ROW_GAME_ACCESS_WILL_BE_RESTRICTED_FOR_FONT_COLOR_FFDF4C_30_MINUTES_FONT_PLEASE_TRY_AGAIN_LATER;" />
-	<sm id="5068" text="｢OTP｣を利用中の方は<br>トークンに出力された6桁の番号を<br>入力してください。<br>利用されていない方は<br>この項目に何も入力せずに<br>ログイン ボタンを押してください。" name="TO_REQUEST_AN_NC_OTP_SERVICE_BR_RUN_THE_CELL_PHONE_NC_OTP_SERVICE_BR_AND_ENTER_THE_DISPLAYED_NC_OTP_NUMBER_WITHIN_1_MINUTE_BR_IF_YOU_DID_NOT_MAKE_THE_REQUEST_BR_LEAVE_THIS_PART_BLANK_BR_AND_CLICK_ON_THE_LOGIN_TAB;" />
-	<sm id="5069" text="<font color=\"FFDF4C\">$s1</font>番のカード番号を入力してください。" name="PLEASE_ENTER_CARD_NUMBER_FONT_COLOR_FFDF4C_S1_FONT;" />
-	<sm id="5070" text="<font size=\"15\" color=\"FFDF5F\">2014年6月11日基準で、リネージュIIサーバーが改編されました。</font><br><font size=\"13\" color=\"ABABAB\">バーツ、フェイシャル</font> → バーツ(New)<br><font size=\"13\" color=\"ABABAB\">エリカ、ゴースティン、テオン</font> → ジグハルト(New)<br><font size=\"13\" color=\"ABABAB\">フランツ、アイリーン、アリア</font> → カイン(New)" name="U_FONT_SIZE_15_COLOR_FFDF5F_THE_LINEAGE_II_SERVER_HAS_BEEN_RESTRUCTURED_AS_OF_06_11_14_FONT_BR_FONT_SIZE_13_COLOR_ABABAB_BARTZ_FEHYSHAR_FONT_BARTZ_NEW_BR_FONT_SIZE_13_COLOR_ABABAB_ERICA_GUSTIN_TEON_FONT_SIEGHARDT_NEW_BR_FONT_SIZE_13_COLOR_ABABAB_FRANZ_IRENE_ARIA_FONT_KAIN_NEW;" />
-	<sm id="5071" text="<font color=\"FFDF4C\">リネージュIIをプレイしている皆さまに様々な特典を差し上げます。</font>" name="FONT_COLOR_FFDF4C_WE_GIVE_VARIOUS_BENEFITS_TO_WARRIORS_WHO_RETURN_AFTER_A_LONG_TIME_FONT;" />
-	<sm id="5072" text="さまざまな特典については、<font color=\"FFDF4C\">リネージュII公式ホームページ</font>(<font color=\"6699FF\"><a href=\"asfunction:homePage\">www.ncsoft.jp/lineage2/</a></font>)をご覧ください！" name="YOU_CAN_RECEIVE_THE_BENEFITS_PROVIDED_TO_DORMANT_CUSTOMERS_ON_FONT_COLOR_FFDF4C_LINEAGE_II_HOMEPAGE_DORMANT_MEMBERSHIP_PAGE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_LINEAGE2_PLAYNC_CO_KR_SERVICE_FREECOUPON_DORMANCY_A_FONT_BR_RECEIVE_BENEFITS_FOR_DORMANT_CUSTOMERS_AND_LOG_INTO_THE_GAME_AGAIN;" />
-	<sm id="5300" text="お客様のアカウントは、アカウント盗用虚偽申告により、弊社のアカウント盗用申告の処理ルールに基づきご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5067" text="電話認証に連続&lt;font color=&quot;FFDF4C&quot;&gt;3回&lt;/font&gt;失敗したため、&lt;font color=&quot;FFDF4C&quot;&gt;30分間&lt;/font&gt;ゲームの実行が遮断されています。しばらくしてから、再度お試しください。" name="IF_YOU_FAIL_AUTHENTICATION_FONT_COLOR_FFDF4C_3_TIMES_FONT_IN_A_ROW_GAME_ACCESS_WILL_BE_RESTRICTED_FOR_FONT_COLOR_FFDF4C_30_MINUTES_FONT_PLEASE_TRY_AGAIN_LATER;" />
+	<sm id="5068" text="｢OTP｣を利用中の方は&lt;br&gt;トークンに出力された6桁の番号を&lt;br&gt;入力してください。&lt;br&gt;利用されていない方は&lt;br&gt;この項目に何も入力せずに&lt;br&gt;ログイン ボタンを押してください。" name="TO_REQUEST_AN_NC_OTP_SERVICE_BR_RUN_THE_CELL_PHONE_NC_OTP_SERVICE_BR_AND_ENTER_THE_DISPLAYED_NC_OTP_NUMBER_WITHIN_1_MINUTE_BR_IF_YOU_DID_NOT_MAKE_THE_REQUEST_BR_LEAVE_THIS_PART_BLANK_BR_AND_CLICK_ON_THE_LOGIN_TAB;" />
+	<sm id="5069" text="&lt;font color=&quot;FFDF4C&quot;&gt;$s1&lt;/font&gt;番のカード番号を入力してください。" name="PLEASE_ENTER_CARD_NUMBER_FONT_COLOR_FFDF4C_S1_FONT;" />
+	<sm id="5070" text="&lt;font size=&quot;15&quot; color=&quot;FFDF5F&quot;&gt;2014年6月11日基準で、リネージュIIサーバーが改編されました。&lt;/font&gt;&lt;br&gt;&lt;font size=&quot;13&quot; color=&quot;ABABAB&quot;&gt;バーツ、フェイシャル&lt;/font&gt; → バーツ(New)&lt;br&gt;&lt;font size=&quot;13&quot; color=&quot;ABABAB&quot;&gt;エリカ、ゴースティン、テオン&lt;/font&gt; → ジグハルト(New)&lt;br&gt;&lt;font size=&quot;13&quot; color=&quot;ABABAB&quot;&gt;フランツ、アイリーン、アリア&lt;/font&gt; → カイン(New)" name="U_FONT_SIZE_15_COLOR_FFDF5F_THE_LINEAGE_II_SERVER_HAS_BEEN_RESTRUCTURED_AS_OF_06_11_14_FONT_BR_FONT_SIZE_13_COLOR_ABABAB_BARTZ_FEHYSHAR_FONT_BARTZ_NEW_BR_FONT_SIZE_13_COLOR_ABABAB_ERICA_GUSTIN_TEON_FONT_SIEGHARDT_NEW_BR_FONT_SIZE_13_COLOR_ABABAB_FRANZ_IRENE_ARIA_FONT_KAIN_NEW;" />
+	<sm id="5071" text="&lt;font color=&quot;FFDF4C&quot;&gt;リネージュIIをプレイしている皆さまに様々な特典を差し上げます。&lt;/font&gt;" name="FONT_COLOR_FFDF4C_WE_GIVE_VARIOUS_BENEFITS_TO_WARRIORS_WHO_RETURN_AFTER_A_LONG_TIME_FONT;" />
+	<sm id="5072" text="さまざまな特典については、&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII公式ホームページ&lt;/font&gt;(&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;)をご覧ください！" name="YOU_CAN_RECEIVE_THE_BENEFITS_PROVIDED_TO_DORMANT_CUSTOMERS_ON_FONT_COLOR_FFDF4C_LINEAGE_II_HOMEPAGE_DORMANT_MEMBERSHIP_PAGE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_LINEAGE2_PLAYNC_CO_KR_SERVICE_FREECOUPON_DORMANCY_A_FONT_BR_RECEIVE_BENEFITS_FOR_DORMANT_CUSTOMERS_AND_LOG_INTO_THE_GAME_AGAIN;" />
+	<sm id="5300" text="お客様のアカウントは、アカウント盗用虚偽申告により、弊社のアカウント盗用申告の処理ルールに基づきご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5301" text="お客様は虚偽の事実を申告されたため、運営ポリシーに基づき、ご利用が制限されています。詳しくは公式サイトのサポートまでお問い合わせください。" name="" />
-	<sm id="5302" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5302" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5303" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイトのサポートまでお問い合わせください。" name="" />
 	<sm id="5304" text="お客様のアカウントは、営利目的の宣伝行為及び現金/他のゲームのアイテムなどへの売買行為が認められたため、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5305" text="お客様のアカウントは、現金/アカウント取引などの行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5305" text="お客様のアカウントは、現金/アカウント取引などの行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5306" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5307" text="お客様のアカウントで不健全な発言行為が認められた為、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5308" text="お客様のアカウントは当社が想定していないリネージュIIサービスのプログラム上の動作を利用する行為により、ご利用が制限されています。この行為はサービスに深刻な障害やゲーム内のバランスの崩壊を招く恐れがあります。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
@@ -4459,18 +4459,18 @@
 	<sm id="5311" text="このアカウントは、お客様本人の要請によりご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5312" text="お客様のアカウントに問題が確認された為、ご利用を停止しております。詳しくは公式サイトのサポートまでお問い合わせください。" name="" />
 	<sm id="5313" text="お客様のアカウントは、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5314" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5315" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5316" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5314" text="お客様のアカウントはアカウント盗用被害の恐れがございます為、一時的にご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5315" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5316" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5317" text="お客様のアカウントは、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5318" text="お客様のアカウントは、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5319" text="お客様のアカウントは、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5320" text="お客様のアカウントはアカウント盗用被害アイテムとの関連が認められたため、一時的にご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5319" text="お客様のアカウントは、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5320" text="お客様のアカウントはアカウント盗用被害アイテムとの関連が認められたため、一時的にご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5321" text="お客様のアカウントは違反行為が認められたため、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
-	<sm id="5322" text="お客様のアカウントは、ご利用が制限されています。<font color=\"FFDF4C\">リネージュII 公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートからお問い合わせください。" name="" />
-	<sm id="5323" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5324" text="お客様のアカウントは、レイドボス若しくはボスモンスターと判断されるノンプレイヤーキャラクター（以下、｢NPC｣という）からのドロップアイテムを持ち去る行為と、それに準じた行為および発言をする行為を確認いたしましたため、ご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
-	<sm id="5325" text="お客様のアカウントは商業目的のゲーム利用が認められたため、ゲームサービスすべてのご利用が制限されています。詳しくは<font color=\"FFDF4C\">公式サイト(</font><font color=\"6699FF\"><a href=\"asfunction:homePage\">http://www.ncsoft.jp/lineage2/</a></font><font color=\"FFDF4C\">)</font>のサポートまでお問い合わせください。" name="" />
+	<sm id="5322" text="お客様のアカウントは、ご利用が制限されています。&lt;font color=&quot;FFDF4C&quot;&gt;リネージュII 公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートからお問い合わせください。" name="" />
+	<sm id="5323" text="お客様のアカウントは不正ユーティリティの利用が認められたため、ゲームサービスすべての利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5324" text="お客様のアカウントは、レイドボス若しくはボスモンスターと判断されるノンプレイヤーキャラクター（以下、｢NPC｣という）からのドロップアイテムを持ち去る行為と、それに準じた行為および発言をする行為を確認いたしましたため、ご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
+	<sm id="5325" text="お客様のアカウントは商業目的のゲーム利用が認められたため、ゲームサービスすべてのご利用が制限されています。詳しくは&lt;font color=&quot;FFDF4C&quot;&gt;公式サイト(&lt;/font&gt;&lt;font color=&quot;6699FF&quot;&gt;&lt;a href=&quot;asfunction:homePage&quot;&gt;http://www.ncsoft.jp/lineage2/&lt;/a&gt;&lt;/font&gt;&lt;font color=&quot;FFDF4C&quot;&gt;)&lt;/font&gt;のサポートまでお問い合わせください。" name="" />
 	<sm id="5326" text="このアカウントは料金未納により、一時的にご利用が制限されている状態です。詳しくは公式サイトのサポートまでお問い合わせください。" name="" />
 	<sm id="5327" text="お客様のアカウントは、営利目的の宣伝行為が認められたため、ご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="" />
 	<sm id="5328" text="お客様のアカウントは、アカウント盗用が認められたため、一時的にご利用が制限されています。詳しくは公式サイト(http://www.ncsoft.jp/lineage2/)のサポートにお問い合わせください。" name="YOUR_IDENTITY_VERIFICATION_HAS_BEEN_TEMPORARILY_SUSPENDED_DUE_TO_SUSPECTED_ACCOUNT_THEFT_IF_YOU_ARE_NOT_INVOLVED_IN_ACCOUNT_THEFT_PLEASE_VERIFY_YOUR_IDENTITY_BY_CLICKING_THE_RELEASE_BUTTON_IN_THE_LOGIN_PAGE_FOR_MORE_DETAILS_PLEASE_VISIT_THE_FONT_COLOR_FFDF4C_LINEAGE_II_SUPPORT_WEBSITE_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_HTTPS_SUPPORT_LINEAGE2_COM_A_FONT;" />
@@ -4563,10 +4563,10 @@
 	<sm id="6084" text="アイテム加工(復元)を進行中です。作業を終了してからやり直してください。" name="APPEARANCE_MODIFICATION_OR_RESTORATION_IN_PROGRESS_PLEASE_TRY_AGAIN_AFTER_COMPLETING_THIS_TASK;" />
 	<sm id="6085" text="$s1が$s2の形状に加工されました。" name="S1_NOW_HAS_S2_S_APPEARANCE;" />
 	<sm id="6086" text="$s1の形状が復元されました。" name="S1_S_APPEARANCE_HAS_BEEN_RESTORED;" />
-	<sm id="6087" text="If you've lost your information, please visit <font color='#FFDF4C'>$s1(</font><font color='#6699FF'><a href='asfunction:homePage'>$s2</a></font><font color='#FFDF4C'>) 1:1 Customer Service Center</font> to verify." name="IF_YOU_VE_LOST_YOUR_INFORMATION_PLEASE_VISIT_FONT_COLOR_FFDF4C_S1_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_S2_A_FONT_FONT_COLOR_FFDF4C_1_1_CUSTOMER_SERVICE_CENTER_FONT_TO_VERIFY;" />
+	<sm id="6087" text="If you've lost your information, please visit &lt;font color='#FFDF4C'&gt;$s1(&lt;/font&gt;&lt;font color='#6699FF'&gt;&lt;a href='asfunction:homePage'&gt;$s2&lt;/a&gt;&lt;/font&gt;&lt;font color='#FFDF4C'&gt;) 1:1 Customer Service Center&lt;/font&gt; to verify." name="IF_YOU_VE_LOST_YOUR_INFORMATION_PLEASE_VISIT_FONT_COLOR_FFDF4C_S1_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_S2_A_FONT_FONT_COLOR_FFDF4C_1_1_CUSTOMER_SERVICE_CENTER_FONT_TO_VERIFY;" />
 	<sm id="6088" text="NC True" name="NC_TRUE;" />
 	<sm id="6089" text="www.nctrue.com" name="WWW_NCTRUE_COM;" />
-	<sm id="6090" text="If you want to create a new account, please visit <font color='#FFDF4C'>$s1(</font><font color='#6699FF'><a href='asfunction:homePage'>$s2</a></font> and go to <font color='#FFDF4C'>)</font>." name="IF_YOU_WANT_TO_CREATE_A_NEW_ACCOUNT_PLEASE_VISIT_FONT_COLOR_FFDF4C_S1_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_S2_A_FONT_AND_GO_TO_FONT_COLOR_FFDF4C_FONT;" />
+	<sm id="6090" text="If you want to create a new account, please visit &lt;font color='#FFDF4C'&gt;$s1(&lt;/font&gt;&lt;font color='#6699FF'&gt;&lt;a href='asfunction:homePage'&gt;$s2&lt;/a&gt;&lt;/font&gt; and go to &lt;font color='#FFDF4C'&gt;)&lt;/font&gt;." name="IF_YOU_WANT_TO_CREATE_A_NEW_ACCOUNT_PLEASE_VISIT_FONT_COLOR_FFDF4C_S1_FONT_FONT_COLOR_6699FF_A_HREF_ASFUNCTION_HOMEPAGE_S2_A_FONT_AND_GO_TO_FONT_COLOR_FFDF4C_FONT;" />
 	<sm id="6091" text="プレイ期間が終了しています。公式サイトにてゲージをご購入の上、ログインしてください。" name="YOU_CANNOT_SELECT_A_DEACTIVATED_CHARACTER_ACTIVATION_CAN_OCCUR_THROUGH_THE_PREMIUM_ACCOUNT_SERVICE;" />
 	<sm id="6092" text="加工(復元)できないアイテムです。" name="THIS_ITEM_CANNOT_BE_MODIFIED_OR_RESTORED;" />
 	<sm id="6093" text="抽出できないアイテムです。" name="THIS_ITEM_CANNOT_BE_USED_AS_AN_APPEARANCE_WEAPON;" />
@@ -4681,7 +4681,7 @@
 	<sm id="6202" text="$s1をいくつ供物に登録しますか。" name="" />
 	<sm id="6203" text="$s1をいくつ登録解除しますか。" name="" />
 	<sm id="6204" text="$c1が$s2の製作に成功しました。" name="C1_HAS_SUCCEEDED_IN_CRAFTING_S2;" />
-	<sm id="6205" text="We're upgrading our systems, and you must migrate your account to continue playing. Click <BLUE02><u><a href='event:here'>here</a></u></BLUE02> to log into your NC Account" name="WE_RE_UPGRADING_OUR_SYSTEMS_AND_YOU_MUST_MIGRATE_YOUR_ACCOUNT_TO_CONTINUE_PLAYING_CLICK_BLUE02_U_A_HREF_EVENT_HERE_HERE_A_U_BLUE02_TO_LOG_INTO_YOUR_NC_ACCOUNT;" />
+	<sm id="6205" text="We're upgrading our systems, and you must migrate your account to continue playing. Click &lt;BLUE02&gt;&lt;u&gt;&lt;a href='event:here'&gt;here&lt;/a&gt;&lt;/u&gt;&lt;/BLUE02&gt; to log into your NC Account" name="WE_RE_UPGRADING_OUR_SYSTEMS_AND_YOU_MUST_MIGRATE_YOUR_ACCOUNT_TO_CONTINUE_PLAYING_CLICK_BLUE02_U_A_HREF_EVENT_HERE_HERE_A_U_BLUE02_TO_LOG_INTO_YOUR_NC_ACCOUNT;" />
 	<sm id="6501" text="フリーテレポートの旗がないため、ブックマークを保存できません。" name="YOU_CANNOT_BOOKMARK_THIS_LOCATION_BECAUSE_YOU_DO_NOT_HAVE_A_MY_TELEPORT_FLAG;" />
 	<sm id="6502" text="フリーテレポートの旗：$s1個" name="MY_TELEPORT_FLAG_S1;" />
 	<sm id="6503" text="キャプテン ターキーが現れました。クリスマス サンタを救い出しましょう。" name="THE_EVIL_THOMAS_D_TURKEY_HAS_APPEARED_PLEASE_SAVE_SANTA;" />
@@ -4760,8 +4760,8 @@
 	<sm id="7039" text="召喚獣/ペット/伴侶の移動状態が現在の位置を保持に変更しました。" name="THE_MOVING_STATUS_OF_YOUR_SERVITOR_PET_COMPANION_WILL_BE_FIXED_TO_THE_CURRENT_LOCATION;" />
 	<sm id="7040" text="召喚獣/ペット/伴侶の移動状態がマスターを追尾に変更されました。" name="THE_MOVING_STATUS_OF_YOUR_SERVITOR_PET_COMPANION_WILL_BE_CHANGED_TO_FOLLOW_YOU;" />
 	<sm id="7041" text="パスワードが違います。もう一度確認して入力してみてください。" name="WRONG_PASSWORD_PLEASE_CHECK_AGAIN;" />
-	<sm id="7042" text="<$s1>取引内容確認" name="S1_CHECK_HISTORY;" />
-	<sm id="7043" text="<$s1>になり、$s2$s3を送りました。" name="IT_S_S1_SO_SEND_S2_S3;" />
+	<sm id="7042" text="&lt;$s1&gt;取引内容確認" name="S1_CHECK_HISTORY;" />
+	<sm id="7043" text="&lt;$s1&gt;になり、$s2$s3を送りました。" name="IT_S_S1_SO_SEND_S2_S3;" />
 	<sm id="7044" text="$s1L2チップ(販売手数料：$s2L2チップ)" name="S1_L2_CHIPS_SALE_FEE_S2_L2_CHIPS;" />
 	<sm id="7045" text="$s1カイモ" name="S1_L2_COINS;" />
 	<sm id="7046" text="$s1L2マイレージ" name="S1_L2_MILEAGE_POINTS;" />
@@ -4769,9 +4769,9 @@
 	<sm id="7048" text="$c1" name="C1;" />
 	<sm id="7049" text="$s1\\n$s2" name="S1_NS2;" />
 	<sm id="7050" text="$s1\\n$s2\\n$s3" name="S1_NS2_NS3;" />
-	<sm id="7051" text="<プレミアム ショップ>プレゼントが到着しました。：$s1" name="GIFT_FROM_PREMIUM_SHOP_S1;" />
+	<sm id="7051" text="&lt;プレミアム ショップ&gt;プレゼントが到着しました。：$s1" name="GIFT_FROM_PREMIUM_SHOP_S1;" />
 	<sm id="7052" text="$c1がプレミアム ショップをとおして、あなたにプレゼントを送りました。受け取ったプレゼントはプレミアム ショップ内の「プレゼント リスト」で確認できます。" name="C1_HAS_SENT_YOU_A_GIFT_THROUGH_THE_PREMIUM_SHOP_PLEASE_CHECK_YOUR_GIFT_WITHIN_THE_INVENTORY_IN_THE_PREMIUM_SHOP;" />
-	<sm id="7053" text="<プレミアム ショップ>おねだりが来ています。" name="YOU_VE_RECEIVED_A_PESTERING_MESSAGE_FROM_THE_PREMIUM_SHOP;" />
+	<sm id="7053" text="&lt;プレミアム ショップ&gt;おねだりが来ています。" name="YOU_VE_RECEIVED_A_PESTERING_MESSAGE_FROM_THE_PREMIUM_SHOP;" />
 	<sm id="7054" text="$c1がプレミアム ショップをとおして、あなたにプレゼントをねだっています。" name="C1_HAS_ASKED_YOU_FOR_A_GIFT_FROM_THE_PREMIUM_SHOP;" />
 	<sm id="7055" text="仇の$c1に復讐しました！" name="YOU_GOT_YOUR_REVENGE_ON_C1;" />
 	<sm id="7056" text="自分を倒した$c1を、自分の仇リストに追加しました。" name="YOU_VE_ADED_C1_TO_YOUR_LIST_OF_FOES_FOR_HAVING_KILLED_YOU;" />
@@ -4851,7 +4851,7 @@
 	<sm id="7130" text="選択したアイテムは既に販売されたか取り消されて購入できません。\\n確認後、再度購入してください。" name="THE_ITEM_YOU_SELECTED_HAS_EITHER_ALREADY_BEEN_SOLD_OR_CANCELED_SO_IT_S_NOT_AVAILABLE_FOR_PURCHASE_NPLEASE_CHECK_AGAIN;" />
 	<sm id="7140" text="獲得した経験値の数値が足りないため、性向値を減少できませんでした。" name="YOU_DO_NOT_HAVE_ENOUGH_XP_SO_THE_KARMA_AMOUNT_CANNOT_BE_REDUCED;" />
 	<sm id="7150" text="$s1m" name="S1M;" />
-	<sm id="7151" text="<html><body><font color='#FFDF4C'>TAB</font>を押して、次のターゲットを選択</body></html>" name="HTML_BODY_CLICK_ON_THE_FONT_COLOR_FFDF4C_TAB_FONT_TO_SELECT_THE_NEXT_TARGET_BODY_HTML;" />
+	<sm id="7151" text="&lt;html&gt;&lt;body&gt;&lt;font color='#FFDF4C'&gt;TAB&lt;/font&gt;を押して、次のターゲットを選択&lt;/body&gt;&lt;/html&gt;" name="HTML_BODY_CLICK_ON_THE_FONT_COLOR_FFDF4C_TAB_FONT_TO_SELECT_THE_NEXT_TARGET_BODY_HTML;" />
 	<sm id="7152" text="自分自身にプレゼントできません。" name="YOU_CANNOT_GIFT_YOURSELF;" />
 	<sm id="7153" text="$s1に移動しますか？  " name="TELEPORT_TO_S1;" />
 	<sm id="7154" text="冒険のスクロールが足りません。\\nプレミアム ショップに移動しますか？" name="NOT_ENOUGH_ADVENTURE_SCROLLS_NGO_TO_THE_PREMIUM_SHOP;" />
@@ -4947,12 +4947,12 @@
 	<sm id="7244" text="$s1人以上" name="OVER_S1;" />
 	<sm id="7245" text="$s1血盟に\\n血盟加入申請をしますか？" name="APPLY_TO_JOIN_THE_N_S1_CLAN;" />
 	<sm id="7246" text="$s1を\\n血盟に勧誘しますか？" name="RECOMMEND_S1_NTO_JOIN_THE_CLAN;" />
-	<sm id="7247" text="<血盟加入申請>$s1があなたの血盟に加入申請しました。" name="CLAN_APPLICATION_S1_HAS_APPLIED_TO_JOIN_YOUR_CLAN;" />
+	<sm id="7247" text="&lt;血盟加入申請&gt;$s1があなたの血盟に加入申請しました。" name="CLAN_APPLICATION_S1_HAS_APPLIED_TO_JOIN_YOUR_CLAN;" />
 	<sm id="7248" text="$s1があなたの血盟に加入申請しました。" name="S1_HAS_APPLIED_TO_JOIN_YOUR_CLAN;" />
 	<sm id="7249" text="$s1に関する詳細情報は、郵便の下段の申請確認ボタンを押して確認してください。" name="IN_ORDER_TO_SEE_S1_S_INFORMATION_CLICK_ON_THE_SEE_APPLICATION_MENU_ON_THE_BOTTOM_OF_THE_MAILBOX;" />
 	<sm id="7250" text="$s1に関する簡易情報" name="S1_S_PREVIEW;" />
 	<sm id="7251" text="レベル：$s1/クラス：$s2\\n血盟脱退ペナルティー回数：$s3" name="LV_S1_CLASS_S2_NCLAN_PENALTY_FOR_LEAVING_S3;" />
-	<sm id="7252" text="<血盟勧誘>$s1血盟があなたを血盟に勧誘しました。" name="CLAN_RECOMMENDATION_THE_S1_CLAN_HAS_MADE_A_RECOMMENDATION_TO_JOIN_THE_CLAN;" />
+	<sm id="7252" text="&lt;血盟勧誘&gt;$s1血盟があなたを血盟に勧誘しました。" name="CLAN_RECOMMENDATION_THE_S1_CLAN_HAS_MADE_A_RECOMMENDATION_TO_JOIN_THE_CLAN;" />
 	<sm id="7253" text="$s1血盟の$s2盟主が、あなたを血盟に勧誘しました。" name="CLAN_LEADER_S2_OF_THE_S1_CLAN_HAS_MADE_A_RECOMMENDATION_TO_JOIN_THE_CLAN;" />
 	<sm id="7254" text="$s1血盟に関する詳細情報は、郵便の下段の申請確認ボタンを押して確認してください。" name="IN_ORDER_TO_SEE_THE_S1_CLAN_S_INFORMATION_CLICK_ON_THE_APPLY_MENU_ON_THE_BOTTOM_OF_THE_MAILBOX;" />
 	<sm id="7255" text="$s1血盟に関する簡易情報" name="S1_CLAN_S_PREVIEW;" />
@@ -5091,7 +5091,7 @@
 	<sm id="7388" text="$s1グレードのソウル ショットがありません。プレミアム ショップで購入してください。" name="NO_GRADE_S1_SOULSHOTS_AVAILABLE_PLEASE_GO_TO_THE_PREMIUM_SHOP_TO_BUY_MORE;" />
 	<sm id="7389" text="$s1グレードのスピリット ショットがありません。プレミアム ショップで購入してください。" name="NO_GRADE_S1_SPIRITSHOTS_AVAILABLE_PLEASE_GO_TO_THE_PREMIUM_SHOP_TO_BUY_MORE;" />
 	<sm id="7390" text="帰属状態では該当機能を遂行できません。" name="CANNOT_USE_THIS_FUNCTION_BINDED;" />
-	<sm id="7391" text="違う血盟に加入申請した場合、キャラクターを削除できません。<br>先に加入申請を取り消してからキャラクターを削除してください。" name="CANNOT_DELETE_A_CHARACTER_THAT_HAS_REQUESTED_TO_JOIN_ANOTHER_CLAN_BR_PLEASE_CANCEL_YOUR_REQUEST_FIRST_AND_THEN_DELETE_THE_CHARACTER;" />
+	<sm id="7391" text="違う血盟に加入申請した場合、キャラクターを削除できません。&lt;br&gt;先に加入申請を取り消してからキャラクターを削除してください。" name="CANNOT_DELETE_A_CHARACTER_THAT_HAS_REQUESTED_TO_JOIN_ANOTHER_CLAN_BR_PLEASE_CANCEL_YOUR_REQUEST_FIRST_AND_THEN_DELETE_THE_CHARACTER;" />
 	<sm id="7392" text="現在、財の神様の能力が発動中です。新年のイベント期間中、毎日20時から23時までに狩りをすると、100％のアデナと経験値を追加で受け取ることができます。" name="THE_POWER_OF_THE_GOD_OF_WEALTH_IS_ACTIVE_YOU_LL_GET_100_XP_AND_100_ADENA_BETWEEN_20_00_23_00_EVERY_DAY_DURING_THE_NEW_YEAR_S_EVENT;" />
 	<sm id="7393" text="$s1日" name="" />
 	<sm id="7394" text="$s1時間 " name="S1_HOURS;" />
@@ -5135,7 +5135,7 @@
 	<sm id="7432" text="該当作業を遂行できないアイテムです。" name="CANNOT_PERFORM_THE_ACTION_WITH_THIS_ITEM;" />
 	<sm id="7433" text="時間制魂吸収を解除できないアイテムです。" name="CANNOT_REMOVE_THE_TIMED_SOUL_CRYSTAL_EFFECT_FROM_THIS_WEAPON;" />
 	<sm id="7434" text="快速成長イベントの時間です。毎日午後8時から10時までの狩りは、経験値2倍、アデナ ドロップ量2倍、アイテム ドロップ確率2倍になります。" name="THE_GREAT_GROWTH_EVENT_IS_HERE_XP_FROM_HUNTING_ADENA_DROP_RATE_AND_ITEM_DROP_RATE_ARE_ALL_DOUBLED_BETWEEN_20_00_22_00_EVERY_DAY;" />
-	<sm id="7435" text="<$s1>ボタンを押すと、時間制魂吸収解除を開始します。" name="CLICK_ON_S1_TO_REMOVE_THE_TIMED_SOUL_CRYSTAL_EFFECT;" />
+	<sm id="7435" text="&lt;$s1&gt;ボタンを押すと、時間制魂吸収解除を開始します。" name="CLICK_ON_S1_TO_REMOVE_THE_TIMED_SOUL_CRYSTAL_EFFECT;" />
 	<sm id="7436" text="$s1の時間制魂吸収の解除に成功しました。" name="THE_TIMED_SOUL_CRYSTAL_EFFECT_HAS_BEEN_REMOVED_FROM_S1;" />
 	<sm id="7437" text="現在、連続ログイン$s1日目です。" name="CONSECUTIVE_LOGINS_S1_DAYS;" />
 	<sm id="7438" text="ログインを毎日連続ですると、マイレージ報賞を受け取れます。\\n連続ログイン報賞は翌日の午前6時30分以降に再接続すると受け取ることができます。" name="GET_MILEAGE_POINTS_FOR_LOGGING_IN_CONSECUTIVELY_EACH_DAY_N_YOU_HAVE_TO_LOG_IN_ONCE_AFTER_6_30_AM_EACH_DAY_TO_RECEIVE_THE_CONSECUTIVE_LOGIN_REWARD;" />
@@ -5147,10 +5147,10 @@
 	<sm id="7444" text="運命の竜の石像イベントの報賞で$s1を受け取りました。" name="YOU_VE_RECEIVED_S1_AS_A_REWARD_FOR_THE_FORTUNE_DRAGON_STATUE_EVENT;" />
 	<sm id="7445" text="既に$s1日目報賞を受け取っているため、報賞を受け取れません。\\n$s2日目からまた報賞を受け取れます。" name="YOU_VE_ALREADY_RECEIVED_THE_REWARD_FOR_DAY_S1_N_RECEIVE_YOUR_REWARD_FOR_DAY_S2_TOMORROW;" />
 	<sm id="7446" text="嵐のTシャツ強化イベントの時間です。毎日午後8時から11時にモンスターを狩ると、嵐の魔力が込められた欠片を獲得できます。" name="THE_STORM_T_SHIRT_ENCHANT_EVENT_IS_HERE_HUNT_MONSTERS_EVERY_DAY_BETWEEN_20_00_22_00_TO_OBTAIN_FRAGMENTS_THAT_CONTAIN_MAGIC_POWER_OF_THE_STORM;" />
-	<sm id="7447" text="運命の青銅のドラゴンヘッドを使用しますか？<br><font color=\"ccccdd\">運命の青銅のドラゴンヘッドはレベル65まで使用可能です。それ以降も使用したければ、リオネル ハンターの所に行き、運命の銀のドラゴンヘッドと交換してください。</font><button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=\"url http://www.ncsoft.jp/lineage2/\" value=\"イベント詳細説明\" back=\"L2UI_CT1_CN.Dialog_HelpIcon_Down\" highlightTex=\"L2UI_CT1_CN.Dialog_HelpIcon_Over\" fore=\"L2UI_CT1_CN.Dialog_HelpIcon\">" name="" />
-	<sm id="7448" text="運命の銀のドラゴンヘッドを使用しますか？<br><font color=\"ccccdd\">運命の銀のドラゴンヘッドはレベル85まで使用可能です。それ以降も使用したければ、リオネル ハンターの所に行き、運命の金のドラゴンヘッドと交換してください。</font><button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=\"url http://www.ncsoft.jp/lineage2/\" value=\"イベント詳細説明\" back=\"L2UI_CT1_CN.Dialog_HelpIcon_Down\" highlightTex=\"L2UI_CT1_CN.Dialog_HelpIcon_Over\" fore=\"L2UI_CT1_CN.Dialog_HelpIcon\">" name="" />
-	<sm id="7449" text="運命の金のドラゴンヘッドを使用しますか？<br><font color=\"ccccdd\">運命の金のドラゴンヘッドはレベル95まで使用可能です。より良い報賞を受け取るには、リオネル ハンターの所に行き、運命の金剛石のドラゴンヘッドと交換してください。</font><button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=\"url http://www.ncsoft.jp/lineage2/\" value=\"イベント詳細説明\" back=\"L2UI_CT1_CN.Dialog_HelpIcon_Down\" highlightTex=\"L2UI_CT1_CN.Dialog_HelpIcon_Over\" fore=\"L2UI_CT1_CN.Dialog_HelpIcon\">" name="" />
-	<sm id="7450" text="運命の金剛石のドラゴンヘッドを使用しますか？<br><font color=\"ccccdd\">運命の金剛石のドラゴンヘッドはレベル95まで使用可能です。</font><button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=\"url http://www.ncsoft.jp/lineage2/\" value=\"イベント詳細説明\" back=\"L2UI_CT1_CN.Dialog_HelpIcon_Down\" highlightTex=\"L2UI_CT1_CN.Dialog_HelpIcon_Over\" fore=\"L2UI_CT1_CN.Dialog_HelpIcon\">" name="" />
+	<sm id="7447" text="運命の青銅のドラゴンヘッドを使用しますか？&lt;br&gt;&lt;font color=&quot;ccccdd&quot;&gt;運命の青銅のドラゴンヘッドはレベル65まで使用可能です。それ以降も使用したければ、リオネル ハンターの所に行き、運命の銀のドラゴンヘッドと交換してください。&lt;/font&gt;&lt;button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=&quot;url http://www.ncsoft.jp/lineage2/&quot; value=&quot;イベント詳細説明&quot; back=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Down&quot; highlightTex=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Over&quot; fore=&quot;L2UI_CT1_CN.Dialog_HelpIcon&quot;&gt;" name="" />
+	<sm id="7448" text="運命の銀のドラゴンヘッドを使用しますか？&lt;br&gt;&lt;font color=&quot;ccccdd&quot;&gt;運命の銀のドラゴンヘッドはレベル85まで使用可能です。それ以降も使用したければ、リオネル ハンターの所に行き、運命の金のドラゴンヘッドと交換してください。&lt;/font&gt;&lt;button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=&quot;url http://www.ncsoft.jp/lineage2/&quot; value=&quot;イベント詳細説明&quot; back=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Down&quot; highlightTex=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Over&quot; fore=&quot;L2UI_CT1_CN.Dialog_HelpIcon&quot;&gt;" name="" />
+	<sm id="7449" text="運命の金のドラゴンヘッドを使用しますか？&lt;br&gt;&lt;font color=&quot;ccccdd&quot;&gt;運命の金のドラゴンヘッドはレベル95まで使用可能です。より良い報賞を受け取るには、リオネル ハンターの所に行き、運命の金剛石のドラゴンヘッドと交換してください。&lt;/font&gt;&lt;button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=&quot;url http://www.ncsoft.jp/lineage2/&quot; value=&quot;イベント詳細説明&quot; back=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Down&quot; highlightTex=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Over&quot; fore=&quot;L2UI_CT1_CN.Dialog_HelpIcon&quot;&gt;" name="" />
+	<sm id="7450" text="運命の金剛石のドラゴンヘッドを使用しますか？&lt;br&gt;&lt;font color=&quot;ccccdd&quot;&gt;運命の金剛石のドラゴンヘッドはレベル95まで使用可能です。&lt;/font&gt;&lt;button fontcolor=d8c351 width=160 height=28 textoffsetx=45 textalign=left action=&quot;url http://www.ncsoft.jp/lineage2/&quot; value=&quot;イベント詳細説明&quot; back=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Down&quot; highlightTex=&quot;L2UI_CT1_CN.Dialog_HelpIcon_Over&quot; fore=&quot;L2UI_CT1_CN.Dialog_HelpIcon&quot;&gt;" name="" />
 	<sm id="7451" text="既にアジトを所有しているため、入札できません。" name="YOU_ALREADY_HAVE_A_CLAN_HALL_SO_YOU_CANNOT_BID;" />
 	<sm id="7452" text="所持限度に達しているため、該当アイテムを受け取れません。インベントリのアイテムの所持限度を確認してください。" name="YOU_VE_EXCEEDED_THE_LIMIT_AND_CANNOT_RETRIEVE_THE_ITEM_PLEASE_CHECK_YOUR_LIMIT_IN_THE_INVENTORY;" />
 	<sm id="7453" text="所持限度に達しているため、該当アイテムを預けられません。倉庫のアイテムの所持限度を確認してください。" name="YOU_VE_EXCEEDED_THE_LIMIT_SO_YOU_CANNOT_DEPOSIT_THE_ITEM_PLEASE_CHECK_YOUR_ITEMS_IN_THE_WAREHOUSE;" />
@@ -5182,7 +5182,7 @@
 	<sm id="7479" text="インベントリの重量、数量制限が80％を超えると、アイテムを受け取ることができません。 " name="CANNOT_ACQUIRE_ITEMS_WHEN_THE_INVENTORY_S_WEIGHT_LIMIT_IS_OVER_80;" />
 	<sm id="7480" text="魔剣/血剣は、決闘中は獲得できません。" name="CANNOT_ACQUIRE_A_DEMONIC_BLOOD_SWORD_WHILE_IN_BATTLE;" />
 	<sm id="7481" text="ディスアーム状態では、魔剣/血剣は獲得できません。" name="CANNOT_ACQUIRE_A_DEMONIC_BLOOD_SWORD_WHILE_DISARMED;" />
-	<sm id="7482" text="$s1血盟との血盟戦が始まりました。21日後に血盟戦は終了し、血盟>戦争情報をとおして確認できます。敗北宣言は7日後から可能で、敗北宣言後、21日間は同じ血盟と血盟線はできません。相手血盟に倒された場合、狩りでの死亡ペナルティーと同じペナルティーを受けます。" name="THE_CLAN_WAR_AGAINST_THE_S1_CLAN_HAS_STARTED_THE_CLAN_WAR_WILL_END_IN_21_DAYS_CHECK_THE_STATUS_ON_CLAN_ACTION_WAR_INFORMATION_YOU_CAN_DECLARE_DEFEAT_STARTING_FROM_THE_7TH_DAY_AND_ONCE_YOU_DO_SO_YOU_WON_T_BE_ABLE_TO_START_A_CLAN_WAR_WITH_THE_SAME_CLAN_FOR_ANOTHER_21_DAYS_IF_YOU_ARE_KILLED_BY_A_MEMBER_OF_THE_OPPOSING_CLAN_YOU_LL_GET_THE_SAME_PENALTY_AS_WHEN_DYING_IN_A_HUNTING_ZONE;" />
+	<sm id="7482" text="$s1血盟との血盟戦が始まりました。21日後に血盟戦は終了し、血盟&gt;戦争情報をとおして確認できます。敗北宣言は7日後から可能で、敗北宣言後、21日間は同じ血盟と血盟線はできません。相手血盟に倒された場合、狩りでの死亡ペナルティーと同じペナルティーを受けます。" name="THE_CLAN_WAR_AGAINST_THE_S1_CLAN_HAS_STARTED_THE_CLAN_WAR_WILL_END_IN_21_DAYS_CHECK_THE_STATUS_ON_CLAN_ACTION_WAR_INFORMATION_YOU_CAN_DECLARE_DEFEAT_STARTING_FROM_THE_7TH_DAY_AND_ONCE_YOU_DO_SO_YOU_WON_T_BE_ABLE_TO_START_A_CLAN_WAR_WITH_THE_SAME_CLAN_FOR_ANOTHER_21_DAYS_IF_YOU_ARE_KILLED_BY_A_MEMBER_OF_THE_OPPOSING_CLAN_YOU_LL_GET_THE_SAME_PENALTY_AS_WHEN_DYING_IN_A_HUNTING_ZONE;" />
 	<sm id="7483" text="血盟戦の拒否後、5日が経っていないので、血盟名声値が減少しました。" name="IT_HASN_T_BEEN_5_DAYS_SINCE_YOU_REFUSED_A_CLAN_WAR_SO_YOUR_CLAN_FAME_POINTS_HAVE_BEEN_REDUCED;" />
 	<sm id="7484" text="陣地が攻撃されています。" name="THE_BASE_IS_UNDER_ATTACK;" />
 	<sm id="7485" text="敵血盟がシール オブ ルーラーを開始しました。" name="THE_OPPOSING_CLAN_HAS_STARTED_THE_SEAL_OF_RULER;" />
