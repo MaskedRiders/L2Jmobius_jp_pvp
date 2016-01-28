@@ -254,6 +254,13 @@ import quests.Q10745_TheSecretIngredients.Q10745_TheSecretIngredients;
 import quests.Q10746_SeeTheWorld.Q10746_SeeTheWorld;
 import quests.Q10755_LettersFromTheQueen_WindyHill.Q10755_LettersFromTheQueen_WindyHill;
 import quests.Q10756_AnInterdimensionalDraft.Q10756_AnInterdimensionalDraft;
+import quests.Q10757_QuietingTheStorm.Q10757_QuietingTheStorm;
+import quests.Q10758_TheOathOfTheWind.Q10758_TheOathOfTheWind;
+import quests.Q10760_LettersFromTheQueen_OrcBarracs.Q10760_LettersFromTheQueen_OrcBarracs;
+import quests.Q10761_AnOrcInLove.Q10761_AnOrcInLove;
+import quests.Q10762_MarionetteSpirit.Q10762_MarionetteSpirit;
+import quests.Q10763_TerrifyingChertuba.Q10763_TerrifyingChertuba;
+import quests.Q10764_FreeSpirit.Q10764_FreeSpirit;
 
 /**
  * @author NosBit
@@ -498,7 +505,14 @@ public class QuestMasterHandler
 		Q10745_TheSecretIngredients.class,
 		Q10746_SeeTheWorld.class,
 		Q10755_LettersFromTheQueen_WindyHill.class,
-		Q10756_AnInterdimensionalDraft.class
+		Q10756_AnInterdimensionalDraft.class,
+		Q10757_QuietingTheStorm.class,
+		Q10758_TheOathOfTheWind.class,
+		Q10760_LettersFromTheQueen_OrcBarracs.class,
+		Q10761_AnOrcInLove.class,
+		Q10762_MarionetteSpirit.class,
+		Q10763_TerrifyingChertuba.class,
+		Q10764_FreeSpirit.class
 	};
 	
 	public static void main(String[] args)

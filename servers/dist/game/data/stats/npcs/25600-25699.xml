@@ -23,7 +23,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="10277" /> <!-- rhand: Monster Only (Behamah Pole) -->
 		<acquire exp="2106269" sp="505" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="254046.904193716" hpRegen="55.0593688798472" mp="1917.0" mpRegen="3" />
 			<attack physical="5869.75911848713" magical="4125.48586492145" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="1520.63794152047" magical="834.552631578947" />
@@ -42,8 +42,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4086" level="1" /> <!-- Critical Chance -->
 			<skill id="4093" level="1" /> <!-- Evasion -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -108,7 +106,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="6722" /> <!-- rhand: Monster Only(Ahrimanes) -->
 		<acquire exp="2194861" sp="526" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="270971.33944121" hpRegen="44.0455404726663" mp="1917.0" mpRegen="3" />
 			<attack physical="5282.78320663841" magical="3712.9372784293" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="1900.79742690058" magical="1390.92105263158" />
@@ -126,8 +124,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4379" level="1" /> <!-- Resist Spear Weapons -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -197,7 +193,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="9442" /> <!-- rhand: Dynasty Sword -->
 		<acquire exp="2076738" sp="498" />
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="254046.904193716" hpRegen="55.0593688798472" mp="1917.0" mpRegen="3" />
 			<attack physical="5869.75911848713" magical="4125.48586492145" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="760.318970760234" magical="1112.73684210526" />
@@ -214,8 +210,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -284,7 +278,7 @@
 		<sex>MALE</sex>
 		<equipment lhand="10548" /> <!-- lhand: Monster Only (Transparent Shield) -->
 		<acquire exp="4712138" sp="1130" raidPoints="533" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="970000" hpRegen="100" mp="1917.0" mpRegen="3" />
 			<attack physical="3152.92775365761" magical="1289.6819828842" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
 			<defence physical="1127.29373410405" magical="549.93387283237" />
@@ -304,8 +298,6 @@
 			<skill id="4246" level="1" /> <!-- Strong in "nan" activity magic DOT -->
 			<skill id="4273" level="5" /> <!-- Resist Daggers/Rapier Weapon -->
 			<skill id="4274" level="4" /> <!-- Blunt Weapon Weak Point -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -346,7 +338,7 @@
 	<npc id="25604" level="50" type="L2Monster" name="Mutated Elpy" title="Naia's Creature">
 		<race>ANIMAL</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="1421.00103" hpRegen="5.5" mp="747.8" mpRegen="2.1" />
 			<attack physical="305.54906" magical="208.6504" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="200.23844" magical="146.5258" />
@@ -360,8 +352,6 @@
 		</stats>
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -392,7 +382,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="18605.9337557173" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
 			<attack physical="2202.47571929825" magical="1825.40227762388" random="10" critical="4" accuracy="4.75" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="589.016480561404" magical="646.525047578947" />
@@ -409,8 +399,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4032" level="10" /> <!-- NPC Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -446,7 +434,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="18605.9337557173" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
 			<attack physical="2202.47571929825" magical="1825.40227762388" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="589.016480561404" magical="646.525047578947" />
@@ -463,8 +451,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4032" level="10" /> <!-- NPC Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -500,7 +486,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="18605.9337557173" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
 			<attack physical="2202.47571929825" magical="1825.40227762388" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="589.016480561404" magical="646.525047578947" />
@@ -517,8 +503,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4032" level="10" /> <!-- NPC Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -554,7 +538,7 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="18605.9337557173" hpRegen="187.410040552143" mp="1846.8" mpRegen="3" />
 			<attack physical="2202.47571929825" magical="1825.40227762388" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="589.016480561404" magical="646.525047578947" />
@@ -571,8 +555,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4032" level="10" /> <!-- NPC Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -622,7 +604,7 @@
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
 		<acquire exp="13455635" sp="3229" raidPoints="1368" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="986096.671976069" hpRegen="287.940361385434" mp="1917.0" mpRegen="3" />
 			<attack physical="5799.79740479873" magical="4805.40042572106" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1140.47845614035" magical="834.548771929825" />
@@ -640,8 +622,6 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!-- Resist Bow/Crossbow Weapons -->
 			<skill id="4116" level="10" /> <!-- Resist M. Atk. -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -720,7 +700,7 @@
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
 		<acquire exp="13455635" sp="3229" raidPoints="1368" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="986096.671976069" hpRegen="287.940361385434" mp="1917.0" mpRegen="3" />
 			<attack physical="5799.79740479873" magical="4805.40042572106" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1140.47845614035" magical="834.548771929825" />
@@ -738,8 +718,6 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!-- Resist Bow/Crossbow Weapons -->
 			<skill id="4116" level="10" /> <!-- Resist M. Atk. -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -821,7 +799,7 @@
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
 		<acquire exp="13455635" sp="3229" raidPoints="1368" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="986096.671976069" hpRegen="287.940361385434" mp="1917.0" mpRegen="3" />
 			<attack physical="5799.79740479873" magical="4805.40042572106" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1140.47845614035" magical="834.548771929825" />
@@ -839,8 +817,6 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!-- Resist Bow/Crossbow Weapons -->
 			<skill id="4116" level="10" /> <!-- Resist M. Atk. -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -913,7 +889,7 @@
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
 		<acquire exp="13455635" sp="3229" raidPoints="1368" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="986096.671976069" hpRegen="287.940361385434" mp="1917.0" mpRegen="3" />
 			<attack physical="5799.79740479873" magical="4805.40042572106" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1140.47845614035" magical="834.548771929825" />
@@ -931,8 +907,6 @@
 		<skillList>
 			<skill id="4071" level="5" /> <!-- Resist Bow/Crossbow Weapons -->
 			<skill id="4116" level="10" /> <!-- Resist M. Atk. -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -985,8 +959,8 @@
 		</parameters>
 		<race>ELEMENTAL</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
+		<stats>
+			<vitals hp="2117.031563442785" hpRegen="8.5" mp="1846.8" mpRegen="3" />
 			<attack physical="1202.69669493176" magical="830.835769581922" random="30" critical="4" accuracy="4.75" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="365.994978837209" magical="267.819242093023" />
 			<attribute>
@@ -1000,8 +974,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4077" level="10" /> <!-- NPC Aura Burn -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1031,7 +1003,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
 			<attack physical="1209.73000893721" magical="840.581560388208" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="368.135300350877" magical="269.385436491228" />
@@ -1046,8 +1018,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4288" level="1" /> <!-- Greater Resist Hold -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1071,7 +1041,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="4234.06312688557" hpRegen="8.5" mp="1846.8" mpRegen="3" />
 			<attack physical="1209.73000893721" magical="840.581560388208" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="368.135300350877" magical="269.385436491228" />
@@ -1086,8 +1056,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4288" level="1" /> <!-- Greater Resist Hold -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1116,7 +1084,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="201" /> <!-- rhand: Club of Nature -->
 		<acquire exp="821000" sp="197" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="42937.4559365726" hpRegen="24.1476600665647" mp="315.12" mpRegen="1.5" />
 			<attack physical="216.999656303378" magical="148.182632996394" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="345.01794" magical="168.32" evasion="-18" />
@@ -1134,8 +1102,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="2" /> <!-- BOSS Might -->
 			<skill id="4177" level="2" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1164,7 +1130,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="221" /> <!-- rhand: Assassin Knife -->
 		<acquire exp="695957" sp="167" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="68563.4278014332" hpRegen="35.3106901452001" mp="463.32" mpRegen="1.8" />
 			<attack physical="457.589621792238" magical="312.474383029699" random="10" critical="8" accuracy="0" attackSpeed="253" type="DAGGER" range="40" distance="80" width="120" />
 			<defence physical="457.40256" magical="223.14" evasion="-18" />
@@ -1182,8 +1148,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="3" /> <!-- BOSS Might -->
 			<skill id="4177" level="3" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1211,7 +1175,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<acquire exp="814824" sp="195" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="109735.575864469" hpRegen="52.8166369725043" mp="720.0" mpRegen="2.1" />
 			<attack physical="897.1817451697" magical="612.658813166547" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="586.98906" magical="286.36" evasion="-18" />
@@ -1229,8 +1193,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="4" /> <!-- BOSS Might -->
 			<skill id="4177" level="4" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1259,7 +1221,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="75" /> <!-- rhand: Caliburs -->
 		<acquire exp="939496" sp="225" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="154029.954705898" hpRegen="70.1991595616828" mp="1007.0" mpRegen="2.4" />
 			<attack physical="1574.55774540111" magical="1075.21882532739" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="728.44779" magical="355.36" evasion="-18" />
@@ -1277,8 +1239,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="5" /> <!-- BOSS Might -->
 			<skill id="4177" level="5" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1306,7 +1266,7 @@
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<acquire exp="1039378" sp="249" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="186877.922094395" hpRegen="81.1635784369403" mp="1314.0" mpRegen="2.7" />
 			<attack physical="2385.12110860886" magical="1628.72854416048" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="873.45189" magical="426.1" evasion="-18" />
@@ -1324,8 +1284,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="6" /> <!-- BOSS Might -->
 			<skill id="4177" level="6" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1354,7 +1312,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="8221" /> <!-- rhand: Monster Only (Grail Apostle Spear) -->
 		<acquire exp="1252188" sp="300" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="207939.679772089" hpRegen="87.9085509175166" mp="1607.4" mpRegen="3" />
 			<attack physical="2987.18479246657" magical="2039.86000523023" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="998.10183" magical="486.92" evasion="-18" />
@@ -1373,8 +1331,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="7" /> <!-- BOSS Might -->
 			<skill id="4177" level="7" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1404,7 +1360,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="78" /> <!-- rhand: Great Sword -->
 		<acquire exp="1365139" sp="327" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="214389.061423525" hpRegen="90.4177394244705" mp="1708.8" mpRegen="3" />
 			<attack physical="3111.31464337673" magical="2124.62457584495" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1036.83381" magical="505.8" evasion="-18" />
@@ -1423,8 +1379,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="8" /> <!-- BOSS Might -->
 			<skill id="4177" level="8" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1476,7 +1430,7 @@
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<acquire exp="3539612" sp="849" raidPoints="930" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="309907.557189244" hpRegen="33.2475941841315" mp="1674.8" mpRegen="3" />
 			<attack physical="594.243196720861" magical="115.335636902663" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="921.7125" magical="449.64" evasion="-18" />
@@ -1492,8 +1446,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1541,7 +1493,7 @@
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
 		<acquire exp="3658389" sp="878" raidPoints="938" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="319298.066079636" hpRegen="34.2550295355049" mp="1777.4" mpRegen="3" />
 			<attack physical="623.117691655907" magical="125.474229315868" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="972.386110863905" magical="474.365822485207" evasion="-18" />
@@ -1557,8 +1509,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1625,7 +1575,7 @@
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
 		<acquire exp="3745533" sp="898" raidPoints="971" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="325715.957207836" hpRegen="34.9435556291686" mp="1846.8" mpRegen="3" />
 			<attack physical="643.033547458868" magical="132.116420113434" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1005.7282140355" magical="490.630579881657" evasion="-18" />
@@ -1641,8 +1591,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1741,7 +1689,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="57629.963204769" hpRegen="7.78867305673077" mp="1507.8" mpRegen="3" />
 			<attack physical="428.978770045773" magical="102.534465428612" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="430.9824105" magical="420.498" evasion="-18" />
@@ -1757,8 +1705,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1790,7 +1736,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="58591.5471939677" hpRegen="7.90115198640846" mp="1540.8" mpRegen="3" />
 			<attack physical="439.902770141518" magical="105.292634546515" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="437.1091425" magical="426.474" evasion="-18" />
@@ -1806,8 +1752,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1838,7 +1782,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="60370.9750823595" hpRegen="8.11364167672888" mp="1607.4" mpRegen="3" />
 			<attack physical="459.199396852777" magical="111.023360116077" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="449.1458235" magical="438.228" evasion="-18" />
@@ -1854,8 +1798,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1887,7 +1829,7 @@
 		</parameters>
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="59504.1556435027" hpRegen="8.00935879323858" mp="1574.0" mpRegen="3" />
 			<attack physical="449.963472088467" magical="108.971985914937" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="443.1654855" magical="432.378" evasion="-18" />
@@ -1903,8 +1845,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1935,7 +1875,7 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="59504.1556435027" hpRegen="8.00935879323858" mp="1574.0" mpRegen="3" />
 			<attack physical="449.963472088467" magical="108.971985914937" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="443.1654855" magical="432.378" evasion="-18" />
@@ -1951,8 +1891,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -1984,7 +1922,7 @@
 		</parameters>
 		<race>DRAGON</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="60370.9750823595" hpRegen="8.11364167672888" mp="1607.4" mpRegen="3" />
 			<attack physical="459.199396852777" magical="111.023360116077" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="449.1458235" magical="438.228" evasion="-18" />
@@ -2000,8 +1938,6 @@
 		<status undying="false" flying="true" noSleepMode="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2035,7 +1971,7 @@
 		</parameters>
 		<race>BEAST</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="58591.5471939677" hpRegen="7.90115198640846" mp="1540.8" mpRegen="3" />
 			<attack physical="439.902770141518" magical="105.292634546515" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="437.1091425" magical="426.474" evasion="-18" />
@@ -2052,8 +1988,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4065" level="9" /> <!-- NPC Heal -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2089,7 +2023,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="4506986" sp="1081" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="436294.588865472" hpRegen="186.30557254141" mp="1812.0" mpRegen="3" />
 			<attack physical="1816.9154129765" magical="1073.23050730418" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1092.54760217647" magical="532.982470588235" evasion="-18" />
@@ -2105,8 +2039,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2167,7 +2099,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13985" lhand="13986" /> <!-- rhand: Exclusive to Monsters (Death Slayer_r) lhand: Exclusive to Monsters (Death Slayer_l) -->
 		<acquire exp="4506986" sp="1081" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="436294.588865472" hpRegen="186.30557254141" mp="1812.0" mpRegen="3" />
 			<attack physical="1816.9154129765" magical="1073.23050730418" random="30" critical="4" accuracy="5" attackSpeed="253" type="DUAL" range="40" distance="80" width="120" />
 			<defence physical="1092.54760217647" magical="532.982470588235" evasion="-18" />
@@ -2183,8 +2115,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2246,7 +2176,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="4650677" sp="1116" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2263,8 +2193,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2314,7 +2242,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="4650677" sp="1116" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2330,8 +2258,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2386,7 +2312,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="4650677" sp="1116" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2402,8 +2328,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2463,7 +2387,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13985" lhand="13986" /> <!-- rhand: Exclusive to Monsters (Death Slayer_r) lhand: Exclusive to Monsters (Death Slayer_l) -->
 		<acquire exp="4650677" sp="1116" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="DUAL" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2479,8 +2403,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2537,7 +2459,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13984" /> <!-- rhand: Exclusive to Monsters (Death Slayer_1hs) -->
 		<acquire exp="4650677" sp="1116" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2553,8 +2475,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2746,7 +2666,7 @@
 		<race>UNDEAD</race>
 		<sex>FEMALE</sex>
 		<acquire exp="3100451" sp="1116" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2762,8 +2682,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2816,7 +2734,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2832,8 +2750,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2902,7 +2818,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2918,8 +2834,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -2972,7 +2886,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -2989,8 +2903,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3046,7 +2958,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13982" /> <!-- rhand: Exclusive to Monsters (Death Knight_pole) -->
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -3062,8 +2974,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3124,7 +3034,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13983" /> <!-- rhand: Exclusive to Monsters (Death Knight_2hs) -->
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="80" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -3140,8 +3050,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3197,7 +3105,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13985" lhand="13986" /> <!-- rhand: Exclusive to Monsters (Death Slayer_r) lhand: Exclusive to Monsters (Death Slayer_l) -->
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1049207" hpRegen="9.5" mp="1846" mpRegen="3.3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="DUAL" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -3266,7 +3174,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="13984" /> <!-- rhand: Exclusive to Monsters (Death Slayer_1hs) -->
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -3282,8 +3190,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3342,7 +3248,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -3358,8 +3264,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3418,7 +3322,7 @@
 		<race>UNDEAD</race>
 		<sex>MALE</sex>
 		<acquire exp="3100451" sp="744" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="440657.534754126" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1845.69199234965" magical="1103.56024381395" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1110.90240635294" magical="541.938352941177" evasion="-18" />
@@ -3434,8 +3338,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3505,8 +3407,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<acquire exp="138831575" sp="33319" raidPoints="338.1" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2555826" hpRegen="180.826353212712" mp="1708.8" mpRegen="3" />
+		<stats>
+			<vitals hp="1277913" hpRegen="180.826353212712" mp="1708.8" mpRegen="3" />
 			<attack physical="1732.89961795948" magical="984.65035778871" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="1036.83381" magical="505.8" evasion="-18" />
 			<attribute>
@@ -3524,8 +3426,6 @@
 			<skill id="4030" level="3" /> <!-- NPC Clan Might -->
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4172" level="8" /> <!-- Stun -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
@@ -3580,8 +3480,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<acquire exp="217112675" sp="52107" raidPoints="349.3" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2784206" hpRegen="184.460962912287" mp="1777.4" mpRegen="3" />
+		<stats>
+			<vitals hp="1392103" hpRegen="184.460962912287" mp="1777.4" mpRegen="3" />
 			<attack physical="1767.73090028046" magical="1023.84622869335" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1061.58432" magical="517.88" evasion="-18" />
 			<attribute>
@@ -3598,8 +3498,6 @@
 		<skillList>
 			<skill id="4031" level="3" /> <!-- NPC Clan Aegis -->
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
@@ -3652,8 +3550,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<acquire exp="376926858" sp="603082" raidPoints="361.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2911644" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
+		<stats>
+			<vitals hp="1455822" hpRegen="188.168628266824" mp="1846.8" mpRegen="3" />
 			<attack physical="1803.2622913761" magical="1053.40504182267" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1085.36442" magical="529.48" evasion="-18" />
 			<attribute>
@@ -3670,8 +3568,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4089" level="1" /> <!-- NPC Bear Spirit Totem -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
@@ -3716,8 +3612,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="152" /> <!-- rhand: Heavy Chisel -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="125144" hpRegen="115.221222" mp="1641.0" mpRegen="3" />
+		<stats>
+			<vitals hp="625720" hpRegen="115.221222" mp="1641.0" mpRegen="3" />
 			<attack physical="4918.273235" magical="3539.30916" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="1348.28" magical="493.3" />
 			<attribute>
@@ -3733,8 +3629,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3769,8 +3663,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="8212" /> <!-- rhand: Monster Only (Solina Brother Mace) -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="128077" hpRegen="114.51642376" mp="1708.8" mpRegen="3" />
+		<stats>
+			<vitals hp="640385" hpRegen="114.51642376" mp="1708.8" mpRegen="3" />
 			<attack physical="5132.039926" magical="3693.196354" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="1382.44" magical="505.8" />
 			<attribute>
@@ -3788,8 +3682,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4066" level="8" /> <!-- NPC Twister -->
 			<skill id="4077" level="8" /> <!-- NPC Aura Burn -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3820,8 +3712,8 @@
 		</parameters>
 		<race>DIVINE</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="135679" hpRegen="113.56314868" mp="1777.4" mpRegen="3" />
+		<stats>
+			<vitals hp="678395" hpRegen="113.56314868" mp="1777.4" mpRegen="3" />
 			<attack physical="5437.186036" magical="3988.349521" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1415.44" magical="517.88" />
 			<attribute>
@@ -3837,8 +3729,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -3878,8 +3768,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<acquire exp="138831575" sp="33319" raidPoints="270.2" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2555826" hpRegen="174.258963997156" mp="1574.0" mpRegen="3" />
+		<stats>
+			<vitals hp="1277913" hpRegen="174.258963997156" mp="1574.0" mpRegen="3" />
 			<attack physical="1632.09846880032" magical="925.853792810094" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="984.81219" magical="480.42" evasion="-18" />
 			<attribute>
@@ -3897,8 +3787,6 @@
 			<skill id="4030" level="3" /> <!-- NPC Clan Might -->
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4172" level="7" /> <!-- Stun -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
@@ -3951,8 +3839,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<acquire exp="217112675" sp="52107" raidPoints="287" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2784206" hpRegen="179.035993279912" mp="1674.8" mpRegen="3" />
+		<stats>
+			<vitals hp="1392103" hpRegen="179.035993279912" mp="1674.8" mpRegen="3" />
 			<attack physical="1715.74219599948" magical="974.826217605108" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1024.125" magical="499.6" evasion="-18" />
 			<attribute>
@@ -3969,8 +3857,6 @@
 		<skillList>
 			<skill id="4031" level="3" /> <!-- NPC Clan Aegis -->
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
@@ -4025,8 +3911,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<acquire exp="376926858" sp="603082" raidPoints="303.8" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
-			<vitals hp="2911644" hpRegen="184.460962912287" mp="1777.4" mpRegen="3" />
+		<stats>
+			<vitals hp="1455822" hpRegen="184.460962912287" mp="1777.4" mpRegen="3" />
 			<attack physical="1767.73090028046" magical="1023.84622869335" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1061.58432" magical="517.88" evasion="-18" />
 			<attribute>
@@ -4043,8 +3929,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4089" level="1" /> <!-- NPC Bear Spirit Totem -->
-			<skill id="4408" level="9" /> <!-- HP Increase (1/2x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="8" /> <!-- Weak P. Def. -->
@@ -4091,8 +3975,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="152" /> <!-- rhand: Heavy Chisel -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="125144" hpRegen="115.87986324" mp="1507.8" mpRegen="3" />
+		<stats>
+			<vitals hp="625720" hpRegen="115.87986324" mp="1507.8" mpRegen="3" />
 			<attack physical="4397.836272" magical="3117.769177" random="30" critical="4" accuracy="0" attackSpeed="253" type="POLE" range="80" distance="80" width="120" />
 			<defence physical="1277" magical="467.22" />
 			<attribute>
@@ -4107,8 +3991,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4142,8 +4024,8 @@
 		<race>DIVINE</race>
 		<sex>MALE</sex>
 		<equipment rhand="8212" /> <!-- rhand: Monster Only (Solina Brother Mace) -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="128077" hpRegen="115.48155276" mp="1607.4" mpRegen="3" />
+		<stats>
+			<vitals hp="640385" hpRegen="115.48155276" mp="1607.4" mpRegen="3" />
 			<attack physical="4791.0733" magical="3435.684243" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="1330.8" magical="486.92" />
 			<attribute>
@@ -4161,8 +4043,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4066" level="7" /> <!-- NPC Twister -->
 			<skill id="4077" level="8" /> <!-- NPC Aura Burn -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4193,8 +4073,8 @@
 		</parameters>
 		<race>DIVINE</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
-			<vitals hp="135679" hpRegen="114.51642376" mp="1708.8" mpRegen="3" />
+		<stats>
+			<vitals hp="678395" hpRegen="114.51642376" mp="1708.8" mpRegen="3" />
 			<attack physical="5132.039926" magical="3693.196354" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1382.44" magical="505.8" />
 			<attribute>
@@ -4210,8 +4090,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="13" /> <!-- HP Increase (5x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4387,7 +4265,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire exp="4292368" sp="1030" raidPoints="508" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1038817" hpRegen="18.630557254141" mp="1812.0" mpRegen="3" />
 			<attack physical="3043.21983656229" magical="1220.95192570577" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1086.15843491228" magical="529.865614035088" />
@@ -4406,8 +4284,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4161" level="1" /> <!-- Summon PC -->
 			<skill id="4232" level="7" /> <!-- NPC AE Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4448,7 +4324,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire exp="4292368" sp="1030" raidPoints="508" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="436294.588865472" hpRegen="18.630557254141" mp="1812.0" mpRegen="3" />
 			<attack physical="3043.21983656229" magical="1220.95192570577" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1086.15843491228" magical="529.865614035088" />
@@ -4467,8 +4343,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4161" level="1" /> <!-- Summon PC -->
 			<skill id="4232" level="7" /> <!-- NPC AE Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4509,7 +4383,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire exp="4292368" sp="1030" raidPoints="508" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="373966.790456118" hpRegen="18.630557254141" mp="1812.0" mpRegen="3" />
 			<attack physical="3043.21983656229" magical="1220.95192570577" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1086.15843491228" magical="529.865614035088" />
@@ -4528,8 +4402,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4161" level="1" /> <!-- Summon PC -->
 			<skill id="4232" level="7" /> <!-- NPC AE Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4570,7 +4442,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire exp="4292368" sp="1030" raidPoints="508" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="373966.790456118" hpRegen="18.630557254141" mp="1812.0" mpRegen="3" />
 			<attack physical="3043.21983656229" magical="1220.95192570577" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1086.15843491228" magical="529.865614035088" />
@@ -4589,8 +4461,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4161" level="1" /> <!-- Summon PC -->
 			<skill id="4232" level="7" /> <!-- NPC AE Strike -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4627,7 +4497,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<acquire exp="4292368" sp="1030" raidPoints="508" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="312521.536403012" hpRegen="96.0880871925918" mp="1812.0" mpRegen="3" />
 			<attack physical="1504.01905217385" magical="298.22125078989" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -4645,8 +4515,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4197" level="9" /> <!-- Hold -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4694,7 +4562,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="123" /> <!-- rhand: Saber -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="33502.3087024029" hpRegen="96.0880871925918" mp="1812.0" mpRegen="3" />
 			<attack physical="4010.61720452678" magical="2120.59167011675" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="536.800845" magical="523.74" />
@@ -4713,8 +4581,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4195" level="9" /> <!-- BOSS Twister -->
 			<skill id="4198" level="9" /> <!-- Poison -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4737,7 +4603,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="50003.4458244819" hpRegen="96.0880871925918" mp="1812.0" mpRegen="3" />
 			<attack physical="6016.07620869539" magical="4771.54001263823" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="536.800845" magical="523.74" />
@@ -4754,8 +4620,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4786,7 +4650,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="21732" /> <!-- rhand: Sword of Revolution - Event -->
 		<acquire exp="1862759394" sp="447062" raidPoints="499" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="309427.263765358" hpRegen="95.1367199926651" mp="1777.4" mpRegen="3" />
 			<attack physical="2978.25554885911" magical="294.628446948968" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1061.58432" magical="517.88" />
@@ -4803,8 +4667,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4846,7 +4708,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2507" /> <!-- rhand: Lizardspear -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="32842.1808669766" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="3931.59220128104" magical="2071.3426383783" random="10" critical="8" accuracy="0" attackSpeed="253" reuseDelay="1500" type="BOW" range="1100" distance="10" width="0" />
 			<defence physical="524.662155" magical="511.9" />
@@ -4863,8 +4725,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4885,7 +4745,7 @@
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
 		<equipment rhand="2" /> <!-- rhand: Long Sword -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="49018.1803984726" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="5897.53574031506" magical="4660.72484306306" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="524.662155" magical="511.9" />
@@ -4902,8 +4762,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -4932,7 +4790,7 @@
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
 		<acquire exp="1926992478" sp="462478" raidPoints="508" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="312521.536403012" hpRegen="96.0880871925918" mp="1812.0" mpRegen="3" />
 			<attack physical="3008.0381043477" magical="1192.88500315956" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -4950,8 +4808,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4197" level="9" /> <!-- Hold -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5000,7 +4856,7 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="33170.6026756464" hpRegen="95.1367199926651" mp="1777.4" mpRegen="3" />
 			<attack physical="3970.90812329385" magical="2095.04396056472" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="530.79216" magical="517.88" />
@@ -5019,8 +4875,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4196" level="9" /> <!-- Decrease Speed -->
 			<skill id="4200" level="9" /> <!-- Decrease Atk. Spd. -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5043,7 +4897,7 @@
 		</parameters>
 		<race>FAIRY</race>
 		<sex>FEMALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="49508.3622024573" hpRegen="95.1367199926651" mp="1777.4" mpRegen="3" />
 			<attack physical="5956.51109771821" magical="4714.05515118349" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="530.79216" magical="517.88" />
@@ -5060,8 +4914,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5091,7 +4943,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="3937" /> <!-- rhand: Giant Bar -->
 		<acquire exp="5553282" sp="1332" raidPoints="896" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="855234.894272099" hpRegen="328.667996016813" mp="1743.0" mpRegen="3" />
 			<attack physical="5450.52437713053" magical="3992.4335394373" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1049.32431" magical="511.9" />
@@ -5110,8 +4962,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="8" /> <!-- BOSS Might -->
 			<skill id="4177" level="8" /> <!-- BOSS Cancel Magic -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5173,7 +5023,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<acquire exp="4027949" sp="966" raidPoints="491" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="306363.627490454" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="2948.76787015753" magical="2071.3426383783" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="524.662155" magical="511.9" />
@@ -5194,8 +5044,6 @@
 			<skill id="4190" level="8" /> <!-- Decrease MP -->
 			<skill id="4196" level="8" /> <!-- Decrease Speed -->
 			<skill id="4276" level="3" /> <!-- Weak Point against Bow/Crossbow Weapons -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5236,7 +5084,7 @@
 	<npc id="25682" level="82" type="L2Monster" name="Cursed Life" title="Raid Fighter">
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="32842.1808669766" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="3931.59220128104" magical="4660.72484306306" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="524.662155" magical="511.9" />
@@ -5254,8 +5102,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4276" level="3" /> <!-- Weak Point against Bow/Crossbow Weapons -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5278,7 +5124,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="49018.1803984726" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="5897.53574031506" magical="4660.72484306306" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="524.662155" magical="511.9" />
@@ -5296,8 +5142,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4276" level="3" /> <!-- Weak Point against Bow/Crossbow Weapons -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5327,7 +5171,7 @@
 		<sex>MALE</sex>
 		<equipment rhand="3938" /> <!-- rhand: Giant Rod -->
 		<acquire exp="4158609" sp="998" raidPoints="499" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="309427.263765358" hpRegen="95.1367199926651" mp="1777.4" mpRegen="3" />
 			<attack physical="2978.25554885911" magical="1178.51378779587" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="1061.58432" magical="517.88" />
@@ -5347,8 +5191,6 @@
 			<skill id="4197" level="8" /> <!-- Hold -->
 			<skill id="4273" level="4" /> <!-- Resist Daggers/Rapier Weapon -->
 			<skill id="4274" level="4" /> <!-- Blunt Weapon Weak Point -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5397,7 +5239,7 @@
 		</parameters>
 		<race>GIANT</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="32842.1808669766" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="3931.59220128104" magical="2071.3426383783" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="524.662155" magical="511.9" />
@@ -5418,8 +5260,6 @@
 			<skill id="4205" level="8" /> <!-- Paralysis -->
 			<skill id="4273" level="4" /> <!-- Resist Daggers/Rapier Weapon -->
 			<skill id="4274" level="4" /> <!-- Blunt Weapon Weak Point -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5443,7 +5283,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="49018.1803984726" hpRegen="94.1947722699655" mp="1743.0" mpRegen="3" />
 			<attack physical="5897.53574031506" magical="4660.72484306306" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="524.662155" magical="511.9" />
@@ -5462,8 +5302,6 @@
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4273" level="4" /> <!-- Resist Daggers/Rapier Weapon -->
 			<skill id="4274" level="4" /> <!-- Blunt Weapon Weak Point -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5496,7 +5334,7 @@
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
 		<acquire exp="5614732" sp="1347" raidPoints="911" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="431893.62160741" hpRegen="132.781870390792" mp="1777.4" mpRegen="3" />
 			<attack physical="2752.51481045092" magical="4038.11495620023" random="50" critical="1" accuracy="9" attackSpeed="253" type="BLUNT" range="40" distance="80" width="120" />
 			<defence physical="1061.58432" magical="517.88" />
@@ -5516,8 +5354,6 @@
 			<skill id="4184" level="8" /> <!-- Decrease Atk. Spd. -->
 			<skill id="4189" level="8" /> <!-- Paralysis -->
 			<skill id="4195" level="8" /> <!-- BOSS Twister -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5560,7 +5396,7 @@
 		</parameters>
 		<race>CONSTRUCT</race>
 		<sex>MALE</sex>
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="46298.9962363143" hpRegen="132.781870390792" mp="1777.4" mpRegen="3" />
 			<attack physical="7339.85599354841" magical="7178.55695763715" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="530.79216" magical="517.88" />
@@ -5577,8 +5413,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5600,7 +5434,7 @@
 		<race>GIANT</race>
 		<sex>MALE</sex>
 		<equipment rhand="3937" /> <!-- rhand: Giant Bar -->
-		<stats str="40" int="21" dex="30" wit="20" con="43" men="20">
+		<stats>
 			<vitals hp="69102.9794571856" hpRegen="132.781870390792" mp="1777.4" mpRegen="3" />
 			<attack physical="11010.0592418037" magical="16152.4598248009" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="530.79216" magical="517.88" />
@@ -5617,8 +5451,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5655,7 +5487,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="3327990" sp="798" raidPoints="338.1" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1038818" hpRegen="186.30557254141" mp="18120.0" mpRegen="30" />
 			<attack physical="1785.40820928327" magical="1036.33137295235" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -5672,8 +5504,6 @@
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
 			<skill id="4173" level="9" /> <!-- BOSS Might -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -5735,7 +5565,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="3327990" sp="798" raidPoints="338.1" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1038818" hpRegen="9.5" mp="18120" mpRegen="3.3" />
 			<attack physical="1785.40820928327" magical="1036.33137295235" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -5814,7 +5644,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="3327990" sp="798" raidPoints="338.1" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1038818" hpRegen="9.5" mp="18120" mpRegen="3.3" />
 			<attack physical="1785.40820928327" magical="1036.33137295235" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -5893,7 +5723,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="3327990" sp="798" raidPoints="338.1" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1038818" hpRegen="9.5" mp="18120" mpRegen="3.3" />
 			<attack physical="1785.40820928327" magical="1036.33137295235" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -5972,7 +5802,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="37775745" sp="9066" raidPoints="343.7" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1038818" hpRegen="9.5" mp="18120" mpRegen="3.3" />
 			<attack physical="1785.40820928327" magical="1036.33137295235" random="30" critical="4" accuracy="5" attackSpeed="253" type="DUAL" range="40" distance="80" width="120" />
 			<defence physical="1073.60169" magical="523.74" />
@@ -6046,7 +5876,7 @@
 		<race>DEMONIC</race>
 		<sex>MALE</sex>
 		<acquire exp="42720365" sp="10252" raidPoints="355.6" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1070295" hpRegen="9.5" mp="19170" mpRegen="3.3" />
 			<attack physical="1839.50786343276" magical="1082.55400336307" random="10" critical="4" accuracy="5" attackSpeed="253" type="FIST" range="40" distance="80" width="120" />
 			<defence physical="1108.0785" magical="540.56" />
@@ -6111,7 +5941,7 @@
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<acquire exp="386354696" sp="92725" raidPoints="361" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="1818762" hpRegen="242.622420161294" mp="18468.0" mpRegen="300" />
 			<attack physical="11355.958626" magical="1212.53790962933" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="17479.902520542" magical="8527.328348" evasion="-18" />
@@ -6127,8 +5957,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -6177,7 +6005,7 @@
 		<race>BEAST</race>
 		<sex>MALE</sex>
 		<acquire raidPoints="361" />
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="15031098" hpRegen="242.622420161294" mp="18468.0" mpRegen="300" />
 			<attack physical="3038.11848539117" magical="1212.53790962933" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1085.36442" magical="529.48" evasion="-18" />
@@ -6193,8 +6021,6 @@
 		<status undying="false" noSleepMode="true" attackable="true" />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="11" /> <!-- Average P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
@@ -6305,7 +6131,7 @@
 		</parameters>
 		<race>HUMANOID</race>
 		<sex>MALE</sex>
-		<stats str="60" int="76" dex="73" wit="70" con="57" men="80">
+		<stats>
 			<vitals hp="780461.719331055" hpRegen="139.120530920571" mp="18468.0" mpRegen="500" />
 			<attack physical="8184.13933986331" magical="2579.001338104" random="30" critical="4" accuracy="5" attackSpeed="253" type="SWORD" range="40" distance="80" width="120" />
 			<defence physical="1876.129926" magical="640.6708" evasion="-18" />
@@ -6318,11 +6144,8 @@
 				<run ground="120" />
 			</speed>
 		</stats>
-		<status />
 		<skillList>
 			<skill id="4045" level="1" /> <!-- Resist Full Magic Attack -->
-			<skill id="4408" level="1" /> <!-- HP Increase (1x) -->
-			<skill id="4409" level="1" /> <!-- MP Increase (1x) -->
 			<skill id="4410" level="15" /> <!-- Strong P. Atk. -->
 			<skill id="4411" level="11" /> <!-- Average M. Atk. -->
 			<skill id="4412" level="11" /> <!-- Average P. Def. -->
