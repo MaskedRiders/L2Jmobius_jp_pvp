@@ -32,10 +32,10 @@ import ai.npc.AbstractNpcAI;
  * Fantasy Isle Parade
  * @author JOJO, Pandragon
  */
-public class Parade extends AbstractNpcAI
+final class Parade extends AbstractNpcAI
 {
 	// @formatter:off
-	protected final int[] ACTORS =
+	final int[] ACTORS =
 	{
 		32379,	0,	32379,
 		32379,	0,	32379,
@@ -141,13 +141,13 @@ public class Parade extends AbstractNpcAI
 		_log.info("Fantasy Isle: Parade starting at " + format.format(System.currentTimeMillis() + diff) + " and is scheduled each next " + (cycle / 3600000) + " hours.");
 	}
 	
-	protected void load()
+	void load()
 	{
 		npcIndex = 0;
 		spawns = new CopyOnWriteArrayList<>();
 	}
 	
-	protected void clean()
+	void clean()
 	{
 		if (spawns != null)
 		{
@@ -168,7 +168,7 @@ public class Parade extends AbstractNpcAI
 		return (dd * 1000L) / 6L;
 	}
 	
-	protected class Start implements Runnable
+	class Start implements Runnable
 	{
 		@Override
 		public void run()
@@ -180,7 +180,7 @@ public class Parade extends AbstractNpcAI
 		}
 	}
 	
-	protected class Spawn implements Runnable
+	class Spawn implements Runnable
 	{
 		@Override
 		public void run()
@@ -209,7 +209,7 @@ public class Parade extends AbstractNpcAI
 		}
 	}
 	
-	protected class Delete implements Runnable
+	class Delete implements Runnable
 	{
 		@Override
 		public void run()
@@ -239,7 +239,7 @@ public class Parade extends AbstractNpcAI
 		}
 	}
 	
-	protected class Clean implements Runnable
+	class Clean implements Runnable
 	{
 		@Override
 		public void run()

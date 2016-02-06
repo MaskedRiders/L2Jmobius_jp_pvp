@@ -37,7 +37,7 @@ import com.l2jmobius.gameserver.util.Broadcast;
 /**
  * @author Gnacik
  */
-public final class Race extends Event
+final class Race extends Event
 {
 	// Event NPC's list
 	private final Set<L2Npc> _npcs = ConcurrentHashMap.newKeySet();
@@ -142,7 +142,7 @@ public final class Race extends Event
 		return true;
 	}
 	
-	protected void StartRace()
+	private void StartRace()
 	{
 		// Abort race if no players signup
 		if (_players.isEmpty())
@@ -381,7 +381,7 @@ public final class Race extends Event
 		activeChar.sendPacket(html);
 	}
 	
-	protected void timeUp()
+	private void timeUp()
 	{
 		Broadcast.toAllOnlinePlayers("Time up, nobody wins!");
 		eventStop();

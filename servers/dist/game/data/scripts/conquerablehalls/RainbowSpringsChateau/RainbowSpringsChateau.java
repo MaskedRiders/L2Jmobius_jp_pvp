@@ -62,9 +62,9 @@ import com.l2jmobius.gameserver.util.Util;
  * Rainbow Springs Chateau clan hall siege script.
  * @author BiggBoss
  */
-public final class RainbowSpringsChateau extends ClanHallSiegeEngine
+final class RainbowSpringsChateau extends ClanHallSiegeEngine
 {
-	protected static class SetFinalAttackers implements Runnable
+	static class SetFinalAttackers implements Runnable
 	{
 		@Override
 		public void run()
@@ -129,7 +129,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 		}
 	}
 	
-	protected static class SiegeStart implements Runnable
+	static class SiegeStart implements Runnable
 	{
 		@Override
 		public void run()
@@ -158,7 +158,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 	{
 		private final L2Clan _winner;
 		
-		protected SiegeEnd(L2Clan winner)
+		SiegeEnd(L2Clan winner)
 		{
 			_winner = winner;
 		}
@@ -187,7 +187,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 		}
 	}
 	
-	protected static class TeleportBack implements Runnable
+	static class TeleportBack implements Runnable
 	{
 		@Override
 		public void run()
@@ -243,7 +243,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 		new Location(155657, -125752, -2214), // Arena 4
 	};
 	
-	protected static final int[] ARENA_ZONES =
+	static final int[] ARENA_ZONES =
 	{
 		112081,
 		112082,
@@ -260,13 +260,15 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 	
 	private static final Skill[] DEBUFFS = {};
 	
-	protected static Map<Integer, Long> _warDecreesCount = new HashMap<>();
-	protected static List<L2Clan> _acceptedClans = new ArrayList<>(4);
+	static Map<Integer, Long> _warDecreesCount = new HashMap<>();
+	static List<L2Clan> _acceptedClans = new ArrayList<>(4);
 	private static Map<String, ArrayList<L2Clan>> _usedTextPassages = new HashMap<>();
 	private static Map<L2Clan, Integer> _pendingItemToGet = new HashMap<>();
 	
-	protected static SiegableHall _rainbow;
-	protected static ScheduledFuture<?> _nextSiege, _siegeEnd;
+	static SiegableHall _rainbow;
+	static ScheduledFuture<?> _nextSiege;
+	
+	static ScheduledFuture<?> _siegeEnd;
 	private static String _registrationEnds;
 	
 	public RainbowSpringsChateau()
@@ -716,7 +718,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 		}
 	}
 	
-	protected static void spawnGourds()
+	static void spawnGourds()
 	{
 		for (int i = 0; i < _acceptedClans.size(); i++)
 		{
@@ -741,7 +743,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 		}
 	}
 	
-	protected static void unSpawnGourds()
+	static void unSpawnGourds()
 	{
 		for (int i = 0; i < _acceptedClans.size(); i++)
 		{
@@ -889,7 +891,7 @@ public final class RainbowSpringsChateau extends ClanHallSiegeEngine
 		}
 	}
 	
-	protected static void setRegistrationEndString(long time)
+	static void setRegistrationEndString(long time)
 	{
 		final Calendar c = Calendar.getInstance();
 		c.setTime(new Date(time));

@@ -36,7 +36,7 @@ import ai.npc.AbstractNpcAI;
  * Polymorphing on attack monsters AI.
  * @author Slyce
  */
-public final class PolymorphingOnAttack extends AbstractNpcAI
+final class PolymorphingOnAttack extends AbstractNpcAI
 {
 	private static final Map<Integer, List<Integer>> MOBSPAWNS = new HashMap<>();
 	static
@@ -56,7 +56,7 @@ public final class PolymorphingOnAttack extends AbstractNpcAI
 		MOBSPAWNS.put(21537, Arrays.asList(21538, 100, 30, -1)); // Fang of Splendor
 	}
 	
-	protected static final NpcStringId[][] MOBTEXTS =
+	private static final NpcStringId[][] MOBTEXTS =
 	{
 		new NpcStringId[]
 		{

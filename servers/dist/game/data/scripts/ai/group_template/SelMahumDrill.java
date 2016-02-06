@@ -36,7 +36,7 @@ import ai.npc.AbstractNpcAI;
  * Sel Mahum Training Ground AI for drill groups.
  * @author GKR
  */
-public final class SelMahumDrill extends AbstractNpcAI
+final class SelMahumDrill extends AbstractNpcAI
 {
 	private static final int[] MAHUM_CHIEFS =
 	{
@@ -105,22 +105,22 @@ public final class SelMahumDrill extends AbstractNpcAI
 			_repeatInterval = repeatInterval;
 		}
 		
-		protected int getSocialActionId()
+		int getSocialActionId()
 		{
 			return _socialActionId;
 		}
 		
-		protected int getAltSocialActionId()
+		int getAltSocialActionId()
 		{
 			return _altSocialActionId;
 		}
 		
-		protected int getRepeatCount()
+		int getRepeatCount()
 		{
 			return _repeatCount;
 		}
 		
-		protected int getRepeatInterval()
+		int getRepeatInterval()
 		{
 			return _repeatInterval;
 		}

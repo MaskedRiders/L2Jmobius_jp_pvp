@@ -42,7 +42,7 @@ import quests.Q00020_BringUpWithLove.Q00020_BringUpWithLove;
  * Updated to Freya.
  * @author Fulminus, Gigiikun
  */
-public final class BeastFarm extends AbstractNpcAI
+final class BeastFarm extends AbstractNpcAI
 {
 	private static final int GOLDEN_SPICE = 15474;
 	private static final int CRYSTAL_SPICE = 15475;
@@ -60,7 +60,7 @@ public final class BeastFarm extends AbstractNpcAI
 		18872
 	};
 	private static final int TAME_CHANCE = 20;
-	protected static final int[] SPECIAL_SPICE_CHANCES =
+	static final int[] SPECIAL_SPICE_CHANCES =
 	{
 		33,
 		75

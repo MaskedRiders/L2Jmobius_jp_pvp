@@ -59,7 +59,7 @@ import ai.npc.AbstractNpcAI;
  * Mentor Guide.
  * @author Gnacik, UnAfraid
  */
-public class MentorGuide extends AbstractNpcAI implements IXmlReader
+public final class MentorGuide extends AbstractNpcAI implements IXmlReader
 {
 	// NPCs
 	private static final int MENTOR_GUIDE = 33587;
@@ -85,7 +85,7 @@ public class MentorGuide extends AbstractNpcAI implements IXmlReader
 		new SkillHolder(9233, 1), // Mentor's Guidance
 	};
 	
-	protected static final SkillHolder[] MENTOR_BUFFS =
+	private static final SkillHolder[] MENTOR_BUFFS =
 	{
 		new SkillHolder(9256, 1), // Mentee's Appreciation;
 	};
