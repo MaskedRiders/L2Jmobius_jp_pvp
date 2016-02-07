@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list maintainEnchantment="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../xsd/multisell.xsd">
+	<npcs>
+		<npc>34095</npc> <!-- Refugee Neti -->
+	</npcs>
+	<item>
+		<!-- Shadow Shaper -->
+		<ingredient count="1" id="46317" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Shaper -->
+		<production count="1" id="46327" />
+	</item>
+	<item>
+		<!-- Shadow Cutter -->
+		<ingredient count="1" id="46318" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Cutter -->
+		<production count="1" id="46318" />
+	</item>
+	<item>
+		<!-- Shadow Slasher -->
+		<ingredient count="1" id="46319" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Slasher -->
+		<production count="1" id="46319" />
+	</item>
+	<item>
+		<!-- Shadow Fighter -->
+		<ingredient count="1" id="46320" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Fighter -->
+		<production count="1" id="46320" />
+	</item>
+	<item>
+		<!-- Shadow Stormer -->
+		<ingredient count="1" id="46321" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Stormer -->
+		<production count="1" id="46321" />
+	</item>
+	<item>
+		<!-- Shadow Thrower -->
+		<ingredient count="1" id="46322" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Thrower -->
+		<production count="1" id="46322" />
+	</item>
+	<item>
+		<!-- Shadow Shooter -->
+		<ingredient count="1" id="46323" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Shooter -->
+		<production count="1" id="46323" />
+	</item>
+	<item>
+		<!-- Shadow Buster -->
+		<ingredient count="1" id="46324" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Buster -->
+		<production count="1" id="46324" />
+	</item>
+	<item>
+		<!-- Shadow Retributer -->
+		<ingredient count="1" id="46325" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Retributer -->
+		<production count="1" id="46325" />
+	</item>
+	<item>
+		<!-- Shadow Dualsword -->
+		<ingredient count="1" id="46326" />
+		<!-- Scroll: Enchant Shadow Weapon -->
+		<ingredient count="1" id="46337" />
+		<!-- Shadow Dualsword -->
+		<production count="1" id="46326" />
+	</item>
+</list>
