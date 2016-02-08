@@ -14,7 +14,7 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package ai.npc.Teleports.DimensionalWarpTeleport;
+package ai.npc.Teleports.HarnakUnderground;
 
 import com.l2jmobius.gameserver.model.Location;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
@@ -25,40 +25,32 @@ import ai.npc.AbstractNpcAI;
 /**
  * @author hlwrave
  */
-final class DimensionalWarpTeleport extends AbstractNpcAI
+final class HarnakUnderground extends AbstractNpcAI
 {
 	// NPC
-	private final static int RESED = 33974;
+	private final static int HADEL = 33344;
 	// Misc
-	private final static int MIN_LEVEL = 99;
-	// Items
-	private final static int WARP_CRYSTAL = 39597;
-	private final static int WARP_CRYSTAL_COUNT = 3;
+	private final static int MIN_LEVEL = 85;
 	// Location
-	private final static Location DIMENSIONAL_WARP = new Location(-76785, -217420, 4016);
+	private final static Location HARNAK_UNDERGROUND = new Location(-114700, 147909, -7720);
 	
-	private DimensionalWarpTeleport()
+	private HarnakUnderground()
 	{
-		super(DimensionalWarpTeleport.class.getSimpleName(), "ai/npc/Teleports");
-		addStartNpc(RESED);
-		addTalkId(RESED);
+		super(HarnakUnderground.class.getSimpleName(), "ai/npc/Teleports");
+		addStartNpc(HADEL);
+		addTalkId(HADEL);
 	}
 	
 	@Override
 	public String onTalk(L2Npc npc, L2PcInstance player)
 	{
-		if ((hasQuestItems(player, WARP_CRYSTAL)) && (player.getLevel() >= MIN_LEVEL) && (getQuestItemsCount(player, WARP_CRYSTAL) >= WARP_CRYSTAL_COUNT) && (player.isAwaken()))
+		if ((player.getLevel() >= MIN_LEVEL) && (player.isAwaken()))
 		{
-			takeItems(player, WARP_CRYSTAL, 3);
-			player.teleToLocation(DIMENSIONAL_WARP);
+			player.teleToLocation(HARNAK_UNDERGROUND);
 		}
 		else if (player.getLevel() < MIN_LEVEL)
 		{
 			return "no_level.htm";
-		}
-		else if (getQuestItemsCount(player, WARP_CRYSTAL) < WARP_CRYSTAL_COUNT)
-		{
-			return "no_item.htm";
 		}
 		else
 		{
@@ -69,6 +61,6 @@ final class DimensionalWarpTeleport extends AbstractNpcAI
 	
 	public static void main(String[] args)
 	{
-		new DimensionalWarpTeleport();
+		new HarnakUnderground();
 	}
 }
