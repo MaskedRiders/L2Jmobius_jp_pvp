@@ -17,8 +17,8 @@
 package quests.Q10363_RequestOfTheSeeker;
 
 import com.l2jmobius.gameserver.model.Location;
-import com.l2jmobius.gameserver.model.actor.L2Attackable;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
+import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.holders.ItemHolder;
 import com.l2jmobius.gameserver.model.quest.Quest;
@@ -265,9 +265,11 @@ public class Q10363_RequestOfTheSeeker extends Quest
 					showOnScreenMsg(caster, NpcStringId.DON_T_TOY_WITH_THE_DEAD, ExShowScreenMessage.TOP_CENTER, 10000);
 					// TODO test
 					L2Npc Spirit1 = addSpawn(RESURRECTED_VENGEFUL_SPIRIT1, new Location(caster.getX() - getRandom(100), caster.getY() - getRandom(100), caster.getZ(), 0));
-					((L2Attackable) ((L2Attackable) Spirit1).getAggroList()).addDamageHate(caster, Spirit1.getMaxHp() / 2, 10000);
+					addAttackDesire(Spirit1, caster);
+					((L2MonsterInstance) Spirit1).addDamageHate(caster, Spirit1.getMaxHp() / 2, 10000);
 					L2Npc Spirit2 = addSpawn(RESURRECTED_VENGEFUL_SPIRIT2, new Location(caster.getX() - getRandom(100), caster.getY() - getRandom(100), caster.getZ(), 0));
-					((L2Attackable) ((L2Attackable) Spirit2).getAggroList()).addDamageHate(caster, Spirit2.getMaxHp() / 2, 10000);
+					addAttackDesire(Spirit2, caster);
+					((L2MonsterInstance) Spirit2).addDamageHate(caster, Spirit2.getMaxHp() / 2, 10000);
 					((L2Npc) caster.getTarget()).deleteMe();
 				}
 			}
