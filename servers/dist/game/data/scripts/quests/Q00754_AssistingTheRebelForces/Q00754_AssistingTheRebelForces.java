@@ -25,7 +25,7 @@ import com.l2jmobius.gameserver.network.serverpackets.ExQuestNpcLogList;
 import com.l2jmobius.gameserver.util.Util;
 
 /**
- * @hlwrave
+ * @author hlwrave
  */
 public class Q00754_AssistingTheRebelForces extends Quest
 {
@@ -51,7 +51,7 @@ public class Q00754_AssistingTheRebelForces extends Quest
 		addStartNpc(SIZRAK);
 		addTalkId(SIZRAK, COMMUNICATION);
 		addKillId(KUNDA_GUARDIAN, KUNDA_BERSERKER, KUNDA_EXECUTOR);
-		addCondMinLevel(MIN_LEVEL, "sofa_sizraku_q0754_05.htm");
+		addCondMinLevel(MIN_LEVEL, "sofa_sizraku_q0754_05.html");
 	}
 	
 	@Override
@@ -59,7 +59,6 @@ public class Q00754_AssistingTheRebelForces extends Quest
 	{
 		String htmltext = event;
 		final QuestState qs = getQuestState(player, false);
-		
 		if (qs == null)
 		{
 			return getNoQuestMsg(player);
@@ -71,7 +70,7 @@ public class Q00754_AssistingTheRebelForces extends Quest
 			qs.set(Integer.toString(KUNDA_GUARDIAN), 0);
 			qs.set(Integer.toString(KUNDA_BERSERKER), 0);
 			qs.set(Integer.toString(KUNDA_EXECUTOR), 0);
-			htmltext = "sofa_sizraku_q0754_04.htm";
+			htmltext = "sofa_sizraku_q0754_04.html";
 		}
 		return htmltext;
 	}
@@ -92,24 +91,24 @@ public class Q00754_AssistingTheRebelForces extends Quest
 				}
 				else if (qs.isCond(0))
 				{
-					htmltext = "sofa_sizraku_q0754_03.htm";
+					htmltext = "sofa_sizraku_q0754_03.html";
 					
 				}
 				else if (qs.isCond(1))
 				{
-					htmltext = "sofa_sizraku_q0754_07.htm";
+					htmltext = "sofa_sizraku_q0754_07.html";
 				}
 				else if (qs.isCond(2))
 				{
-					qs.addExpAndSp(570676680, 261024840);
-					qs.giveItems(REBEL_SUPPLY_BOX, 1);
-					qs.giveItems(MARK_OF_RESISTANCE, 1);
+					addExpAndSp(player, 570676680, 261024840);
+					giveItems(player, REBEL_SUPPLY_BOX, 1);
+					giveItems(player, MARK_OF_RESISTANCE, 1);
 					qs.exitQuest(QuestType.DAILY, true);
-					htmltext = "sofa_sizraku_q0754_08.htm";
+					htmltext = "sofa_sizraku_q0754_08.html";
 				}
 				else if (qs.isCompleted())
 				{
-					htmltext = "sofa_sizraku_q0754_06.htm";
+					htmltext = "sofa_sizraku_q0754_06.html";
 				}
 				break;
 			}
@@ -118,10 +117,10 @@ public class Q00754_AssistingTheRebelForces extends Quest
 				if (qs.isCond(2))
 				{
 					qs.getPlayer().addExpAndSp(570676680, 261024840);
-					qs.giveItems(REBEL_SUPPLY_BOX, 1);
-					qs.giveItems(MARK_OF_RESISTANCE, 1);
+					giveItems(player, REBEL_SUPPLY_BOX, 1);
+					giveItems(player, MARK_OF_RESISTANCE, 1);
 					qs.exitQuest(QuestType.DAILY, true);
-					htmltext = "sofa_sizraku_q0754_08.htm";
+					htmltext = "sofa_sizraku_q0754_08.html";
 				}
 				break;
 			}
@@ -173,7 +172,7 @@ public class Q00754_AssistingTheRebelForces extends Quest
 			log.addNpc(KUNDA_GUARDIAN, qs.getInt(Integer.toString(KUNDA_GUARDIAN)));
 			log.addNpc(KUNDA_BERSERKER, qs.getInt(Integer.toString(KUNDA_BERSERKER)));
 			log.addNpc(KUNDA_EXECUTOR, qs.getInt(Integer.toString(KUNDA_EXECUTOR)));
-			killer.sendPacket(log);
+			qs.getPlayer().sendPacket(log);
 			
 			if ((qs.getInt(Integer.toString(KUNDA_GUARDIAN)) >= KUNDA_GUARDIAN_KILL) && (qs.getInt(Integer.toString(KUNDA_BERSERKER)) >= KUNDA_BERSERKER_KILL) && (qs.getInt(Integer.toString(KUNDA_EXECUTOR)) >= KUNDA_EXECUTOR_KILL))
 			{
