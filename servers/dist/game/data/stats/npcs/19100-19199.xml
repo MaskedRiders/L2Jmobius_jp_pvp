@@ -1425,7 +1425,7 @@
 			</speed>
 			<hitTime>333</hitTime>
 		</stats>
-		<status attackable="true" />
+		<status attackable="false" />
 		<skillList>
 			<skill id="4416" level="6" />
 		</skillList>
@@ -1451,7 +1451,7 @@
 			</speed>
 			<hitTime>333</hitTime>
 		</stats>
-		<status attackable="true" />
+		<status attackable="false" />
 		<skillList>
 			<skill id="4416" level="14" />
 		</skillList>

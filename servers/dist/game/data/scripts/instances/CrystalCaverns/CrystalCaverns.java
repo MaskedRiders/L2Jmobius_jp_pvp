@@ -514,10 +514,7 @@ public final class CrystalCaverns extends AbstractInstance
 	{
 		if (debug || player.canOverrideCond(PcCondOverride.INSTANCE_CONDITIONS))
 		{
-			if (debug)
-			{
-				return true;
-			}
+			return true;
 		}
 		
 		final L2Party party = player.getParty();
@@ -1771,10 +1768,10 @@ public final class CrystalCaverns extends AbstractInstance
 	public String onTalk(L2Npc npc, L2PcInstance player)
 	{
 		final int npcId = npc.getId();
-		QuestState st = getQuestState(player, false);
-		if (st == null)
+		QuestState qs = getQuestState(player, false);
+		if (qs == null)
 		{
-			st = newQuestState(player);
+			qs = newQuestState(player);
 		}
 		if (npcId == ORACLE_GUIDE_1)
 		{

@@ -43,9 +43,7 @@ import quests.Q10296_SevenSignsPowerOfTheSeal.Q10296_SevenSignsPowerOfTheSeal;
 
 public class MonasteryOfSilence2 extends AbstractNpcAI
 {
-	// Values
-	private static final int INSTANCE_ID = 151;
-	// NPC's
+	// NPCs
 	private static final int OddGlobe = 32815;
 	private static final int Elcadia_First_Room = 32787;
 	private static final int Elcadia_Support = 32785;
@@ -69,7 +67,7 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 	private static final int AltarOfHallows_Sword = 32858;
 	private static final int AltarOfHallows_Scroll = 32859;
 	private static final int AltarOfHallows_Shield = 32860;
-	// Teleport's
+	// Teleports
 	private static final int ENTER = 0;
 	private static final int HOLYGRAL = 1;
 	private static final int EXIT = 2;
@@ -152,7 +150,6 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 		}
 		// EtisEtina
 	};
-	
 	private static final int[] TALK =
 	{
 		OddGlobe,
@@ -178,7 +175,6 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 		AltarOfHallows_Scroll,
 		AltarOfHallows_Shield
 	};
-	
 	private static final int[] MageBuff =
 	{
 		6725,
@@ -193,7 +189,7 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 		6716,
 		6717
 	};
-	
+	private static final int INSTANCE_ID = 151;
 	private final HashMap<Integer, InstanceHolder> instanceWorlds = new HashMap<>();
 	
 	static class InstanceHolder
@@ -201,11 +197,8 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 		final List<L2Npc> mobs = new ArrayList<>();
 	}
 	
-	private class MoSWorld2 extends InstanceWorld
+	class MoSWorld2 extends InstanceWorld
 	{
-		public MoSWorld2()
-		{
-		}
 	}
 	
 	public MonasteryOfSilence2()
@@ -295,12 +288,12 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
 		final String htmltext = getNoQuestMsg(player);
-		QuestState st = player.getQuestState(MonasteryOfSilence2.class.getSimpleName());
-		final QuestState qs = player.getQuestState(Q10294_SevenSignsToTheMonasteryOfSilence.class.getSimpleName());
-		final QuestState qs1 = player.getQuestState(Q10295_SevenSignsSolinasTomb.class.getSimpleName());
-		if (st == null)
+		QuestState qs = player.getQuestState(MonasteryOfSilence2.class.getSimpleName());
+		final QuestState qs1 = player.getQuestState(Q10294_SevenSignsToTheMonasteryOfSilence.class.getSimpleName());
+		final QuestState qs2 = player.getQuestState(Q10295_SevenSignsSolinasTomb.class.getSimpleName());
+		if (qs == null)
 		{
-			st = newQuestState(player);
+			qs = newQuestState(player);
 		}
 		if ("check_follow".equals(event))
 		{
@@ -308,7 +301,7 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 			npc.getAI().stopFollow();
 			npc.setIsRunning(true);
 			npc.getAI().startFollow(player);
-			if ((qs != null) && (qs.getCond() == 2))
+			if ((qs1 != null) && (qs1.getCond() == 2))
 			{
 				if (getRandom(10) < 1)
 				{
@@ -319,14 +312,14 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 					npc.broadcastPacket(new NpcSay(npc.getObjectId(), ChatType.NPC_GENERAL, npc.getId(), NpcStringId.REMEMBER_THE_CONTENT_OF_THE_BOOKS_THAT_YOU_FOUND_YOU_CAN_T_TAKE_THEM_OUT_WITH_YOU));
 				}
 			}
-			if ((qs != null) && (qs.getCond() == 3))
+			if ((qs1 != null) && (qs1.getCond() == 3))
 			{
 				if (getRandom(8) < 1)
 				{
 					npc.broadcastPacket(new NpcSay(npc.getObjectId(), ChatType.NPC_GENERAL, npc.getId(), NpcStringId.YOUR_WORK_HERE_IS_DONE_SO_RETURN_TO_THE_CENTRAL_GUARDIAN));
 				}
 			}
-			if ((qs1 != null) && (qs1.getCond() == 1))
+			if ((qs2 != null) && (qs2.getCond() == 1))
 			{
 				if (getRandom(5) < 1)
 				{
@@ -366,9 +359,9 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 		{
 			if ("Enter1".equals(event))
 			{
-				if (qs1.getInt("seal_removed") != 1)
+				if (qs2.getInt("seal_removed") != 1)
 				{
-					qs1.startQuestTimer("StartMovie", 1000);
+					qs2.startQuestTimer("StartMovie", 1000);
 					teleportPlayer(npc, player, TELEPORTS[ENTER1], player.getInstanceId());
 				}
 				else
@@ -379,9 +372,9 @@ public class MonasteryOfSilence2 extends AbstractNpcAI
 			}
 			if ("Enter3".equals(event))
 			{
-				if ((qs.getInt("book_" + 32821) + qs.getInt("book_" + 32828) + qs.getInt("book_" + 32831) + qs.getInt("book_" + 32834)) != 4)
+				if ((qs1.getInt("book_" + 32821) + qs1.getInt("book_" + 32828) + qs1.getInt("book_" + 32831) + qs1.getInt("book_" + 32834)) != 4)
 				{
-					qs.startQuestTimer("OpenMovie", 4000);
+					qs1.startQuestTimer("OpenMovie", 4000);
 				}
 				teleportPlayer(npc, player, TELEPORTS[HOLYGRAL], player.getInstanceId());
 				return null;

@@ -43,15 +43,6 @@ import instances.AbstractInstance;
  */
 public final class NornilsGarden extends AbstractInstance
 {
-	class NornilsWorld extends InstanceWorld
-	{
-		L2Npc first_npc = null;
-		boolean spawned_1 = false;
-		boolean spawned_2 = false;
-		boolean spawned_3 = false;
-		boolean spawned_4 = false;
-	}
-	
 	// NPCs
 	private static final int _garden_guard = 32330;
 	private static final int[] _final_gates =
@@ -165,36 +156,13 @@ public final class NornilsGarden extends AbstractInstance
 	};
 	// @formatter:on
 	
-	private static final void dropHerb(L2Npc mob, L2PcInstance player, int[][] drop)
+	class NornilsWorld extends InstanceWorld
 	{
-		final int chance = getRandom(100);
-		for (int[] element : drop)
-		{
-			if (chance < element[2])
-			{
-				mob.dropItem(player, element[0], element[1]);
-			}
-		}
-	}
-	
-	private static final void giveBuffs(L2Character ch)
-	{
-		if (skill1 != null)
-		{
-			skill1.applyEffects(ch, ch);
-		}
-		if (skill2 != null)
-		{
-			skill2.applyEffects(ch, ch);
-		}
-		if (skill3 != null)
-		{
-			skill3.applyEffects(ch, ch);
-		}
-		if (skill4 != null)
-		{
-			skill4.applyEffects(ch, ch);
-		}
+		L2Npc first_npc = null;
+		boolean spawned_1 = false;
+		boolean spawned_2 = false;
+		boolean spawned_3 = false;
+		boolean spawned_4 = false;
 	}
 	
 	public NornilsGarden()
@@ -389,9 +357,9 @@ public final class NornilsGarden extends AbstractInstance
 		}
 	}
 	
-	private void openDoor(QuestState st, L2PcInstance player, int doorId)
+	private void openDoor(QuestState qs, L2PcInstance player, int doorId)
 	{
-		st.unset("correct");
+		qs.unset("correct");
 		final InstanceWorld tmpworld = InstanceManager.getInstance().getWorld(player.getInstanceId());
 		if (tmpworld instanceof NornilsWorld)
 		{
@@ -460,6 +428,38 @@ public final class NornilsGarden extends AbstractInstance
 		return "ok";
 	}
 	
+	private static final void dropHerb(L2Npc mob, L2PcInstance player, int[][] drop)
+	{
+		final int chance = getRandom(100);
+		for (int[] element : drop)
+		{
+			if (chance < element[2])
+			{
+				mob.dropItem(player, element[0], element[1]);
+			}
+		}
+	}
+	
+	private static final void giveBuffs(L2Character ch)
+	{
+		if (skill1 != null)
+		{
+			skill1.applyEffects(ch, ch);
+		}
+		if (skill2 != null)
+		{
+			skill2.applyEffects(ch, ch);
+		}
+		if (skill3 != null)
+		{
+			skill3.applyEffects(ch, ch);
+		}
+		if (skill4 != null)
+		{
+			skill4.applyEffects(ch, ch);
+		}
+	}
+	
 	@Override
 	public String onEnterZone(L2Character character, L2ZoneType zone)
 	{
@@ -492,8 +492,8 @@ public final class NornilsGarden extends AbstractInstance
 	public final String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
 		String htmltext = event;
-		final QuestState st = getQuestState(player, false);
-		if (st == null)
+		final QuestState qs = getQuestState(player, false);
+		if (qs == null)
 		{
 			return getNoQuestMsg(player);
 		}
@@ -522,29 +522,29 @@ public final class NornilsGarden extends AbstractInstance
 		{
 			if (event.equalsIgnoreCase("32260-02.html") || event.equalsIgnoreCase("32261-02.html") || event.equalsIgnoreCase("32262-02.html"))
 			{
-				st.unset("correct");
+				qs.unset("correct");
 			}
 			else if (Util.isDigit(event))
 			{
-				int correct = st.getInt("correct");
+				int correct = qs.getInt("correct");
 				correct++;
-				st.set("correct", String.valueOf(correct));
+				qs.set("correct", String.valueOf(correct));
 				htmltext = npc.getId() + "-0" + String.valueOf(correct + 2) + ".html";
 			}
 			else if (event.equalsIgnoreCase("check"))
 			{
-				final int correct = st.getInt("correct");
+				final int correct = qs.getInt("correct");
 				if ((npc.getId() == 32260) && (correct == 3))
 				{
-					openDoor(st, player, 16200014);
+					openDoor(qs, player, 16200014);
 				}
 				else if ((npc.getId() == 32261) && (correct == 3))
 				{
-					openDoor(st, player, 16200015);
+					openDoor(qs, player, 16200015);
 				}
 				else if ((npc.getId() == 32262) && (correct == 4))
 				{
-					openDoor(st, player, 16200016);
+					openDoor(qs, player, 16200016);
 				}
 				else
 				{
@@ -592,8 +592,8 @@ public final class NornilsGarden extends AbstractInstance
 	@Override
 	public final String onKill(L2Npc npc, L2PcInstance player, boolean isSummon)
 	{
-		final QuestState st = getQuestState(player, false);
-		if (st == null)
+		final QuestState qs = getQuestState(player, false);
+		if (qs == null)
 		{
 			return null;
 		}
