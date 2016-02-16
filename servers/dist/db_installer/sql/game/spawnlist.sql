@@ -8219,7 +8219,7 @@ INSERT INTO `spawnlist` VALUES
 ("Atelia Fortress", 1, 23539, -55740, 52390, -2179, 0, 0, 0, 60, 0, 0, 0),
 ("Atelia Fortress", 1, 23539, -54373, 52365, -2179, 0, 0, 0, 60, 0, 0, 0),
 -- Burnstein
-("Atelia Fortress", 1, 23587, -44089, 43017, -1388, 0, 0, 24393, 60, 0, 0, 0),
+("Atelia Fortress", 1, 23587, -44089, 43017, -1388, 0, 0, 24393, 3600, 0, 0, 0),
 -- Hummel
 ("Atelia Fortress", 1, 23588, -48157, 55441, -3160, 0, 0, 13924, 60, 0, 0, 0),
 ("Atelia Fortress", 1, 23588, -54959, 52312, -2161, 0, 0, 26850, 60, 0, 0, 0),
@@ -8247,8 +8247,7 @@ INSERT INTO `spawnlist` VALUES
 ("Atelia Fortress", 1, 33583, -47243, 48545, -2408, 0, 0, 26892, 60, 0, 0, 0),
 -- Teleport Device
 ("Atelia Castle", 1, 34052, -55805, 56157, -1921, 0, 0, 55746, 60, 0, 0, 0),
--- Devianne
-("Atelia Fortress", 1, 34089, -50063, 49439, -1760, 0, 0, 40362, 60, 0, 0, 0),
+
 -- Embryo Supply Box
 ("Atelia Fortress", 1, 34137, -47475, 56483, -3192, 0, 0, 0, 60, 0, 0, 0),
 ("Atelia Fortress", 1, 34137, -46903, 59349, -3184, 0, 0, 0, 60, 0, 0, 0),
@@ -35760,8 +35759,6 @@ INSERT INTO `spawnlist` VALUES
 ("23_20", 1, 33587, 116921, 77195, -2695, 0, 0, 38057, 0, 0, 0, 0),
 -- Mysterious Butler
 ("23_20", 1, 33685, 116045, 77812, -2680, 0, 0, 49811, 0, 0, 0, 0),
--- Aria Furstmater
-("Aria_Hunter_Vilage", 1, 33918, 116390, 75387, -2712, 0, 0, 12298, 60, 0, 0, 0),
 
 -- [23_21]
 
@@ -49709,3 +49706,16 @@ INSERT INTO `spawnlist` VALUES
 
 -- Isle of The Souls Harbor
 INSERT INTO `spawnlist` VALUES ('Stronghold III', 1, 33796, -85919, 37167, -2048, 0, 0, 48000, 60, 0, 0, 0); -- Verda
+
+-- Altar of Sacrifice
+INSERT INTO `spawnlist` VALUES 
+('Altar of Sacrifice', 1, 33813, 48445, -30210, -1680, 0, 0, 48000, 60, 0, 0, 0),
+('Altar of Sacrifice', 1, 19478, 48402, -30105, -1680, 0, 0, 48000, 60, 0, 0, 0), 
+('Altar of Sacrifice', 1, 33887, 48227, -30305, -1680, 0, 0, 48000, 60, 0, 0, 0),
+('Altar of Sacrifice', 1, 33812, 48471, -30182, -1680, 0, 0, 48000, 60, 0, 0, 0),
+('Altar of Sacrifice', 1, 33881, 48319, -30204, -1680, 0, 0, 48000, 60, 0, 0, 0);
+
+-- Hunters Village
+INSERT INTO `spawnlist` VALUES 
+('HuntersVillage', 1, 34018, 116503, 75392, -2712, 0, 0, 12298, 60, 0, 0, 0),
+('HuntersVillage', 1, 33918, 116390, 75387, -2712, 0, 0, 12298, 60, 0, 0, 0);
