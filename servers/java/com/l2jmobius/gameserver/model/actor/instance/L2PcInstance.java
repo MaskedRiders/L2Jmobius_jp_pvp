@@ -6607,6 +6607,47 @@ public final class L2PcInstance extends L2Playable
 		return true;
 	}
 	
+	/**
+	 * Disarm the player's Armor.
+	 * @return {@code true}.
+	 */
+	public boolean disarmArmor()
+	{
+		final L2ItemInstance chest = getInventory().getPaperdollItem(Inventory.PAPERDOLL_CHEST);
+		if (chest != null)
+		{
+			final L2ItemInstance[] unequiped = getInventory().unEquipItemInBodySlotAndRecord(chest.getItem().getBodyPart());
+			final InventoryUpdate iu = new InventoryUpdate();
+			for (L2ItemInstance itm : unequiped)
+			{
+				iu.addModifiedItem(itm);
+			}
+			sendPacket(iu);
+			
+			abortAttack();
+			broadcastUserInfo();
+			
+			// this can be 0 if the user pressed the right mousebutton twice very fast
+			if (unequiped.length > 0)
+			{
+				SystemMessage sm = null;
+				if (unequiped[0].getEnchantLevel() > 0)
+				{
+					sm = SystemMessage.getSystemMessage(SystemMessageId.THE_EQUIPMENT_S1_S2_HAS_BEEN_REMOVED);
+					sm.addInt(unequiped[0].getEnchantLevel());
+					sm.addItemName(unequiped[0]);
+				}
+				else
+				{
+					sm = SystemMessage.getSystemMessage(SystemMessageId.S1_HAS_BEEN_UNEQUIPPED);
+					sm.addItemName(unequiped[0]);
+				}
+				sendPacket(sm);
+			}
+		}
+		return true;
+	}
+	
 	public boolean mount(L2Summon pet)
 	{
 		if (!Config.ALLOW_MOUNTS_DURING_SIEGE && isInsideZone(ZoneId.SIEGE))
@@ -12161,7 +12202,7 @@ public final class L2PcInstance extends L2Playable
 		{
 			_fish.setFishGroup(-1);
 		}
-		// sendMessage("Hook x,y: " + _x + "," + _y + " - Water Z, Player Z:" + _z + ", " + getZ()); //debug line, uncoment to show coordinates used in fishing.
+		// sendMessage("Hook x,y: " + _x + "," + _y + " - Water Z, Player Z:" + _z + ", " + getZ()); // debug line, uncoment to show coordinates used in fishing.
 		broadcastPacket(new ExFishingStart(this, _fish.getFishGroup(), _x, _y, _z, _lure.isNightLure()));
 		// sendPacket(new PlaySound(1, "SF_P_01", 0, 0, 0, 0, 0));
 		startLookingForFishTask();

@@ -14,26 +14,22 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package com.l2jmobius.loginserver.network.loginserverpackets;
-
-import com.l2jmobius.util.network.BaseSendablePacket;
+package com.l2jmobius.gameserver.instancemanager;
 
 /**
- * @author Nik
+ * @author Mobius
  */
-public class ChangePasswordResponse extends BaseSendablePacket
+public final class EventShrineManager
 {
-	public ChangePasswordResponse(byte successful, String characterName, String msgToSend)
+	private static boolean ENABLE_SHRINES = false;
+	
+	public static boolean areShrinesEnabled()
 	{
-		writeC(0x06);
-		// writeC(successful); // 0 false, 1 true
-		writeS(characterName);
-		writeS(msgToSend);
+		return ENABLE_SHRINES;
 	}
 	
-	@Override
-	public byte[] getContent()
+	public static void setEnabled(boolean enabled)
 	{
-		return getBytes();
+		ENABLE_SHRINES = enabled;
 	}
 }
