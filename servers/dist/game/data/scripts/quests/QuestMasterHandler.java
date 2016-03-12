@@ -259,6 +259,7 @@ import quests.Q10411_KekropusLetter_TheForestOfTheDead.Q10411_KekropusLetter_The
 import quests.Q10414_KekropusLetter_WithCourage.Q10414_KekropusLetter_WithCourage;
 import quests.Q10415_KekropusLetter_WithWisdom.Q10415_KekropusLetter_WithWisdom;
 import quests.Q10453_StoppingTheWindDragon.Q10453_StoppingTheWindDragon;
+import quests.Q10472_WindsOfFate_EncroachingShadows.Q10472_WindsOfFate_EncroachingShadows;
 import quests.Q10501_ZakenEmbroideredSoulCloak.Q10501_ZakenEmbroideredSoulCloak;
 import quests.Q10502_FreyaEmbroideredSoulCloak.Q10502_FreyaEmbroideredSoulCloak;
 import quests.Q10503_FrintezzaEmbroideredSoulCloak.Q10503_FrintezzaEmbroideredSoulCloak;
@@ -292,6 +293,8 @@ import quests.Q10764_FreeSpirit.Q10764_FreeSpirit;
 import quests.Q10769_LettersFromTheQueen_CrumaTower.Q10769_LettersFromTheQueen_CrumaTower;
 import quests.Q10770_InSearchOfTheGrail.Q10770_InSearchOfTheGrail;
 import quests.Q10771_VolatilePower.Q10771_VolatilePower;
+import quests.Q10772_ReportsFromCrumaTowerPart1.Q10772_ReportsFromCrumaTowerPart1;
+import quests.Q10775_InSearchOfAnAncientGiant.Q10775_InSearchOfAnAncientGiant;
 import quests.Q10782_LettersFromTheQueen_ForsakenPlains.Q10782_LettersFromTheQueen_ForsakenPlains;
 import quests.Q10785_LettersFromTheQueen_FieldsOfMassacre.Q10785_LettersFromTheQueen_FieldsOfMassacre;
 import quests.Q10789_LettersFromTheQueen_SwampOfScreams.Q10789_LettersFromTheQueen_SwampOfScreams;
@@ -546,6 +549,7 @@ final class QuestMasterHandler
 		Q10414_KekropusLetter_WithCourage.class,
 		Q10415_KekropusLetter_WithWisdom.class,
 		Q10453_StoppingTheWindDragon.class,
+		Q10472_WindsOfFate_EncroachingShadows.class,
 		Q10501_ZakenEmbroideredSoulCloak.class,
 		Q10502_FreyaEmbroideredSoulCloak.class,
 		Q10503_FrintezzaEmbroideredSoulCloak.class,
@@ -579,6 +583,8 @@ final class QuestMasterHandler
 		Q10769_LettersFromTheQueen_CrumaTower.class,
 		Q10770_InSearchOfTheGrail.class,
 		Q10771_VolatilePower.class,
+		Q10772_ReportsFromCrumaTowerPart1.class,
+		Q10775_InSearchOfAnAncientGiant.class,
 		Q10782_LettersFromTheQueen_ForsakenPlains.class,
 		Q10785_LettersFromTheQueen_FieldsOfMassacre.class,
 		Q10789_LettersFromTheQueen_SwampOfScreams.class,

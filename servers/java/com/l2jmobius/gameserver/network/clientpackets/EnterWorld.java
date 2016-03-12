@@ -117,9 +117,6 @@ public class EnterWorld extends L2GameClientPacket
 	private final static int ERTHEIA_INTRO_FOR_ERTHEIA_USM_ID = 147;
 	private final static int ERTHEIA_INTRO_FOR_OTHERS_USM_ID = 148;
 	
-	private final static int ERTHEIA_INTRO_FOR_ERTHEIA_USM_ID = 147;
-	private final static int ERTHEIA_INTRO_FOR_OTHERS_USM_ID = 148;
-	
 	@Override
 	protected void readImpl()
 	{
