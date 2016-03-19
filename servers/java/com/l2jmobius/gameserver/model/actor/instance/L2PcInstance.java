@@ -1,5 +1,4 @@
 /*
- * This file is part of the L2J Mobius project.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -1490,7 +1489,6 @@ public final class L2PcInstance extends L2Playable
 	 * Gets all the active quests.
 	 * @return a list of active quests
 	 */
-	
 	public List<Quest> getAllActiveQuests()
 	{
 		final List<Quest> quests = new LinkedList<>();
@@ -4372,7 +4370,7 @@ public final class L2PcInstance extends L2Playable
 	
 	public final void broadcastPacket(SocialAction sa)
 	{
-		L2Object target = getTarget();
+		final L2Object target = getTarget();
 		if ((target != null) && target.isNpc())
 		{
 			EventDispatcher.getInstance().notifyEventAsync(new OnNpcSocialActionSee((L2Npc) target, getActingPlayer(), sa.getId()), (L2Npc) target);
@@ -14412,7 +14410,7 @@ public final class L2PcInstance extends L2Playable
 		return _pcBangPoints;
 	}
 	
-	public void setPcBangPoints(final int count)
+	public void setPcBangPoints(int count)
 	{
 		if (count < 200000)
 		{
