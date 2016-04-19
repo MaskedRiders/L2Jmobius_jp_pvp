@@ -133,6 +133,7 @@ import quests.Q00470_DivinityProtector.Q00470_DivinityProtector;
 import quests.Q00471_BreakingThroughTheEmeraldSquare.Q00471_BreakingThroughTheEmeraldSquare;
 import quests.Q00472_ChallengeSteamCorridor.Q00472_ChallengeSteamCorridor;
 import quests.Q00473_InTheCoralGarden.Q00473_InTheCoralGarden;
+import quests.Q00485_HotSpringWater.Q00485_HotSpringWater;
 import quests.Q00490_DutyOfTheSurvivor.Q00490_DutyOfTheSurvivor;
 import quests.Q00492_TombRaiders.Q00492_TombRaiders;
 import quests.Q00494_IncarnationOfGreedZellakaGroup.Q00494_IncarnationOfGreedZellakaGroup;
@@ -182,6 +183,7 @@ import quests.Q00754_AssistingTheRebelForces.Q00754_AssistingTheRebelForces;
 import quests.Q00755_InNeedOfPetras.Q00755_InNeedOfPetras;
 import quests.Q00756_TopQualityPetra.Q00756_TopQualityPetra;
 import quests.Q00757_TriolsMovement.Q00757_TriolsMovement;
+import quests.Q00760_BlockTheExit.Q00760_BlockTheExit;
 import quests.Q00901_HowLavasaurusesAreMade.Q00901_HowLavasaurusesAreMade;
 import quests.Q00902_ReclaimOurEra.Q00902_ReclaimOurEra;
 import quests.Q00903_TheCallOfAntharas.Q00903_TheCallOfAntharas;
@@ -306,6 +308,7 @@ import quests.Q10789_LettersFromTheQueen_SwampOfScreams.Q10789_LettersFromTheQue
 import quests.Q10790_AMercenaryHelper.Q10790_AMercenaryHelper;
 import quests.Q10791_TheManOfMystery.Q10791_TheManOfMystery;
 import quests.Q10792_LettersFromTheQueen_ForestOfTheDead.Q10792_LettersFromTheQueen_ForestOfTheDead;
+import quests.Q10795_LettersFromTheQueen_WallOfAgros.Q10795_LettersFromTheQueen_WallOfAgros;
 
 /**
  * @author NosBit
@@ -479,6 +482,7 @@ final class QuestMasterHandler
 		Q00755_InNeedOfPetras.class,
 		Q00756_TopQualityPetra.class,
 		Q00757_TriolsMovement.class,
+		Q00760_BlockTheExit.class,
 		Q00901_HowLavasaurusesAreMade.class,
 		Q00902_ReclaimOurEra.class,
 		Q00903_TheCallOfAntharas.class,
@@ -546,6 +550,7 @@ final class QuestMasterHandler
 		Q10383_FergasonsOffer.class,
 		Q10384_AnAudienceWithTauti.class,
 		Q10385_RedThreadOfFate.class,
+		Q00485_HotSpringWater.class,
 		Q10386_MysteriousJourney.class,
 		Q10388_ConspiracyBehindDoor.class,
 		Q10389_TheVoiceOfAuthority.class,
@@ -602,7 +607,8 @@ final class QuestMasterHandler
 		Q10789_LettersFromTheQueen_SwampOfScreams.class,
 		Q10790_AMercenaryHelper.class,
 		Q10791_TheManOfMystery.class,
-		Q10792_LettersFromTheQueen_ForestOfTheDead.class
+		Q10792_LettersFromTheQueen_ForestOfTheDead.class,
+		Q10795_LettersFromTheQueen_WallOfAgros.class
 	};
 	
 	public static void main(String[] args)
