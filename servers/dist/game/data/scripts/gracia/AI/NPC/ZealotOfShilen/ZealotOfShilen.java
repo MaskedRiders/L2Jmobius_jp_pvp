@@ -21,7 +21,7 @@ import com.l2jmobius.gameserver.model.actor.L2Character;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Zealot of Shilen AI.
@@ -70,7 +70,7 @@ public final class ZealotOfShilen extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(L2Npc npc, L2PcInstance player)
 	{
-		return (npc.isAttackingNow()) ? "32628-01.html" : npc.getId() + ".html";
+		return npc.isAttackingNow() ? "32628-01.html" : npc.getId() + ".html";
 	}
 	
 	@Override

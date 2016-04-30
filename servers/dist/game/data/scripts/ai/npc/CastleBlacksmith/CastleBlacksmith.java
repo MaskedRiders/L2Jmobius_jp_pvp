@@ -21,7 +21,7 @@ import com.l2jmobius.gameserver.model.PcCondOverride;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Castle Blacksmith AI.
@@ -65,7 +65,7 @@ final class CastleBlacksmith extends AbstractNpcAI
 	@Override
 	public String onFirstTalk(L2Npc npc, L2PcInstance player)
 	{
-		return (hasRights(player, npc)) ? npc.getId() + "-01.html" : "no.html";
+		return hasRights(player, npc) ? npc.getId() + "-01.html" : "no.html";
 	}
 	
 	public static void main(String[] args)

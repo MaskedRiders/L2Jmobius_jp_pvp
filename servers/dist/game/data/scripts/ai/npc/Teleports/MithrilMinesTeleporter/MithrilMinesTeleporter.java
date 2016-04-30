@@ -20,7 +20,7 @@ import com.l2jmobius.gameserver.model.Location;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Mithril Mines teleport AI.
@@ -29,7 +29,7 @@ import ai.npc.AbstractNpcAI;
 final class MithrilMinesTeleporter extends AbstractNpcAI
 {
 	// NPC
-	private final static int TELEPORT_CRYSTAL = 32652;
+	private static final int TELEPORT_CRYSTAL = 32652;
 	// Location
 	private static final Location[] LOCS =
 	{

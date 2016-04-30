@@ -53,7 +53,7 @@ import com.l2jmobius.gameserver.network.serverpackets.mentoring.ExMentorList;
 import com.l2jmobius.gameserver.util.Util;
 import com.l2jmobius.util.data.xml.IXmlReader;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Mentor Guide.
@@ -71,7 +71,7 @@ public final class MentorGuide extends AbstractNpcAI implements IXmlReader
 	private static final int DIPLOMA = 33805;
 	
 	// Skills
-	private final static SkillHolder[] MENTEE_BUFFS =
+	private static final SkillHolder[] MENTEE_BUFFS =
 	{
 		new SkillHolder(9227, 1), // Mentor's Poem of Horn
 		new SkillHolder(9228, 1), // Mentor's Poem of Drum

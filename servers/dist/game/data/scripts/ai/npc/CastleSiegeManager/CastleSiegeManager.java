@@ -19,7 +19,7 @@ package ai.npc.CastleSiegeManager;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Castle Siege Manager AI.
@@ -68,16 +68,13 @@ final class CastleSiegeManager extends AbstractNpcAI
 		{
 			htmltext = "CastleSiegeManager-02.html";
 		}
+		else if (npc.getConquerableHall() != null)
+		{
+			npc.getConquerableHall().showSiegeInfo(player);
+		}
 		else
 		{
-			if (npc.getConquerableHall() != null)
-			{
-				npc.getConquerableHall().showSiegeInfo(player);
-			}
-			else
-			{
-				npc.getCastle().getSiege().listRegisterClan(player);
-			}
+			npc.getCastle().getSiege().listRegisterClan(player);
 		}
 		return htmltext;
 	}

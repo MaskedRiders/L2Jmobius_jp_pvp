@@ -14,7 +14,6 @@
  * You should have received a copy of the GNU General Public License
  * along with this program. If not, see <http://www.gnu.org/licenses/>.
  */
-package custom;
 
 /**
  * Scripts added in the custom folder define quests and/or AI that are not normally part of the original Lineage 2 game.<br>
@@ -23,3 +22,4 @@ package custom;
  * The mechanics and syntax of custom scripts are the same as all quest scripts.
  * @author Zoey76
  */
+package custom;

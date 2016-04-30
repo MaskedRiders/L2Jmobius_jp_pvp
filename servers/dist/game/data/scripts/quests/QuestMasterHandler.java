@@ -134,6 +134,8 @@ import quests.Q00471_BreakingThroughTheEmeraldSquare.Q00471_BreakingThroughTheEm
 import quests.Q00472_ChallengeSteamCorridor.Q00472_ChallengeSteamCorridor;
 import quests.Q00473_InTheCoralGarden.Q00473_InTheCoralGarden;
 import quests.Q00485_HotSpringWater.Q00485_HotSpringWater;
+import quests.Q00488_WondersOfCaring.Q00488_WondersOfCaring;
+import quests.Q00489_InThisQuietPlace.Q00489_InThisQuietPlace;
 import quests.Q00490_DutyOfTheSurvivor.Q00490_DutyOfTheSurvivor;
 import quests.Q00492_TombRaiders.Q00492_TombRaiders;
 import quests.Q00494_IncarnationOfGreedZellakaGroup.Q00494_IncarnationOfGreedZellakaGroup;
@@ -566,6 +568,8 @@ final class QuestMasterHandler
 		Q10453_StoppingTheWindDragon.class,
 		Q10465_SoulFrostSword.class,
 		Q10472_WindsOfFate_EncroachingShadows.class,
+		Q00488_WondersOfCaring.class,
+		Q00489_InThisQuietPlace.class,
 		Q10501_ZakenEmbroideredSoulCloak.class,
 		Q10502_FreyaEmbroideredSoulCloak.class,
 		Q10503_FrintezzaEmbroideredSoulCloak.class,

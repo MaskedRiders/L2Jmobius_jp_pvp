@@ -26,7 +26,7 @@ import com.l2jmobius.gameserver.model.entity.TvTEvent;
 import com.l2jmobius.gameserver.model.olympiad.OlympiadManager;
 import com.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * TvT Manager AI.
@@ -138,7 +138,7 @@ final class TvTManager extends AbstractNpcAI implements IVoicedCommandHandler
 		{
 			final boolean isParticipant = TvTEvent.isPlayerParticipant(player.getObjectId());
 			final int[] teamsPlayerCounts = TvTEvent.getTeamsPlayerCounts();
-			htmltext = getHtm(player.getHtmlPrefix(), (!isParticipant ? "Participation.html" : "RemoveParticipation.html"));
+			htmltext = getHtm(player.getHtmlPrefix(), !isParticipant ? "Participation.html" : "RemoveParticipation.html");
 			htmltext = htmltext.replaceAll("%objectId%", String.valueOf(npc.getObjectId()));
 			htmltext = htmltext.replaceAll("%team1name%", Config.TVT_EVENT_TEAM_1_NAME);
 			htmltext = htmltext.replaceAll("%team1playercount%", String.valueOf(teamsPlayerCounts[0]));

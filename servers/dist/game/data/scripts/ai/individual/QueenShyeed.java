@@ -24,7 +24,7 @@ import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.zone.type.L2EffectZone;
 import com.l2jmobius.gameserver.network.NpcStringId;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Queen Shyeed AI
@@ -87,7 +87,7 @@ final class QueenShyeed extends AbstractNpcAI
 	private void spawnShyeed()
 	{
 		final String respawn = loadGlobalQuestVar("Respawn");
-		final long remain = (!respawn.isEmpty()) ? Long.parseLong(respawn) - System.currentTimeMillis() : 0;
+		final long remain = !respawn.isEmpty() ? Long.parseLong(respawn) - System.currentTimeMillis() : 0;
 		if (remain > 0)
 		{
 			startQuestTimer("respawn", remain, null, null);

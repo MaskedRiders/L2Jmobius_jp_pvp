@@ -24,6 +24,7 @@ import com.l2jmobius.gameserver.data.sql.impl.OfflineTradersTable;
 import com.l2jmobius.gameserver.data.xml.impl.AdminData;
 import com.l2jmobius.gameserver.data.xml.impl.BeautyShopData;
 import com.l2jmobius.gameserver.data.xml.impl.SkillTreesData;
+import com.l2jmobius.gameserver.enums.ChatType;
 import com.l2jmobius.gameserver.enums.Race;
 import com.l2jmobius.gameserver.enums.SubclassInfoType;
 import com.l2jmobius.gameserver.instancemanager.CHSiegeManager;
@@ -37,6 +38,7 @@ import com.l2jmobius.gameserver.instancemanager.InstanceManager;
 import com.l2jmobius.gameserver.instancemanager.MailManager;
 import com.l2jmobius.gameserver.instancemanager.PetitionManager;
 import com.l2jmobius.gameserver.instancemanager.QuestManager;
+import com.l2jmobius.gameserver.instancemanager.ServerRestartManager;
 import com.l2jmobius.gameserver.instancemanager.SiegeManager;
 import com.l2jmobius.gameserver.model.L2Clan;
 import com.l2jmobius.gameserver.model.L2Object;
@@ -64,6 +66,7 @@ import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.AcquireSkillList;
 import com.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import com.l2jmobius.gameserver.network.serverpackets.AllyCrest;
+import com.l2jmobius.gameserver.network.serverpackets.CreatureSay;
 import com.l2jmobius.gameserver.network.serverpackets.Die;
 import com.l2jmobius.gameserver.network.serverpackets.EtcStatusUpdate;
 import com.l2jmobius.gameserver.network.serverpackets.ExAcquireAPSkillList;
@@ -110,12 +113,12 @@ import com.l2jmobius.gameserver.network.serverpackets.friend.L2FriendList;
  */
 public class EnterWorld extends L2GameClientPacket
 {
-	private final static String _C__11_ENTERWORLD = "[C] 11 EnterWorld";
+	private static final String _C__11_ENTERWORLD = "[C] 11 EnterWorld";
 	private final int[][] tracert = new int[5][4];
-	private final static double MIN_HP = 0.5;
+	private static final double MIN_HP = 0.5;
 	private static final int COMBAT_FLAG = 9819;
-	private final static int ERTHEIA_INTRO_FOR_ERTHEIA_USM_ID = 147;
-	private final static int ERTHEIA_INTRO_FOR_OTHERS_USM_ID = 148;
+	private static final int ERTHEIA_INTRO_FOR_ERTHEIA_USM_ID = 147;
+	private static final int ERTHEIA_INTRO_FOR_OTHERS_USM_ID = 148;
 	
 	@Override
 	protected void readImpl()
@@ -501,6 +504,11 @@ public class EnterWorld extends L2GameClientPacket
 		activeChar.sendPacket(SystemMessageId.WELCOME_TO_THE_WORLD_OF_LINEAGE_II);
 		
 		AnnouncementsTable.getInstance().showAnnouncements(activeChar);
+		
+		if ((Config.SERVER_RESTART_SCHEDULE_ENABLED) && (Config.SERVER_RESTART_SCHEDULE_MESSAGE))
+		{
+			activeChar.sendPacket(new CreatureSay(2, ChatType.BATTLEFIELD, "[SERVER]", "Next restart is scheduled at " + ServerRestartManager.getInstance().getNextRestartTime() + "."));
+		}
 		
 		if (showClanNotice)
 		{

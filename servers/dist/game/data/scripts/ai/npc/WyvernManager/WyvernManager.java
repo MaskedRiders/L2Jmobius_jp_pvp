@@ -26,7 +26,7 @@ import com.l2jmobius.gameserver.model.entity.Fort;
 import com.l2jmobius.gameserver.model.entity.clanhall.SiegableHall;
 import com.l2jmobius.gameserver.util.Util;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Wyvern Manager
@@ -284,23 +284,17 @@ final class WyvernManager extends AbstractNpcAI
 		{
 			htmltext = "wyvernmanager-02.html";
 		}
+		else if (Config.ALLOW_WYVERN_ALWAYS)
+		{
+			htmltext = replaceAll(npc, player.getHtmlPrefix());
+		}
+		else if (MANAGERS.get(npc.getId()) == ManagerType.CASTLE)
+		{
+			htmltext = "wyvernmanager-dusk.html";
+		}
 		else
 		{
-			if (Config.ALLOW_WYVERN_ALWAYS)
-			{
-				htmltext = replaceAll(npc, player.getHtmlPrefix());
-			}
-			else
-			{
-				if (MANAGERS.get(npc.getId()) == ManagerType.CASTLE)
-				{
-					htmltext = "wyvernmanager-dusk.html";
-				}
-				else
-				{
-					htmltext = replaceAll(npc, player.getHtmlPrefix());
-				}
-			}
+			htmltext = replaceAll(npc, player.getHtmlPrefix());
 		}
 		return htmltext;
 	}

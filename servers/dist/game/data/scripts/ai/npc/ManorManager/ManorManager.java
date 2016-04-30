@@ -37,13 +37,13 @@ import com.l2jmobius.gameserver.network.serverpackets.ExShowSeedInfo;
 import com.l2jmobius.gameserver.network.serverpackets.ExShowSellCropList;
 import com.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Manor manager AI.
  * @author malyelfik
  */
-final class ManorManager extends AbstractNpcAI
+public final class ManorManager extends AbstractNpcAI
 {
 	private static final int[] NPC =
 	{

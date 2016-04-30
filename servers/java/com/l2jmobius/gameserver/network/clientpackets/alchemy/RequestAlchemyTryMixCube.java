@@ -28,8 +28,8 @@ import com.l2jmobius.gameserver.network.serverpackets.alchemy.ExTryMixCube;
 
 public class RequestAlchemyTryMixCube extends L2GameClientPacket
 {
-	private final static int AIR_STONE = 39461;
-	private final static int ELCYUM_CRYSTAL = 36514;
+	private static final int AIR_STONE = 39461;
+	private static final int ELCYUM_CRYSTAL = 36514;
 	private final Map<Integer, Long> _items = new HashMap<>();
 	
 	public RequestAlchemyTryMixCube()
@@ -66,7 +66,7 @@ public class RequestAlchemyTryMixCube extends L2GameClientPacket
 			activeChar.sendPacket(ExTryMixCube.FAIL);
 			return;
 		}
-		if (activeChar.isInStoreMode() || activeChar.isInStoreMode())
+		if (activeChar.isInStoreMode())
 		{
 			activeChar.sendPacket(SystemMessageId.YOU_CANNOT_USE_ALCHEMY_WHILE_TRADING_OR_USING_A_PRIVATE_STORE_OR_SHOP);
 			activeChar.sendPacket(ExTryMixCube.FAIL);

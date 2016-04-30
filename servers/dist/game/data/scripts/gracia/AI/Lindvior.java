@@ -25,7 +25,7 @@ import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.network.NpcStringId;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Lindvior Scene AI.
@@ -110,7 +110,7 @@ public class Lindvior extends AbstractNpcAI
 	
 	private void scheduleNextLindviorVisit()
 	{
-		startQuestTimer("start", ((ALT_MODE) ? ALT_MODE_MIN * 60000 : scheduleNextLindviorDate()), null, null);
+		startQuestTimer("start", ALT_MODE ? ALT_MODE_MIN * 60000 : scheduleNextLindviorDate(), null, null);
 	}
 	
 	private long scheduleNextLindviorDate()

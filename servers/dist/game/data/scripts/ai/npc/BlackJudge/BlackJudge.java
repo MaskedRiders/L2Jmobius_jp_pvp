@@ -26,7 +26,7 @@ import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.SystemMessage;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Black Judge AI.
@@ -56,7 +56,7 @@ final class BlackJudge extends AbstractNpcAI
 	public String onAdvEvent(String event, L2Npc npc, L2PcInstance player)
 	{
 		String htmltext = null;
-		final int level = ((player.getExpertiseLevel() < 5) ? player.getExpertiseLevel() : 5);
+		final int level = (player.getExpertiseLevel() < 5) ? player.getExpertiseLevel() : 5;
 		switch (event)
 		{
 			case "remove_info":

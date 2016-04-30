@@ -23,7 +23,7 @@ import com.l2jmobius.gameserver.model.entity.Castle;
 import com.l2jmobius.gameserver.model.entity.Fort;
 import com.l2jmobius.gameserver.network.serverpackets.NpcHtmlMessage;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Castle Ambassador AI.
@@ -140,7 +140,7 @@ final class CastleAmbassador extends AbstractNpcAI
 		
 		if (player.isClanLeader() && (player.getClanId() == fortOwner))
 		{
-			htmltext = (fortresss.isBorderFortress()) ? "ambassador-01.html" : "ambassador.html";
+			htmltext = fortresss.isBorderFortress() ? "ambassador-01.html" : "ambassador.html";
 		}
 		else
 		{

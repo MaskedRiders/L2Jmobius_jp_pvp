@@ -39,7 +39,7 @@ import com.l2jmobius.gameserver.network.SystemMessageId;
 import com.l2jmobius.gameserver.network.serverpackets.ActionFailed;
 import com.l2jmobius.gameserver.util.Util;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Energy Seeds AI.
@@ -177,14 +177,13 @@ public class EnergySeeds extends AbstractNpcAI
 						return super.onSkillSee(npc, caster, skill, targets, isSummon);
 					}
 				}
+				caster.sendPacket(SystemMessageId.YOUR_COLLECTION_HAS_SUCCEEDED);
 				if (getRandom(100) < 33)
 				{
-					caster.sendPacket(SystemMessageId.YOUR_COLLECTION_HAS_SUCCEEDED);
 					caster.addItem("EnergySeed", itemId, getRandom(RATE + 1, 2 * RATE), null, true);
 				}
 				else
 				{
-					caster.sendPacket(SystemMessageId.YOUR_COLLECTION_HAS_SUCCEEDED);
 					caster.addItem("EnergySeed", itemId, getRandom(1, RATE), null, true);
 				}
 				seedCollectEvent(caster, npc, spawn._seedId);

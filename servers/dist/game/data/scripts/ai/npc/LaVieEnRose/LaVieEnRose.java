@@ -24,7 +24,7 @@ import com.l2jmobius.gameserver.network.serverpackets.ExResponseBeautyList;
 import com.l2jmobius.gameserver.network.serverpackets.ExResponseResetList;
 import com.l2jmobius.gameserver.network.serverpackets.ExShowBeautyMenu;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * La Vie En Rose AI.
@@ -112,7 +112,7 @@ final class LaVieEnRose extends AbstractNpcAI
 	@Override
 	public String onSpawn(L2Npc npc)
 	{
-		startQuestTimer("SPAM_TEXT", (5 * 60 * 1000), npc, null, true);
+		startQuestTimer("SPAM_TEXT", 5 * 60 * 1000, npc, null, true);
 		return super.onSpawn(npc);
 	}
 	

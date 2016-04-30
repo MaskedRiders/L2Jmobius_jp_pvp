@@ -34,7 +34,7 @@ import com.l2jmobius.gameserver.model.skills.Skill;
 import com.l2jmobius.gameserver.util.Util;
 import com.l2jmobius.util.Rnd;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * @author Micr0, Zerox
@@ -178,7 +178,7 @@ final class ScarletVanHalisha extends AbstractNpcAI
 		Skill skill = _skill;
 		if (skill == null)
 		{
-			skill = (getRndSkills(npc));
+			skill = getRndSkills(npc);
 		}
 		
 		if (npc.isPhysicalMuted())
@@ -222,7 +222,7 @@ final class ScarletVanHalisha extends AbstractNpcAI
 						continue;
 					}
 					
-					if (((((L2Character) obj).getZ() < (npc.getZ() - 100)) && (((L2Character) obj).getZ() > (npc.getZ() + 100))) || !(GeoData.getInstance().canSeeTarget(((L2Character) obj).getX(), ((L2Character) obj).getY(), ((L2Character) obj).getZ(), npc.getX(), npc.getY(), npc.getZ())))
+					if (((((L2Character) obj).getZ() < (npc.getZ() - 100)) && (((L2Character) obj).getZ() > (npc.getZ() + 100))) || !GeoData.getInstance().canSeeTarget(((L2Character) obj).getX(), ((L2Character) obj).getY(), ((L2Character) obj).getZ(), npc.getX(), npc.getY(), npc.getZ()))
 					{
 						continue;
 					}

@@ -19,7 +19,7 @@ package ai.npc.CastleWarehouse;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Castle Warehouse Keeper AI.
@@ -66,7 +66,7 @@ final class CastleWarehouse extends AbstractNpcAI
 			}
 			case "warehouse-04.html":
 			{
-				htmltext = (!npc.isMyLord(player)) ? "warehouse-no.html" : getHtm(player.getHtmlPrefix(), "warehouse-04.html").replace("%blood%", Integer.toString(player.getClan().getBloodAllianceCount()));
+				htmltext = !npc.isMyLord(player) ? "warehouse-no.html" : getHtm(player.getHtmlPrefix(), "warehouse-04.html").replace("%blood%", Integer.toString(player.getClan().getBloodAllianceCount()));
 				break;
 			}
 			case "Receive":

@@ -25,7 +25,7 @@ import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2VillageMasterFighterInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2VillageMasterPriestInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * This script manages the dialogs of the headmasters of all newbie villages.<br>
@@ -91,12 +91,9 @@ final class FirstClassTransferTalk extends AbstractNpcAI
 							htmltext += "mystic.html";
 						}
 					}
-					else
+					else if (npc instanceof L2VillageMasterFighterInstance)
 					{
-						if (npc instanceof L2VillageMasterFighterInstance)
-						{
-							htmltext += "fighter.html";
-						}
+						htmltext += "fighter.html";
 					}
 				}
 				else if (player.getClassId().level() == 1)

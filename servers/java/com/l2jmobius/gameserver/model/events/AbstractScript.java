@@ -23,12 +23,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
-import java.util.Map.Entry;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -62,9 +58,6 @@ import com.l2jmobius.gameserver.model.actor.instance.L2MonsterInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.actor.instance.L2TrapInstance;
 import com.l2jmobius.gameserver.model.actor.templates.L2NpcTemplate;
-import com.l2jmobius.gameserver.model.drops.GeneralDropItem;
-import com.l2jmobius.gameserver.model.drops.GroupedGeneralDropItem;
-import com.l2jmobius.gameserver.model.drops.IDropItem;
 import com.l2jmobius.gameserver.model.entity.Castle;
 import com.l2jmobius.gameserver.model.entity.Fort;
 import com.l2jmobius.gameserver.model.entity.Instance;
@@ -144,7 +137,6 @@ import com.l2jmobius.gameserver.scripting.L2ScriptEngineManager;
 import com.l2jmobius.gameserver.scripting.ScriptManager;
 import com.l2jmobius.gameserver.util.MinionList;
 import com.l2jmobius.util.Rnd;
-import com.l2jmobius.util.Util;
 
 /**
  * Abstract script.
@@ -1911,7 +1903,7 @@ public abstract class AbstractScript implements INamable
 		}
 		if (checkCount)
 		{
-			return (getQuestItemsCount(player, item.getId()) >= item.getCount());
+			return getQuestItemsCount(player, item.getId()) >= item.getCount();
 		}
 		return hasQuestItems(player, item.getId());
 	}
@@ -1948,7 +1940,7 @@ public abstract class AbstractScript implements INamable
 	 */
 	public static boolean hasQuestItems(L2PcInstance player, int itemId)
 	{
-		return (player.getInventory().getItemByItemId(itemId) != null);
+		return player.getInventory().getItemByItemId(itemId) != null;
 	}
 	
 	/**
@@ -2002,11 +1994,11 @@ public abstract class AbstractScript implements INamable
 	public static int getEnchantLevel(L2PcInstance player, int itemId)
 	{
 		final L2ItemInstance enchantedItem = player.getInventory().getItemByItemId(itemId);
-		if (enchantedItem == null)
+		if (enchantedItem != null)
 		{
-			return 0;
+			return enchantedItem.getEnchantLevel();
 		}
-		return enchantedItem.getEnchantLevel();
+		return 0;
 	}
 	
 	/**
@@ -2133,19 +2125,16 @@ public abstract class AbstractScript implements INamable
 			smsg.addLong(count);
 		}
 		// Otherwise, send message of object reward to client
+		else if (count > 1)
+		{
+			smsg = SystemMessage.getSystemMessage(SystemMessageId.YOU_HAVE_EARNED_S2_S1_S);
+			smsg.addItemName(item);
+			smsg.addLong(count);
+		}
 		else
 		{
-			if (count > 1)
-			{
-				smsg = SystemMessage.getSystemMessage(SystemMessageId.YOU_HAVE_EARNED_S2_S1_S);
-				smsg.addItemName(item);
-				smsg.addLong(count);
-			}
-			else
-			{
-				smsg = SystemMessage.getSystemMessage(SystemMessageId.YOU_HAVE_EARNED_S1);
-				smsg.addItemName(item);
-			}
+			smsg = SystemMessage.getSystemMessage(SystemMessageId.YOU_HAVE_EARNED_S1);
+			smsg.addItemName(item);
 		}
 		// send packets
 		player.sendPacket(smsg);
@@ -2315,7 +2304,7 @@ public abstract class AbstractScript implements INamable
 			}
 		}
 		
-		long amountToGive = ((minAmount == maxAmount) ? minAmount : Rnd.get(minAmount, maxAmount));
+		long amountToGive = (minAmount == maxAmount) ? minAmount : Rnd.get(minAmount, maxAmount);
 		final double random = Rnd.nextDouble();
 		// Inventory slot check (almost useless for non-stacking items)
 		if ((dropChance >= random) && (amountToGive > 0) && player.getInventory().validateCapacityByItemId(itemId))
@@ -2350,499 +2339,6 @@ public abstract class AbstractScript implements INamable
 			}
 		}
 		return false;
-	}
-	
-	/**
-	 * Gives an item to the player
-	 * @param player
-	 * @param item
-	 * @param victim the character that "dropped" the item
-	 * @return <code>true</code> if at least one item was given, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim)
-	{
-		final List<ItemHolder> items = item.calculateDrops(victim, player);
-		if ((items == null) || items.isEmpty())
-		{
-			return false;
-		}
-		giveItems(player, items);
-		return true;
-	}
-	
-	/**
-	 * Gives an item to the player
-	 * @param player
-	 * @param items
-	 */
-	protected static void giveItems(L2PcInstance player, List<ItemHolder> items)
-	{
-		for (ItemHolder item : items)
-		{
-			giveItems(player, item);
-		}
-	}
-	
-	/**
-	 * Gives an item to the player
-	 * @param player
-	 * @param item
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached.
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, ItemHolder item, long limit)
-	{
-		final long maxToGive = limit - player.getInventory().getInventoryItemCount(item.getId(), -1);
-		if (maxToGive <= 0)
-		{
-			return false;
-		}
-		giveItems(player, item.getId(), Math.min(maxToGive, item.getCount()));
-		return true;
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, ItemHolder item, long limit, boolean playSound)
-	{
-		final boolean drop = giveItems(player, item, limit);
-		if (drop && playSound)
-		{
-			playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
-		}
-		return drop;
-	}
-	
-	/**
-	 * @param player
-	 * @param items
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached.
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, List<ItemHolder> items, long limit)
-	{
-		boolean b = false;
-		for (ItemHolder item : items)
-		{
-			b |= giveItems(player, item, limit);
-		}
-		return b;
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, List<ItemHolder> items, long limit, boolean playSound)
-	{
-		final boolean drop = giveItems(player, items, limit);
-		if (drop && playSound)
-		{
-			playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
-		}
-		return drop;
-	}
-	
-	/**
-	 * @param player
-	 * @param items
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached. If a no limit for an itemId is specified, item will always be given
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, List<ItemHolder> items, Map<Integer, Long> limit)
-	{
-		return giveItems(player, items, Util.mapToFunction(limit));
-	}
-	
-	/**
-	 * @param player
-	 * @param items
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached. If a no limit for an itemId is specified, item will always be given
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, List<ItemHolder> items, Function<Integer, Long> limit)
-	{
-		boolean b = false;
-		for (ItemHolder item : items)
-		{
-			if (limit != null)
-			{
-				final Long longLimit = limit.apply(item.getId());
-				// null -> no limit specified for that item id. This trick is to avoid limit.apply() be called twice (once for the null check)
-				if (longLimit != null)
-				{
-					b |= giveItems(player, item, longLimit);
-					continue; // the item is given, continue with next
-				}
-			}
-			// da BIG else
-			// no limit specified here (either limit or limit.apply(item.getId()) is null)
-			b = true;
-			giveItems(player, item);
-		}
-		return b;
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, List<ItemHolder> items, Function<Integer, Long> limit, boolean playSound)
-	{
-		final boolean drop = giveItems(player, items, limit);
-		if (drop && playSound)
-		{
-			playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
-		}
-		return drop;
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, List<ItemHolder> items, Map<Integer, Long> limit, boolean playSound)
-	{
-		return giveItems(player, items, Util.mapToFunction(limit), playSound);
-	}
-	
-	/**
-	 * @param player
-	 * @param item
-	 * @param victim the character that "dropped" the item
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached.
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim, int limit)
-	{
-		return giveItems(player, item.calculateDrops(victim, player), limit);
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim, int limit, boolean playSound)
-	{
-		final boolean drop = giveItems(player, item, victim, limit);
-		if (drop && playSound)
-		{
-			playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
-		}
-		return drop;
-	}
-	
-	/**
-	 * @param player
-	 * @param item
-	 * @param victim the character that "dropped" the item
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached. If a no limit for an itemId is specified, item will always be given
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim, Map<Integer, Long> limit)
-	{
-		return giveItems(player, item.calculateDrops(victim, player), limit);
-	}
-	
-	/**
-	 * @param player
-	 * @param item
-	 * @param victim the character that "dropped" the item
-	 * @param limit the maximum amount of items the player can have. Won't give more if this limit is reached. If a no limit for an itemId is specified, item will always be given
-	 * @return <code>true</code> if at least one item was given to the player, <code>false</code> otherwise
-	 */
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim, Function<Integer, Long> limit)
-	{
-		return giveItems(player, item.calculateDrops(victim, player), limit);
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim, Map<Integer, Long> limit, boolean playSound)
-	{
-		return giveItems(player, item, victim, Util.mapToFunction(limit), playSound);
-	}
-	
-	protected static boolean giveItems(L2PcInstance player, IDropItem item, L2Character victim, Function<Integer, Long> limit, boolean playSound)
-	{
-		final boolean drop = giveItems(player, item, victim, limit);
-		if (drop && playSound)
-		{
-			playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
-		}
-		return drop;
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, Collection<ItemHolder> items, Function<Integer, Long> limit, boolean playSound)
-	{
-		final Map<L2PcInstance, Map<Integer, Long>> rewardedCounts = calculateDistribution(players, items, limit);
-		// now give the calculated items to the players
-		giveItems(rewardedCounts, playSound);
-		return rewardedCounts;
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, Collection<ItemHolder> items, Map<Integer, Long> limit, boolean playSound)
-	{
-		return distributeItems(players, items, Util.mapToFunction(limit), playSound);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, Collection<ItemHolder> items, long limit, boolean playSound)
-	{
-		return distributeItems(players, items, t -> limit, playSound);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param item the items to distribute
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Long> distributeItems(Collection<L2PcInstance> players, ItemHolder item, long limit, boolean playSound)
-	{
-		final Map<L2PcInstance, Map<Integer, Long>> distribution = distributeItems(players, Collections.singletonList(item), limit, playSound);
-		final Map<L2PcInstance, Long> returnMap = new HashMap<>();
-		for (Entry<L2PcInstance, Map<Integer, Long>> entry : distribution.entrySet())
-		{
-			for (Entry<Integer, Long> entry2 : entry.getValue().entrySet())
-			{
-				returnMap.put(entry.getKey(), entry2.getValue());
-			}
-		}
-		return returnMap;
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param killer the one who "kills" the victim
-	 * @param victim the character that "dropped" the item
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, IDropItem items, L2Character killer, L2Character victim, Function<Integer, Long> limit, boolean playSound)
-	{
-		return distributeItems(players, items.calculateDrops(victim, killer), limit, playSound);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param killer the one who "kills" the victim
-	 * @param victim the character that "dropped" the item
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, IDropItem items, L2Character killer, L2Character victim, Map<Integer, Long> limit, boolean playSound)
-	{
-		return distributeItems(players, items.calculateDrops(victim, killer), limit, playSound);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param killer the one who "kills" the victim
-	 * @param victim the character that "dropped" the item
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, IDropItem items, L2Character killer, L2Character victim, long limit, boolean playSound)
-	{
-		return distributeItems(players, items.calculateDrops(victim, killer), limit, playSound);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param killer the one who "kills" the victim
-	 * @param victim the character that "dropped" the item
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @param smartDrop true if to not calculate a drop, which can't be given to any player 'cause of limits
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, GroupedGeneralDropItem items, L2Character killer, L2Character victim, Function<Integer, Long> limit, boolean playSound, boolean smartDrop)
-	{
-		GroupedGeneralDropItem toDrop;
-		if (smartDrop)
-		{
-			toDrop = new GroupedGeneralDropItem(items.getChance(), items.getDropCalculationStrategy(), items.getKillerChanceModifierStrategy(), items.getPreciseStrategy());
-			final List<GeneralDropItem> dropItems = new LinkedList<>(items.getItems());
-			ITEM_LOOP: for (Iterator<GeneralDropItem> it = dropItems.iterator(); it.hasNext();)
-			{
-				final GeneralDropItem item = it.next();
-				for (L2PcInstance player : players)
-				{
-					final int itemId = item.getItemId();
-					if (player.getInventory().getInventoryItemCount(itemId, -1, true) < avoidNull(limit, itemId))
-					{
-						// we can give this item to this player
-						continue ITEM_LOOP;
-					}
-				}
-				// there's nobody to give this item to
-				it.remove();
-			}
-			toDrop.setItems(dropItems);
-			toDrop = toDrop.normalizeMe(victim, killer);
-		}
-		else
-		{
-			toDrop = items;
-		}
-		return distributeItems(players, toDrop, killer, victim, limit, playSound);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param killer the one who "kills" the victim
-	 * @param victim the character that "dropped" the item
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @param smartDrop true if to not calculate a drop, which can't be given to any player
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, GroupedGeneralDropItem items, L2Character killer, L2Character victim, Map<Integer, Long> limit, boolean playSound, boolean smartDrop)
-	{
-		return distributeItems(players, items, killer, victim, Util.mapToFunction(limit), playSound, smartDrop);
-	}
-	
-	/**
-	 * Distributes items to players equally
-	 * @param players the players to whom the items will be distributed
-	 * @param items the items to distribute
-	 * @param killer the one who "kills" the victim
-	 * @param victim the character that "dropped" the item
-	 * @param limit the limit what single player can have of each item
-	 * @param playSound if to play sound if a player gets at least one item
-	 * @param smartDrop true if to not calculate a drop, which can't be given to any player
-	 * @return the counts of each items given to each player
-	 */
-	protected static Map<L2PcInstance, Map<Integer, Long>> distributeItems(Collection<L2PcInstance> players, GroupedGeneralDropItem items, L2Character killer, L2Character victim, long limit, boolean playSound, boolean smartDrop)
-	{
-		return distributeItems(players, items, killer, victim, t -> limit, playSound, smartDrop);
-	}
-	
-	/**
-	 * @param players
-	 * @param items
-	 * @param limit
-	 * @return
-	 */
-	private static Map<L2PcInstance, Map<Integer, Long>> calculateDistribution(Collection<L2PcInstance> players, Collection<ItemHolder> items, Function<Integer, Long> limit)
-	{
-		final Map<L2PcInstance, Map<Integer, Long>> rewardedCounts = new HashMap<>();
-		for (L2PcInstance player : players)
-		{
-			rewardedCounts.put(player, new HashMap<Integer, Long>());
-		}
-		NEXT_ITEM: for (ItemHolder item : items)
-		{
-			long equaldist = item.getCount() / players.size();
-			long randomdist = item.getCount() % players.size();
-			final List<L2PcInstance> toDist = new ArrayList<>(players);
-			do // this must happen at least once in order to get away already full players (and then equaldist can become nonzero)
-			{
-				for (Iterator<L2PcInstance> it = toDist.iterator(); it.hasNext();)
-				{
-					final L2PcInstance player = it.next();
-					if (!rewardedCounts.get(player).containsKey(item.getId()))
-					{
-						rewardedCounts.get(player).put(item.getId(), 0L);
-					}
-					final long maxGive = avoidNull(limit, item.getId()) - player.getInventory().getInventoryItemCount(item.getId(), -1, true) - rewardedCounts.get(player).get(item.getId());
-					long toGive = equaldist;
-					if (equaldist >= maxGive)
-					{
-						toGive = maxGive;
-						randomdist += (equaldist - maxGive); // overflown items are available to next players
-						it.remove(); // this player is already full
-					}
-					rewardedCounts.get(player).put(item.getId(), rewardedCounts.get(player).get(item.getId()) + toGive);
-				}
-				if (toDist.isEmpty())
-				{
-					// there's no one to give items anymore, all players will be full when we give the items
-					continue NEXT_ITEM;
-				}
-				equaldist = randomdist / toDist.size(); // the rest of items may be allowed to be equally distributed between remaining players
-				randomdist %= toDist.size();
-			}
-			while (equaldist > 0);
-			while (randomdist > 0)
-			{
-				if (toDist.isEmpty())
-				{
-					// we don't have any player left
-					continue NEXT_ITEM;
-				}
-				final L2PcInstance player = toDist.get(getRandom(toDist.size()));
-				// avoid null return
-				final long maxGive = avoidNull(limit, item.getId()) - limit.apply(item.getId()) - player.getInventory().getInventoryItemCount(item.getId(), -1, true) - rewardedCounts.get(player).get(item.getId());
-				if (maxGive > 0)
-				{
-					// we can add an item to player
-					// so we add one item to player
-					rewardedCounts.get(player).put(item.getId(), rewardedCounts.get(player).get(item.getId()) + 1);
-					randomdist--;
-				}
-				toDist.remove(player); // Either way this player isn't allowable for next random award
-			}
-		}
-		return rewardedCounts;
-	}
-	
-	/**
-	 * This function is for avoidance null returns in function limits
-	 * @param <T> the type of function arg
-	 * @param function the function
-	 * @param arg the argument
-	 * @return {@link Long#MAX_VALUE} if function.apply(arg) is null, function.apply(arg) otherwise
-	 */
-	private static <T> long avoidNull(Function<T, Long> function, T arg)
-	{
-		final Long longLimit = function.apply(arg);
-		return longLimit == null ? Long.MAX_VALUE : longLimit;
-	}
-	
-	/**
-	 * Distributes items to players
-	 * @param rewardedCounts A scheme of distribution items (the structure is: Map<player Map<itemId, count>>)
-	 * @param playSound if to play sound if a player gets at least one item
-	 */
-	private static void giveItems(Map<L2PcInstance, Map<Integer, Long>> rewardedCounts, boolean playSound)
-	{
-		for (Entry<L2PcInstance, Map<Integer, Long>> entry : rewardedCounts.entrySet())
-		{
-			final L2PcInstance player = entry.getKey();
-			boolean playPlayerSound = false;
-			for (Entry<Integer, Long> item : entry.getValue().entrySet())
-			{
-				if (item.getValue() >= 0)
-				{
-					playPlayerSound = true;
-					giveItems(player, item.getKey(), item.getValue());
-				}
-			}
-			if (playSound && playPlayerSound)
-			{
-				playSound(player, QuestSound.ITEMSOUND_QUEST_ITEMGET);
-			}
-		}
 	}
 	
 	/**
@@ -3274,7 +2770,7 @@ public abstract class AbstractScript implements INamable
 	 * @param isWide
 	 * @param relAngle
 	 */
-	public static final void specialCamera(L2PcInstance player, L2Character creature, int force, int angle1, int angle2, int time, int range, int duration, int relYaw, int relPitch, int isWide, int relAngle)
+	public static void specialCamera(L2PcInstance player, L2Character creature, int force, int angle1, int angle2, int time, int range, int duration, int relYaw, int relPitch, int isWide, int relAngle)
 	{
 		player.sendPacket(new SpecialCamera(creature, force, angle1, angle2, time, range, duration, relYaw, relPitch, isWide, relAngle));
 	}
@@ -3293,7 +2789,7 @@ public abstract class AbstractScript implements INamable
 	 * @param isWide
 	 * @param relAngle
 	 */
-	public static final void specialCameraEx(L2PcInstance player, L2Character creature, int force, int angle1, int angle2, int time, int duration, int relYaw, int relPitch, int isWide, int relAngle)
+	public static void specialCameraEx(L2PcInstance player, L2Character creature, int force, int angle1, int angle2, int time, int duration, int relYaw, int relPitch, int isWide, int relAngle)
 	{
 		player.sendPacket(new SpecialCamera(creature, player, force, angle1, angle2, time, duration, relYaw, relPitch, isWide, relAngle));
 	}
@@ -3314,7 +2810,7 @@ public abstract class AbstractScript implements INamable
 	 * @param relAngle
 	 * @param unk
 	 */
-	public static final void specialCamera3(L2PcInstance player, L2Character creature, int force, int angle1, int angle2, int time, int range, int duration, int relYaw, int relPitch, int isWide, int relAngle, int unk)
+	public static void specialCamera3(L2PcInstance player, L2Character creature, int force, int angle1, int angle2, int time, int range, int duration, int relYaw, int relPitch, int isWide, int relAngle, int unk)
 	{
 		player.sendPacket(new SpecialCamera(creature, force, angle1, angle2, time, range, duration, relYaw, relPitch, isWide, relAngle, unk));
 	}

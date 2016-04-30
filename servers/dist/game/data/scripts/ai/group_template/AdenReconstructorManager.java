@@ -21,7 +21,7 @@ import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.network.NpcStringId;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Aden Reconstructor Manager AI.
@@ -74,7 +74,7 @@ final class AdenReconstructorManager extends AbstractNpcAI
 	@Override
 	public String onSpawn(L2Npc npc)
 	{
-		startQuestTimer("SPAM_TEXT", (5 * 60 * 1000), npc, null, true);
+		startQuestTimer("SPAM_TEXT", 5 * 60 * 1000, npc, null, true);
 		return super.onSpawn(npc);
 	}
 	

@@ -25,7 +25,7 @@ import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 import com.l2jmobius.gameserver.model.holders.SkillHolder;
 import com.l2jmobius.gameserver.network.NpcStringId;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Silent Valley AI
@@ -159,7 +159,7 @@ final class SilentValley extends AbstractNpcAI
 	{
 		if (creature.isPlayable())
 		{
-			final L2PcInstance player = (isSummon) ? ((L2Summon) creature).getOwner() : creature.getActingPlayer();
+			final L2PcInstance player = isSummon ? ((L2Summon) creature).getOwner() : creature.getActingPlayer();
 			if ((npc.getId() == GUARD1) || (npc.getId() == GUARD2))
 			{
 				npc.setTarget(player);

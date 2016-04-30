@@ -19,7 +19,7 @@ package ai.npc.Teleports.StrongholdsTeleports;
 import com.l2jmobius.gameserver.model.actor.L2Npc;
 import com.l2jmobius.gameserver.model.actor.instance.L2PcInstance;
 
-import ai.npc.AbstractNpcAI;
+import ai.AbstractNpcAI;
 
 /**
  * Strongholds teleport AI.<br>
@@ -29,7 +29,7 @@ import ai.npc.AbstractNpcAI;
 final class StrongholdsTeleports extends AbstractNpcAI
 {
 	// NPCs
-	private final static int[] NPCs =
+	private static final int[] NPCs =
 	{
 		32181,
 		32184,
